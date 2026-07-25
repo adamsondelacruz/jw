@@ -26,6 +26,8 @@ For generated study answers, ground each answer in the current paragraph and use
 
 When the user asks to generate the current Watchtower Study answers, pattern the output after the files in `watchtower/2026-07/`.
 
+If available, use the local Codex skill `jw-study-output` for this workflow. The repo renderer `watchtower/render_bilingual_study.py` can convert the agreed Markdown structure into the styled HTML format, and headless Chrome can print that HTML to PDF.
+
 Current preferred output pattern:
 
 - Use the current folder structure: `watchtower/YYYY-MM/`
@@ -49,3 +51,4 @@ Apply the same "learn the local pattern first" approach to other recurring tasks
 2. Follow the current folder structure and naming convention already used in this workspace.
 3. Match the tone, bilingual pattern, and output formats from nearby examples unless the user gives a different instruction.
 4. When source material is available in both English and Tagalog, verify the matching Tagalog JW.org page instead of guessing the translated URL.
+5. Prefer script-assisted rendering for repeatable output formatting instead of hand-building HTML.
