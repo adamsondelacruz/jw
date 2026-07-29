@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-NZ" xml:lang="en-NZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Forming a New Congregation</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">@page {
+size: A4;
+margin: 15mm 15mm 16mm;
+}
+:root {
+--green-900: #163d27;
+--green-700: #1a4d2e;
+--green-600: #2d6b48;
+--green-100: #e8f2eb;
+--green-050: #f4f8f5;
+--blue-800: #1f4d7a;
+--blue-100: #eaf2fa;
+--gold-700: #856404;
+--gold-100: #fff7dc;
+--ink: #222;
+--muted: #5d665f;
+--rule: #c7d0c9;
+}
+html {
+background: #f7f8f7;
+color: var(--ink);
+}
+body {
+box-sizing: border-box;
+max-width: 820px;
+margin: 2em auto;
+padding: 2.4em 3em;
+background: white;
+font-family: Georgia, "Times New Roman", serif;
+font-size: 16px;
+line-height: 1.55;
+text-rendering: optimizeLegibility;
+}
+header {
+margin: -2.4em -3em 2em;
+padding: 2.2em 3em 1.8em;
+background: linear-gradient(135deg, var(--green-900), var(--green-600));
+color: white;
+text-align: left;
+}
+header h1 {
+margin: 0;
+color: white;
+font-size: 2.25em;
+line-height: 1.08;
+}
+header .subtitle {
+margin: 0.5em 0 0;
+color: #e4f1e8;
+font-size: 1.08em;
+}
+h2 {
+margin: 1.8em 0 0.7em;
+padding-bottom: 0.28em;
+border-bottom: 1px solid var(--rule);
+color: var(--green-700);
+font-size: 1.55em;
+line-height: 1.2;
+}
+h3 {
+margin: 1.35em 0 0.45em;
+color: var(--green-600);
+font-size: 1.17em;
+line-height: 1.25;
+}
+p {
+margin: 0.7em 0;
+}
+ol,
+ul {
+margin: 0.65em 0 0.9em;
+padding-left: 1.5em;
+}
+li {
+margin: 0.26em 0;
+}
+strong {
+color: var(--green-700);
+}
+table {
+width: 100%;
+margin: 0.9em 0 1.2em;
+border-collapse: collapse;
+font-size: 0.92em;
+}
+th,
+td {
+padding: 0.48em 0.58em;
+border: 1px solid #cbd3cd;
+text-align: left;
+vertical-align: top;
+}
+th {
+background: var(--green-100);
+color: var(--green-900);
+font-weight: 700;
+}
+tbody tr:nth-child(even) {
+background: #fafcfb;
+}
+.source-line {
+margin: -0.7em 0 1.2em;
+color: var(--muted);
+font-size: 0.88em;
+}
+.notice,
+.new-only,
+.quickview,
+.footer-note {
+margin: 1.1em 0 1.35em;
+padding: 0.8em 1em;
+border-left: 5px solid var(--blue-800);
+background: var(--blue-100);
+page-break-inside: avoid;
+}
+.notice h3,
+.new-only h3 {
+margin-top: 0;
+color: var(--blue-800);
+}
+.quickview {
+border-left-color: var(--green-600);
+background: var(--green-050);
+}
+.quickview h3 {
+margin-top: 0;
+}
+.footer-note {
+margin-top: 2em;
+border-left-color: var(--gold-700);
+background: var(--gold-100);
+font-size: 0.9em;
+}
+.writing-space {
+min-height: 7em;
+border: 1px solid var(--rule);
+background-image: repeating-linear-gradient(
+to bottom,
+white,
+white 1.75em,
+#d9dfda 1.8em
+);
+}
+.writing-space p {
+margin: 0;
+}
+a {
+color: var(--blue-800);
+}
+@media print {
+html {
+background: white;
+}
+body {
+max-width: none;
+margin: 0;
+padding: 0;
+font-size: 10.5pt;
+}
+header {
+margin: -15mm -15mm 9mm;
+padding: 15mm 15mm 11mm;
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+h2,
+h3,
+table,
+.notice,
+.new-only,
+.quickview,
+.footer-note {
+page-break-inside: avoid;
+}
+h2,
+h3 {
+page-break-after: avoid;
+}
+h2.section-break {
+break-before: page;
+page-break-before: always;
+}
+p,
+li {
+orphans: 3;
+widows: 3;
+}
+th,
+.notice,
+.new-only,
+.quickview,
+.footer-note {
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+}
+@media (max-width: 650px) {
+body {
+margin: 0;
+padding: 1.25em;
+font-size: 15px;
+}
+header {
+margin: -1.25em -1.25em 1.4em;
+padding: 1.6em 1.25em 1.4em;
+}
+header h1 {
+font-size: 1.8em;
+}
+table {
+display: block;
+overflow-x: auto;
+}
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Forming a New Congregation</h1>
+<p class="subtitle">Meeting guide and S-51 preparation checklist</p>
+</header>
+<div class="source-line">
+<p><strong>Source:</strong> Congregation Application/Information
+(S-51-E), revision 1/16, pages 1-2</p>
+</div>
+<section id="start-with-this-important-limitation" class="notice">
+<h3>Start with this important limitation</h3>
+<p>S-51 says to read the <strong>Instructions for Recommending New
+Congregations (S-50)</strong> before completing the application. This
+guide captures what S-51 requires, but <strong>S-51 alone is not the
+complete recommendation procedure</strong>. Obtain and review the
+current S-50 before finalising or submitting anything.</p>
+</section>
+<h2 id="the-meeting-outcome">The meeting outcome</h2>
+<p>By the end of the meeting, aim to have these six results:</p>
+<ol type="1">
+<li><strong>A clear reason</strong> for recommending the new
+congregation.</li>
+<li><strong>The congregations and territory involved</strong>
+identified.</li>
+<li><strong>A suitable proposed complete name</strong> checked against
+the naming rules.</li>
+<li><strong>Accurate publisher and appointed-brother counts</strong> for
+every required S-51 form.</li>
+<li><strong>A realistic proposed start month</strong> and the circuit
+overseer’s circuit-and-section recommendation.</li>
+<li><strong>Owners and deadlines</strong> for the forms, map or
+explanation, review, and signatures.</li>
+</ol>
+<section id="at-a-glance" class="quickview">
+<h3>At a glance</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>We need to prepare</th>
+<th>What goes on its S-51</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Proposed new congregation</strong></td>
+<td>Points <strong>1-8</strong>; leave the congregation-number field
+blank</td>
+</tr>
+<tr class="even">
+<td><strong>Existing congregation whose boundary is
+affected</strong></td>
+<td>Points <strong>1-4</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Existing congregation hosting the group</strong></td>
+<td>Points <strong>1-4</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Existing congregation whose only change is its
+name</strong></td>
+<td>Point <strong>1 only</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Prepare one S-51 for the proposed new congregation and one for
+<strong>each</strong> existing congregation directly involved.</p>
+</section>
+<h2 id="suggested-meeting-flow">Suggested meeting flow</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>Main question</th>
+<th>Decision or information to record</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Confirm the procedure</td>
+<td>Do we have the current S-50 and understand who must be
+involved?</td>
+<td>Any procedural questions to resolve</td>
+</tr>
+<tr class="even">
+<td>2. Establish the reason</td>
+<td>Why would a new congregation be beneficial and workable?</td>
+<td>Short factual explanation for point 5</td>
+</tr>
+<tr class="odd">
+<td>3. Define the effect</td>
+<td>Which territories and congregations are directly involved?</td>
+<td>Complete names, numbers, and boundary/hosting impact</td>
+</tr>
+<tr class="even">
+<td>4. Choose a name</td>
+<td>What name accurately reflects the proposed territory?</td>
+<td>Proposed complete name and any needed explanation</td>
+</tr>
+<tr class="odd">
+<td>5. Confirm resources</td>
+<td>Who will make up and serve the congregation?</td>
+<td>Publisher, pioneer, elder, and ministerial-servant counts</td>
+</tr>
+<tr class="even">
+<td>6. Confirm readiness</td>
+<td>When could it begin, and where should it be assigned?</td>
+<td>First of proposed month/year; circuit and section</td>
+</tr>
+<tr class="odd">
+<td>7. Assign next actions</td>
+<td>Who will prepare, verify, and sign each item?</td>
+<td>Owners and due dates</td>
+</tr>
+</tbody>
+</table>
+<h2 id="s-51-data-checklist">S-51 data checklist</h2>
+<h3 id="proposed-complete-name">1. Proposed complete name</h3>
+<p>Record the proposed new congregation’s:</p>
+<ul>
+<li>directional or geographic designation;</li>
+<li>city;</li>
+<li>province or state; and</li>
+<li>congregation number — <strong>leave this blank for the new
+congregation</strong>.</li>
+</ul>
+<p>If an existing congregation involved in the proposal needs a new
+name, record both its current complete name and its proposed new
+complete name.</p>
+<h3 id="publishers-including-pioneers">2. Publishers, including
+pioneers</h3>
+<p>Record the form’s three requested figures:</p>
+<ul>
+<li>total active;</li>
+<li>regular; and</li>
+<li>baptized.</li>
+</ul>
+<p>Use the categories exactly as they appear on the form and verify the
+figures before submission.</p>
+<h3 id="pioneers">3. Pioneers</h3>
+<p>Record:</p>
+<ul>
+<li>regular pioneers; and</li>
+<li>special pioneers.</li>
+</ul>
+<h3 id="appointed-brothers">4. Appointed brothers</h3>
+<p>Record how many will serve as:</p>
+<ul>
+<li>elders; and</li>
+<li>ministerial servants.</li>
+</ul>
+<section id="points-5-8-are-for-the-proposed-new-congregation-only" class="new-only">
+<h3>Points 5-8 are for the proposed new congregation only</h3>
+<p>Do not complete points 5-8 on the S-51 forms for the existing
+congregations involved.</p>
+</section>
+<h3 id="reason-for-forming-the-congregation">5. Reason for forming the
+congregation</h3>
+<p>Prepare a brief, factual statement explaining why the new
+congregation is being recommended. If the form does not provide enough
+space, continue on page 2.</p>
+<p><strong>Discussion prompts:</strong> What present situation is the
+proposal addressing? How will the proposed arrangement affect the
+congregations and territory involved? What facts support the
+recommendation?</p>
+<h3 id="existing-congregations-directly-involved">6. Existing
+congregations directly involved</h3>
+<p>List:</p>
+<ul>
+<li>every congregation whose territory boundary would be affected;
+and</li>
+<li>the congregation that has been hosting the group, if a hosted group
+is now being recommended as a congregation.</li>
+</ul>
+<p>For each one, provide its <strong>complete name</strong> — including
+directional or geographic designation, city, and province or state — and
+its congregation number. Additional congregations may be listed on page
+2.</p>
+<h3 id="proposed-start">7. Proposed start</h3>
+<p>State when the new congregation could begin functioning: <strong>the
+first of a month and year</strong>.</p>
+<h3 id="circuit-and-section">8. Circuit and section</h3>
+<p>The <strong>circuit overseer</strong> recommends the circuit and
+section to which the congregation should be assigned.</p>
+<h3 id="date-and-signatures-shown-on-the-application">Date and
+signatures shown on the application</h3>
+<p>The S-51 application provides fields for the date and typed-name
+signatures of:</p>
+<ul>
+<li>coordinator of the body of elders;</li>
+<li>secretary;</li>
+<li>circuit overseer; and</li>
+<li>service overseer.</li>
+</ul>
+<p>For a name change that is <strong>not</strong> connected with forming
+a new congregation, S-51 says that only point 1 is completed and the
+form need only be signed by the Congregation Service Committee.</p>
+<h2 class="section-break" id="naming-guide">Naming guide</h2>
+<h3 id="the-three-part-name">The three-part name</h3>
+<p>A complete congregation name should reflect its territory assignment
+and contain:</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>Requirement</th>
+<th style="text-align: center;">Check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>A directional or other geographic designation — such as a street,
+park, or neighbourhood</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>A city within the congregation’s territory</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>The province or state containing that city</td>
+<td style="text-align: center;">☐</td>
+</tr>
+</tbody>
+</table>
+<p>The directional or geographic designation must relate to the
+<strong>city named in the complete name</strong>, not to a neighbouring
+city. The city name itself should not be used as the first part.</p>
+<p><strong>S-51 example:</strong> “Hamilton Congregation of Jehovah’s
+Witnesses, Bath, Maine.”</p>
+<h3 id="if-the-congregation-uses-a-foreign-language">If the congregation
+uses a foreign language</h3>
+<p>When the congregation’s primary language differs from the country’s
+principal language:</p>
+<ul>
+<li>include the language in the first part of the complete name;
+and</li>
+<li>put a directional or geographic designation before the language,
+even if it is the only congregation of that language in the city.</li>
+</ul>
+<p><strong>S-51 example:</strong> “Hamilton Spanish Congregation of
+Jehovah’s Witnesses, Bath, Maine.”</p>
+<h3 id="check-whether-an-existing-congregation-should-request-a-name-change">Check
+whether an existing congregation should request a name change</h3>
+<p>When a second congregation is formed, the original congregation’s
+name does <strong>not</strong> change automatically. It should request
+permission to change its name if:</p>
+<ul>
+<li>its current name will no longer reflect a meaningful part of its
+revised territory; or</li>
+<li>the first part of its name is only a language and another
+congregation of the same language is being formed in that city.</li>
+</ul>
+<p>If the reason for the selected name is not clearly visible on the map
+sent to the branch office, provide a brief explanation of why the name
+is appropriate.</p>
+<p>Once approved, always use the complete three-part name in branch
+correspondence, letterheads, bank accounts, exemption applications, and
+similar official uses.</p>
+<h2 id="meeting-worksheet">Meeting worksheet</h2>
+<h3 id="a.-proposed-new-congregation">A. Proposed new congregation</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Working answer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Directional/geographic designation</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>City</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Province/state</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Reason the name fits the territory</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Primary language, if different from the country’s principal
+language</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Proposed first month/year of operation</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Recommended circuit and section — circuit overseer</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="b.-people-and-support">B. People and support</h3>
+<table>
+<thead>
+<tr class="header">
+<th>S-51 figure</th>
+<th style="text-align: center;">Count</th>
+<th>Verified by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total active publishers, including pioneers</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Regular</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Baptized</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Regular pioneers</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Special pioneers</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Elders who will serve</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ministerial servants who will serve</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c.-existing-congregations-directly-involved">C. Existing
+congregations directly involved</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Complete congregation name</th>
+<th style="text-align: right;">Number</th>
+<th>Boundary affected, hosting group, or name only?</th>
+<th>S-51 needed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="d.-draft-reason-for-the-recommendation">D. Draft reason for the
+recommendation</h3>
+<div class="writing-space">
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+<h3 id="e.-actions-after-the-meeting">E. Actions after the meeting</h3>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Owner</th>
+<th>Due date</th>
+<th style="text-align: center;">Done</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Obtain and review the current S-50</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>Confirm proposed boundaries and the map required by the applicable
+instructions</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>Verify all publisher and pioneer figures</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>Verify elder and ministerial-servant assignments/counts</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>Confirm every involved congregation and its complete
+name/number</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>Check the proposed name against all S-51 naming rules</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>Draft the point 5 explanation</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>Prepare the new congregation’s S-51, points 1-8</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>Prepare each other required S-51 with the correct points</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>Obtain the required typed-name signatures</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>Conduct final review against S-50 and S-51</td>
+<td></td>
+<td></td>
+<td style="text-align: center;">☐</td>
+</tr>
+</tbody>
+</table>
+<div class="footer-note">
+<p><strong>Accuracy note:</strong> This is a plain-language meeting aid,
+not a replacement for S-50 or S-51. Where this guide and the official
+instructions differ, follow the current official instructions.</p>
+</div>
+</body>
+</html>
