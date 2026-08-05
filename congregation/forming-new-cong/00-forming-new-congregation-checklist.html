@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Forming a New Congregation — Master Checklist</title>
+  <style>
+    :root {
+      --bg: #faf8f7;
+      --surface: #fffdfc;
+      --surface-2: #f7f1f2;
+      --fg: #292326;
+      --muted: #71666b;
+      --rule: #ded3d6;
+      --maroon: #74283d;
+      --maroon-dark: #481321;
+      --maroon-soft: #f4e7eb;
+      --rose: #a34f67;
+      --gold: #8a651d;
+      --gold-soft: #fff5dc;
+      --green: #2f6b50;
+      --green-soft: #e8f3ed;
+      --blue: #355f85;
+      --blue-soft: #eaf2f8;
+      --shadow: 0 12px 36px rgba(65, 22, 35, 0.09);
+      --radius: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171214;
+        --surface: #211a1d;
+        --surface-2: #2a2024;
+        --fg: #f0e9eb;
+        --muted: #b5a8ad;
+        --rule: #49373e;
+        --maroon: #d08ba0;
+        --maroon-dark: #f0bdca;
+        --maroon-soft: #3b252d;
+        --rose: #daa1b1;
+        --gold: #e0bd72;
+        --gold-soft: #342d1e;
+        --green: #8bc4a7;
+        --green-soft: #20342a;
+        --blue: #9bc1df;
+        --blue-soft: #22313d;
+        --shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+    }
+    button, input, textarea { font: inherit; }
+    button { cursor: pointer; }
+    a { color: var(--maroon); }
+    a:hover { color: var(--rose); }
+
+    .page { max-width: 1040px; margin: 0 auto; padding: 0 22px 72px; }
+    .hero {
+      margin: 0 -22px 24px;
+      padding: 42px max(22px, calc((100vw - 1040px) / 2 + 22px)) 32px;
+      background:
+        radial-gradient(circle at 86% 10%, rgba(255,255,255,.10), transparent 24%),
+        linear-gradient(135deg, #3d0f1c, #74283d 65%, #8d4056);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #efd7de;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; max-width: 780px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4.5vw, 3.35rem); line-height: 1.04; }
+    .hero-subtitle { max-width: 740px; margin: 14px 0 18px; color: #f5e8ec; font-size: 1.02rem; }
+    .source-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .source-links a {
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .source-links a:hover { background: rgba(255,255,255,.12); }
+
+    .project-card, .toolbar, .intro-card, .section, .radius-research {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .project-card { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; padding: 18px; }
+    label.field { display: grid; gap: 5px; color: var(--muted); font-size: .74rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+    label.field input, label.field textarea {
+      width: 100%;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--fg);
+      padding: 9px 10px;
+      font-size: .92rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    label.field input:focus, label.field textarea:focus, .item-note textarea:focus {
+      outline: 3px solid color-mix(in srgb, var(--maroon) 22%, transparent);
+      border-color: var(--maroon);
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 8px;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: minmax(190px, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      margin: 18px 0;
+      padding: 12px 14px;
+      backdrop-filter: blur(12px);
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+    }
+    .progress-wrap { min-width: 0; }
+    .progress-line { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 5px; font-size: .8rem; }
+    #progressText { color: var(--maroon); font-weight: 800; }
+    #saveStatus { overflow: hidden; color: var(--muted); text-overflow: ellipsis; white-space: nowrap; }
+    .progress-track { height: 9px; overflow: hidden; border-radius: 99px; background: var(--surface-2); }
+    .progress-fill { width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--maroon-dark), var(--rose)); transition: width .25s ease; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    .btn {
+      min-height: 36px;
+      padding: 7px 11px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--fg);
+      font-size: .78rem;
+      font-weight: 750;
+    }
+    .btn:hover { border-color: var(--maroon); background: var(--maroon-soft); }
+    .btn.primary { border-color: var(--maroon); background: var(--maroon); color: #fff; }
+    .btn.primary:hover { background: var(--maroon-dark); }
+    .btn.danger { color: #9e2b3d; }
+
+    .intro-card { margin-bottom: 18px; padding: 17px 18px; border-left: 5px solid var(--gold); background: var(--gold-soft); }
+    .intro-card h2 { margin: 0 0 6px; color: var(--gold); font-size: 1rem; }
+    .intro-card p { margin: 5px 0; font-size: .88rem; }
+    .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 10px; color: var(--muted); font-size: .78rem; }
+    .legend strong { color: var(--fg); }
+
+    #checklist { display: grid; gap: 16px; }
+    details.section { overflow: hidden; }
+    details.section > summary {
+      list-style: none;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 17px 18px;
+      cursor: pointer;
+      user-select: none;
+    }
+    details.section > summary::-webkit-details-marker { display: none; }
+    .section-number {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--maroon-soft);
+      color: var(--maroon);
+      font-weight: 850;
+    }
+    .section-title { min-width: 0; }
+    .section-title h2 { margin: 0; color: var(--maroon); font-family: Georgia, "Times New Roman", serif; font-size: 1.24rem; line-height: 1.2; }
+    .section-title p { margin: 3px 0 0; color: var(--muted); font-size: .79rem; }
+    .section-progress { color: var(--muted); font-size: .77rem; font-weight: 750; white-space: nowrap; }
+    details.section[open] > summary { border-bottom: 1px solid var(--rule); background: var(--surface-2); }
+    .section-body { padding: 6px 18px 16px; }
+    .gate {
+      margin: 12px 0 7px;
+      padding: 10px 12px;
+      border-left: 4px solid var(--maroon);
+      background: var(--maroon-soft);
+      color: var(--maroon-dark);
+      font-size: .84rem;
+      font-weight: 700;
+    }
+    .task {
+      display: grid;
+      grid-template-columns: 26px minmax(0, 1fr);
+      gap: 9px;
+      padding: 11px 2px;
+      border-bottom: 1px solid var(--rule);
+      transition: opacity .2s ease, background .2s ease;
+    }
+    .task:last-child { border-bottom: 0; }
+    .task.completed { opacity: .66; }
+    .task.completed .task-title { text-decoration: line-through; text-decoration-thickness: 1px; }
+    .task input[type="checkbox"] {
+      appearance: none;
+      width: 21px;
+      height: 21px;
+      margin: 2px 0 0;
+      border: 2px solid var(--rule);
+      border-radius: 5px;
+      background: var(--surface);
+      display: grid;
+      place-content: center;
+    }
+    .task input[type="checkbox"]::before {
+      content: "";
+      width: 10px;
+      height: 6px;
+      border: solid #fff;
+      border-width: 0 0 2px 2px;
+      transform: rotate(-45deg) scale(0);
+      transform-origin: center;
+      transition: transform .1s ease;
+    }
+    .task input[type="checkbox"]:checked { border-color: var(--maroon); background: var(--maroon); }
+    .task input[type="checkbox"]:checked::before { transform: rotate(-45deg) scale(1); }
+    .task input[type="checkbox"]:focus-visible { outline: 3px solid color-mix(in srgb, var(--maroon) 25%, transparent); outline-offset: 2px; }
+    .task-main { min-width: 0; }
+    .task-title { font-size: .93rem; font-weight: 650; }
+    .ref {
+      display: inline-block;
+      margin: 0 6px 2px 0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--maroon-soft);
+      color: var(--maroon);
+      font-size: .68rem;
+      font-weight: 850;
+      letter-spacing: .02em;
+      vertical-align: .08em;
+    }
+    .task-detail { margin: 4px 0 0; color: var(--muted); font-size: .79rem; }
+    details.item-note { margin-top: 5px; }
+    details.item-note summary { width: fit-content; color: var(--blue); cursor: pointer; font-size: .73rem; font-weight: 750; }
+    .item-note textarea {
+      width: 100%;
+      min-height: 58px;
+      margin-top: 6px;
+      padding: 8px 9px;
+      resize: vertical;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--fg);
+      font-size: .8rem;
+    }
+    .section-complete > summary .section-number { background: var(--green-soft); color: var(--green); }
+
+    .radius-research { margin-top: 20px; overflow: hidden; }
+    .radius-research header { padding: 18px 20px; background: var(--blue-soft); border-bottom: 1px solid var(--rule); }
+    .radius-research h2 { margin: 0; color: var(--blue); font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; }
+    .radius-research header p { margin: 5px 0 0; color: var(--muted); font-size: .82rem; }
+    .radius-research-body { padding: 18px 20px 20px; }
+    .radius-research-body > :first-child { margin-top: 0; }
+    .radius-research-body > :last-child { margin-bottom: 0; }
+    .radius-research p, .radius-research li { font-size: .86rem; }
+    .radius-table-wrap { margin: 14px 0; overflow-x: auto; }
+    .radius-research table { width: 100%; border-collapse: collapse; font-size: .78rem; }
+    .radius-research th, .radius-research td { padding: 8px 9px; border: 1px solid var(--rule); text-align: left; vertical-align: top; }
+    .radius-research th { background: var(--surface-2); color: var(--maroon-dark); }
+    .radius-research td:first-child { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+    .radius-recommendation { margin-top: 15px; padding: 12px 14px; border-left: 4px solid var(--blue); background: var(--blue-soft); }
+
+    .footer { margin-top: 24px; color: var(--muted); font-size: .76rem; text-align: center; }
+    .noscript { margin: 18px 0; padding: 14px; border: 2px solid #b4233b; background: #fff0f2; color: #6f1222; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (max-width: 760px) {
+      .project-card { grid-template-columns: 1fr; }
+      .toolbar { position: static; grid-template-columns: 1fr; }
+      .actions { justify-content: flex-start; }
+      .btn { flex: 1 1 auto; }
+      details.section > summary { grid-template-columns: auto 1fr; }
+      .section-progress { grid-column: 2; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      :root { --bg: #fff; --surface: #fff; --surface-2: #faf4f6; --fg: #1f1b1d; --muted: #62595d; --rule: #d7cdd0; --maroon: #74283d; --maroon-dark: #481321; --maroon-soft: #f4e7eb; }
+      body { background: #fff; font-size: 9pt; }
+      .page { max-width: none; padding: 0; }
+      .hero { margin: -12mm -12mm 8mm; padding: 12mm; box-shadow: none; }
+      .hero-subtitle { margin-bottom: 0; }
+      .source-links, .toolbar, details.item-note summary, .footer { display: none !important; }
+      .project-card, .intro-card, .section, .radius-research { box-shadow: none; }
+      .project-card { grid-template-columns: 2fr 1fr 1fr; }
+      details.section { break-inside: auto; }
+      details.section:not([open]) > .section-body { display: block; }
+      details.section > summary { break-after: avoid; }
+      .task { break-inside: avoid; padding: 7px 2px; }
+      .item-note[open] { display: block; }
+      .item-note textarea { min-height: 34px; border: 0; border-left: 2px solid var(--rule); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">Project master checklist</p>
+      <h1>Forming a New Congregation</h1>
+      <p class="hero-subtitle">A plain-language working checklist based on S-50-E (7/21) and S-51-E (1/16). Complete the official forms themselves; this page is your progress tracker.</p>
+      <nav class="source-links" aria-label="Source documents">
+        <a href="00-S-50_E.pdf" target="_blank" rel="noopener">S-50 instructions</a>
+        <a href="00-S-51_E.pdf" target="_blank" rel="noopener">S-51</a>
+        <a href="00-S-51_E-filled.pdf" target="_blank" rel="noopener">S-51 — point 5 filled</a>
+        <a href="00-S-29_E.pdf" target="_blank" rel="noopener">S-29</a>
+        <a href="00-S-5_E.pdf" target="_blank" rel="noopener">S-5</a>
+        <a href="00-M-202_E.pdf" target="_blank" rel="noopener">M-202</a>
+        <a href="00-S-36_E.pdf" target="_blank" rel="noopener">S-36</a>
+        <a href="00-S-6_E.pdf" target="_blank" rel="noopener">S-6</a>
+      </nav>
+    </header>
+
+    <section class="project-card" aria-label="Project details">
+      <label class="field">Proposed congregation / project name
+        <input id="projectName" data-project-field="name" type="text" autocomplete="off" placeholder="Working name">
+      </label>
+      <label class="field">Lead / coordinator
+        <input id="projectLead" data-project-field="lead" type="text" autocomplete="off" placeholder="Name">
+      </label>
+      <label class="field">Target submission date
+        <input id="targetDate" data-project-field="targetDate" type="date">
+      </label>
+    </section>
+
+    <section class="toolbar" aria-label="Checklist controls">
+      <div class="progress-wrap">
+        <div class="progress-line">
+          <span id="progressText">0 of 0 complete</span>
+          <span id="saveStatus" role="status" aria-live="polite">Starting…</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Overall checklist progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="openJson" class="btn" type="button">Open JSON</button>
+        <button id="saveJson" class="btn primary" type="button">Save JSON</button>
+        <button id="downloadJson" class="btn" type="button">Download backup</button>
+        <button id="printPage" class="btn" type="button">Print</button>
+        <button id="resetAll" class="btn danger" type="button">Reset</button>
+      </div>
+      <input id="fileInput" class="sr-only" type="file" accept="application/json,.json">
+    </section>
+
+    <aside class="intro-card">
+      <h2>How saving works</h2>
+      <p>Ticks, notes, and project details are saved automatically in this browser when storage is available. For a portable and reliable record, use <strong>Open JSON</strong> to connect the companion file, then <strong>Save JSON</strong> after changes. If direct file writing is unavailable, Save JSON downloads a replacement file.</p>
+      <p><strong>Submission gate:</strong> S-50 says every requirement in its paragraph 2 must be met before the circuit overseer submits a recommendation to the Service Department.</p>
+      <div class="legend">
+        <span><strong>Maroon tag</strong> = source form or instruction</span>
+        <span><strong>Tick</strong> = verified/completed, not merely discussed</span>
+        <span><strong>Note</strong> = evidence, owner, decision, or follow-up</span>
+      </div>
+    </aside>
+
+    <noscript><div class="noscript">JavaScript is required for ticking items and saving progress. The printed checklist remains readable, but interactive persistence will not work.</div></noscript>
+    <main id="checklist" aria-label="New congregation formation checklist"></main>
+
+    <section class="radius-research" aria-labelledby="radius-research-title">
+      <header>
+        <h2 id="radius-research-title">S-51 point 6 — Ashburton 100 km radius research</h2>
+        <p>Captured verbatim from the research completed on 3 August 2026.</p>
+      </header>
+      <div class="radius-research-body">
+        <p>Using the official JW meeting locator and straight-line distance from the Ashburton Kingdom Hall at <strong>262–264 Cameron Street</strong> (<code>-43.90561, 171.75299</code>), I found <strong>16 congregations at seven Kingdom Hall locations within 100 km</strong>. Congregation numbers are in parentheses. Data checked 3 August 2026. <a href="https://hub.jw.org/meetings/en/goto/entry-point/meetings" target="_blank" rel="noopener">Official JW locator</a> · <a href="https://hub.jw.org/meetings/api/meeting-search?northEastLatitude=-43.0063&amp;northEastLongitude=173.0010&amp;southWestLatitude=-44.8049&amp;southWestLongitude=170.5050&amp;searchLatitude=-43.90561&amp;searchLongitude=171.75299&amp;eventTypes=congregation&amp;eventTypes=congregationGroup&amp;isInitialLocationSearch=true&amp;search=262-264%20Cameron%20Street%20Ashburton" target="_blank" rel="noopener">live radius search data</a></p>
+
+        <div class="radius-table-wrap">
+          <table>
+            <thead><tr><th>Radius</th><th>Kingdom Hall location</th><th>Congregations</th></tr></thead>
+            <tbody>
+              <tr><td>0.00 km</td><td><strong>262–264 Cameron Street, Ashburton 7700</strong></td><td>Ashburton <strong>(1016)</strong></td></tr>
+              <tr><td>52.85 km</td><td><strong>35 St Leonards Road, Temuka 7920</strong></td><td>Temuka <strong>(2105)</strong></td></tr>
+              <tr><td>66.95 km</td><td><strong>20 Old North Road, Marchwiel 7910</strong></td><td>Parkside–Timaru <strong>(2634)</strong>; Mountainview–Timaru <strong>(2139)</strong></td></tr>
+              <tr><td>78.74 km</td><td><strong>13–15 Wrights Road, Addington 8024</strong></td><td>Christchurch Tagalog–Christchurch <strong>(3756)</strong>; Spreydon–Christchurch <strong>(1396)</strong>; Halswell–Christchurch <strong>(2543)</strong>; Hornby–Christchurch <strong>(3400)</strong></td></tr>
+              <tr><td>80.40 km</td><td><strong>726 Harewood Road, Harewood 8051</strong></td><td>Avonhead–Christchurch <strong>(1388)</strong>; Burwood–Christchurch <strong>(1354)</strong></td></tr>
+              <tr><td>84.21 km</td><td><strong>524 Gloucester Street, Linwood 8011</strong></td><td>Christchurch Samoan–Christchurch <strong>(2618)</strong>; St Albans–Christchurch <strong>(1347)</strong>; New Brighton–Christchurch <strong>(1362)</strong>; Ferrymead–Christchurch <strong>(2535)</strong></td></tr>
+              <tr><td>92.72 km</td><td><strong>1 Hills Street, Kaiapoi 7630</strong></td><td>Rangiora <strong>(3418)</strong>; Kaiapoi <strong>(1602)</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Waimate is excluded: its hall is <strong>107.48 km</strong> away.</p>
+
+        <div class="radius-recommendation">
+          <p><strong>Important for S-51 point 6:</strong> proximity alone does not make a congregation “directly involved.” The form asks only for congregations:</p>
+          <ul>
+            <li>whose territory boundaries will be affected; or</li>
+            <li>hosting the group being recommended.</li>
+          </ul>
+          <p>Based on what we currently know, the likely entries are:</p>
+          <ol>
+            <li><strong>Ashburton (1016)</strong> — the host congregation.</li>
+            <li><strong>Christchurch Tagalog–Christchurch (3756)</strong> — if its existing Tagalog territory will be divided or adjusted to form the Ashburton Tagalog congregation.</li>
+          </ol>
+          <p>The other fourteen should not be entered merely because they fall inside the 100 km radius. Their inclusion depends on the proposed territory adjustment confirmed by the CO. I have therefore not filled point 6 in the PDF yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">This aid paraphrases S-50-E (7/21) and S-51-E (1/16). If it differs from current official direction, follow the current official direction.</p>
+  </div>
+
+  <script>
+    "use strict";
+
+    const FILE_NAME = "00-forming-new-congregation-progress.json";
+    const STORAGE_KEY = "forming-new-congregation-checklist-v1";
+    const SCHEMA_VERSION = 1;
+
+    const sections = [
+      {
+        id: "forms",
+        title: "Prepare the forms and submission package",
+        subtitle: "Start here: identify every form and every congregation that needs a copy.",
+        gate: "The circuit overseer verifies that this information is accurate before sending the recommendation to the Service Department.",
+        items: [
+          { id: "forms-read-s50", ref: "S-50", title: "Have every involved body of elders and circuit overseer review S-50.", detail: "If more than one circuit is affected, the circuit overseers work together in preparing the recommendation." },
+          { id: "forms-s51-new", ref: "S-51", title: "Complete one S-51 for the proposed new congregation — points 1 through 8.", detail: "Leave the new congregation number blank." },
+          { id: "forms-s51-existing", ref: "S-51", title: "Complete one S-51 for each existing congregation directly involved — points 1 through 4.", detail: "This includes congregations whose territory boundaries are affected and a congregation hosting a group now recommended as a congregation." },
+          { id: "forms-s51-name-only", ref: "S-51", title: "For an existing congregation whose only change is its name, complete point 1 only.", detail: "Check whether revised territory makes an existing name inappropriate." },
+          { id: "forms-s29-new", ref: "S-29", title: "Complete an S-29 for the proposed new congregation.", detail: "Coordinator of the Body of Elders/Secretary Change of Address form." },
+          { id: "forms-s29-existing", ref: "S-29", title: "Complete an S-29 for each existing congregation whose coordinator or secretary will change." },
+          { id: "forms-s5-new", ref: "S-5", title: "Complete an S-5 for the proposed new congregation.", detail: "Kingdom Hall Information form." },
+          { id: "forms-s5-existing", ref: "S-5", title: "Complete an S-5 for each existing congregation whose Kingdom Hall information will change." },
+          { id: "forms-m202-new", ref: "M-202", title: "Prepare the new congregation’s periodical and Life and Ministry Meeting Workbook request." },
+          { id: "forms-m202-existing", ref: "M-202", title: "Prepare revised requests for existing congregations whose requests will change.", detail: "Alternatively, each congregation may enter new or revised requests on jw.org after being informed that the new congregation is approved." },
+          { id: "forms-s36-new", ref: "S-36", title: "Complete an S-36 for the proposed new congregation.", detail: "Avoid a post office box if at all possible." },
+          { id: "forms-s36-existing", ref: "S-36", title: "Complete an S-36 for each existing congregation whose shipping address will change." },
+          { id: "forms-s36-shipto", ref: "S-36", title: "Have the ship-to congregation at the new congregation’s Kingdom Hall complete an S-36.", detail: "List all updated information, including the shipping address and every congregation in the Kingdom Hall Literature Group. This is required even if shipments normally go to a Regional Literature Depot." },
+          { id: "forms-s6-new", ref: "S-6", title: "Complete an S-6 for the proposed new congregation.", detail: "Follow every step on the Territory Adjustment Request form carefully." },
+          { id: "forms-s6-existing", ref: "S-6", title: "Complete an S-6 for every existing congregation whose territory boundaries are affected." },
+          { id: "forms-number-blank", ref: "S-50", title: "Confirm that the congregation-number field is blank on every form for the proposed new congregation." }
+        ]
+      },
+      {
+        id: "requirements",
+        title: "Pass all seven formation requirements",
+        subtitle: "Do not treat these as aspirations; verify that each condition is already met.",
+        gate: "All seven S-50 paragraph 2 requirements must be met before the recommendation is submitted.",
+        items: [
+          { id: "req-population", ref: "S-50 ¶2(1)", title: "Verify a significant population dependent on the proposed congregation’s language lives near the Kingdom Hall.", detail: "S-50 suggests perhaps at least a few thousand individuals." },
+          { id: "req-travel-search", ref: "S-50 ¶2(1)", title: "Verify the territory can be worked without long-distance travel or many hours of search work." },
+          { id: "req-language-need", ref: "S-50 ¶2(1)", title: "For a foreign or indigenous language, verify that a significant part of the language community has little or no understanding of the language of an established local congregation.", detail: "S-50 says this should be true in most cases." },
+          { id: "req-publishers-students", ref: "S-50 ¶2(2)", title: "Verify genuine spiritual-language need among publishers or progressing Bible students.", detail: "Either a significant number of publishers depend on the language for spiritual food, or Bible students who depend on and prefer it are attending meetings and progressing toward baptism." },
+          { id: "req-mature-core", ref: "S-50 ¶2(3)", title: "Verify a solid core of spiritually mature publishers is fluent in the language." },
+          { id: "req-appointed-sufficient", ref: "S-50 ¶2(4)", title: "Verify there are enough appointed men, including at least one elder.", detail: "They must be able to provide shepherding, handle meeting parts, and take the lead in the ministry." },
+          { id: "req-appointed-fluent", ref: "S-50 ¶2(4)", title: "Verify the majority of appointed men are fluent in the congregation’s language." },
+          { id: "req-meetings-local", ref: "S-50 ¶2(5)", title: "Verify local publishers can conduct all weekly meetings and regularly care for the parts." },
+          { id: "req-no-stream-dependence", ref: "S-50 ¶2(5)", title: "Verify the congregation will not depend on JW Stream.", detail: "With circuit overseer approval, a recorded meeting or portion may be viewed occasionally, but this cannot be the congregation’s normal support." },
+          { id: "req-publications", ref: "S-50 ¶2(6)", title: "Verify the study Watchtower and Life and Ministry Meeting Workbook are available in a usable language.", detail: "They may be in the congregation’s language or another language in which most publishers are literate." },
+          { id: "req-publication-arrangement", ref: "S-50 ¶2(6)", title: "If publications are not in the congregation’s language, confirm the meeting-language arrangement.", detail: "Publishers use the congregation’s language for ministry, comments, talks, and prayers, while using the available-language publications during meetings." },
+          { id: "req-meeting-place", ref: "S-50 ¶2(7)", title: "Verify a Kingdom Hall or another appropriate meeting place is available." }
+        ]
+      },
+      {
+        id: "considerations",
+        title: "Evaluate freedom of choice and warning signs",
+        subtitle: "Make the recommendation on evidence, without pressuring publishers or overlooking weakness.",
+        items: [
+          { id: "consider-choice", ref: "S-50 ¶3", title: "Confirm each publisher or family head is free to choose which congregation the family will attend.", detail: "No one is to be pressured to support a particular language field or congregation." },
+          { id: "consider-no-assumptions", ref: "S-50 ¶3", title: "Base projected support on voluntary, individually confirmed decisions — not assumptions or pressure." },
+          { id: "warning-no-students", ref: "S-50 ¶4(1)", title: "Check for this warning sign: after one or two years as a group, no Bible students attend meetings or progress toward baptism.", detail: "Especially significant if most publishers are fluent but few or none depend on the language for spiritual food." },
+          { id: "warning-one-appointed", ref: "S-50 ¶4(2)", title: "Check for this warning sign: activity and progressive students exist, but only one appointed man is taking the lead.", detail: "The S-50 example has one elder supporting a weekly Life and Ministry Meeting and a monthly public talk; that is still insufficient." },
+          { id: "warning-fluency-oversight", ref: "S-50 ¶4(3)", title: "Check for this warning sign: students attend, but most mature publishers are not fluent, none depend on the language, and appointed oversight is insufficient." },
+          { id: "warning-individual-review", ref: "S-50 ¶4", title: "Review the proposal on its own facts, not by mechanically matching or dismissing the examples.", detail: "S-50 says the examples are illustrative and each situation must be considered individually." }
+        ]
+      },
+      {
+        id: "s51-new",
+        title: "Complete the proposed congregation’s S-51",
+        subtitle: "Gather and verify the exact information requested in points 1 through 8.",
+        items: [
+          { id: "s51-name", ref: "S-51 ¶1", title: "Record the proposed complete congregation name.", detail: "Include the directional/geographic designation, city, and province or state. Leave the congregation number blank." },
+          { id: "s51-total-active", ref: "S-51 ¶2", title: "Verify and enter the total active publishers, including pioneers." },
+          { id: "s51-regular", ref: "S-51 ¶2", title: "Verify and enter the figure requested in the form’s “Regular” field." },
+          { id: "s51-baptized", ref: "S-51 ¶2", title: "Verify and enter the baptized-publisher figure." },
+          { id: "s51-regular-pioneers", ref: "S-51 ¶3", title: "Verify and enter the number of regular pioneers." },
+          { id: "s51-special-pioneers", ref: "S-51 ¶3", title: "Verify and enter the number of special pioneers." },
+          { id: "s51-elders", ref: "S-51 ¶4", title: "Verify and enter the number of elders who will serve in the congregation." },
+          { id: "s51-ms", ref: "S-51 ¶4", title: "Verify and enter the number of ministerial servants who will serve in the congregation." },
+          { id: "s51-proposed-committee", ref: "S-50 ¶2(4) / S-29", title: "Identify the brothers proposed to serve as coordinator, secretary, and service overseer in the new congregation.", detail: "Do this with the host body of elders and circuit overseer. While you remain a group, you do not yet have a separate Congregation Service Committee; the group remains under the host body’s oversight." },
+          { id: "s51-reasons", ref: "S-51 ¶5", title: "Write a brief, factual reason for forming the congregation.", detail: "Continue on page 2 if more space is needed. Tie the explanation to the verified S-50 requirements and the actual local need." },
+          { id: "s51-involved-list", ref: "S-51 ¶6", title: "List every existing congregation directly involved, with complete name and congregation number.", detail: "Include each boundary-affected congregation and the congregation hosting the group, if applicable; continue on page 2 if necessary." },
+          { id: "s51-start", ref: "S-51 ¶7", title: "State when the congregation could begin functioning — the first of a proposed month and year." },
+          { id: "s51-circuit-section", ref: "S-51 ¶8", title: "Have the circuit overseer recommend the circuit and section assignment." },
+          { id: "s51-date", ref: "S-51", title: "Enter the application date." },
+          { id: "s51-signatory-confirmation", ref: "S-50 ¶5 / S-51", title: "Have the circuit overseer confirm who should sign the proposed congregation’s S-51 before names are entered.", detail: "S-51 lists the coordinator, secretary, circuit overseer, and service overseer, but it does not explicitly say whether the three congregation signers are the host committee or the brothers proposed for the new congregation. The host congregation also completes its own separate S-51." },
+          { id: "s51-signatures", ref: "S-51", title: "Obtain the typed-name signatures confirmed by the circuit overseer.", detail: "The signature fields shown are coordinator of the body of elders, secretary, circuit overseer, and service overseer." }
+        ]
+      },
+      {
+        id: "naming",
+        title: "Verify every congregation name",
+        subtitle: "Names must still fit the territory after the proposed boundary changes.",
+        items: [
+          { id: "name-three-parts", ref: "S-51", title: "Build each complete name from three parts: geographic designation, city, and province/state.", detail: "The first part may be directional or identify a street, park, neighbourhood, or another geographic feature." },
+          { id: "name-reflects-territory", ref: "S-51 / S-6", title: "Verify the name meaningfully reflects the congregation’s proposed territory assignment." },
+          { id: "name-same-city", ref: "S-51", title: "Verify the first geographic designation refers to the city named in the complete name — not a neighbouring city." },
+          { id: "name-city-not-first", ref: "S-51", title: "Do not use the city name itself as the first part of the complete name." },
+          { id: "name-language", ref: "S-51", title: "If the primary language differs from the country’s principal language, include the language in the first part." },
+          { id: "name-language-prefix", ref: "S-51", title: "Place a directional or geographic designation before the language.", detail: "This applies even if it is the only congregation of that language in the city." },
+          { id: "name-existing-review", ref: "S-51", title: "Review the original congregation’s name; do not assume it changes automatically when a second congregation is formed." },
+          { id: "name-existing-change", ref: "S-51", title: "Request permission to rename an existing congregation when its old name no longer reflects meaningful revised territory.", detail: "Also consider a change when its first name-part is only a language and another congregation of that language is being formed in the city." },
+          { id: "name-map-explanation", ref: "S-51", title: "If the reason for a proposed name is not clear on the territory map, include a brief explanation." },
+          { id: "name-complete-use", ref: "S-51", title: "Plan to use the approved complete name for every official purpose.", detail: "Examples include branch correspondence, letterheads, bank accounts, and exemption applications." }
+        ]
+      },
+      {
+        id: "final-review",
+        title: "Conduct the final accuracy review",
+        subtitle: "Cross-check people, territory, facilities, requests, addresses, and every affected congregation.",
+        items: [
+          { id: "final-counts", ref: "S-50 / S-51", title: "Reconcile every publisher, pioneer, elder, and ministerial-servant count across the proposal." },
+          { id: "final-language", ref: "S-50", title: "Document the evidence for language dependence, fluency, and community need." },
+          { id: "final-meetings", ref: "S-50", title: "Confirm the proposed congregation can sustain every weekly meeting locally." },
+          { id: "final-place", ref: "S-5 / S-50", title: "Confirm meeting-place availability and that the Kingdom Hall information is complete." },
+          { id: "final-territory", ref: "S-6", title: "Confirm proposed territory boundaries and every affected congregation’s adjustment." },
+          { id: "final-shipping", ref: "S-36", title: "Confirm shipping address, ship-to congregation, and Kingdom Hall Literature Group information." },
+          { id: "final-requests", ref: "M-202", title: "Confirm new or revised periodical and workbook requests, or record who will enter them after approval." },
+          { id: "final-existing-names", ref: "S-51 / S-6", title: "Confirm all existing congregation names remain appropriate after boundary changes." },
+          { id: "final-copies", ref: "S-50 ¶5", title: "Confirm there is one correctly completed copy of every required form for every affected congregation." },
+          { id: "final-co-verify", ref: "S-50 ¶5", title: "Have the circuit overseer verify the complete package is accurate." },
+          { id: "final-submit", ref: "S-50 ¶5", title: "Circuit overseer sends the recommendation package to the Service Department for consideration." }
+        ]
+      },
+      {
+        id: "approval",
+        title: "Wait for approval and implement the branch direction",
+        subtitle: "A proposed start date is not authorisation to begin functioning.",
+        gate: "The branch office informs the congregation(s) and circuit overseer(s) whether the new congregation is approved.",
+        items: [
+          { id: "approval-wait", ref: "S-50 ¶6", title: "Do not begin functioning as a new congregation before branch approval." },
+          { id: "approval-letter", ref: "S-50 ¶6", title: "Receive and review the branch approval letter with all affected congregations and circuit overseers." },
+          { id: "approval-date", ref: "S-50 ¶6", title: "Use the start date specified in the approval letter.", detail: "The letter also provides further instructions." },
+          { id: "approval-instructions", ref: "S-50 ¶6", title: "Assign and complete every further instruction in the approval letter." },
+          { id: "approval-territory-supplies", ref: "S-50 ¶6", title: "Track the updated territory assignments and other supplies that will follow." },
+          { id: "approval-requests", ref: "M-202", title: "If periodical/workbook requests were deferred, enter the approved new or revised requests on jw.org." },
+          { id: "approval-official-name", ref: "S-51", title: "Adopt the approved complete congregation name in all official records and uses." }
+        ]
+      }
+    ];
+
+    const knownIds = new Set(sections.flatMap(section => section.items.map(item => item.id)));
+    let state = defaultState();
+    let fileHandle = null;
+    let dirtySinceJsonSave = false;
+    let noteSaveTimer = null;
+
+    const checklist = document.getElementById("checklist");
+    const progressText = document.getElementById("progressText");
+    const progressFill = document.getElementById("progressFill");
+    const progressTrack = document.querySelector(".progress-track");
+    const saveStatus = document.getElementById("saveStatus");
+    const fileInput = document.getElementById("fileInput");
+
+    function defaultState() {
+      return {
+        schemaVersion: SCHEMA_VERSION,
+        project: { name: "", lead: "", targetDate: "" },
+        checks: {},
+        notes: {},
+        sectionOpen: {},
+        savedAt: null
+      };
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderChecklist() {
+      checklist.innerHTML = sections.map((section, index) => {
+        const isOpen = state.sectionOpen[section.id] !== false;
+        const tasks = section.items.map(item => {
+          const checked = state.checks[item.id] === true;
+          const note = state.notes[item.id] || "";
+          return `
+            <article class="task${checked ? " completed" : ""}" data-task-id="${item.id}">
+              <input class="task-check" id="${item.id}" type="checkbox" data-id="${item.id}"${checked ? " checked" : ""}>
+              <div class="task-main">
+                <label class="task-title" for="${item.id}"><span class="ref">(${escapeHtml(item.ref)})</span>${escapeHtml(item.title)}</label>
+                ${item.detail ? `<p class="task-detail">${escapeHtml(item.detail)}</p>` : ""}
+                <details class="item-note"${note ? " open" : ""}>
+                  <summary>Add/view note</summary>
+                  <textarea class="task-note" data-id="${item.id}" aria-label="Note for ${escapeHtml(item.title)}" placeholder="Evidence, owner, decision, or follow-up…">${escapeHtml(note)}</textarea>
+                </details>
+              </div>
+            </article>`;
+        }).join("");
+        return `
+          <details class="section" data-section-id="${section.id}"${isOpen ? " open" : ""}>
+            <summary>
+              <span class="section-number">${index + 1}</span>
+              <span class="section-title"><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.subtitle)}</p></span>
+              <span class="section-progress" data-section-progress="${section.id}">0 / ${section.items.length}</span>
+            </summary>
+            <div class="section-body">
+              ${section.gate ? `<div class="gate">${escapeHtml(section.gate)}</div>` : ""}
+              ${tasks}
+            </div>
+          </details>`;
+      }).join("");
+      applyProjectFields();
+      updateProgress();
+    }
+
+    function applyProjectFields() {
+      document.querySelectorAll("[data-project-field]").forEach(input => {
+        input.value = state.project[input.dataset.projectField] || "";
+      });
+    }
+
+    function updateProgress() {
+      const total = knownIds.size;
+      const done = [...knownIds].filter(id => state.checks[id] === true).length;
+      const percent = total ? Math.round(done / total * 100) : 0;
+      progressText.textContent = `${done} of ${total} complete (${percent}%)`;
+      progressFill.style.width = `${percent}%`;
+      progressTrack.setAttribute("aria-valuenow", String(percent));
+
+      sections.forEach(section => {
+        const sectionDone = section.items.filter(item => state.checks[item.id] === true).length;
+        const label = document.querySelector(`[data-section-progress="${section.id}"]`);
+        const container = document.querySelector(`[data-section-id="${section.id}"]`);
+        if (label) label.textContent = `${sectionDone} / ${section.items.length}`;
+        if (container) container.classList.toggle("section-complete", sectionDone === section.items.length);
+      });
+    }
+
+    function sanitiseState(candidate) {
+      const clean = defaultState();
+      if (!candidate || typeof candidate !== "object") return clean;
+      if (candidate.project && typeof candidate.project === "object") {
+        for (const key of ["name", "lead", "targetDate"]) {
+          if (typeof candidate.project[key] === "string") clean.project[key] = candidate.project[key].slice(0, 500);
+        }
+      }
+      if (candidate.checks && typeof candidate.checks === "object") {
+        for (const id of knownIds) clean.checks[id] = candidate.checks[id] === true;
+      }
+      if (candidate.notes && typeof candidate.notes === "object") {
+        for (const id of knownIds) {
+          if (typeof candidate.notes[id] === "string") clean.notes[id] = candidate.notes[id].slice(0, 10000);
+        }
+      }
+      if (candidate.sectionOpen && typeof candidate.sectionOpen === "object") {
+        for (const section of sections) clean.sectionOpen[section.id] = candidate.sectionOpen[section.id] !== false;
+      }
+      clean.savedAt = typeof candidate.savedAt === "string" ? candidate.savedAt : null;
+      return clean;
+    }
+
+    function exportState() {
+      return {
+        schemaVersion: SCHEMA_VERSION,
+        document: "Forming a New Congregation — Master Checklist",
+        sources: ["S-50-E 7/21", "S-51-E 1/16"],
+        knownItemCount: knownIds.size,
+        savedAt: new Date().toISOString(),
+        project: state.project,
+        checks: Object.fromEntries([...knownIds].map(id => [id, state.checks[id] === true])),
+        notes: Object.fromEntries([...knownIds].filter(id => state.notes[id]).map(id => [id, state.notes[id]])),
+        sectionOpen: Object.fromEntries(sections.map(section => [section.id, state.sectionOpen[section.id] !== false]))
+      };
+    }
+
+    function persistLocal(message = "Saved in this browser") {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...state, savedAt: new Date().toISOString() }));
+        setStatus(dirtySinceJsonSave ? `${message}; JSON has unsaved changes` : message);
+      } catch (error) {
+        setStatus("Browser storage unavailable — save JSON to protect progress", true);
+      }
+    }
+
+    function setStatus(message, isError = false) {
+      saveStatus.textContent = message;
+      saveStatus.style.color = isError ? "#b4233b" : "";
+      saveStatus.title = message;
+    }
+
+    function markChanged() {
+      dirtySinceJsonSave = true;
+      persistLocal();
+    }
+
+    function applyLoadedState(candidate, sourceLabel) {
+      state = sanitiseState(candidate);
+      dirtySinceJsonSave = false;
+      renderChecklist();
+      persistLocal(`Loaded ${sourceLabel}`);
+    }
+
+    async function parseJsonText(text, sourceLabel) {
+      let parsed;
+      try {
+        parsed = JSON.parse(text);
+      } catch (error) {
+        throw new Error("The selected file is not valid JSON.");
+      }
+      if (parsed.schemaVersion !== undefined && parsed.schemaVersion !== SCHEMA_VERSION) {
+        throw new Error(`Unsupported checklist schema version: ${parsed.schemaVersion}`);
+      }
+      applyLoadedState(parsed, sourceLabel);
+    }
+
+    async function openJsonFile() {
+      try {
+        if ("showOpenFilePicker" in window) {
+          const [handle] = await window.showOpenFilePicker({
+            id: "forming-new-congregation-progress",
+            types: [{ description: "Checklist progress JSON", accept: { "application/json": [".json"] } }],
+            multiple: false
+          });
+          const file = await handle.getFile();
+          await parseJsonText(await file.text(), file.name);
+          fileHandle = handle;
+          setStatus(`Connected to ${file.name}`);
+        } else {
+          fileInput.click();
+        }
+      } catch (error) {
+        if (error.name !== "AbortError") setStatus(error.message || "Could not open JSON", true);
+      }
+    }
+
+    async function saveJsonFile() {
+      const payload = JSON.stringify(exportState(), null, 2) + "\n";
+      try {
+        if (!fileHandle && "showSaveFilePicker" in window) {
+          fileHandle = await window.showSaveFilePicker({
+            id: "forming-new-congregation-progress",
+            suggestedName: FILE_NAME,
+            types: [{ description: "Checklist progress JSON", accept: { "application/json": [".json"] } }]
+          });
+        }
+        if (fileHandle) {
+          const writable = await fileHandle.createWritable();
+          await writable.write(payload);
+          await writable.close();
+          dirtySinceJsonSave = false;
+          state.savedAt = new Date().toISOString();
+          persistLocal();
+          setStatus(`Saved directly to ${fileHandle.name}`);
+          return;
+        }
+        downloadPayload(payload);
+        dirtySinceJsonSave = false;
+        persistLocal();
+        setStatus(`Downloaded ${FILE_NAME}; replace the companion file with it`);
+      } catch (error) {
+        if (error.name !== "AbortError") setStatus(error.message || "Could not save JSON", true);
+      }
+    }
+
+    function downloadPayload(payload = JSON.stringify(exportState(), null, 2) + "\n") {
+      const blob = new Blob([payload], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = FILE_NAME;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function loadInitialState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          state = sanitiseState(JSON.parse(saved));
+          renderChecklist();
+          setStatus("Restored browser-saved progress; JSON not connected");
+          return;
+        }
+      } catch (error) {
+        setStatus("Could not restore browser storage", true);
+      }
+      renderChecklist();
+      setStatus("No saved progress loaded; open the companion JSON or begin ticking");
+    }
+
+    checklist.addEventListener("change", event => {
+      if (event.target.matches(".task-check")) {
+        const id = event.target.dataset.id;
+        state.checks[id] = event.target.checked;
+        event.target.closest(".task").classList.toggle("completed", event.target.checked);
+        updateProgress();
+        markChanged();
+      }
+    });
+
+    checklist.addEventListener("input", event => {
+      if (event.target.matches(".task-note")) {
+        state.notes[event.target.dataset.id] = event.target.value;
+        dirtySinceJsonSave = true;
+        clearTimeout(noteSaveTimer);
+        noteSaveTimer = setTimeout(() => persistLocal(), 250);
+      }
+    });
+
+    checklist.addEventListener("toggle", event => {
+      if (event.target.matches("details.section")) {
+        state.sectionOpen[event.target.dataset.sectionId] = event.target.open;
+        persistLocal();
+      }
+    }, true);
+
+    document.querySelectorAll("[data-project-field]").forEach(input => {
+      input.addEventListener("input", () => {
+        state.project[input.dataset.projectField] = input.value;
+        markChanged();
+      });
+    });
+
+    document.getElementById("openJson").addEventListener("click", openJsonFile);
+    document.getElementById("saveJson").addEventListener("click", saveJsonFile);
+    document.getElementById("downloadJson").addEventListener("click", () => {
+      downloadPayload();
+      setStatus(`Downloaded backup ${FILE_NAME}`);
+    });
+    document.getElementById("printPage").addEventListener("click", () => window.print());
+    document.getElementById("resetAll").addEventListener("click", () => {
+      if (!confirm("Reset every tick, note, and project field in this browser? Save a JSON backup first if you may need the current progress.")) return;
+      state = defaultState();
+      fileHandle = null;
+      dirtySinceJsonSave = true;
+      try { localStorage.removeItem(STORAGE_KEY); } catch (error) { /* no-op */ }
+      renderChecklist();
+      setStatus("Checklist reset; companion JSON was not changed");
+    });
+
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files && fileInput.files[0];
+      if (!file) return;
+      try {
+        await parseJsonText(await file.text(), file.name);
+        fileHandle = null;
+        setStatus(`Loaded ${file.name}; direct overwrite unavailable, Save JSON will download a replacement`);
+      } catch (error) {
+        setStatus(error.message || "Could not load JSON", true);
+      } finally {
+        fileInput.value = "";
+      }
+    });
+
+    loadInitialState();
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "document": "Forming a New Congregation — Master Checklist",
+  "sources": [
+    "S-50-E 7/21",
+    "S-51-E 1/16"
+  ],
+  "knownItemCount": 78,
+  "savedAt": null,
+  "project": {
+    "name": "",
+    "lead": "",
+    "targetDate": ""
+  },
+  "checks": {},
+  "notes": {},
+  "sectionOpen": {
+    "forms": true,
+    "requirements": true,
+    "considerations": true,
+    "s51-new": true,
+    "naming": true,
+    "final-review": true,
+    "approval": true
+  }
+}
