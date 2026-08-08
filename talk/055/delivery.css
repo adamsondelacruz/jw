@@ -6,6 +6,7 @@
 :root {
   --text: #181818;
   --muted: #4b5563;
+  --subtle: #7b8490;
   --rule: #d7d7d7;
   --accent: #1f4e79;
   --cue-bg: #f4f7fb;
@@ -55,9 +56,11 @@ h3 {
 }
 
 p {
-  margin: 0 0 1.05rem;
-  padding-left: 1.65rem;
-  text-indent: -1.65rem;
+  --level-offset: 0rem;
+  --hang: 1.65rem;
+  margin: 0 0 1.05rem var(--level-offset);
+  padding-left: var(--hang);
+  text-indent: calc(var(--hang) * -1);
 }
 
 h1 + p,
@@ -68,7 +71,20 @@ p:has(> strong:only-child) {
   text-indent: 0;
 }
 
+section.level3 > p {
+  --level-offset: 1.35rem;
+}
+
+section.level2 > p:has(> span.subtle:only-child) {
+  --level-offset: 1.35rem;
+}
+
+section.level3 > p:has(> span.subtle:only-child) {
+  --level-offset: 2.7rem;
+}
+
 p:has(> em:only-child) {
+  --level-offset: 0rem;
   color: var(--muted);
   font-size: 0.62rem;
   line-height: 1.15;
@@ -78,6 +94,7 @@ p:has(> em:only-child) {
 }
 
 p:has(> strong:only-child) {
+  --level-offset: 0rem;
   color: #111827;
   font-size: 1.02rem;
   font-weight: 700;
@@ -92,6 +109,10 @@ ul {
   padding: 0;
 }
 
+section.level3 > ul {
+  margin-left: 4.45rem;
+}
+
 li {
   margin: 0.5rem 0;
   padding-left: 0.25rem;
@@ -103,6 +124,11 @@ strong {
 
 em {
   color: inherit;
+}
+
+.subtle {
+  color: var(--subtle);
+  font-style: italic;
 }
 
 @media print {

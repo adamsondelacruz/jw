@@ -1,7 +1,7 @@
 # How Can You Make a Good Name With God?
 
 Public Talk No. 55  
-Version: v0 delivery outline  
+Version: v1 delivery outline  
 Target length: 30 minutes including scripture readings
 
 ## Introduction (05) 1 min
@@ -38,6 +38,8 @@ Human reputation has value, but it is not the highest goal. People's opinions ch
 
 Jesus warned us to store up treasures in heaven. Matthew 6:19, 20; Jehovah's approval; safest investment.
 
+People's approval can be useful, but limited. They see actions; Jehovah sees motive; people forget; Jehovah remembers.
+
 *(Ask slowly)*
 
 The question is not only, "Do people like me?" What kind of name am I making with Jehovah?
@@ -47,6 +49,8 @@ Psalm 15:1, 2 shows what Jehovah values. Integrity; righteousness; truth in hear
 *(Encourage new ones)*
 
 A good name with God is within reach. Ordinary people; faithful choices; day after day.
+
+A good name is built gradually. Repeated honesty; small obedient choices; private conduct; Jehovah notices pattern.
 
 Why should we especially want a good name with God?
 
@@ -150,6 +154,8 @@ A fence around a lookout is not there to spoil the view. Enjoy safely; Jehovah s
 
 This helps new ones understand obedience. Jehovah not harsh; Father; love, wisdom, protection.
 
+Obedience protects future happiness. Some consequences are delayed; Jehovah sees where a path leads; trust his view.
+
 *(Gentle humor)*
 
 Obedience can be challenging. Psalm 103:14; Jehovah remembers dust; we surprise ourselves, not Jehovah.
@@ -157,6 +163,8 @@ Obedience can be challenging. Psalm 103:14; Jehovah remembers dust; we surprise 
 Jehovah's patience helps sincere ones. Not excusing wrong; helping improvement.
 
 Jehovah sees the difference. Loving wrong vs fighting weakness; slow progress; sincere effort.
+
+Practical application. Choose one command to strengthen; speech; entertainment; honesty; association; ask Jehovah for help.
 
 ### 3. Imitate Jehovah's Qualities (21) 4 min incl. reading
 
@@ -218,6 +226,8 @@ Prayer may feel awkward at first. What to say? not performance; not impressive w
 
 Pray specifically. Control speech today; patience with family member; see Jehovah's help clearly.
 
+Prayer builds closeness by honesty. Tell Jehovah fears; gratitude; confusion; desire to please him; not memorized phrases.
+
 Psalm 55:22 says to throw burden on Jehovah. Not show and take back; hand it over.
 
 Proverbs 3:5, 6 says trust Jehovah. Decisions; prayed? Bible principles? effect on name with Jehovah?
@@ -251,6 +261,8 @@ Spiritual steps are best taken now.
 Some may think, "I have made mistakes." Isaiah 1:18; set matters straight; Jehovah invites return.
 
 The good name that matters most is built with Jehovah. Not fame, wealth, popularity; sincere faith; steady action.
+
+Past mistakes do not have to define the future. Repentance; teachable spirit; one clean step today; Jehovah values return.
 
 *(Slow the list)*
 

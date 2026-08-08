@@ -19,7 +19,7 @@ But there is one Person whose view of our name matters more than anyone else's: 
 
 So today we will consider this important question: **How can you make a good name with God?** And this is not only for those who have served Jehovah for many years. Even new ones, even those still learning, can begin building a good name with Jehovah now.
 
-## A Good Name Is Valuable (06) 3 min
+## A Good Name Is Valuable (06) 3 min incl. reading
 
 *(Transition to scripture)*
 
@@ -31,9 +31,11 @@ Please turn to **Proverbs 22:1**.
 
 *(Light humor)*
 
-The verse says that a good name is to be chosen rather than great wealth. That is interesting, because many people spend a lot of time trying to make a name for themselves. Some do it through money. Some through career. Some through popularity. Today, some try to make a name through social media. A person can spend twenty minutes arranging a photo of a cup of coffee so that strangers will think, "What a meaningful life." Meanwhile, the coffee is getting cold.
+The verse says that a good name is to be chosen rather than great wealth. That is interesting, because many people spend a lot of time trying to make a name for themselves. Some do it through money. Some through career. Some through popularity. Today, some try to make a name through social media. A person can spend twenty minutes arranging a photo of a cup of coffee so that strangers will think, "What a meaningful life." <span class="subtle">Meanwhile, the coffee is getting cold.</span>
 
-There is nothing wrong with having a good reputation with people. In fact, Christians should be honest, dependable, and kind. But the Bible helps us see that reputation with people is not the highest goal. People's opinions can change quickly. One day a crowd praises someone; the next day they forget him. Human approval can be like morning mist. It may look impressive for a little while, but when the sun rises, it disappears.
+There is nothing wrong with having a good reputation with people. In fact, Christians should be honest, dependable, and kind. But the Bible helps us see that reputation with people is not the highest goal. People's opinions can change quickly. One day a crowd praises someone; the next day they forget him. <span class="subtle">Human approval can be like morning mist. It may look impressive for a little while, but when the sun rises, it disappears.</span>
+
+People's approval can be useful, but it is limited. People see actions, but Jehovah sees the motive behind the action. People may forget, but Jehovah remembers. That is why a good name with God is far more secure than a good name built only on human approval.
 
 Jesus warned against putting our main treasure in things that do not last. In **Matthew 6:19, 20**, he encouraged his listeners to store up treasures in heaven. That means Jehovah's approval is the safest place to invest our life.
 
@@ -43,17 +45,15 @@ So the opening question is not simply, "Do people like me?" It is, "What kind of
 
 Psalm 15:1, 2 helps us see what Jehovah values. It speaks of the person who walks faultlessly, practices what is right, and speaks truth in his heart. Jehovah values integrity. He values honesty. He values a heart that is sincere.
 
-Think again of the flower in the garden. Its fragrance is not a signboard. It does not announce, "Please admire me." It simply gives off what is inside. In the same way, a good name with Jehovah is not built mainly by appearance. It comes from what we are becoming inside.
-
-That is a calming thought. We do not need to compete with others to have a good name with Jehovah. We do not need to be the most talented, the most confident, or the most noticed. A flower does not compare its fragrance with the flower next to it. It simply gives what it has. Likewise, each of us can give Jehovah sincerity, obedience, and love.
-
 *(Encourage new ones)*
 
 So a good name with God is within reach. It is not reserved for people with impressive abilities. It is built by ordinary people who make faithful choices day after day.
 
+<span class="subtle">A good name is usually built gradually. Repeated honesty, small obedient choices, and private conduct all form a pattern. People may not notice every part of that pattern, but Jehovah does.</span>
+
 So why should we especially want a good name with God?
 
-## Why Make a Good Name With God? (09) 5 min
+## Why Make a Good Name With God? (09) 5 min incl. reading
 
 *(New main section)*
 
@@ -69,7 +69,7 @@ Notice what Jehovah does. He pays attention. He listens. Those who fear Jehovah 
 
 This can be very encouraging, especially for newer ones. A person may think: "I do not know much yet. I still get nervous finding Bible books. Sometimes I turn to the table of contents and hope no one notices." But Jehovah is not looking for someone to impress him with speed. He notices sincere appreciation for his name.
 
-It is a little like a careful gardener. A gardener may notice a small new shoot long before anyone else sees anything special. To others, it may look like just a tiny green stem. But the gardener sees life. He knows what it can become.
+<span class="subtle">It is a little like a careful gardener. A gardener may notice a small new shoot long before anyone else sees anything special. To others, it may look like just a tiny green stem. But the gardener sees life. He knows what it can become.</span>
 
 *(Say, then pause)*
 
@@ -83,7 +83,7 @@ This is important because people do not always see effort. They may see only the
 
 That helps us appreciate why a good name with Jehovah is so precious. His view is complete. He sees the heart. He sees the struggle. He sees the motive.
 
-We also owe Jehovah worship because he created us. Revelation 4:11 says that all things exist because of his will. So obedience to Jehovah is reasonable. But the outline makes an important point: our main motivation is not mere obligation. It is love.
+We also owe Jehovah worship because he created us. Revelation 4:11 says that all things exist because of his will. So obedience to Jehovah is reasonable. <span class="subtle">But the outline makes an important point: our main motivation is not mere obligation. It is love.</span>
 
 Psalm 116:12 asks, in effect, "What can I repay Jehovah for all the good he has done for me?" That is the spirit of a person who wants a good name with God. Not, "What is the minimum I have to do?" but, "Jehovah has been good to me. How can I respond?"
 
@@ -93,9 +93,9 @@ That leads to the practical part of the talk: **How can you make a good name wit
 
 The outline gives us four steps: learn about Jehovah, obey Jehovah's commandments, imitate Jehovah's qualities, and pray to Jehovah.
 
-## How Can You Make a Good Name With God? (14) 17 min
+## How Can You Make a Good Name With God? (14) 17 min incl. readings
 
-### 1. Learn About Jehovah (14) 4 min
+### 1. Learn About Jehovah (14) 4 min incl. reading
 
 *(Point one clearly)*
 
@@ -115,11 +115,11 @@ In the same way, Bible study is not just collecting information. We ask, "What d
 
 Psalm 119:97 speaks about loving Jehovah's law and thinking about it. Meditation is important. Reading the Bible without meditation can be like rain that falls on hard ground and runs off. But when we pause and think, the truth soaks in.
 
-That means Bible reading does not have to be rushed. Sometimes we may feel that if we read many chapters, then it was a good study session. Of course, reading larger portions can be helpful. But one verse carefully considered can also be powerful. A small seed can produce a large tree if it is planted deeply enough.
+<span class="subtle">That means Bible reading does not have to be rushed. Sometimes we may feel that if we read many chapters, then it was a good study session. Of course, reading larger portions can be helpful. But one verse carefully considered can also be powerful. A small seed can produce a large tree if it is planted deeply enough.</span>
 
 *(Warm smile)*
 
-For a newer one, this can be encouraging. You may not understand everything at once. That is normal. Nobody learns a language, a skill, or a friendship all in one afternoon. If someone took one piano lesson and then said, "I cannot play a concert, so perhaps music is not for me," we would say, "Give it some time." Learning about Jehovah is an ongoing process.
+For a newer one, this can be encouraging. You may not understand everything at once. That is normal. Nobody learns a language, a skill, or a friendship all in one afternoon. <span class="subtle">If someone took one piano lesson and then said, "I cannot play a concert, so perhaps music is not for me," we would say, "Give it some time."</span> Learning about Jehovah is an ongoing process.
 
 *(Slow the questions)*
 
@@ -129,13 +129,13 @@ So after reading a scripture, it is helpful to ask simple questions:
 - What does this teach me about myself?
 - What would Jehovah like me to do?
 
-James 4:8 says that if we draw close to God, he will draw close to us. That is a beautiful promise. Jehovah does not say, "Take one step toward me, and I will think about it." He warmly responds.
+James 4:8 says that if we draw close to God, he will draw close to us. <span class="subtle">That is a beautiful promise. Jehovah does not say, "Take one step toward me, and I will think about it." He warmly responds.</span>
 
 So if you are studying the Bible, keep going. If you are trying to rebuild spiritual habits, keep going. If you are helping a Bible student, help him see that learning about Jehovah is not a school assignment; it is the beginning of a friendship.
 
 So the first step to making a good name with God is to keep learning about him.
 
-### 2. Obey Jehovah's Commandments (18) 4 min
+### 2. Obey Jehovah's Commandments (18) 3 min incl. reading
 
 *(Reassuring tone)*
 
@@ -149,13 +149,15 @@ This scripture connects love with obedience. If we love Jehovah, we observe his 
 
 *(Subtle hand gesture)*
 
-At first, a person may feel that Bible standards are restrictive. But Jehovah's commands are really protective. Think of riverbanks. Do riverbanks imprison the river? No. They guide it. Without banks, the water spreads everywhere and loses force. With banks, the river flows strongly and gives life.
+At first, a person may feel that Bible standards are restrictive. But Jehovah's commands are really protective. <span class="subtle">Think of riverbanks. Do riverbanks imprison the river? No. They guide it. Without banks, the water spreads everywhere and loses force. With banks, the river flows strongly and gives life.</span>
 
-Jehovah's commands guide our life in a clean, strong direction. They protect our thinking, our family, our conscience, and our friendship with him.
+<span class="subtle">Jehovah's commands guide our life in a clean, strong direction. They protect our thinking, our family, our conscience, and our friendship with him.</span>
 
 We can illustrate it another way. A fence around a lookout point is not there to spoil the view. It is there so people can enjoy the view safely. Jehovah's standards may at times say, "Do not go beyond this point." But that is not because Jehovah wants to take joy away from us. It is because he sees dangers that we may not see.
 
 This is especially helpful for new ones to understand. Jehovah is not asking for obedience because he is harsh. He is a Father. His commandments reflect love, wisdom, and protection.
+
+Obedience also protects future happiness. Some consequences do not appear immediately, but Jehovah sees where a path leads. When we obey him, we are trusting that his view is clearer than ours.
 
 *(Gentle humor)*
 
@@ -165,19 +167,9 @@ That is comforting. Jehovah's patience does not mean he excuses wrong conduct, b
 
 There is a difference between a person who loves wrong and a person who hates the wrong but is fighting weakness. Jehovah can see that difference. We may feel discouraged because progress is slower than we hoped. But Jehovah values sincere effort.
 
-*(Tender reassurance)*
+<span class="subtle">So it can be helpful to choose one area of obedience to strengthen. It might be our speech, our entertainment, our honesty, or our association. Instead of trying to fix everything at once, we can ask, "What is one clean step I can take now to show Jehovah that I want a good name with him?"</span>
 
-Think of a child learning to walk. The parent does not say, "That was only three steps; come back when you can cross the room." A loving parent is delighted by progress. In a similar way, Jehovah is patient with sincere ones who keep trying to obey him.
-
-If obedience feels difficult, what can we do? Ask Jehovah for help. Luke 11:11-13 shows that Jehovah gives holy spirit to those asking him. Philippians 4:13 reminds us that we can receive strength from the one who gives us power.
-
-*(Sincere prayer tone)*
-
-So a practical prayer might be: "Jehovah, I want to obey you, but this is difficult for me. Please help me want what is right. Please give me strength today."
-
-That kind of prayer helps us build a good name with God because it shows humility and dependence on him.
-
-### 3. Imitate Jehovah's Qualities (22) 4 min
+### 3. Imitate Jehovah's Qualities (21) 4 min incl. reading
 
 *(Point three clearly)*
 
@@ -191,13 +183,13 @@ David asked Jehovah to make him know His ways and teach him His paths. That is a
 
 Imitating Jehovah means learning to think and feel more like him. Amos 5:15 says to hate what is bad and love what is good. That means our goal is not just outward obedience. We want our heart to be trained.
 
-For example, a healthy body learns to reject spoiled food. It is not being unreasonable; it is protecting life. In a similar way, a spiritually healthy heart learns to reject what Jehovah says is harmful and to love what Jehovah says is good.
+For example, a plant near a window gradually bends toward the light. It does that because light gives it life. In a similar way, as Jehovah trains our heart, we learn to lean toward what he loves and turn away from what blocks spiritual life.
 
-This does not happen automatically. The world trains people's tastes every day. Entertainment, advertising, and conversation can gradually make wrong things seem normal. So we need to let Jehovah train our moral taste. We learn not only to ask, "Is this allowed?" but also, "Is this something Jehovah loves? Would this help me become the kind of person Jehovah is pleased to remember?"
+This does not happen automatically. <span class="subtle">The world trains people's tastes every day. Entertainment, advertising, and conversation can gradually make wrong things seem normal. So we need to let Jehovah train our moral taste. We learn not only to ask, "Is this allowed?" but also, "Is this something Jehovah loves? Would this help me become the kind of person Jehovah is pleased to remember?"</span>
 
 *(Firm but warm)*
 
-That question can simplify many decisions. A person trying to make a good name with Jehovah is not looking for the closest edge of what is acceptable. He wants Jehovah's ways to become his ways.
+<span class="subtle">That question can simplify many decisions.</span> A person trying to make a good name with Jehovah is not looking for the closest edge of what is acceptable. He wants Jehovah's ways to become his ways.
 
 How can we see Jehovah's qualities clearly? By studying Jesus. John 14:9 shows that Jesus perfectly reflected his Father. When we see Jesus showing compassion, patience, courage, and loyalty, we are seeing Jehovah's qualities in action.
 
@@ -218,7 +210,7 @@ So when we read about Jesus, we can ask:
 
 This helps us make Jehovah's ways our ways.
 
-### 4. Pray to Jehovah (26) 5 min
+### 4. Pray to Jehovah (25) 6 min incl. reading
 
 *(Personal tone)*
 
@@ -236,11 +228,13 @@ Prayer is real communication with Jehovah.
 
 First Peter 5:7 says that Jehovah cares for us. So prayer is not just a formal religious habit. We can speak to Jehovah about our anxieties, decisions, weaknesses, gratitude, and hopes.
 
-That can take time to learn. Some feel awkward at first. They may wonder, "What should I say?" But prayer is not a performance. Jehovah is not listening for impressive vocabulary. He is listening for sincerity. A child does not need polished words to speak to a loving father. The relationship is what matters.
+<span class="subtle">That can take time to learn. Some feel awkward at first. They may wonder, "What should I say?" But prayer is not a performance. Jehovah is not listening for impressive vocabulary. He is listening for sincerity. A child does not need polished words to speak to a loving father. The relationship is what matters.</span>
+
+Prayer also builds closeness because it allows us to be honest with Jehovah. We can tell him our fears, our gratitude, our confusion, and our desire to please him. We do not need memorized phrases. We need a sincere heart.
 
 *(Slow sample prayers)*
 
-We can pray about specific things. Not only, "Please help me be good," but, "Please help me control my speech today." Not only, "Please bless my family," but, "Please help me be patient with this family member." Specific prayers help us see Jehovah's help more clearly.
+<span class="subtle">We can pray about specific things. Not only, "Please help me be good," but, "Please help me control my speech today." Not only, "Please bless my family," but, "Please help me be patient with this family member." Specific prayers help us see Jehovah's help more clearly.</span>
 
 Psalm 55:22 says to throw our burden on Jehovah. That word picture is powerful. It does not mean we politely show Jehovah our burden and then take it back. It means we hand it over to him.
 
@@ -252,7 +246,7 @@ Prayer helps us rely on Jehovah instead of ourselves. And reliance on Jehovah is
 
 So the four steps work together. We learn about Jehovah by listening to him in the Bible. We obey because we trust his wisdom. We imitate his qualities because we love his ways. And we pray because we rely on him. These are not four separate boxes to tick. They are like four strands woven together into a strong cord.
 
-## Act Now to Make a Good Name With God (31) 4 min
+## Act Now to Make a Good Name With God (31) 4 min incl. reading
 
 *(Conclusion begins)*
 
@@ -274,9 +268,7 @@ Spiritual steps are best taken now.
 
 Someone may also think, "But I have made mistakes. Maybe my name with God is already ruined." Isaiah 1:18 gives hope. Jehovah invited people with serious sins to set matters straight with him. That tells us something beautiful about Jehovah. He does not want people to stay far away in shame. He invites repentant ones to return.
 
-Think of leaves after a dry, dusty period. Then rain comes. The dust is washed away, and the leaves can receive light again. In a far greater way, Jehovah can cleanse and refresh a repentant person.
-
-Malachi 3:10 shows that Jehovah generously blesses those who trust him and put worship first. Psalm 119:1, 2 connects happiness with walking in Jehovah's way and seeking him wholeheartedly.
+Past mistakes do not have to define the future. A repentant person can show a teachable spirit and take one clean step today. Jehovah values that return.
 
 So the good name that matters most is not built through fame, wealth, or popularity. It is built with Jehovah through sincere faith and steady action.
 
