@@ -131,6 +131,37 @@ em {
   font-style: italic;
 }
 
+.highlight-legend {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  margin: 0.25rem 0 1rem;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.kw {
+  border-radius: 0.18rem;
+  font-weight: 800;
+  padding: 0.02rem 0.18rem;
+  text-transform: uppercase;
+}
+
+.kw-green {
+  background: #dff4df;
+  color: #14532d;
+}
+
+.kw-orange {
+  background: #ffe8c2;
+  color: #7c3f00;
+}
+
+.kw-blue {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
 @media print {
   html {
     font-size: 17px;
