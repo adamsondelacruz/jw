@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  a { color:#2563eb; text-decoration:none; }
+  a:hover { color:#1d4ed8; }
+  .page { font-family:'Public Sans',sans-serif; -webkit-font-smoothing:antialiased; }
+</style>
+</helmet>
+<div class="page" style="width:1123px; height:794px; background:#fbfaf8; color:#1c1917; padding:6px 34px; display:flex; flex-direction:column; gap:2px; overflow:hidden; position:relative;">
+
+  <!-- HEADER -->
+  <header style="display:flex; justify-content:space-between; align-items:flex-end; gap:24px; border-bottom:2.5px solid #1c1917; padding-bottom:12px;">
+    <div>
+      <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:36px; letter-spacing:-0.02em; line-height:0.95;">THE ROAD TO SKE 34</div>
+      <div style="font-family:'Public Sans'; font-weight:500; font-size:14px; color:#57534e; margin-top:6px; letter-spacing:0.01em;">A journey in phases · Jul 17, 2026 – Jan 3, 2027 · TDX → Hanmer Springs → Mt Somers → Auckland → back to Christchurch</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:7px; align-items:flex-end;">
+      <div style="display:flex; gap:7px; flex-wrap:wrap; justify-content:flex-end;">
+        <sc-for list="{{ phases }}" as="p" hint-placeholder-count="5">
+          <div style="display:flex; align-items:center; gap:6px; padding:3px 9px; border-radius:999px; border:1.5px solid #e7e5e4;">
+            <span style="width:11px; height:11px; border-radius:3px; background:{{ p.color }};"></span>
+            <span style="font-family:'Archivo'; font-weight:700; font-size:11px; letter-spacing:0.04em;">{{ p.name }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex; gap:14px; align-items:center; color:#57534e;">
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;">{{ boxIcon }} Packing</span>
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;">{{ planeIcon }} Flight</span>
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;">{{ keyIcon }} Handover</span>
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;">{{ snowIcon }} Snow trip</span>
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;"><span style="width:12px; height:12px; border-radius:50%; background:#1c1917; display:inline-block;"></span> Single day</span>
+        <span style="display:flex; align-items:center; gap:5px; font-size:11px; font-weight:600;"><span style="width:20px; height:8px; border-radius:4px; background:#1c1917; display:inline-block;"></span> Ongoing</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ROUTE RIBBON -->
+  <section style="position:relative; padding:0;">
+    <div style="font-family:'Archivo'; font-weight:800; font-size:12px; letter-spacing:0.14em; color:#78716c; margin-bottom:5px;">THE ROUTE</div>
+    <div style="position:relative; display:flex; justify-content:space-between; align-items:flex-start; padding:0 4px;">
+      <div style="position:absolute; left:38px; right:38px; top:15px; height:3px; background:repeating-linear-gradient(90deg,#d6d3d1 0 9px,transparent 9px 17px);"></div>
+      <sc-for list="{{ route }}" as="r" hint-placeholder-count="6">
+        <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center; width:150px; z-index:1;">
+          <div style="width:32px; height:32px; display:flex; align-items:center; justify-content:center;">{{ r.pinEl }}</div>
+          <div style="font-family:'Archivo'; font-weight:800; font-size:14px; margin-top:4px; line-height:1.05;">{{ r.place }}</div>
+          <div style="font-family:'Archivo'; font-weight:700; font-size:12px; color:{{ r.color }}; margin-top:3px;">{{ r.date }}</div>
+          <div style="font-size:10.5px; color:#78716c; margin-top:2px; line-height:1.2;">{{ r.note }}</div>
+          <div style="margin-top:5px; display:flex; gap:5px;">{{ r.iconsEl }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- GANTT -->
+  <section style="position:relative;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
+      <div style="font-family:'Archivo'; font-weight:800; font-size:12px; letter-spacing:0.14em; color:#78716c;">MASTER TIMELINE · JULY → JANUARY</div>
+    </div>
+    <!-- month strip -->
+    <div style="display:flex;">
+      <div style="width:172px; flex:none;"></div>
+      <div style="position:relative; flex:1; height:24px;">
+        <sc-for list="{{ months }}" as="m" hint-placeholder-count="5">
+          <div style="position:absolute; top:0; left:{{ m.center }}%; transform:translateX(-50%); font-family:'Archivo'; font-weight:900; font-size:17px; letter-spacing:0.02em; color:#1c1917;">{{ m.label }}</div>
+        </sc-for>
+      </div>
+    </div>
+    <!-- rows -->
+    <div style="position:relative;">
+      <!-- gridlines overlay -->
+      <div style="position:absolute; left:172px; right:0; top:0; bottom:0; pointer-events:none;">
+        <sc-for list="{{ gridlines }}" as="g" hint-placeholder-count="4">
+          <div style="position:absolute; top:0; bottom:0; left:{{ g.pct }}%; width:1px; background:#e7e5e4;"></div>
+        </sc-for>
+      </div>
+      <sc-for list="{{ phases }}" as="p" hint-placeholder-count="5">
+        <div style="display:flex; align-items:stretch; border-top:1px solid #ede9e6;">
+          <!-- label -->
+          <div style="width:172px; flex:none; padding:3px 14px 3px 0; display:flex; flex-direction:column; justify-content:center;">
+            <div style="display:flex; align-items:center; gap:7px;">
+              <span style="width:12px; height:12px; border-radius:3px; background:{{ p.color }};"></span>
+              <span style="font-family:'Archivo'; font-weight:800; font-size:14px;">{{ p.name }}</span>
+            </div>
+            <div style="font-size:11px; color:#78716c; margin-top:1px; padding-left:19px;">{{ p.range }}</div>
+          </div>
+          <!-- track -->
+          <div style="position:relative; flex:1; height:28px;">
+            <!-- phase span band -->
+            <sc-if value="{{ p.hasBand }}" hint-placeholder-val="{{ true }}">
+              <div style="position:absolute; top:27px; height:10px; border-radius:5px; left:{{ p.left }}%; width:{{ p.width }}%; background:{{ p.band }};"></div>
+            </sc-if>
+            <!-- markers -->
+            <sc-for list="{{ p.items }}" as="it" hint-placeholder-count="4">
+              <sc-if value="{{ it.isBar }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute; top:0; height:100%; left:{{ it.left }}%; width:{{ it.width }}%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;">
+                  <div style="height:12px; display:flex; align-items:flex-end;">{{ it.iconEl }}</div>
+                  <div style="width:100%; height:12px; border-radius:6px; background:{{ it.color }};"></div>
+                  <sc-if value="{{ it.showLabel }}" hint-placeholder-val="{{ true }}">
+                    <div style="font-family:'Public Sans'; font-weight:600; font-size:9.5px; color:#44403c; white-space:nowrap; line-height:1;">{{ it.label }}</div>
+                  </sc-if>
+                </div>
+              </sc-if>
+              <sc-if value="{{ it.isDot }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute; top:0; height:100%; left:{{ it.left }}%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;">
+                  <div style="height:12px; display:flex; align-items:flex-end;">{{ it.iconEl }}</div>
+                  <div style="width:13px; height:13px; border-radius:50%; background:{{ it.color }}; border:2px solid #fbfaf8; box-shadow:0 0 0 1.5px {{ it.color }};"></div>
+                  <sc-if value="{{ it.showLabel }}" hint-placeholder-val="{{ true }}">
+                    <div style="font-family:'Public Sans'; font-weight:600; font-size:9.5px; color:#44403c; white-space:nowrap; line-height:1;">{{ it.label }}</div>
+                  </sc-if>
+                </div>
+              </sc-if>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <div style="border-top:1px solid #ede9e6;"></div>
+    </div>
+  </section>
+
+  <!-- MONTH UP-CLOSE (tabbed) -->
+  <section style="background:#f4f1ec; border:1.5px solid #e7e0d6; border-radius:12px; padding:9px 14px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:7px;">
+      <div style="display:flex; align-items:baseline; gap:9px;">
+        <div style="font-family:'Archivo'; font-weight:900; font-size:16px; letter-spacing:0.02em;">UP CLOSE</div>
+        <div style="font-size:11px; color:#78716c; font-weight:500;">{{ activeNote }}</div>
+      </div>
+      <div style="display:flex; gap:5px;">
+        <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="6">
+          <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex; gap:10px; align-items:stretch;">
+      <sc-for list="{{ activeCards }}" as="w" hint-placeholder-count="4">
+        <div style="flex:1; background:#fff; border:1px solid #e7e5e4; border-radius:9px; padding:9px 10px; display:flex; flex-direction:column; gap:6px;">
+          <div style="font-family:'Archivo'; font-weight:800; font-size:12.5px; letter-spacing:0.02em; padding-bottom:5px; border-bottom:1.5px solid #f0ede9;">{{ w.label }}</div>
+          <sc-for list="{{ w.events }}" as="e" hint-placeholder-count="2">
+            <div style="display:flex; gap:7px; align-items:flex-start;">
+              <span style="width:9px; height:9px; border-radius:50%; background:{{ e.color }}; margin-top:3px; flex:none;"></span>
+              <div style="line-height:1.25;">
+                <span style="font-family:'Archivo'; font-weight:700; font-size:10.5px; color:#292524;">{{ e.date }}</span>
+                <span style="font-size:10.5px; color:#57534e;"> {{ e.text }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1123,&quot;height&quot;:794}}">
+class Component extends DCLogic {
+  state = { active: 'SEP' };
+  di(m, d) {
+    if (m === 7) return d - 17;
+    if (m === 8) return 14 + d;
+    if (m === 9) return 45 + d;
+    if (m === 10) return 75 + d;
+    if (m === 11) return 106 + d;
+    if (m === 12) return 136 + d;
+    return 167 + d; // Jan
+  }
+  pct(idx) { return +(idx / 170 * 100).toFixed(2); }
+
+  icon(name, color, size) {
+    size = size || 14;
+    const R = React.createElement;
+    const svg = (children, extra) => R('svg', Object.assign({
+      width: size, height: size, viewBox: '0 0 24 24', fill: 'none',
+      stroke: color, strokeWidth: 2.1, strokeLinecap: 'round', strokeLinejoin: 'round'
+    }, extra || {}), children);
+    const P = (d, k) => R('path', { d, key: k });
+    if (name === 'plane') return svg([P('M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z', 1)]);
+    if (name === 'box') return svg([
+      P('m7.5 4.27 9 5.15', 1),
+      P('M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z', 2),
+      P('M3.3 7 12 12l8.7-5', 3),
+      P('M12 22V12', 4)
+    ]);
+    if (name === 'key') return svg([
+      P('M2.6 17.4A2 2 0 0 0 2 18.8V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.2a2 2 0 0 0 1.4-.6l.8-.8a6.5 6.5 0 1 0-4-4z', 1),
+      R('circle', { cx: 16.5, cy: 7.5, r: 0.6, fill: color, key: 2 })
+    ]);
+    if (name === 'snow') return svg([
+      P('M12 3v18', 1), P('M3 12h18', 2), P('m5.5 5.5 13 13', 3), P('m18.5 5.5-13 13', 4),
+      P('M12 6l-2 1.3M12 6l2 1.3', 5), P('M12 18l-2-1.3M12 18l2-1.3', 6),
+      P('M6 12l1.3-2M6 12l1.3 2', 7), P('M18 12l-1.3-2M18 12l-1.3 2', 8)
+    ], { strokeWidth: 1.9 });
+    if (name === 'pin') return R('svg', { width: size, height: size, viewBox: '0 0 24 24', fill: 'none' }, [
+      R('path', { d: 'M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z', fill: color, stroke: '#fff', strokeWidth: 1.5, key: 1 }),
+      R('circle', { cx: 12, cy: 10, r: 3, fill: '#fff', key: 2 })
+    ]);
+    if (name === 'flag') return R('svg', { width: size, height: size, viewBox: '0 0 24 24', fill: 'none' }, [
+      R('path', { d: 'M4 22V4l10 3-2.5 4.5L14 16 4 13', fill: color, stroke: color, strokeWidth: 1.6, strokeLinejoin: 'round', key: 1 }),
+      R('path', { d: 'M4 22V4', stroke: '#fff', strokeWidth: 1.6, strokeLinecap: 'round', key: 2 })
+    ]);
+    return null;
+  }
+
+  build(m, d) { return this.pct(this.di(m, d)); }
+
+  renderVals() {
+    const C = { work: '#16a34a', house: '#ea580c', pss: '#ca8a04', ske: '#7c3aed', assign: '#0d9488' };
+    const band = {
+      work: 'rgba(22,163,74,0.16)', house: 'rgba(234,88,12,0.14)',
+      pss: 'rgba(202,138,4,0.18)', ske: 'rgba(124,58,237,0.14)', assign: 'rgba(13,148,136,0.14)'
+    };
+    const b = (m, d) => this.build(m, d);
+
+    const bar = (c, s, e, label, showLabel, ic) => ({
+      isBar: true, isDot: false, color: c, left: s, width: +(e - s).toFixed(2),
+      label: label, showLabel: !!showLabel, iconEl: ic ? this.icon(ic, c, 13) : null
+    });
+    const dot = (c, s, label, showLabel, ic) => ({
+      isBar: false, isDot: true, color: c, left: s,
+      label: label, showLabel: !!showLabel, iconEl: ic ? this.icon(ic, c, 13) : null
+    });
+
+    const phases = [
+      {
+        name: 'WORK', color: C.work, band: band.work, range: 'Jul 17 – Sep 10',
+        hasBand: true, left: b(7, 17), width: +(b(9, 10) - b(7, 17)).toFixed(2),
+        items: [
+          bar(C.work, b(7, 17), b(9, 10), 'TDX Work', false),
+          dot(C.work, b(8, 3), 'Meet Marc', false)
+        ]
+      },
+      {
+        name: 'ANNIVERSARY', color: '#2563eb', band: 'rgba(37,99,235,0.16)', range: 'Jul 31 – Aug 2',
+        hasBand: true, left: b(7, 31), width: +(b(8, 2) - b(7, 31)).toFixed(2),
+        items: [
+          bar('#2563eb', b(7, 31), b(8, 2), 'Hanmer Springs', true)
+        ]
+      },
+      {
+        name: 'SNOW TRIP', color: '#0891b2', band: 'rgba(8,145,178,0.16)', range: 'Aug 14 – 16',
+        hasBand: true, left: b(8, 14), width: +(b(8, 16) - b(8, 14)).toFixed(2),
+        items: [
+          bar('#0891b2', b(8, 14), b(8, 16), 'With friends', true, 'snow')
+        ]
+      },
+      {
+        name: 'HOUSE', color: C.house, band: band.house, range: 'Aug 28 – Sep 22',
+        hasBand: true, left: b(8, 28), width: +(b(9, 22) - b(8, 28)).toFixed(2),
+        items: [
+          bar(C.house, b(8, 28), b(8, 30), 'Packing', false, 'box'),
+          bar(C.house, b(9, 4), b(9, 6), 'Boxes → Mt Somers', false, 'box'),
+          dot(C.work, b(9, 5), 'Public talk', true),
+          bar(C.house, b(9, 11), b(9, 17), 'Final pack-up', false),
+          bar(C.house, b(9, 16), b(9, 22), 'Rustic Lane', false),
+          dot(C.house, b(9, 22), 'Handover', true, 'key')
+        ]
+      },
+      {
+        name: 'PSS', color: C.pss, band: band.pss, range: 'Sep 19 – 27',
+        hasBand: true, left: b(9, 19), width: +(b(9, 27) - b(9, 19)).toFixed(2),
+        items: [
+          bar(C.pss, b(9, 19), b(9, 27), 'Lawag family', false),
+          dot(C.pss, b(8, 21), 'PSS books', true),
+          dot(C.pss, b(9, 19), 'Flight → AKL', true, 'plane')
+        ]
+      },
+      {
+        name: 'SKE', color: C.ske, band: band.ske, range: 'Sep 27 – Nov 29',
+        hasBand: true, left: b(9, 27), width: +(b(11, 29) - b(9, 27)).toFixed(2),
+        items: [
+          bar(C.ske, b(9, 27), b(10, 1), 'Hilton', false),
+          bar(C.ske, b(10, 1), b(11, 29), 'SKE 34 · Oct 1 – Nov 29', true),
+          dot(C.ske, b(10, 1), 'Host', false),
+          dot(C.ske, b(10, 2), 'Orient.', false),
+          dot(C.ske, b(10, 5), 'School starts', true)
+        ]
+      },
+      {
+        name: 'ASSIGNMENT', color: C.assign, band: band.assign, range: 'Nov 30 – Jan 3',
+        hasBand: true, left: b(11, 30), width: +(b(1, 3) - b(11, 30)).toFixed(2),
+        items: [
+          dot(C.assign, b(11, 30), 'Return → CHC', true, 'plane'),
+          bar(C.assign, b(12, 1), b(1, 3), 'Mt Somers · new assignment', true)
+        ]
+      }
+    ];
+
+    const months = [
+      { label: 'JUL', center: b(7, 24) },
+      { label: 'AUG', center: b(8, 16) },
+      { label: 'SEP', center: b(9, 15) },
+      { label: 'OCT', center: b(10, 16) },
+      { label: 'NOV', center: b(11, 15) },
+      { label: 'DEC', center: b(12, 16) }
+    ];
+    const gridlines = [{ pct: b(8, 1) }, { pct: b(9, 1) }, { pct: b(10, 1) }, { pct: b(11, 1) }, { pct: b(12, 1) }, { pct: b(1, 1) }];
+
+    const route = [
+      { place: 'TDX', color: C.house, date: 'Home base', note: 'Rustic Lane · until Sep 22', pin: C.work, icons: ['box', 'key'] },
+      { place: 'Hanmer Springs', color: '#2563eb', date: 'Jul 31 – Aug 2', note: 'Wedding anniversary', pin: '#2563eb', icons: [] },
+      { place: 'Mt Somers', color: C.house, date: 'Sep 4 – 6', note: 'Public talk · first boxes · parents', pin: C.house, icons: ['box'] },
+      { place: 'Auckland', color: C.pss, date: 'Sep 19 – 27', note: 'PSS · Lawag family', pin: C.pss, icons: ['plane'] },
+      { place: 'SKE 34', color: C.ske, date: 'Oct 1 – Nov 29', note: 'Orientation · school', pin: C.ske, icons: ['flag'] },
+      { place: 'Christchurch', color: C.assign, date: 'Nov 30', note: 'CHC Cong → new assignment · @ Mt Somers to Jan 3', pin: C.assign, icons: ['plane'] }
+    ].map(r => ({
+      place: r.place, color: r.color, date: r.date, note: r.note,
+      pinEl: this.icon('pin', r.pin, 30),
+      iconsEl: r.icons.map((n, i) => React.createElement('span', { key: i, style: { display: 'inline-flex' } }, this.icon(n, '#78716c', 14)))
+    }));
+
+    const detail = {
+      JUL: { note: 'invitation, hosting & family — then work and prep begin', cards: [
+        { label: 'JUL 1 – 7', events: [
+          { color: C.ske, date: 'Jul 3', text: '· Received the SKE invitation' },
+          { color: '#2563eb', date: 'Jul 6', text: "· Parents' wedding anniversary" }
+        ]},
+        { label: 'JUL 8 – 14', events: [
+          { color: C.pss, date: 'Jul 12–13', text: '· Host the Soriano couple' }
+        ]},
+        { label: 'JUL 15 – 24', events: [
+          { color: C.work, date: 'Jul 17', text: '· TDX Work begins (runs to Sep 10)' },
+          { color: C.pss, date: 'Jul 17', text: '· Prep for PSS & SKE begins (to Sep 17)' },
+          { color: '#2563eb', date: 'Jul 18', text: '· Hiroko & Hamish dinner invitation' }
+        ]},
+        { label: 'JUL 25 – 31', events: [
+          { color: '#2563eb', date: 'Jul 31 – Aug 2', text: '· Wedding anniversary @ Hanmer Springs' }
+        ]}
+      ]},
+      AUG: { note: 'meetings, a snow trip, and the first boxes', cards: [
+        { label: 'AUG 1 – 7', events: [
+          { color: C.work, date: 'Aug 3', text: '· Meeting with Marc (TDX)' }
+        ]},
+        { label: 'AUG 8 – 16', events: [
+          { color: '#0891b2', date: 'Aug 14 – 16', text: '· Snow trip with friends' }
+        ]},
+        { label: 'AUG 17 – 24', events: [
+          { color: C.pss, date: 'Aug 21', text: '· Distribute PSS books to the congregation' }
+        ]},
+        { label: 'AUG 25 – 31', events: [
+          { color: C.house, date: 'Aug 28 – 30', text: '· Start packing things in boxes' }
+        ]}
+      ]},
+      SEP: { note: 'the busiest month — four phases overlap in a single fortnight', cards: [
+        { label: 'SEP 1 – 7', events: [
+          { color: C.work, date: 'Sep 5', text: '· Public talk, Ashburton Tagalog Group @ Mt Somers' },
+          { color: C.house, date: 'Sep 4–6', text: '· Move first boxes to Mt Somers' }
+        ]},
+        { label: 'SEP 8 – 14', events: [
+          { color: C.work, date: 'Sep 7–10', text: '· Last week of TDX work' },
+          { color: C.house, date: 'Sep 11–17', text: '· Final pack-up & general cleaning begins' }
+        ]},
+        { label: 'SEP 15 – 21', events: [
+          { color: C.house, date: 'Sep 16–22', text: '· Last week in Rustic Lane — rent talk w/ Jacquline' },
+          { color: C.pss, date: 'Sep 19', text: '· ✈ Flight to Auckland — PSS begins' },
+          { color: C.pss, date: 'Sep 19–27', text: '· Staying with the Lawag family' }
+        ]},
+        { label: 'SEP 22 – 28', events: [
+          { color: C.house, date: 'Sep 22', text: '· Key handover to Micah — power & internet cancelled' },
+          { color: C.ske, date: 'Sep 27', text: '· Staying at the Hilton (to Oct 1)' }
+        ]},
+        { label: 'SEP 29 – 30', events: [
+          { color: C.ske, date: 'Sep 30', text: '· On the doorstep of SKE 34 — starts Oct 1' }
+        ]}
+      ]},
+      OCT: { note: 'SKE 34 opens in Auckland', cards: [
+        { label: 'OCT 1 – 5', events: [
+          { color: C.ske, date: 'Oct 1', text: '· SKE — Meet the host' },
+          { color: C.ske, date: 'Oct 2', text: '· SKE Orientation' },
+          { color: C.ske, date: 'Oct 5', text: '· SKE 34 — School starts' }
+        ]},
+        { label: 'OCT 6 – 31', events: [
+          { color: C.ske, date: 'Oct 1 – Nov 29', text: '· SKE 34 in session' }
+        ]}
+      ]},
+      NOV: { note: 'school wraps up and the flight home', cards: [
+        { label: 'NOV 1 – 28', events: [
+          { color: C.ske, date: 'to Nov 29', text: '· SKE 34 continues in Auckland' }
+        ]},
+        { label: 'NOV 29', events: [
+          { color: C.ske, date: 'Nov 29', text: '· SKE 34 ends' }
+        ]},
+        { label: 'NOV 30', events: [
+          { color: C.assign, date: 'Nov 30', text: '· ✈ Flight back to Christchurch' }
+        ]}
+      ]},
+      DEC: { note: 'settling in for the new assignment', cards: [
+        { label: 'DEC 1 – JAN 3', events: [
+          { color: C.assign, date: 'Dec 1 – Jan 3', text: '· Staying @ Mt Somers with the parentals' }
+        ]},
+        { label: 'THE TRANSITION', events: [
+          { color: C.assign, date: 'from Dec', text: '· Christchurch Congregation → new assignment' }
+        ]}
+      ]}
+    };
+
+    const active = detail[this.state.active] ? this.state.active : 'SEP';
+    const tabOrder = ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    const tabs = tabOrder.map(k => ({
+      label: k, key: k,
+      onClick: () => this.setState({ active: k }),
+      style: 'font-family:Archivo,sans-serif; font-weight:800; font-size:11.5px; letter-spacing:0.05em; padding:4px 11px; border-radius:999px; cursor:pointer; border:1.5px solid ' +
+        (k === active ? '#1c1917' : '#d6d3d1') + '; background:' + (k === active ? '#1c1917' : 'transparent') +
+        '; color:' + (k === active ? '#fbfaf8' : '#57534e') + ';'
+    }));
+
+    return {
+      phases, months, gridlines, route,
+      tabs, activeCards: detail[active].cards, activeNote: detail[active].note,
+      boxIcon: this.icon('box', '#57534e', 14),
+      planeIcon: this.icon('plane', '#57534e', 14),
+      keyIcon: this.icon('key', '#57534e', 14),
+      snowIcon: this.icon('snow', '#57534e', 14)
+    };
+  }
+}
+</script>
+</body>
+</html>
