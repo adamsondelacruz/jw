@@ -38,11 +38,13 @@ Use with: [draft-talk-v3.md](draft-talk-v3.md)
 - Good name > wealth.
 - World chases name: money, career, education, popularity, social media.
 - Coffee photo -> coffee gets cold.
-- Human approval changes quickly.
-- Jehovah sees motive. Jehovah remembers.
-- Matthew 6:19, 20 -> safest investment: heaven.
-- Flower again: value not in being seen, but what it gives off.
-- Good name with Jehovah comes from inside.
+- Babel warning:
+  - "celebrated name for ourselves."
+  - recognition / security / independence.
+  - Nimrod -> famous, but against Jehovah.
+  - result: confused, scattered, remembered as warning.
+- Not: how can I become noticed?
+- Better: what name with Jehovah?
 - Psalm 15:1, 2 -> integrity, right conduct, truth in heart.
 
 **Key line:** What kind of name am I making with Jehovah?
@@ -56,11 +58,17 @@ Use with: [draft-talk-v3.md](draft-talk-v3.md)
 - Jehovah pays attention.
 - Jehovah listens.
 - Book of remembrance -> warm thought.
+- Abraham contrast:
+  - did not chase fame.
+  - trusted and obeyed.
+  - Jehovah: "I will make your name great."
+  - Jehovah-given name.
+  - remembered as Jehovah's friend.
 - New ones: not speed, sincerity.
 - Finding Bible books / table of contents.
-- Careful gardener sees tiny shoot.
 - Jehovah notices sincere beginnings.
 - Hebrews 11:6 -> rewards seekers.
+- Prayer / study / meetings / changes -> Jehovah sees heart.
 - One short comment -> Jehovah sees courage and prayer.
 - Meeting attendance -> Jehovah sees effort.
 - Motive: love, not mere obligation.

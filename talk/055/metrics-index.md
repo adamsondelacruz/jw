@@ -19,7 +19,7 @@ Last updated: 2026-08-08
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | [draft-talk.md](draft-talk.md) | 2,993 | 136 | 3,129 | 24-26 min | 27-31 min | 21 | 6 | 15 | 39 | 503 | 11 |
 | [draft-talk-v2.md](draft-talk-v2.md) | 1,997 | 144 | 2,141 | 16-18 min | 24-28 min | 19 | 7 | 12 | 62 | 6 | 9 |
-| [draft-talk-v3.md](draft-talk-v3.md) | 2,168 | 144 | 2,312 | 17-19 min | 26-30 min | 18 | 7 | 11 | 64 | 6 | 9 |
+| [draft-talk-v3.md](draft-talk-v3.md) | 2,222 | 144 | 2,366 | 17-20 min | 28-31 min | 22 | 7 | 15 | 62 | 6 | 9 |
 | [v0-outline.md](v0-outline.md) | 1,081 | 136 | 1,217 | 9-10 min | 22-30 min | 21 | 6 | 15 | 39 | 0 | 7 |
 | [v1-outline.md](v1-outline.md) | 1,182 | 136 | 1,318 | 10-11 min | 24-30 min | 21 | 6 | 15 | 39 | 0 | 8 |
 | [extemporaneous-sample.md](extemporaneous-sample.md) | 873 | 0 | 873 | 6-7 min | 8-10 min | 2 | 0 | 2 | 0 | 0 | 6 |
@@ -30,7 +30,7 @@ Last updated: 2026-08-08
 |---|---:|---:|---:|
 | [draft-talk.md](draft-talk.md) | 26.1 min | 24.1 min | 22.4 min |
 | [draft-talk-v2.md](draft-talk-v2.md) | 17.8 min | 16.5 min | 15.3 min |
-| [draft-talk-v3.md](draft-talk-v3.md) | 19.3 min | 17.8 min | 16.5 min |
+| [draft-talk-v3.md](draft-talk-v3.md) | 19.7 min | 18.2 min | 16.9 min |
 | [v0-outline.md](v0-outline.md) | 10.1 min | 9.4 min | 8.7 min |
 | [v1-outline.md](v1-outline.md) | 11.0 min | 10.1 min | 9.4 min |
 | [extemporaneous-sample.md](extemporaneous-sample.md) | 7.3 min | 6.7 min | 6.2 min |
@@ -51,24 +51,25 @@ Last updated: 2026-08-08
 
 | Metric | Original draft | Draft v2 | Draft v3 |
 |---|---:|---:|---:|
-| Manuscript words | 2,993 | 1,997 | 2,168 |
-| Total spoken estimate | 3,129 | 2,141 | 2,312 |
-| Straight read time | 24-26 min | 16-18 min | 17-19 min |
-| Practical delivery range | 27-31 min | 24-28 min | 26-30 min |
-| Unique cited scriptures | 21 | 19 | 18 |
+| Manuscript words | 2,993 | 1,997 | 2,222 |
+| Total spoken estimate | 3,129 | 2,141 | 2,366 |
+| Straight read time | 24-26 min | 16-18 min | 17-20 min |
+| Practical delivery range | 27-31 min | 24-28 min | 28-31 min |
+| Unique cited scriptures | 21 | 19 | 22 |
 | Read scriptures | 6 | 7 | 7 |
-| Supporting scriptures | 15 | 12 | 11 |
+| Supporting scriptures | 15 | 12 | 15 |
 | Subtle optional words | 503 | 6 | 6 |
 | PDF pages | 11 | 9 | 9 |
 
 ## Draft v3 Timing Assessment
 
-Draft v3 is **not** a 30-minute verbatim manuscript. If read closely as written, it is likely around **17-19 minutes**.
+Draft v3 is **not** a 30-minute verbatim manuscript. If read closely as written, it is likely around **17-20 minutes**.
 
 For a 30-minute delivery, draft v3 needs about **7-9 minutes of natural expansion** through scripture explanation, pauses, and audience-facing transitions:
 
 - Briefly explain each read scripture after reading it.
 - Let the flower/fragrance illustration breathe at the introduction, John 17:3, and conclusion.
+- Use Babel and Abraham as a clean contrast: self-made name versus Jehovah-given name.
 - Let the David Meyers experience carry the obedience section without adding a second obedience illustration.
 - Add short audience-facing pauses after the main questions.
 - Use supporting scriptures as one-sentence reinforcement, not separate discussions.
@@ -88,8 +89,12 @@ For a 30-minute delivery, draft v3 needs about **7-9 minutes of natural expansio
 
 ### Supporting Scriptures
 
-- Matthew 6:19, 20
 - Psalm 15:1, 2
+- Genesis 11:4
+- Genesis 10:9
+- Genesis 11:8
+- Genesis 12:2
+- James 2:23
 - Hebrews 11:6
 - Revelation 4:11
 - Psalm 116:12

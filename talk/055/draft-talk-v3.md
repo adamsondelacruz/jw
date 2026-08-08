@@ -36,21 +36,15 @@ Please turn to **Proverbs 22:1**.
 
 The verse says that a good name is to be chosen rather than great wealth. Many people spend much of life trying to make a name for themselves through money, career, education, popularity, or today, through social media. A person may spend twenty minutes arranging a photo of a cup of coffee so that strangers will think, "What a meaningful life." <span class="subtle">Meanwhile, the coffee is getting cold.</span>
 
-*(Bring back focus)*
+*(Bible contrast)*
 
-There is nothing wrong with having a good reputation with people. Christians should be honest, dependable, and kind. But human approval is not the highest goal. People's opinions change. Some praise quickly and forget quickly. Jehovah's approval is different. People may see the action, but Jehovah sees the motive. People may forget, but Jehovah remembers.
+The Bible gives us a strong warning example at Babel. In **Genesis 11:4**, the people there said: "Let us make a celebrated name for ourselves." They wanted recognition, importance, and security, but they were not trying to make a good name with Jehovah. Nimrod too became a mighty and famous man, but **Genesis 10:9** says he was "in opposition to Jehovah." So their name was built on ambition, pride, and independence from Jehovah.
 
-*(Brief support)*
-
-Jesus helped us see this in **Matthew 6:19, 20** when he encouraged his listeners to store up treasures in heaven. Jehovah's approval is the safest place to invest our life.
-
-*(Illustrate with main picture)*
-
-Think again of that small flower. Its value is not measured by how many people stop to admire it. Its fragrance is simply what it gives off because of what it is. In the same way, a good name with Jehovah is not mainly built by display. It comes from what we are becoming inside.
+What was the result? As **Genesis 11:8** shows, Jehovah confused their language and scattered them over the earth. Their project stopped, their unity collapsed, and the name they wanted to build for themselves became connected with confusion, not honor. So the lesson is clear: a name built apart from Jehovah does not last.
 
 *(Apply)*
 
-So the opening question is not simply, "Do people like me?" The better question is, "What kind of name am I making with Jehovah?" Psalm 15:1, 2 briefly reminds us that Jehovah values integrity, right conduct, and truth in the heart. That means a good name with God is within reach. It is built by ordinary people making faithful choices day after day.
+So the question is not, "How can I become noticed?" The better question is, "What kind of name am I making with Jehovah?" Psalm 15:1, 2 shows that Jehovah values integrity, right conduct, and truth in the heart. So a good name with God is not built on ambition or display. It is built by sincere people making faithful choices day after day.
 
 *(Transition)*
 
@@ -70,13 +64,15 @@ Please turn to **Malachi 3:16**.
 
 Notice Jehovah's response. He pays attention. He listens. Those who fear him and meditate on his name are not invisible to him. The verse speaks of a "book of remembrance." That is a warm expression. Jehovah remembers those who value him.
 
+*(Positive contrast)*
+
+In contrast with Babel, think of Abraham. He did not chase fame or try to build a name for himself. He simply trusted and obeyed Jehovah. He left his homeland, followed Jehovah's direction, and lived as a man of faith. And in **Genesis 12:2**, what did Jehovah say? "I will make your name great." So Abraham's good name was not self-made. It was Jehovah-given.
+
+And that name lasted. Thousands of years later, Abraham is still remembered, not for wealth, fame, or popularity, but for faith and friendship with Jehovah. **James 2:23** even calls him Jehovah's friend. That is the kind of name that truly matters.
+
 *(Encourage newer ones)*
 
 That can be very encouraging, especially for newer ones. A person may think, "I do not know much yet. I still get nervous finding Bible books. Sometimes I turn to the table of contents and hope no one notices." But Jehovah is not looking for someone to impress him with speed. He notices sincerity.
-
-*(Develop the same garden picture)*
-
-It is like a careful gardener. A gardener may notice a small new shoot long before anyone else sees anything special. To others, it may look like just a tiny green stem. But the gardener sees life. He knows what it can become.
 
 *(Say; then pause)*
 
