@@ -1,0 +1,21 @@
+{
+  "name": "jw-hub-convention-assignments",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Guarded Playwright workflow for JW Hub convention responsibility assignments",
+  "scripts": {
+    "login": "node login.mjs",
+    "check-session": "node check-session.mjs",
+    "inspect": "node inspect-responsibilities.mjs",
+    "verify": "node verify-assignment.mjs",
+    "verify-all": "node verify-all-assignments.mjs",
+    "assign": "node assign-responsibility.mjs",
+    "sync": "node sync-responsibilities.mjs",
+    "test": "node --test",
+    "check": "node --check login.mjs && node --check check-session.mjs && node --check inspect-responsibilities.mjs && node --check assign-responsibility.mjs && node --check sync-responsibilities.mjs && node --check verify-assignment.mjs && node --check verify-all-assignments.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

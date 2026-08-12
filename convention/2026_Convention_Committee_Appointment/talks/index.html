@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>2026 Convention Talks — English / Tagalog</title>
+  <style>
+    :root {
+      --blue: #0b6fae;
+      --blue-dark: #084d79;
+      --blue-pale: #eaf5fb;
+      --navy: #17364a;
+      --ink: #1f2933;
+      --muted: #63717d;
+      --line: #d6e0e7;
+      --paper: #ffffff;
+      --wash: #f4f8fa;
+      --tagalog: #7c4d91;
+      --tagalog-pale: #f5eef8;
+      --amber: #fff5d6;
+      --amber-line: #e3bd47;
+      --shadow: 0 12px 34px rgba(23, 54, 74, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, #edf6fb 0, var(--paper) 25rem);
+      font: 16px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 1rem 0 4rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .65rem 0 1rem;
+      color: var(--blue-dark);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .topbar a {
+      padding: .45rem .75rem;
+      border-radius: .55rem;
+      text-decoration: none;
+    }
+
+    .topbar a:hover { background: rgba(255, 255, 255, .8); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.6rem, 5vw, 3.5rem);
+      border-radius: 1.25rem;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue-dark), #0b78b9 60%, #4b86a9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 18rem;
+      height: 18rem;
+      right: -6rem;
+      top: -8rem;
+      border: 3rem solid rgba(255, 255, 255, .08);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      margin: 0 0 .55rem;
+      color: #cdeafa;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.7rem);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin: 1rem 0 0;
+      color: #e8f6fd;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: .75rem;
+      margin: 1rem 0 0;
+    }
+
+    .stat {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 5px 18px rgba(23, 54, 74, .06);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 1.45rem;
+      line-height: 1.1;
+    }
+
+    .stat span { color: var(--muted); font-size: .82rem; }
+
+    .notice {
+      margin: 1.2rem 0 2.25rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--amber-line);
+      border-left-width: .4rem;
+      border-radius: .75rem;
+      background: var(--amber);
+    }
+
+    .notice strong { color: #6b4b00; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: .55rem;
+      border-bottom: 2px solid var(--blue-pale);
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--blue-dark);
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .section-heading span { color: var(--muted); font-size: .85rem; }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .resource-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: var(--paper);
+      box-shadow: 0 7px 24px rgba(23, 54, 74, .07);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      padding: 1rem 1.1rem;
+      border-bottom: 1px solid var(--line);
+      background: var(--wash);
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .type-icon {
+      display: grid;
+      flex: 0 0 2.65rem;
+      height: 2.65rem;
+      place-items: center;
+      border-radius: .7rem;
+      color: #fff;
+      background: var(--blue);
+      font-size: .67rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+    }
+
+    .type-icon.doc { background: #527a42; }
+    .type-icon.pdf { background: #a64545; }
+
+    .card-head h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    .resource-row {
+      display: grid;
+      grid-template-columns: 4rem minmax(0, 1fr);
+      gap: .85rem;
+      padding: 1rem 1.1rem;
+    }
+
+    .resource-row + .resource-row { border-top: 1px solid var(--line); }
+
+    .language {
+      display: inline-flex;
+      align-items: center;
+      align-self: start;
+      justify-content: center;
+      min-height: 1.8rem;
+      padding: .2rem .45rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      background: var(--blue-pale);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+    }
+
+    .language.tl { color: var(--tagalog); background: var(--tagalog-pale); }
+
+    .item-title { margin: 0 0 .6rem; font-size: .95rem; line-height: 1.4; }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      max-width: 100%;
+      padding: .5rem .7rem;
+      border: 1px solid #b9d5e5;
+      border-radius: .55rem;
+      color: var(--blue-dark);
+      background: #f7fcff;
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 750;
+    }
+
+    .download::before { content: "↓"; font-size: 1rem; }
+    .download:hover { border-color: var(--blue); background: var(--blue-pale); }
+    .download span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .meta { display: block; margin-top: .45rem; color: var(--muted); font-size: .73rem; }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .8rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .resource-grid { grid-template-columns: 1fr; }
+      .section-heading { align-items: start; flex-direction: column; gap: .2rem; }
+    }
+
+    @media (max-width: 440px) {
+      .page-shell { width: min(100% - 1rem, 1120px); }
+      .hero { border-radius: .9rem; }
+      .resource-row { grid-template-columns: 1fr; gap: .55rem; }
+      .language { justify-self: start; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e8eef2;
+        --muted: #aebbc4;
+        --line: #38505e;
+        --paper: #162631;
+        --wash: #1c303d;
+        --blue-pale: #173b50;
+        --navy: #d8edf8;
+        --amber: #413817;
+        --amber-line: #9a7c26;
+        --tagalog-pale: #35263c;
+      }
+      body { background: linear-gradient(180deg, #142f40 0, #101d25 25rem); }
+      .stat { background: rgba(22, 38, 49, .95); }
+      .download { border-color: #3f657b; background: #17303e; }
+      .notice strong { color: #ffe18a; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page-shell { width: 100%; padding: 0; }
+      .topbar { display: none; }
+      .hero { color: #fff; box-shadow: none; }
+      .resource-card, .stat { break-inside: avoid; box-shadow: none; }
+      .download { text-decoration: none; }
+      * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="topbar" aria-label="Convention navigation">
+      <span>2026 Convention Committee</span>
+      <a href="../rooming/index.html">Rooming documentation →</a>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Local resource library</p>
+      <h1>Convention Talks</h1>
+      <p class="hero-copy">English and Tagalog talk outlines, supporting videos, and speaker forms shared through JW Docs.</p>
+    </header>
+
+    <section class="stats" aria-label="Collection summary">
+      <div class="stat"><strong>16</strong><span>downloaded files</span></div>
+      <div class="stat"><strong>8</strong><span>English files</span></div>
+      <div class="stat"><strong>8</strong><span>Tagalog-listing files</span></div>
+      <div class="stat"><strong>212 MB</strong><span>total local size</span></div>
+    </section>
+
+    <aside class="notice">
+      <strong>Language note:</strong> The Tagalog JW Docs listing supplies <em>Convention Speaker Confirmation (CO-11)</em> in English. The local <code>-TG</code> copy preserves that listed fallback and is not a Tagalog translation.
+    </aside>
+
+    <main>
+      <section aria-labelledby="prepared-talks">
+        <div class="section-heading">
+          <h2 id="prepared-talks">Prepared Delivery Packages</h2>
+          <span>manuscript · extemporaneous guide · metrics · source notes · PDFs</span>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon doc">04</span><h3>“He Will Not Quarrel”</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">17-minute symposium talk with two videos and Isaiah 42:1-4 as the sole required reading.</p><a class="download" href="004/00-index.html"><span>Open Talk 04 package</span></a><small class="meta">English and Tagalog delivery documents</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon doc">13</span><h3>Can You Discern the Principle Behind the Law?</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">24-minute talk with two videos, six laws in outline order, and no formal scripture readings.</p><a class="download" href="013/00-index.html"><span>Open Talk 13 package</span></a><small class="meta">English and Tagalog delivery documents</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="talk-04">
+        <div class="section-heading">
+          <h2 id="talk-04">Talk 04 / Pahayag 04</h2>
+          <span>1 outline · 2 supporting videos · both languages</span>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon doc">DOCX</span><h3>Talk outline / Outline ng pahayag</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">4. Messianic Prophecy Fulfilled! (Symposium)—“He Will Not Quarrel”</p><a class="download" download href="00-CO-tk26_E_004.docx"><span>00-CO-tk26_E_004.docx</span></a><small class="meta">DOCX · 43 KB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">4. Natupad ang Hula sa Mesiyas! (Simposyum)—“Hindi Siya Makikipagtalo”</p><a class="download" download href="01-CO-tk26_TG_004-TG.docx"><span>01-CO-tk26_TG_004-TG.docx</span></a><small class="meta">DOCX · 13 KB</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon">MP4</span><h3>Video 1</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Talk 04 Video 1 — “He Will Not Quarrel”</p><a class="download" download href="02-CO-v26_E_041_r720P.mp4"><span>02-CO-v26_E_041_r720P.mp4</span></a><small class="meta">MP4 · 720p · 16.0 MB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">Pahayag 04 Video 1 — “Hindi Siya Makikipagtalo”</p><a class="download" download href="03-CO-v26_TG_041_r720P-TG.mp4"><span>03-CO-v26_TG_041_r720P-TG.mp4</span></a><small class="meta">MP4 · 720p · 16.0 MB</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon">MP4</span><h3>Video 2</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Talk 04 Video 2 — “He Will Not Quarrel”</p><a class="download" download href="04-CO-v26_E_042_r720P.mp4"><span>04-CO-v26_E_042_r720P.mp4</span></a><small class="meta">MP4 · 720p · 11.3 MB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">Pahayag 04 Video 2 — “Hindi Siya Makikipagtalo”</p><a class="download" download href="05-CO-v26_TG_042_r720P-TG.mp4"><span>05-CO-v26_TG_042_r720P-TG.mp4</span></a><small class="meta">MP4 · 720p · 11.3 MB</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="talk-13">
+        <div class="section-heading">
+          <h2 id="talk-13">Talk 13 / Pahayag 13</h2>
+          <span>1 outline · 2 supporting videos · both languages</span>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon doc">DOCX</span><h3>Talk outline / Outline ng pahayag</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">13. Can You Discern the Principle Behind the Law?</p><a class="download" download href="06-CO-tk26_E_013.docx"><span>06-CO-tk26_E_013.docx</span></a><small class="meta">DOCX · 39 KB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">13. Nauunawaan Mo Ba ang Prinsipyo sa Likod ng mga Batas?</p><a class="download" download href="07-CO-tk26_TG_013-TG.docx"><span>07-CO-tk26_TG_013-TG.docx</span></a><small class="meta">DOCX · 14 KB</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon">MP4</span><h3>Video 1</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Talk 13 Video 1 — Can You Discern the Principle Behind the Law?</p><a class="download" download href="08-CO-v26_E_131_r720P.mp4"><span>08-CO-v26_E_131_r720P.mp4</span></a><small class="meta">MP4 · 720p · 24.3 MB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">Pahayag 13 Video 1 — Nauunawaan Mo Ba ang Prinsipyo sa Likod ng mga Batas?</p><a class="download" download href="09-CO-v26_TG_131_r720P-TG.mp4"><span>09-CO-v26_TG_131_r720P-TG.mp4</span></a><small class="meta">MP4 · 720p · 24.3 MB</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon">MP4</span><h3>Video 2</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Talk 13 Video 2 — Can You Discern the Principle Behind the Law?</p><a class="download" download href="10-CO-v26_E_132_r720P.mp4"><span>10-CO-v26_E_132_r720P.mp4</span></a><small class="meta">MP4 · 720p · 57.2 MB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">Pahayag 13 Video 2 — Nauunawaan Mo Ba ang Prinsipyo sa Likod ng mga Batas?</p><a class="download" download href="11-CO-v26_TG_132_r720P-TG.mp4"><span>11-CO-v26_TG_132_r720P-TG.mp4</span></a><small class="meta">MP4 · 720p · 57.1 MB</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="forms">
+        <div class="section-heading">
+          <h2 id="forms">Speaker Forms / Mga Form</h2>
+          <span>2 supporting publications · both listings</span>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon pdf">PDF</span><h3>CO-11 — Convention Speaker Confirmation</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Convention Speaker Confirmation</p><a class="download" download href="12-CO-11_E.pdf"><span>12-CO-11_E.pdf</span></a><small class="meta">PDF · 1 page · 1.7 MB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">English fallback shown in the Tagalog listing</p><a class="download" download href="13-CO-11_E-TG.pdf"><span>13-CO-11_E-TG.pdf</span></a><small class="meta">PDF · 1 page · 1.7 MB · English content</small></div>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="card-head"><span class="type-icon pdf">PDF</span><h3>CO-90 — Speaker guidelines</h3></div>
+            <div class="resource-row">
+              <span class="language">EN</span>
+              <div><p class="item-title">Guidelines for Those Assigned Talks at Assemblies or Conventions</p><a class="download" download href="14-CO-90_E.pdf"><span>14-CO-90_E.pdf</span></a><small class="meta">PDF · 137 KB</small></div>
+            </div>
+            <div class="resource-row">
+              <span class="language tl">TG</span>
+              <div><p class="item-title">Mga Tagubilin Para sa mga Naatasang Magpahayag sa Asamblea o Kombensiyon</p><a class="download" download href="15-CO-90_TG-TG.pdf"><span>15-CO-90_TG-TG.pdf</span></a><small class="meta">PDF · 4 pages · 131 KB</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>Downloaded from JW Docs “Shared With You” · 10 August 2026 · Video files saved at the highest available 720p quality</footer>
+  </div>
+</body>
+</html>

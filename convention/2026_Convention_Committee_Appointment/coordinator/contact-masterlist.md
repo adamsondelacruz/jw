@@ -1,0 +1,179 @@
+# Confidential Elder and Ministerial Servant Contact Masterlist
+
+<div class="confidential-banner">CONFIDENTIAL — For authorised convention coordination only. Contains personal mobile numbers and jwpub.org addresses. Do not post publicly or distribute beyond those who need it.</div>
+
+**Source:** [2026 CONVENTION COMMITTEE.xlsx](../2026%20CONVENTION%20COMMITTEE.xlsx), worksheet “Elder & MS Contact List”  
+**Contacts:** 72 · **Areas/congregation groupings:** 5  
+**Data treatment:** Names, displayed phone values, email addresses, role categories, and groupings are reproduced from the workbook. Phone links are normalised to New Zealand’s +64 dialling format where possible.
+
+<div class="contact-tools"><label for="contact-search">Search contacts</label><input id="contact-search" type="search" placeholder="Name, congregation/area, Elder/MS, mobile or email" autocomplete="off"><p class="contact-count" id="contact-count" aria-live="polite"></p></div>
+
+<section class="contact-group" data-group="ashburton">
+<h2>Ashburton (6)</h2>
+
+<h3>Elder (5)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="ashburton elder adamson dela cruz 64212447795 1delacruzadamson@jwpub.org"><td>Adamson dela Cruz</td><td><a href="tel:+64212447795">64212447795</a></td><td><a href="mailto:1delaCruzAdamson@jwpub.org">1delaCruzAdamson@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="ashburton elder daveson asuncion 64211440914 asunciondaveson20@jwpub.org"><td>Daveson Asuncion</td><td><a href="tel:+64211440914">64211440914</a></td><td><a href="mailto:asunciondaveson20@jwpub.org">asunciondaveson20@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="ashburton elder kevin rosales 64273003053 rkevinjohn@jwpub.org"><td>Kevin Rosales</td><td><a href="tel:+64273003053">64273003053</a></td><td><a href="mailto:rkevinjohn@jwpub.org">rkevinjohn@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="ashburton elder arnel elefanio 64275218360 earnel28@jwpub.org"><td>Arnel Elefanio</td><td><a href="tel:+64275218360">64275218360</a></td><td><a href="mailto:earnel28@jwpub.org">earnel28@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="ashburton elder dan sangil 64274530735 dsangil11@jwpub.org"><td>Dan Sangil</td><td><a href="tel:+64274530735">64274530735</a></td><td><a href="mailto:dsangil11@jwpub.org">dsangil11@jwpub.org</a></td></tr>
+</tbody></table>
+
+<h3>MS (1)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="ashburton ms john ulanday 64212990125 ulandayjohnjerick@jwpub.org"><td>John Ulanday</td><td><a href="tel:+64212990125">64212990125</a></td><td><a href="mailto:Ulandayjohnjerick@jwpub.org">Ulandayjohnjerick@jwpub.org</a></td></tr>
+</tbody></table>
+
+</section>
+
+<section class="contact-group" data-group="auckland">
+<h2>Auckland (20)</h2>
+
+<h3>Elder (11)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="auckland elder amorante, apolonio 027 507 7058 aapolonio47@jwpub.org"><td>Amorante, Apolonio</td><td><a href="tel:+64275077058">027 507 7058</a></td><td><a href="mailto:AApolonio47@jwpub.org">AApolonio47@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder dela cruz, joel 021 059 5850 joeld2@jwpub.org"><td>Dela Cruz, Joel</td><td><a href="tel:+64210595850">021 059 5850</a></td><td><a href="mailto:JoelD2@jwpub.org">JoelD2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder intic, george 021 029 15416 georgeintic4@jwpub.org"><td>Intic, George</td><td><a href="tel:+642102915416">021 029 15416</a></td><td><a href="mailto:GEORGEINTIC4@jwpub.org">GEORGEINTIC4@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder joaquin, jerus 021 023 24810 jjerus2@jwpub.org"><td>Joaquin, Jerus</td><td><a href="tel:+642102324810">021 023 24810</a></td><td><a href="mailto:JJerus2@jwpub.org">JJerus2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder lawag, joan rey 022 523 6739 joanreyl@jwpub.org"><td>Lawag, Joan Rey</td><td><a href="tel:+64225236739">022 523 6739</a></td><td><a href="mailto:JoanReyL@jwpub.org">JoanReyL@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder laxamana, emmanuel 022 319 8318 8laxamanaemmanuel@jwpub.org"><td>Laxamana, Emmanuel</td><td><a href="tel:+64223198318">022 319 8318</a></td><td><a href="mailto:8LaxamanaEmmanuel@jwpub.org">8LaxamanaEmmanuel@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder lumiguid, romel 021 175 1694 rlumiguid3@jwpub.org"><td>Lumiguid, Romel</td><td><a href="tel:+64211751694">021 175 1694</a></td><td><a href="mailto:RLUMIGUID3@jwpub.org">RLUMIGUID3@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder morata, kent 027 837 1529 moratakent13@jwpub.org"><td>Morata, Kent</td><td><a href="tel:+64278371529">027 837 1529</a></td><td><a href="mailto:MorataKent13@jwpub.org">MorataKent13@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder palmiano, thomas tim 021 744 659 tpalmiano1@jwpub.org"><td>Palmiano, Thomas Tim</td><td><a href="tel:+6421744659">021 744 659</a></td><td><a href="mailto:TPalmiano1@jwpub.org">TPalmiano1@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder serio, xavier 022 679 0340 sxavier13@jwpub.org"><td>Serio, Xavier</td><td><a href="tel:+64226790340">022 679 0340</a></td><td><a href="mailto:SXavier13@jwpub.org">SXavier13@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland elder vinuya, israel m. 027 374 8523 ivinuya@jwpub.org"><td>Vinuya, Israel M.</td><td><a href="tel:+64273748523">027 374 8523</a></td><td><a href="mailto:IVinuya@jwpub.org">IVinuya@jwpub.org</a></td></tr>
+</tbody></table>
+
+<h3>MS (9)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="auckland ms baillo, james 021 027 1693 baillojames50@jwpub.org"><td>Baillo, James</td><td><a href="tel:+64210271693">021 027 1693</a></td><td><a href="mailto:BailloJames50@jwpub.org">BailloJames50@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms bautista, jiro 021 029 94463 bautistajiro@jwpub.org"><td>Bautista, Jiro</td><td><a href="tel:+642102994463">021 029 94463</a></td><td><a href="mailto:BautistaJiro@jwpub.org">BautistaJiro@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms bautista, ju-an miguel 027 555 5247 1bautistajuan@jwpub.org"><td>Bautista, Ju-an Miguel</td><td><a href="tel:+64275555247">027 555 5247</a></td><td><a href="mailto:1BautistaJuan@jwpub.org">1BautistaJuan@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms de jesus, reynaldo 021 085 39209 1reynaldod@jwpub.org"><td>De Jesus, Reynaldo</td><td><a href="tel:+642108539209">021 085 39209</a></td><td><a href="mailto:1ReynaldoD@jwpub.org">1ReynaldoD@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms macaoay, hermogenes 021 217 9157 hmacaoay@jwpub.org"><td>Macaoay, Hermogenes</td><td><a href="tel:+64212179157">021 217 9157</a></td><td><a href="mailto:HMacaoay@jwpub.org">HMacaoay@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms mendioro, neil 022 420 9509 mendioron8@jwpub.org"><td>Mendioro, Neil</td><td><a href="tel:+64224209509">022 420 9509</a></td><td><a href="mailto:MendioroN8@jwpub.org">MendioroN8@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms mercado, jose 021 202 1576 mercadojack@jwpub.org"><td>Mercado, Jose</td><td><a href="tel:+64212021576">021 202 1576</a></td><td><a href="mailto:MercadoJack@jwpub.org">MercadoJack@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms odtohan, randy 021 235 3896 odtohanr@jwpub.org"><td>Odtohan, Randy</td><td><a href="tel:+64212353896">021 235 3896</a></td><td><a href="mailto:OdtohanR@jwpub.org">OdtohanR@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="auckland ms tiglao, dexter 020 419 12238 dtiglao@jwpub.org"><td>Tiglao, Dexter</td><td><a href="tel:+642041912238">020 419 12238</a></td><td><a href="mailto:DTiglao@jwpub.org">DTiglao@jwpub.org</a></td></tr>
+</tbody></table>
+
+</section>
+
+<section class="contact-group" data-group="christchurch">
+<h2>Christchurch (22)</h2>
+
+<h3>Elder (10)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="christchurch elder arienza, francisco 2102361428 arienzaf2@jwpub.org"><td>Arienza, Francisco</td><td><a href="tel:+642102361428">2102361428</a></td><td><a href="mailto:ArienzaF2@jwpub.org">ArienzaF2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder balangue, daniel 211126496 1balangued@jwpub.org"><td>Balangue, Daniel</td><td><a href="tel:+64211126496">211126496</a></td><td><a href="mailto:1BalangueD@jwpub.org">1BalangueD@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder calaunan, wilfred m. jr 221669524 wilfredocalaunan@jwpub.org"><td>Calaunan, Wilfred M. Jr</td><td><a href="tel:+64221669524">221669524</a></td><td><a href="mailto:WilfredoCalaunan@jwpub.org">WilfredoCalaunan@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder garcia, charles 277770194 garciacharles9@jwpub.org"><td>Garcia, Charles</td><td><a href="tel:+64277770194">277770194</a></td><td><a href="mailto:GarciaCharles9@jwpub.org">GarciaCharles9@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder garcia, jireh 211041920 garciajireh@jwpub.org"><td>Garcia, Jireh</td><td><a href="tel:+64211041920">211041920</a></td><td><a href="mailto:GarciaJireh@jwpub.org">GarciaJireh@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder ibe, mark 211023733 markedvinibe10@jwpub.org"><td>Ibe, Mark</td><td><a href="tel:+64211023733">211023733</a></td><td><a href="mailto:MarkEdvinIbe10@jwpub.org">MarkEdvinIbe10@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder meru, jeremias &quot;jerry&quot; 277756438 jeremiasmeru10@jwpub.org"><td>Meru, Jeremias &quot;Jerry&quot;</td><td><a href="tel:+64277756438">277756438</a></td><td><a href="mailto:JeremiasMeru10@jwpub.org">JeremiasMeru10@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder natural, samuel 210643480 2naturals@jwpub.org"><td>Natural, Samuel</td><td><a href="tel:+64210643480">210643480</a></td><td><a href="mailto:2NaturalS@jwpub.org">2NaturalS@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder vea, louie joy 21896443 lvea12@jwpub.org"><td>Vea, Louie Joy</td><td><a href="tel:+6421896443">21896443</a></td><td><a href="mailto:LVea12@jwpub.org">LVea12@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch elder yasay, domingo jr 291235146 yasaydomingo@jwpub.org"><td>Yasay, Domingo Jr</td><td><a href="tel:+64291235146">291235146</a></td><td><a href="mailto:YasayDomingo@jwpub.org">YasayDomingo@jwpub.org</a></td></tr>
+</tbody></table>
+
+<h3>MS (12)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="christchurch ms agustin, nikko s. 2041926351 agustinnikko@jwpub.org"><td>Agustin, Nikko S.</td><td><a href="tel:+642041926351">2041926351</a></td><td><a href="mailto:AgustinNikko@jwpub.org">AgustinNikko@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms ariola, jess christian a. 220734575 jessariola@jwpub.org"><td>Ariola, Jess Christian A.</td><td><a href="tel:+64220734575">220734575</a></td><td><a href="mailto:JessAriola@jwpub.org">JessAriola@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms arroyo, jepte 272144511 jeptearroyo2@jwpub.org"><td>Arroyo, Jepte</td><td><a href="tel:+64272144511">272144511</a></td><td><a href="mailto:JepteArroyo2@jwpub.org">JepteArroyo2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms daud, junaid 2041653303 junaidd@jwpub.org"><td>Daud, Junaid</td><td><a href="tel:+642041653303">2041653303</a></td><td><a href="mailto:JunaidD@jwpub.org">JunaidD@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms douglas, lucien 221741533 luciend17@jwpub.org"><td>Douglas, Lucien</td><td><a href="tel:+64221741533">221741533</a></td><td><a href="mailto:LucienD17@jwpub.org">LucienD17@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms garcia, reynaldo 225055164 greynaldo@jwpub.org"><td>Garcia, Reynaldo</td><td><a href="tel:+64225055164">225055164</a></td><td><a href="mailto:GReynaldo@jwpub.org">GReynaldo@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms mejia, rylstone 212206755 rylstonem@jwpub.org"><td>Mejia, Rylstone</td><td><a href="tel:+64212206755">212206755</a></td><td><a href="mailto:RylstoneM@jwpub.org">RylstoneM@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms meru, zuriel james 220967106 zmeru44@jwpub.org"><td>Meru, Zuriel James</td><td><a href="tel:+64220967106">220967106</a></td><td><a href="mailto:ZMeru44@jwpub.org">ZMeru44@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms pio, samuel 276565456 piosamuel@jwpub.org"><td>Pio, Samuel</td><td><a href="tel:+64276565456">276565456</a></td><td><a href="mailto:PioSamuel@jwpub.org">PioSamuel@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms santos, joemar 224251934 santosjoemar@jwpub.org"><td>Santos, Joemar</td><td><a href="tel:+64224251934">224251934</a></td><td><a href="mailto:SantosJoemar@jwpub.org">SantosJoemar@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms soliman, angelito 211104895 asolioman71@jwpub.org"><td>Soliman, Angelito</td><td><a href="tel:+64211104895">211104895</a></td><td><a href="mailto:ASolioman71@jwpub.org">ASolioman71@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="christchurch ms villarin, alessandro 2040624155 alessandrovillarin@jwpub.org"><td>Villarin, Alessandro</td><td><a href="tel:+642040624155">2040624155</a></td><td><a href="mailto:AlessandroVillarin@jwpub.org">AlessandroVillarin@jwpub.org</a></td></tr>
+</tbody></table>
+
+</section>
+
+<section class="contact-group" data-group="hamilton">
+<h2>Hamilton (12)</h2>
+
+<h3>Elder (7)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="hamilton elder jeric avinante 0226458428 javinante@jwpub.org"><td>Jeric Avinante</td><td><a href="tel:+64226458428">0226458428</a></td><td><a href="mailto:JAvinante@jwpub.org">JAvinante@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder ronnie montemayor 0272233122 montemayorr1@jwpub.org"><td>Ronnie Montemayor</td><td><a href="tel:+64272233122">0272233122</a></td><td><a href="mailto:MontemayorR1@jwpub.org">MontemayorR1@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder fernando martinez 02102881826 23fernandom@jwpub.org"><td>Fernando Martinez</td><td><a href="tel:+642102881826">02102881826</a></td><td><a href="mailto:23FernandoM@jwpub.org">23FernandoM@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder ralf jumanoy 0211580378 rjumanoy@jwpub.org"><td>Ralf Jumanoy</td><td><a href="tel:+64211580378">0211580378</a></td><td><a href="mailto:RJumanoy@jwpub.org">RJumanoy@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder bengie talbo 0223513058 bengietalbo@jwpub.org"><td>Bengie Talbo</td><td><a href="tel:+64223513058">0223513058</a></td><td><a href="mailto:BengieTalbo@jwpub.org">BengieTalbo@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder ivander montemayor 0284627510 imontemayor@jwpub.org"><td>Ivander Montemayor</td><td><a href="tel:+64284627510">0284627510</a></td><td><a href="mailto:IMontemayor@jwpub.org">IMontemayor@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton elder melquesedec torzar 02902378069 melquesedet23@jwpub.org"><td>Melquesedec Torzar</td><td><a href="tel:+642902378069">02902378069</a></td><td><a href="mailto:MelquesedeT23@jwpub.org">MelquesedeT23@jwpub.org</a></td></tr>
+</tbody></table>
+
+<h3>MS (5)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="hamilton ms norwin macapinlac 0272139697 norwinmacapinlac@jwpub.org"><td>Norwin Macapinlac</td><td><a href="tel:+64272139697">0272139697</a></td><td><a href="mailto:norwinmacapinlac@jwpub.org">norwinmacapinlac@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton ms richard rivera 027 555 1733 rrichard93@jwpub.org"><td>Richard Rivera</td><td><a href="tel:+64275551733">027 555 1733</a></td><td><a href="mailto:RRichard93@jwpub.org">RRichard93@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton ms jerome talbo 0273500187 23tjerome@jwpub.org"><td>Jerome Talbo</td><td><a href="tel:+64273500187">0273500187</a></td><td><a href="mailto:23TJerome@jwpub.org">23TJerome@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton ms harvey genosas 022 353 2308 harveygenosas@jwpub.org"><td>Harvey Genosas</td><td><a href="tel:+64223532308">022 353 2308</a></td><td><a href="mailto:HarveyGenosas@jwpub.org">HarveyGenosas@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="hamilton ms rodel santos 022 561 1059 santosrodel@jwpub.org"><td>Rodel Santos</td><td><a href="tel:+64225611059">022 561 1059</a></td><td><a href="mailto:SantosRodel@jwpub.org">SantosRodel@jwpub.org</a></td></tr>
+</tbody></table>
+
+</section>
+
+<section class="contact-group" data-group="takanini">
+<h2>Takanini (12)</h2>
+
+<h3>Elder (6)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="takanini elder joshua espiritu 277717029 espiritujoshuaroboza@jwpub.org"><td>Joshua Espiritu</td><td><a href="tel:+64277717029">277717029</a></td><td><a href="mailto:espiritujoshuaroboza@jwpub.org">espiritujoshuaroboza@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini elder meliton soriano 2102267366 sorianomeliton13@jwpub.org"><td>Meliton Soriano</td><td><a href="tel:+642102267366">2102267366</a></td><td><a href="mailto:SorianoMeliton13@jwpub.org">SorianoMeliton13@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini elder ron mariano 273913848 ronkennethmariano@jwpub.org"><td>Ron Mariano</td><td><a href="tel:+64273913848">273913848</a></td><td><a href="mailto:RonKennethMariano@jwpub.org">RonKennethMariano@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini elder ramon ruiz 2108902484 ruizramon26@jwpub.org"><td>Ramon Ruiz</td><td><a href="tel:+642108902484">2108902484</a></td><td><a href="mailto:ruizramon26@jwpub.org">ruizramon26@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini elder luis limaco 211102067 7limacol@jwpub.org"><td>Luis Limaco</td><td><a href="tel:+64211102067">211102067</a></td><td><a href="mailto:7limacol@jwpub.org">7limacol@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini elder stu poole 2111577194 pooles1@jwpub.org"><td>Stu Poole</td><td><a href="tel:+642111577194">2111577194</a></td><td><a href="mailto:PooleS1@jwpub.org">PooleS1@jwpub.org</a></td></tr>
+</tbody></table>
+
+<h3>MS (6)</h3>
+
+<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>
+<tr class="contact-row" data-search="takanini ms giocef soriano 2215165762 gios@jwpub.org"><td>Giocef Soriano</td><td><a href="tel:+642215165762">2215165762</a></td><td><a href="mailto:GioS@jwpub.org">GioS@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini ms edward peralta 2102749836 eduardoperalta2@jwpub.org"><td>Edward Peralta</td><td><a href="tel:+642102749836">2102749836</a></td><td><a href="mailto:eduardoperalta2@jwpub.org">eduardoperalta2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini ms reymundo sapno 276200052 reymundos@jwpub.org"><td>Reymundo Sapno</td><td><a href="tel:+64276200052">276200052</a></td><td><a href="mailto:ReymundoS@jwpub.org">ReymundoS@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini ms myco pascua 212871408 14eduardmycop@jwpub.org"><td>Myco Pascua</td><td><a href="tel:+64212871408">212871408</a></td><td><a href="mailto:14EduardmycoP@jwpub.org">14EduardmycoP@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini ms bo waitere 272569636 jwaitere2@jwpub.org"><td>Bo Waitere</td><td><a href="tel:+64272569636">272569636</a></td><td><a href="mailto:JWaitere2@jwpub.org">JWaitere2@jwpub.org</a></td></tr>
+<tr class="contact-row" data-search="takanini ms rovic lopez 2108161954 rlopez93@jwpub.org"><td>Rovic Lopez</td><td><a href="tel:+642108161954">2108161954</a></td><td><a href="mailto:RLopez93@jwpub.org">RLopez93@jwpub.org</a></td></tr>
+</tbody></table>
+
+</section>
+
+## Corrections and control
+
+- Correct the source workbook first, then rerun `generate_contact_masterlist.py` and `render_docs.py`.
+- Verify details before urgent or sensitive communication; this page reflects the workbook, not live JW Hub data.
+- Apply the current convention direction for access, retention, and destruction of contact information.
+
+<script>
+(() => {
+  const input = document.getElementById('contact-search');
+  const count = document.getElementById('contact-count');
+  const rows = [...document.querySelectorAll('.contact-row')];
+  const groups = [...document.querySelectorAll('.contact-group')];
+  function filter() {
+    const terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let visible = 0;
+    for (const row of rows) { const match = terms.every(term => row.dataset.search.includes(term)); row.hidden = !match; if (match) visible++; }
+    for (const group of groups) group.hidden = !group.querySelector('.contact-row:not([hidden])');
+    count.textContent = `${visible} of ${rows.length} contacts shown`;
+  }
+  input.addEventListener('input', filter); filter();
+})();
+</script>

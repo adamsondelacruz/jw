@@ -1,0 +1,5 @@
+# JW Hub Playwright authentication and private run artifacts
+convention/2026_Convention_Committee_Appointment/automation/.browser-profile/
+convention/2026_Convention_Committee_Appointment/automation/artifacts/
+convention/2026_Convention_Committee_Appointment/automation/node_modules/
+

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "conventionId": "5ff3cade-fc3a-4423-bb88-f6bc983a1d1c",
+  "source": "../2026 CONVENTION COMMITTEE.xlsx / Elder & MS Contact List and coordinator organisation chart",
+  "exclusions": [
+    "Convention Committee Coordinator Assistant — To be confirmed",
+    "Program Overseer Assistant — To be confirmed",
+    "Accounts Overseer Assistant Thomas Tim Palmiano — TBC",
+    "Rooming Department Overseer Meliton Soriano — no distinct matching Hub responsibility",
+    "Rooming Department Assistant Romel Lumiguid — no distinct matching Hub responsibility"
+  ],
+  "assignments": [
+    { "role": "Accounts Overseer", "chartName": "Jerus Joaquin", "expectedName": "Jerus Joaquin", "email": "JJerus2@jwpub.org" },
+    { "role": "Accounts Overseer Assistant", "chartName": "Domingo Yasay", "expectedName": "Domingo Yasay", "email": "YasayDomingo@jwpub.org" },
+    { "role": "Attendant Overseer", "chartName": "Ron Mariano", "expectedName": "Ron Mariano", "email": "RonKennethMariano@jwpub.org" },
+    { "role": "Attendant Overseer Assistant(s)", "chartName": "Jireh Garcia", "expectedName": "Jireh Garcia", "email": "GarciaJireh@jwpub.org" },
+    { "role": "Attendant Overseer Assistant(s)", "chartName": "Ronnie Montemayor", "expectedName": "Ronnie Montemayor", "email": "MontemayorR1@jwpub.org" },
+    { "role": "First Aid Overseer", "chartName": "Xavier Senio", "expectedName": "Xavier Serio", "email": "SXavier13@jwpub.org" },
+    { "role": "First Aid Overseer Assistant(s)", "chartName": "Francisco Arienza", "expectedName": "Francisco Arienza", "email": "ArienzaF2@jwpub.org" },
+    { "role": "First Aid Overseer Assistant(s)", "chartName": "Samuel Natural", "expectedName": "Samuel Natural", "email": "2NaturalS@jwpub.org" },
+    { "role": "Parking Overseer", "chartName": "Jeric Avinante", "expectedName": "Jeric Avinante", "email": "JAvinante@jwpub.org" },
+    { "role": "Parking Overseer Assistant(s)", "chartName": "Ralf Jumanoy", "expectedName": "Ralf Jumanoy", "email": "RJumanoy@jwpub.org" },
+    { "role": "Parking Overseer Assistant(s)", "chartName": "Benjie Talbo", "expectedName": "Bengie Talbo", "email": "BengieTalbo@jwpub.org" },
+    { "role": "Safety Coordinator", "chartName": "Joan Rey Lawag", "expectedName": "Joan Rey Lawag", "email": "JoanReyL@jwpub.org" },
+    { "role": "Safety Coordinator Assistant(s)", "chartName": "Melquesedec Torzar", "expectedName": "Melquesedec Torzar", "email": "MelquesedeT23@jwpub.org" },
+    { "role": "Audio/Video Overseer", "chartName": "Kent Morata", "expectedName": "Kent Morata", "email": "MorataKent13@jwpub.org" },
+    { "role": "Audio/Video Overseer Assistant(s)", "chartName": "Joel Dela Cruz", "expectedName": "Joel Dela Cruz", "email": "JoelD2@jwpub.org" },
+    { "role": "Audio/Video Overseer Assistant(s)", "chartName": "Fernando Martinez", "expectedName": "Fernando Martinez", "email": "23FernandoM@jwpub.org" },
+    { "role": "Baptism Overseer", "chartName": "Emmanuel Laxamana", "expectedName": "Emmanuel Laxamana", "email": "8LaxamanaEmmanuel@jwpub.org" },
+    { "role": "Baptism Overseer Assistant(s)", "chartName": "Louie Vea", "expectedName": "Louie Joy Vea", "email": "LVea12@jwpub.org" },
+    { "role": "Cleaning Overseer", "chartName": "Ramon Ruiz", "expectedName": "Ramon Ruiz", "email": "ruizramon26@jwpub.org" },
+    { "role": "Cleaning Overseer Assistant(s)", "chartName": "Charles Garcia", "expectedName": "Charles Garcia", "email": "GarciaCharles9@jwpub.org" },
+    { "role": "Cleaning Overseer Assistant(s)", "chartName": "Ivander Montemayor", "expectedName": "Vanic Montemayor", "email": "IMontemayor@jwpub.org", "identityNote": "Workbook name Ivander; JW Hub returned Vanic for the exact approved account" },
+    { "role": "Information and Volunteer Service Overseer", "chartName": "Jeremeias Meru", "expectedName": "Jeremias Meru", "email": "JeremiasMeru10@jwpub.org" },
+    { "role": "Information and Volunteer Service Overseer Assistant(s)", "chartName": "Luis Limaco", "expectedName": "Luis Limaco", "email": "7limacol@jwpub.org" },
+    { "role": "Lost and Found and Checkroom Overseer", "chartName": "Jeremeias Meru", "expectedName": "Jeremias Meru", "email": "JeremiasMeru10@jwpub.org" },
+    { "role": "Lost and Found and Checkroom Assistant(s)", "chartName": "Luis Limaco", "expectedName": "Luis Limaco", "email": "7limacol@jwpub.org" },
+    { "role": "Rooming Overseer Assistant", "section": "Convention Committee Assistants", "chartName": "Daveson Asuncion", "expectedName": "Daveson Asuncion", "email": "asunciondaveson20@jwpub.org" }
+  ]
+}
