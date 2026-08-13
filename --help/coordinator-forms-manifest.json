@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "downloadedAt": "2026-08-11T21:17:36.573Z",
+  "language": "en",
+  "candidateCount": 14,
+  "downloadedFileCount": 0,
+  "results": [
+    {
+      "code": "CO-68",
+      "expectedTitle": "Convention Committee Acceptance and Rooming Information",
+      "source": "https://docs.jw.org/en/-/pub-co-68",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-53",
+      "expectedTitle": "Convention Personnel Report",
+      "source": "https://docs.jw.org/en/-/pub-co-53",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-100",
+      "expectedTitle": "Convention Sign Request",
+      "source": "https://docs.jw.org/en/-/pub-co-100",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-62",
+      "expectedTitle": "Postconvention Report",
+      "source": "https://docs.jw.org/en/-/pub-co-62",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-63",
+      "expectedTitle": "Instructions for Event Accounting",
+      "source": "https://docs.jw.org/en/-/pub-co-63",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "TO-5",
+      "expectedTitle": "Risk Incident Report",
+      "source": "https://docs.jw.org/en/-/pub-to-5",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-161",
+      "expectedTitle": "Assembly and Convention Emergency Preparedness Plan",
+      "source": "https://docs.jw.org/en/-/pub-co-161",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "DC-85",
+      "expectedTitle": "Congregation Job Hazard Analysis",
+      "source": "https://docs.jw.org/en/-/pub-dc-85",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-19a",
+      "expectedTitle": "Attendant badge",
+      "source": "https://docs.jw.org/en/-/pub-co-19a",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-24",
+      "expectedTitle": "Convention Attendant Count Cards",
+      "source": "https://docs.jw.org/en/-/pub-co-24",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-23",
+      "expectedTitle": "Assembly and Convention Attendant Instructions",
+      "source": "https://docs.jw.org/en/-/pub-co-23",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-65",
+      "expectedTitle": "Assembly and Convention Parking Attendant Instructions",
+      "source": "https://docs.jw.org/en/-/pub-co-65",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-5a",
+      "expectedTitle": "Special Rooming Needs Request",
+      "source": "https://docs.jw.org/en/-/pub-co-5a",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    },
+    {
+      "code": "CO-14",
+      "expectedTitle": "Site Inspection Release Agreement",
+      "source": "https://docs.jw.org/en/-/pub-co-14",
+      "status": "error",
+      "error": "Session redirected to login; refresh the cookies",
+      "files": []
+    }
+  ]
+}

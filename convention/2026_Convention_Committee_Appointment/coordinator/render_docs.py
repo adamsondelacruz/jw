@@ -2,6 +2,7 @@
 """Render coordinator Markdown documents to linked standalone HTML files."""
 
 from pathlib import Path
+import os
 import re
 import subprocess
 
@@ -35,6 +36,8 @@ def render(source: Path, css: str, nav: str) -> None:
     ], cwd=ROOT, check=True)
     html = target.read_text(encoding="utf-8")
     html = re.sub(r'href="([^"#?]+)\.md([#?][^"]*)?"', r'href="\1.html\2"', html)
+    linker = Path(os.path.relpath(ROOT.parent / "co1-links.js", target.parent)).as_posix()
+    html = html.replace("</body>", f'<script src="{linker}" data-co1="CO-1.html"></script>\n</body>')
     target.write_text(html, encoding="utf-8")
 
 

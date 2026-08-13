@@ -1,5 +1,41 @@
 # JW Hub Playwright authentication and private run artifacts
 convention/2026_Convention_Committee_Appointment/automation/.browser-profile/
 convention/2026_Convention_Committee_Appointment/automation/artifacts/
-convention/2026_Convention_Committee_Appointment/automation/node_modules/
 
+# Node.js — applies at every directory depth
+node_modules/
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.pnpm-store/
+.eslintcache
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python — bytecode, tool caches, environments, and build output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+build/
+*.egg-info/
+.eggs/
+
+# Rust — Cargo build output and generated profiling files
+target/
+*.profraw
+*.profdata
