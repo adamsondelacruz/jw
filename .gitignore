@@ -1,6 +1,8 @@
 # JW Hub Playwright authentication and private run artifacts
+/.jw-automation/
 convention/2026_Convention_Committee_Appointment/automation/.browser-profile/
 convention/2026_Convention_Committee_Appointment/automation/artifacts/
+convention/2026_Convention_Committee_Appointment/automation/.jw-drive-profile/
 
 # Node.js — applies at every directory depth
 node_modules/

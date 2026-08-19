@@ -12,9 +12,18 @@ This is the working home for the Convention Committee coordinator’s documents.
 2. [Departments and personnel](departments-and-personnel.md) — your four supervised departments and the local names that require verification.
 3. [Reorganised committee chart](organisation-chart.md) — visual working chart with the current committee appointments.
 4. [Confidential contact masterlist](contact-masterlist.md) — searchable Elder/MS contact details from the workbook.
-5. [Forms register](forms-register.md) — necessary official forms, local availability, deadlines, and missing/current-version actions.
-6. [Coordinator checklist](coordinator-checklist.md) — Appendix C plus the committee-wide tasks you need to chair or track.
-7. [Source map](source-map.md) — exact CO-1 paragraphs behind the pack.
+5. [Department communications](communications.html) — recipient emails, department-specific attachments, drafts, deadlines, and delivery status.
+6. [Forms register](forms-register.md) — necessary official forms, local availability, deadlines, and missing/current-version actions.
+7. [Operational guidance](operational-guidance.md) — practical, source-linked answers, beginning with what the committee needs to know about baptism candidates.
+8. [Coordinator checklist](coordinator-checklist.md) — Appendix C plus the committee-wide tasks you need to chair or track.
+9. [Source map](source-map.md) — exact CO-1 paragraphs behind the pack.
+10. [Venue department instructions and checklists](../templates/index.html) — downloaded South Auckland Assembly Hall manuals, checklists, plans, and department files.
+
+## Upcoming meeting
+
+- [Convention Committee meeting — 19 August 2026, 10:00 PM](meetings/00-2026-08-19-convention-committee-agenda.md)
+- Main decisions: Program Overseer Assistant and replacement Attendant Overseer
+- Supporting reference: [CO-53 easy guide](co-53-guide.md)
 
 ## Immediate answer to “Do I just reply?”
 

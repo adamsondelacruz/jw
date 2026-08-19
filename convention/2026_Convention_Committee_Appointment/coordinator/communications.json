@@ -1,0 +1,387 @@
+{
+  "event": "2026 Auckland Tagalog Convention",
+  "venue": "South Auckland Assembly Hall",
+  "dates": "30 October–1 November 2026",
+  "response_due": "1 September 2026",
+  "updated": "18 August 2026",
+  "communications": [
+    {
+      "id": "committee",
+      "department": "Convention Committee",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Israel Vinuya",
+          "email": "IVinuya@jwpub.org"
+        },
+        {
+          "name": "Wilfredo M Calaunan",
+          "email": "WilfredoCalaunan@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Convention Committee/RC 2026_Auckland.xlsx",
+        "templates/Event Oversight/M-270 Assembly Hall Operating Manual - complete.pdf",
+        "templates/Event Oversight/M-270c Information - Event Oversight.pdf",
+        "templates/Event Oversight/M-286 Checklist - Event Oversight.pdf",
+        "templates/Event Oversight/CO-161_E Emergency Preparedness Plan.pdf",
+        "templates/Event Oversight/SAAH Evacuation Plan.pdf",
+        "templates/Event Oversight/SAAH Plans 5.1.24 (1).pdf",
+        "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
+      ],
+      "note": "Committee-only package. The confidential diagram must not be forwarded.",
+      "variant": "committee",
+      "sent_at": "2026-08-13T13:04:45.467Z"
+    },
+    {
+      "id": "committee-meeting-2026-08-19",
+      "department": "Committee Meeting — 19 August",
+      "status": "Sent",
+      "subject": "Convention Committee Meeting — 19 August 2026 at 10:00 PM",
+      "response_due": "Confirm availability as soon as possible",
+      "to": [
+        {
+          "name": "Israel Vinuya",
+          "email": "IVinuya@jwpub.org"
+        },
+        {
+          "name": "Wilfredo M Calaunan",
+          "email": "WilfredoCalaunan@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "coordinator/meetings/00-2026-08-19-convention-committee-agenda.pdf",
+        "CO-53_E.pdf"
+      ],
+      "note": "Committee only. Ron Mariano is not included as a recipient or CC.",
+      "variant": "committee-meeting",
+      "sent_at": "2026-08-16T23:26:45.154Z"
+    },
+    {
+      "id": "coordinator-assistant",
+      "department": "Coordinator Assistant",
+      "status": "Draft — appointment follow-up",
+      "to": [
+        {
+          "name": "Ron Mariano",
+          "email": "RonKennethMariano@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Convention Committee/RC 2026_Auckland.xlsx",
+        "templates/Event Oversight/M-270 Assembly Hall Operating Manual - complete.pdf",
+        "templates/Event Oversight/M-270c Information - Event Oversight.pdf",
+        "templates/Event Oversight/M-286 Checklist - Event Oversight.pdf",
+        "templates/Event Oversight/CO-161_E Emergency Preparedness Plan.pdf",
+        "templates/Event Oversight/SAAH Evacuation Plan.pdf",
+        "templates/Event Oversight/SAAH Plans 5.1.24 (1).pdf",
+        "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
+      ],
+      "note": "New appointment follow-up. Not yet sent. Confirm whether Ron continues concurrently as Attendant overseer.",
+      "variant": "committee-assistant"
+    },
+    {
+      "id": "accounts",
+      "department": "Accounts",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Jerus Joaquin",
+          "email": "JJerus2@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Domingo Yasay",
+          "email": "YasayDomingo@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Accounts/M-281 Assembly Hall Operating Manual - Accounts.pptx",
+        "templates/Accounts/M-281 Checklist - Accounts.pdf",
+        "templates/Accounts/ANZ Instructions for Making Deposits.pdf",
+        "templates/Accounts/2018-11-13 ANZ Fast Deposit Bag letter.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "sent_at": "2026-08-13T13:05:06.715Z"
+    },
+    {
+      "id": "attendant",
+      "department": "Attendant",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Ron Mariano",
+          "email": "RonKennethMariano@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Jireh Garcia",
+          "email": "GarciaJireh@jwpub.org"
+        },
+        {
+          "name": "Ronnie Montemayor",
+          "email": "MontemayorR1@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Attendants/M-282 Assembly Hall Operating Manual - Attendant.pdf",
+        "templates/Attendants/M-282 Checklist - Attendant.pdf",
+        "templates/Attendants/Evacuation plan for SAAH.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf"
+      ],
+      "sent_at": "2026-08-13T13:05:20.877Z"
+    },
+    {
+      "id": "audio-video",
+      "department": "Audio / Video",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Kent Morata",
+          "email": "MorataKent13@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Joel Dela Cruz",
+          "email": "JoelD2@jwpub.org"
+        },
+        {
+          "name": "Fernando Martinez",
+          "email": "23FernandoM@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Audio Video/M-272 Assembly Hall Operating Manual - Audio Video.pdf",
+        "templates/Audio Video/M-272a Checklist - Audio Video.pdf",
+        "templates/Audio Video/M-272b Checklist - Platform.pdf",
+        "templates/Audio Video/AV Startup & Shutdown Procedure.pdf",
+        "templates/Audio Video/Recording Convention Programs.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "sent_at": "2026-08-13T13:05:44.110Z"
+    },
+    {
+      "id": "baptism",
+      "department": "Baptism",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Emmanuel Laxamana",
+          "email": "8LaxamanaEmmanuel@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Louie Vea",
+          "email": "LVea12@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Baptism/M-283 Assembly Hall Operating Manual - Baptism.pdf",
+        "templates/Baptism/M-283 Checklist - Baptism.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "sent_at": "2026-08-13T13:06:03.917Z"
+    },
+    {
+      "id": "cleaning",
+      "department": "Cleaning",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Ramon Ruiz",
+          "email": "ruizramon26@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Charles Garcia",
+          "email": "GarciaCharles9@jwpub.org"
+        },
+        {
+          "name": "Ivander Montemayor",
+          "email": "IMontemayor@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Cleaning/M-273 Assembly Hall Operating Manual - Cleaning.pdf",
+        "templates/Cleaning/M-273 Checklist - Cleaning.pdf",
+        "templates/Cleaning/Dining Room Layout.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "sent_at": "2026-08-13T13:06:51.888Z"
+    },
+    {
+      "id": "first-aid",
+      "department": "First Aid",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Xavier Serio",
+          "email": "SXavier13@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Francisco Arienza",
+          "email": "ArienzaF2@jwpub.org"
+        },
+        {
+          "name": "Samuel Natural",
+          "email": "2NaturalS@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/First Aid/M-284 Assembly Hall Operating Manual - First Aid.pdf",
+        "templates/First Aid/M-284 Checklist - First Aid.pdf",
+        "templates/First Aid/Evacuation plan for SAAH.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf"
+      ],
+      "sent_at": "2026-08-13T13:07:23.914Z"
+    },
+    {
+      "id": "parking",
+      "department": "Parking",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Jeric Avinante",
+          "email": "JAvinante@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Ralf Jumanoy",
+          "email": "RJumanoy@jwpub.org"
+        },
+        {
+          "name": "Bengie Talbo",
+          "email": "BengieTalbo@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Parking/M-274 Assembly Hall Operating Manual - Parking.pdf",
+        "templates/Parking/M-274 Checklist - Parking.pdf",
+        "templates/Parking/Evacuation plan for SAAH.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf"
+      ],
+      "sent_at": "2026-08-13T13:07:42.915Z"
+    },
+    {
+      "id": "information-lost-found",
+      "department": "Information / Volunteer Service / Lost & Found",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Jeremias Meru",
+          "email": "JeremiasMeru10@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Luis Limaco",
+          "email": "7limacol@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Lost and Found/M-285 Assembly Hall Operating Manual - Lost and Found.pdf",
+        "templates/Lost and Found/M-285 Checklist - Lost and Found.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "note": "M-285 applies only to Lost & Found. No dedicated venue files were supplied for Information or Volunteer Service.",
+      "variant": "limited",
+      "sent_at": "2026-08-13T13:08:06.782Z"
+    },
+    {
+      "id": "safety",
+      "department": "Safety",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Joan Rey Lawag",
+          "email": "JoanReyL@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Melquesedec Torzar",
+          "email": "MelquesedeT23@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Event Oversight/CO-161_E Emergency Preparedness Plan.pdf",
+        "templates/Event Oversight/SAAH Evacuation Plan.pdf",
+        "templates/Event Oversight/SAAH Plans 5.1.24 (1).pdf",
+        "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
+      ],
+      "note": "Controlled safety package. The confidential diagram must not be forwarded.",
+      "variant": "confidential",
+      "sent_at": "2026-08-13T13:08:35.403Z"
+    },
+    {
+      "id": "rooming",
+      "department": "Rooming Department",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Meliton Soriano",
+          "email": "SorianoMeliton13@jwpub.org"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Romel Lumiguid",
+          "email": "RLUMIGUID3@jwpub.org"
+        }
+      ],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "note": "Venue orientation only. No dedicated Rooming files were supplied; current CO-80 must still be obtained.",
+      "variant": "limited",
+      "sent_at": "2026-08-13T13:08:46.948Z"
+    },
+    {
+      "id": "daveson-receipt-check",
+      "department": "Rooming Overseer Assistant — Receipt Check",
+      "status": "Sent",
+      "subject": "2026 Auckland Tagalog Convention — Rooming Documents",
+      "response_due": "Please reply when convenient",
+      "to": [
+        {
+          "name": "Daveson Asuncion",
+          "email": "asunciondaveson20@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [],
+      "note": "Receipt check only. No attachments. Ask whether Wilfredo's documents were received and can be opened.",
+      "variant": "receipt-check",
+      "sent_at": "2026-08-18T03:45:00.158Z"
+    }
+  ]
+}

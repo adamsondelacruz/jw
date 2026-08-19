@@ -16,6 +16,8 @@ DOCS = [
     "forms-register.md",
     "coordinator-checklist.md",
     "source-map.md",
+    "co-53-guide.md",
+    "operational-guidance.md",
 ]
 
 
@@ -45,5 +47,7 @@ for name in DOCS:
     render(ROOT / name, "assets/coordinator.css", "assets/nav.html")
 for source in sorted((ROOT / "templates").glob("*.md")):
     render(source, "../assets/coordinator.css", "assets/template-nav.html")
+for source in sorted((ROOT / "meetings").glob("*.md")):
+    render(source, "../assets/coordinator.css", "assets/template-nav.html")
 
-print(f"Rendered {len(DOCS)} guides and {len(list((ROOT / 'templates').glob('*.md')))} templates.")
+print(f"Rendered {len(DOCS)} guides, {len(list((ROOT / 'templates').glob('*.md')))} templates, and {len(list((ROOT / 'meetings').glob('*.md')))} meetings.")
