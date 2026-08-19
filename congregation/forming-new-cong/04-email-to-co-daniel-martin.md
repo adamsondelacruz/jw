@@ -1,6 +1,6 @@
-# Draft Email to Daniel Martin
+# Email to Daniel Martin
 
-**Status:** Draft for review — not sent  
+**Status:** Sent — 9 August 2026  
 **Subject:** Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation
 
 Dear Brother Martin,
@@ -44,10 +44,10 @@ Ashburton Congregation
 
 ---
 
-## Review notes before sending
+## Local review notes — not part of the sent email
 
 These notes are not part of the email:
 
-1. The signed S-51 currently shows **31 total active** and **35 regular** in point 2. This should be checked before sending because the regular figure exceeds the active figure and appears to match the total number listed in the August proposal.
-2. The S-51 date and circuit-overseer signature are blank, which may be intentional because the form is being presented to Brother Martin for his review and signature.
+1. The signed S-51 shows **31 total active** and **35 regular** in point 2. This discrepancy was recorded during local review because the regular figure exceeds the active figure and appears to match the total number listed in the August proposal.
+2. The S-51 date and circuit-overseer signature were blank when the copy was sent for Brother Martin’s review and direction.
 3. Confirm the reporting date and scope of the **34 progressive Bible studies** if Brother Martin may need that figure documented separately.

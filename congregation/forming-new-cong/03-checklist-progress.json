@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "document": "Forming a New Congregation — Master Checklist",
+  "sources": [
+    "S-50-E 7/21",
+    "S-51-E 1/16"
+  ],
+  "knownItemCount": 78,
+  "savedAt": "2026-08-19T13:05:46+12:00",
+  "mergeMode": "additive",
+  "evidenceRevision": "2026-08-13-email-and-s51",
+  "project": {
+    "name": "",
+    "lead": "",
+    "targetDate": ""
+  },
+  "checks": {
+    "forms-number-blank": true,
+    "req-population": true,
+    "req-language-need": true,
+    "req-publishers-students": true,
+    "req-mature-core": true,
+    "req-appointed-sufficient": true,
+    "warning-no-students": true,
+    "warning-one-appointed": true,
+    "warning-fluency-oversight": true,
+    "warning-individual-review": true,
+    "s51-total-active": true,
+    "s51-baptized": true,
+    "s51-regular-pioneers": true,
+    "s51-elders": true,
+    "s51-ms": true,
+    "s51-reasons": true,
+    "s51-start": true,
+    "final-language": true
+  },
+  "notes": {
+    "forms-number-blank": "Signed S-51 attachment: the proposed congregation-number field is blank.",
+    "req-population": "9 August email and signed S-51: local census, Tagalog-language, and Mid Canterbury estimates were presented with the stated significant Tagalog-speaking need.",
+    "req-language-need": "Signed S-51 reason: publishers and Bible students depend on Tagalog for spiritual instruction and progress.",
+    "req-publishers-students": "9 August email and signed S-51: 35 publishers, 46 Bible studies, and 34 reported progressive studies support the recorded language need and spiritual activity.",
+    "req-mature-core": "Signed S-51 reason: a stable and spiritually mature core of fluent publishers is present.",
+    "req-appointed-sufficient": "9 August email and signed S-51: 5 elders and 2 ministerial servants; the signed reason states appointed brothers can provide shepherding and care for congregation responsibilities.",
+    "warning-no-students": "Checked against the 9 August email: this warning sign is not present; 46 studies and 34 reported progressive studies were recorded.",
+    "warning-one-appointed": "Checked against the 9 August email: this warning sign is not present; 5 elders and 2 ministerial servants were recorded.",
+    "warning-fluency-oversight": "Checked against the signed S-51 reason: this warning sign is not present; it records a fluent mature core and appointed brothers capable of oversight.",
+    "warning-individual-review": "The 9 August email reviews Ashburton's own population, language, publisher, study, attendance, and appointed-brother evidence and explicitly states its limitations.",
+    "s51-total-active": "Signed S-51 attachment and 9 August email: Total active is recorded as 31.",
+    "s51-baptized": "Signed S-51 attachment: Baptized is recorded as 31.",
+    "s51-regular-pioneers": "Signed S-51 attachment and 9 August email: 10 regular pioneers are recorded.",
+    "s51-elders": "Signed S-51 attachment and 9 August email: 5 elders are recorded.",
+    "s51-ms": "Signed S-51 attachment and 9 August email: 2 ministerial servants are recorded.",
+    "s51-reasons": "Signed S-51 attachment contains the completed factual reason for forming the congregation.",
+    "s51-start": "Signed S-51 attachment and 9 August email record November 2026 as the proposed start month—not branch approval.",
+    "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence."
+  },
+  "sectionOpen": {
+    "forms": true,
+    "requirements": true,
+    "considerations": true,
+    "s51-new": true,
+    "naming": true,
+    "final-review": true,
+    "approval": true
+  }
+}

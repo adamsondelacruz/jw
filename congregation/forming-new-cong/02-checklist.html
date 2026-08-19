@@ -66,7 +66,7 @@
     .page { max-width: 1040px; margin: 0 auto; padding: 0 22px 72px; }
     .hero {
       margin: 0 -22px 24px;
-      padding: 42px max(22px, calc((100vw - 1040px) / 2 + 22px)) 32px;
+      padding: 42px 22px 32px;
       background:
         radial-gradient(circle at 86% 10%, rgba(255,255,255,.10), transparent 24%),
         linear-gradient(135deg, #3d0f1c, #74283d 65%, #8d4056);
@@ -319,14 +319,14 @@
       <h1>Forming a New Congregation</h1>
       <p class="hero-subtitle">A plain-language working checklist based on S-50-E (7/21) and S-51-E (1/16). Complete the official forms themselves; this page is your progress tracker.</p>
       <nav class="source-links" aria-label="Source documents">
-        <a href="00-S-50_E.pdf" target="_blank" rel="noopener">S-50 instructions</a>
-        <a href="00-S-51_E.pdf" target="_blank" rel="noopener">S-51</a>
-        <a href="00-S-51_E-filled.pdf" target="_blank" rel="noopener">S-51 — point 5 filled</a>
-        <a href="00-S-29_E.pdf" target="_blank" rel="noopener">S-29</a>
-        <a href="00-S-5_E.pdf" target="_blank" rel="noopener">S-5</a>
-        <a href="00-M-202_E.pdf" target="_blank" rel="noopener">M-202</a>
-        <a href="00-S-36_E.pdf" target="_blank" rel="noopener">S-36</a>
-        <a href="00-S-6_E.pdf" target="_blank" rel="noopener">S-6</a>
+        <a href="05-S-50_E.pdf" target="_blank" rel="noopener">S-50 instructions</a>
+        <a href="06-S-51_E.pdf" target="_blank" rel="noopener">S-51</a>
+        <a href="07-S-51_E-filled.pdf" target="_blank" rel="noopener">S-51 — point 5 filled</a>
+        <a href="10-S-29_E.pdf" target="_blank" rel="noopener">S-29</a>
+        <a href="11-S-5_E.pdf" target="_blank" rel="noopener">S-5</a>
+        <a href="12-M-202_E.pdf" target="_blank" rel="noopener">M-202</a>
+        <a href="13-S-36_E.pdf" target="_blank" rel="noopener">S-36</a>
+        <a href="14-S-6_E.pdf" target="_blank" rel="noopener">S-6</a>
       </nav>
     </header>
 
@@ -423,9 +423,10 @@
   <script>
     "use strict";
 
-    const FILE_NAME = "00-forming-new-congregation-progress.json";
+    const FILE_NAME = "03-checklist-progress.json";
     const STORAGE_KEY = "forming-new-congregation-checklist-v1";
     const SCHEMA_VERSION = 1;
+    const EVIDENCE_REVISION = "2026-08-13-email-and-s51";
 
     const sections = [
       {
@@ -458,18 +459,18 @@
         subtitle: "Do not treat these as aspirations; verify that each condition is already met.",
         gate: "All seven S-50 paragraph 2 requirements must be met before the recommendation is submitted.",
         items: [
-          { id: "req-population", ref: "S-50 ¶2(1)", title: "Verify a significant population dependent on the proposed congregation’s language lives near the Kingdom Hall.", detail: "S-50 suggests perhaps at least a few thousand individuals." },
-          { id: "req-travel-search", ref: "S-50 ¶2(1)", title: "Verify the territory can be worked without long-distance travel or many hours of search work." },
-          { id: "req-language-need", ref: "S-50 ¶2(1)", title: "For a foreign or indigenous language, verify that a significant part of the language community has little or no understanding of the language of an established local congregation.", detail: "S-50 says this should be true in most cases." },
-          { id: "req-publishers-students", ref: "S-50 ¶2(2)", title: "Verify genuine spiritual-language need among publishers or progressing Bible students.", detail: "Either a significant number of publishers depend on the language for spiritual food, or Bible students who depend on and prefer it are attending meetings and progressing toward baptism." },
-          { id: "req-mature-core", ref: "S-50 ¶2(3)", title: "Verify a solid core of spiritually mature publishers is fluent in the language." },
-          { id: "req-appointed-sufficient", ref: "S-50 ¶2(4)", title: "Verify there are enough appointed men, including at least one elder.", detail: "They must be able to provide shepherding, handle meeting parts, and take the lead in the ministry." },
-          { id: "req-appointed-fluent", ref: "S-50 ¶2(4)", title: "Verify the majority of appointed men are fluent in the congregation’s language." },
-          { id: "req-meetings-local", ref: "S-50 ¶2(5)", title: "Verify local publishers can conduct all weekly meetings and regularly care for the parts." },
-          { id: "req-no-stream-dependence", ref: "S-50 ¶2(5)", title: "Verify the congregation will not depend on JW Stream.", detail: "With circuit overseer approval, a recorded meeting or portion may be viewed occasionally, but this cannot be the congregation’s normal support." },
-          { id: "req-publications", ref: "S-50 ¶2(6)", title: "Verify the study Watchtower and Life and Ministry Meeting Workbook are available in a usable language.", detail: "They may be in the congregation’s language or another language in which most publishers are literate." },
-          { id: "req-publication-arrangement", ref: "S-50 ¶2(6)", title: "If publications are not in the congregation’s language, confirm the meeting-language arrangement.", detail: "Publishers use the congregation’s language for ministry, comments, talks, and prayers, while using the available-language publications during meetings." },
-          { id: "req-meeting-place", ref: "S-50 ¶2(7)", title: "Verify a Kingdom Hall or another appropriate meeting place is available." }
+          { id: "req-population", ref: "S-50 par. 2(1)", title: "Verify a significant population dependent on the proposed congregation’s language lives near the Kingdom Hall.", detail: "S-50 suggests perhaps at least a few thousand individuals." },
+          { id: "req-travel-search", ref: "S-50 par. 2(1)", title: "Verify the territory can be worked without long-distance travel or many hours of search work." },
+          { id: "req-language-need", ref: "S-50 par. 2(1)", title: "For a foreign or indigenous language, verify that a significant part of the language community has little or no understanding of the language of an established local congregation.", detail: "S-50 says this should be true in most cases." },
+          { id: "req-publishers-students", ref: "S-50 par. 2(2)", title: "Verify genuine spiritual-language need among publishers or progressing Bible students.", detail: "Either a significant number of publishers depend on the language for spiritual food, or Bible students who depend on and prefer it are attending meetings and progressing toward baptism." },
+          { id: "req-mature-core", ref: "S-50 par. 2(3)", title: "Verify a solid core of spiritually mature publishers is fluent in the language." },
+          { id: "req-appointed-sufficient", ref: "S-50 par. 2(4)", title: "Verify there are enough appointed men, including at least one elder.", detail: "They must be able to provide shepherding, handle meeting parts, and take the lead in the ministry." },
+          { id: "req-appointed-fluent", ref: "S-50 par. 2(4)", title: "Verify the majority of appointed men are fluent in the congregation’s language." },
+          { id: "req-meetings-local", ref: "S-50 par. 2(5)", title: "Verify local publishers can conduct all weekly meetings and regularly care for the parts." },
+          { id: "req-no-stream-dependence", ref: "S-50 par. 2(5)", title: "Verify the congregation will not depend on JW Stream.", detail: "With circuit overseer approval, a recorded meeting or portion may be viewed occasionally, but this cannot be the congregation’s normal support." },
+          { id: "req-publications", ref: "S-50 par. 2(6)", title: "Verify the study Watchtower and Life and Ministry Meeting Workbook are available in a usable language.", detail: "They may be in the congregation’s language or another language in which most publishers are literate." },
+          { id: "req-publication-arrangement", ref: "S-50 par. 2(6)", title: "If publications are not in the congregation’s language, confirm the meeting-language arrangement.", detail: "Publishers use the congregation’s language for ministry, comments, talks, and prayers, while using the available-language publications during meetings." },
+          { id: "req-meeting-place", ref: "S-50 par. 2(7)", title: "Verify a Kingdom Hall or another appropriate meeting place is available." }
         ]
       },
       {
@@ -477,12 +478,12 @@
         title: "Evaluate freedom of choice and warning signs",
         subtitle: "Make the recommendation on evidence, without pressuring publishers or overlooking weakness.",
         items: [
-          { id: "consider-choice", ref: "S-50 ¶3", title: "Confirm each publisher or family head is free to choose which congregation the family will attend.", detail: "No one is to be pressured to support a particular language field or congregation." },
-          { id: "consider-no-assumptions", ref: "S-50 ¶3", title: "Base projected support on voluntary, individually confirmed decisions — not assumptions or pressure." },
-          { id: "warning-no-students", ref: "S-50 ¶4(1)", title: "Check for this warning sign: after one or two years as a group, no Bible students attend meetings or progress toward baptism.", detail: "Especially significant if most publishers are fluent but few or none depend on the language for spiritual food." },
-          { id: "warning-one-appointed", ref: "S-50 ¶4(2)", title: "Check for this warning sign: activity and progressive students exist, but only one appointed man is taking the lead.", detail: "The S-50 example has one elder supporting a weekly Life and Ministry Meeting and a monthly public talk; that is still insufficient." },
-          { id: "warning-fluency-oversight", ref: "S-50 ¶4(3)", title: "Check for this warning sign: students attend, but most mature publishers are not fluent, none depend on the language, and appointed oversight is insufficient." },
-          { id: "warning-individual-review", ref: "S-50 ¶4", title: "Review the proposal on its own facts, not by mechanically matching or dismissing the examples.", detail: "S-50 says the examples are illustrative and each situation must be considered individually." }
+          { id: "consider-choice", ref: "S-50 par. 3", title: "Confirm each publisher or family head is free to choose which congregation the family will attend.", detail: "No one is to be pressured to support a particular language field or congregation." },
+          { id: "consider-no-assumptions", ref: "S-50 par. 3", title: "Base projected support on voluntary, individually confirmed decisions — not assumptions or pressure." },
+          { id: "warning-no-students", ref: "S-50 par. 4(1)", title: "Check for this warning sign: after one or two years as a group, no Bible students attend meetings or progress toward baptism.", detail: "Especially significant if most publishers are fluent but few or none depend on the language for spiritual food." },
+          { id: "warning-one-appointed", ref: "S-50 par. 4(2)", title: "Check for this warning sign: activity and progressive students exist, but only one appointed man is taking the lead.", detail: "The S-50 example has one elder supporting a weekly Life and Ministry Meeting and a monthly public talk; that is still insufficient." },
+          { id: "warning-fluency-oversight", ref: "S-50 par. 4(3)", title: "Check for this warning sign: students attend, but most mature publishers are not fluent, none depend on the language, and appointed oversight is insufficient." },
+          { id: "warning-individual-review", ref: "S-50 par. 4", title: "Review the proposal on its own facts, not by mechanically matching or dismissing the examples.", detail: "S-50 says the examples are illustrative and each situation must be considered individually." }
         ]
       },
       {
@@ -490,21 +491,21 @@
         title: "Complete the proposed congregation’s S-51",
         subtitle: "Gather and verify the exact information requested in points 1 through 8.",
         items: [
-          { id: "s51-name", ref: "S-51 ¶1", title: "Record the proposed complete congregation name.", detail: "Include the directional/geographic designation, city, and province or state. Leave the congregation number blank." },
-          { id: "s51-total-active", ref: "S-51 ¶2", title: "Verify and enter the total active publishers, including pioneers." },
-          { id: "s51-regular", ref: "S-51 ¶2", title: "Verify and enter the figure requested in the form’s “Regular” field." },
-          { id: "s51-baptized", ref: "S-51 ¶2", title: "Verify and enter the baptized-publisher figure." },
-          { id: "s51-regular-pioneers", ref: "S-51 ¶3", title: "Verify and enter the number of regular pioneers." },
-          { id: "s51-special-pioneers", ref: "S-51 ¶3", title: "Verify and enter the number of special pioneers." },
-          { id: "s51-elders", ref: "S-51 ¶4", title: "Verify and enter the number of elders who will serve in the congregation." },
-          { id: "s51-ms", ref: "S-51 ¶4", title: "Verify and enter the number of ministerial servants who will serve in the congregation." },
-          { id: "s51-proposed-committee", ref: "S-50 ¶2(4) / S-29", title: "Identify the brothers proposed to serve as coordinator, secretary, and service overseer in the new congregation.", detail: "Do this with the host body of elders and circuit overseer. While you remain a group, you do not yet have a separate Congregation Service Committee; the group remains under the host body’s oversight." },
-          { id: "s51-reasons", ref: "S-51 ¶5", title: "Write a brief, factual reason for forming the congregation.", detail: "Continue on page 2 if more space is needed. Tie the explanation to the verified S-50 requirements and the actual local need." },
-          { id: "s51-involved-list", ref: "S-51 ¶6", title: "List every existing congregation directly involved, with complete name and congregation number.", detail: "Include each boundary-affected congregation and the congregation hosting the group, if applicable; continue on page 2 if necessary." },
-          { id: "s51-start", ref: "S-51 ¶7", title: "State when the congregation could begin functioning — the first of a proposed month and year." },
-          { id: "s51-circuit-section", ref: "S-51 ¶8", title: "Have the circuit overseer recommend the circuit and section assignment." },
+          { id: "s51-name", ref: "S-51 point 1", title: "Record the proposed complete congregation name.", detail: "Include the directional/geographic designation, city, and province or state. Leave the congregation number blank." },
+          { id: "s51-total-active", ref: "S-51 point 2", title: "Verify and enter the total active publishers, including pioneers." },
+          { id: "s51-regular", ref: "S-51 point 2", title: "Verify and enter the figure requested in the form’s “Regular” field." },
+          { id: "s51-baptized", ref: "S-51 point 2", title: "Verify and enter the baptized-publisher figure." },
+          { id: "s51-regular-pioneers", ref: "S-51 point 3", title: "Verify and enter the number of regular pioneers." },
+          { id: "s51-special-pioneers", ref: "S-51 point 3", title: "Verify and enter the number of special pioneers." },
+          { id: "s51-elders", ref: "S-51 point 4", title: "Verify and enter the number of elders who will serve in the congregation." },
+          { id: "s51-ms", ref: "S-51 point 4", title: "Verify and enter the number of ministerial servants who will serve in the congregation." },
+          { id: "s51-proposed-committee", ref: "S-50 par. 2(4) / S-29", title: "Identify the brothers proposed to serve as coordinator, secretary, and service overseer in the new congregation.", detail: "Do this with the host body of elders and circuit overseer. While you remain a group, you do not yet have a separate Congregation Service Committee; the group remains under the host body’s oversight." },
+          { id: "s51-reasons", ref: "S-51 point 5", title: "Write a brief, factual reason for forming the congregation.", detail: "Continue on page 2 if more space is needed. Tie the explanation to the verified S-50 requirements and the actual local need." },
+          { id: "s51-involved-list", ref: "S-51 point 6", title: "List every existing congregation directly involved, with complete name and congregation number.", detail: "Include each boundary-affected congregation and the congregation hosting the group, if applicable; continue on page 2 if necessary." },
+          { id: "s51-start", ref: "S-51 point 7", title: "State when the congregation could begin functioning — the first of a proposed month and year." },
+          { id: "s51-circuit-section", ref: "S-51 point 8", title: "Have the circuit overseer recommend the circuit and section assignment." },
           { id: "s51-date", ref: "S-51", title: "Enter the application date." },
-          { id: "s51-signatory-confirmation", ref: "S-50 ¶5 / S-51", title: "Have the circuit overseer confirm who should sign the proposed congregation’s S-51 before names are entered.", detail: "S-51 lists the coordinator, secretary, circuit overseer, and service overseer, but it does not explicitly say whether the three congregation signers are the host committee or the brothers proposed for the new congregation. The host congregation also completes its own separate S-51." },
+          { id: "s51-signatory-confirmation", ref: "S-50 par. 5 / S-51", title: "Have the circuit overseer confirm who should sign the proposed congregation’s S-51 before names are entered.", detail: "S-51 lists the coordinator, secretary, circuit overseer, and service overseer, but it does not explicitly say whether the three congregation signers are the host committee or the brothers proposed for the new congregation. The host congregation also completes its own separate S-51." },
           { id: "s51-signatures", ref: "S-51", title: "Obtain the typed-name signatures confirmed by the circuit overseer.", detail: "The signature fields shown are coordinator of the body of elders, secretary, circuit overseer, and service overseer." }
         ]
       },
@@ -538,9 +539,9 @@
           { id: "final-shipping", ref: "S-36", title: "Confirm shipping address, ship-to congregation, and Kingdom Hall Literature Group information." },
           { id: "final-requests", ref: "M-202", title: "Confirm new or revised periodical and workbook requests, or record who will enter them after approval." },
           { id: "final-existing-names", ref: "S-51 / S-6", title: "Confirm all existing congregation names remain appropriate after boundary changes." },
-          { id: "final-copies", ref: "S-50 ¶5", title: "Confirm there is one correctly completed copy of every required form for every affected congregation." },
-          { id: "final-co-verify", ref: "S-50 ¶5", title: "Have the circuit overseer verify the complete package is accurate." },
-          { id: "final-submit", ref: "S-50 ¶5", title: "Circuit overseer sends the recommendation package to the Service Department for consideration." }
+          { id: "final-copies", ref: "S-50 par. 5", title: "Confirm there is one correctly completed copy of every required form for every affected congregation." },
+          { id: "final-co-verify", ref: "S-50 par. 5", title: "Have the circuit overseer verify the complete package is accurate." },
+          { id: "final-submit", ref: "S-50 par. 5", title: "Circuit overseer sends the recommendation package to the Service Department for consideration." }
         ]
       },
       {
@@ -549,11 +550,11 @@
         subtitle: "A proposed start date is not authorisation to begin functioning.",
         gate: "The branch office informs the congregation(s) and circuit overseer(s) whether the new congregation is approved.",
         items: [
-          { id: "approval-wait", ref: "S-50 ¶6", title: "Do not begin functioning as a new congregation before branch approval." },
-          { id: "approval-letter", ref: "S-50 ¶6", title: "Receive and review the branch approval letter with all affected congregations and circuit overseers." },
-          { id: "approval-date", ref: "S-50 ¶6", title: "Use the start date specified in the approval letter.", detail: "The letter also provides further instructions." },
-          { id: "approval-instructions", ref: "S-50 ¶6", title: "Assign and complete every further instruction in the approval letter." },
-          { id: "approval-territory-supplies", ref: "S-50 ¶6", title: "Track the updated territory assignments and other supplies that will follow." },
+          { id: "approval-wait", ref: "S-50 par. 6", title: "Do not begin functioning as a new congregation before branch approval." },
+          { id: "approval-letter", ref: "S-50 par. 6", title: "Receive and review the branch approval letter with all affected congregations and circuit overseers." },
+          { id: "approval-date", ref: "S-50 par. 6", title: "Use the start date specified in the approval letter.", detail: "The letter also provides further instructions." },
+          { id: "approval-instructions", ref: "S-50 par. 6", title: "Assign and complete every further instruction in the approval letter." },
+          { id: "approval-territory-supplies", ref: "S-50 par. 6", title: "Track the updated territory assignments and other supplies that will follow." },
           { id: "approval-requests", ref: "M-202", title: "If periodical/workbook requests were deferred, enter the approved new or revised requests on jw.org." },
           { id: "approval-official-name", ref: "S-51", title: "Adopt the approved complete congregation name in all official records and uses." }
         ]
@@ -561,6 +562,26 @@
     ];
 
     const knownIds = new Set(sections.flatMap(section => section.items.map(item => item.id)));
+    const evidenceUpdates = {
+      "forms-number-blank": "Signed S-51 attachment: the proposed congregation-number field is blank.",
+      "req-population": "9 August email and signed S-51: local census, Tagalog-language, and Mid Canterbury estimates were presented with the stated significant Tagalog-speaking need.",
+      "req-language-need": "Signed S-51 reason: publishers and Bible students depend on Tagalog for spiritual instruction and progress.",
+      "req-publishers-students": "9 August email and signed S-51: 35 publishers, 46 Bible studies, and 34 reported progressive studies support the recorded language need and spiritual activity.",
+      "req-mature-core": "Signed S-51 reason: a stable and spiritually mature core of fluent publishers is present.",
+      "req-appointed-sufficient": "9 August email and signed S-51: 5 elders and 2 ministerial servants; the signed reason states appointed brothers can provide shepherding and care for congregation responsibilities.",
+      "warning-no-students": "Checked against the 9 August email: this warning sign is not present; 46 studies and 34 reported progressive studies were recorded.",
+      "warning-one-appointed": "Checked against the 9 August email: this warning sign is not present; 5 elders and 2 ministerial servants were recorded.",
+      "warning-fluency-oversight": "Checked against the signed S-51 reason: this warning sign is not present; it records a fluent mature core and appointed brothers capable of oversight.",
+      "warning-individual-review": "The 9 August email reviews Ashburton's own population, language, publisher, study, attendance, and appointed-brother evidence and explicitly states its limitations.",
+      "s51-total-active": "Signed S-51 attachment and 9 August email: Total active is recorded as 31.",
+      "s51-baptized": "Signed S-51 attachment: Baptized is recorded as 31.",
+      "s51-regular-pioneers": "Signed S-51 attachment and 9 August email: 10 regular pioneers are recorded.",
+      "s51-elders": "Signed S-51 attachment and 9 August email: 5 elders are recorded.",
+      "s51-ms": "Signed S-51 attachment and 9 August email: 2 ministerial servants are recorded.",
+      "s51-reasons": "Signed S-51 attachment contains the completed factual reason for forming the congregation.",
+      "s51-start": "Signed S-51 attachment and 9 August email record November 2026 as the proposed start month—not branch approval.",
+      "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence."
+    };
     let state = defaultState();
     let fileHandle = null;
     let dirtySinceJsonSave = false;
@@ -580,8 +601,21 @@
         checks: {},
         notes: {},
         sectionOpen: {},
-        savedAt: null
+        savedAt: null,
+        evidenceRevision: null
       };
+    }
+
+    function applyEvidenceUpdates(candidate) {
+      const clean = sanitiseState(candidate);
+      if (clean.evidenceRevision === EVIDENCE_REVISION) return clean;
+      for (const [id, note] of Object.entries(evidenceUpdates)) {
+        if (!knownIds.has(id)) continue;
+        clean.checks[id] = true;
+        if (!clean.notes[id]) clean.notes[id] = note;
+      }
+      clean.evidenceRevision = EVIDENCE_REVISION;
+      return clean;
     }
 
     function escapeHtml(value) {
@@ -672,6 +706,7 @@
         for (const section of sections) clean.sectionOpen[section.id] = candidate.sectionOpen[section.id] !== false;
       }
       clean.savedAt = typeof candidate.savedAt === "string" ? candidate.savedAt : null;
+      clean.evidenceRevision = typeof candidate.evidenceRevision === "string" ? candidate.evidenceRevision : null;
       return clean;
     }
 
@@ -685,7 +720,8 @@
         project: state.project,
         checks: Object.fromEntries([...knownIds].map(id => [id, state.checks[id] === true])),
         notes: Object.fromEntries([...knownIds].filter(id => state.notes[id]).map(id => [id, state.notes[id]])),
-        sectionOpen: Object.fromEntries(sections.map(section => [section.id, state.sectionOpen[section.id] !== false]))
+        sectionOpen: Object.fromEntries(sections.map(section => [section.id, state.sectionOpen[section.id] !== false])),
+        evidenceRevision: state.evidenceRevision
       };
     }
 
@@ -710,8 +746,20 @@
     }
 
     function applyLoadedState(candidate, sourceLabel) {
-      state = sanitiseState(candidate);
-      dirtySinceJsonSave = false;
+      const previous = state;
+      const additive = candidate && candidate.mergeMode === "additive";
+      const loaded = applyEvidenceUpdates(candidate);
+      if (additive) {
+        for (const id of knownIds) {
+          if (previous.checks[id] === true) loaded.checks[id] = true;
+          if (!loaded.notes[id] && previous.notes[id]) loaded.notes[id] = previous.notes[id];
+        }
+        for (const key of ["name", "lead", "targetDate"]) {
+          if (!loaded.project[key] && previous.project[key]) loaded.project[key] = previous.project[key];
+        }
+      }
+      state = loaded;
+      dirtySinceJsonSave = additive;
       renderChecklist();
       persistLocal(`Loaded ${sourceLabel}`);
     }
@@ -794,16 +842,21 @@
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
-          state = sanitiseState(JSON.parse(saved));
+          const restored = sanitiseState(JSON.parse(saved));
+          const needsEvidenceMerge = restored.evidenceRevision !== EVIDENCE_REVISION;
+          state = applyEvidenceUpdates(restored);
+          dirtySinceJsonSave = needsEvidenceMerge;
           renderChecklist();
-          setStatus("Restored browser-saved progress; JSON not connected");
+          persistLocal(needsEvidenceMerge ? "Restored your ticks and added communication-backed items" : "Restored browser-saved progress");
           return;
         }
       } catch (error) {
         setStatus("Could not restore browser storage", true);
       }
+      state = applyEvidenceUpdates(defaultState());
+      dirtySinceJsonSave = true;
       renderChecklist();
-      setStatus("No saved progress loaded; open the companion JSON or begin ticking");
+      persistLocal("Loaded communication-backed checklist items");
     }
 
     checklist.addEventListener("change", event => {
@@ -849,11 +902,11 @@
     document.getElementById("resetAll").addEventListener("click", () => {
       if (!confirm("Reset every tick, note, and project field in this browser? Save a JSON backup first if you may need the current progress.")) return;
       state = defaultState();
+      state.evidenceRevision = EVIDENCE_REVISION;
       fileHandle = null;
       dirtySinceJsonSave = true;
-      try { localStorage.removeItem(STORAGE_KEY); } catch (error) { /* no-op */ }
       renderChecklist();
-      setStatus("Checklist reset; companion JSON was not changed");
+      persistLocal("Checklist reset; companion JSON was not changed");
     });
 
     fileInput.addEventListener("change", async () => {

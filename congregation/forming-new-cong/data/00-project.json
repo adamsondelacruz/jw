@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "Ashburton Tagalog — New Congregation Recommendation",
+    "working_arrangement": "Ashburton Tagalog group under the Ashburton host body of elders",
+    "host_congregation": "Ashburton (1016)",
+    "circuit": "NZ-1",
+    "proposed_circuit_section": "NZ-1B",
+    "kingdom_hall": "262–264 Cameron Street, Ashburton 7700",
+    "status": "submitted-to-circuit-overseer",
+    "updated_at": "2026-08-19T13:05:46+12:00",
+    "current_direction": "Both S-51 forms—the proposed Ashburton Tagalog congregation and the Ashburton host congregation—have been sent to the circuit overseer. S-50 through par. 5 has been confirmed; par. 6 remains pending because branch approval and start instructions have not yet been received.",
+    "next_action": "Wait for the circuit overseer’s next direction and, under S-50 par. 6, the branch office’s approval letter. Do not begin functioning or assume a start date before that letter."
+  },
+  "source_documents": [
+    {
+      "path": "05-S-50_E.pdf",
+      "kind": "official-instruction",
+      "revision": "S-50-E 7/21",
+      "sha256": "2e4273c465559bcbea9eb91630a81e91a55b403e303bbccfb25dd445d1e68c9f",
+      "immutable": true
+    },
+    {
+      "path": "06-S-51_E.pdf",
+      "kind": "blank-official-form",
+      "revision": "S-51-E 1/16",
+      "sha256": "714acd546b874cc48835039883974fe0deaeefdbb0d5290a30dcad1775ec6158",
+      "immutable": true
+    },
+    {
+      "path": "09-S-51-Ashburton-Tagalog-signed.pdf",
+      "kind": "signed-evidence",
+      "revision": "S-51-E 1/16",
+      "sha256": "af65857d84ed5dbe273dd92a20e54d4068824f103a661c05331ac83e3b118b88",
+      "immutable": true
+    },
+    {
+      "path": "08-S-51_E-Ashburton-working.pdf",
+      "kind": "submitted-evidence",
+      "revision": "S-51-E 1/16",
+      "sha256": "aea9f6fe594cd4db0f25c902a74eebd8e93dad46d1698dc7dec2a3a850875ee9",
+      "immutable": true
+    },
+    {
+      "path": "07-S-51_E-filled.pdf",
+      "kind": "superseded-working-form",
+      "revision": "S-51-E 1/16",
+      "sha256": "95425d7838c9f4ad6292422eaffe75dda38b34a9e6d2a5f10a99ee76509cf3bb",
+      "immutable": false
+    },
+    {
+      "path": "10-S-29_E.pdf",
+      "kind": "blank-official-form",
+      "sha256": "ebcc66e9a426c288c4bd7599d1ae201205a275b02d282394d84cb5423a93f41c",
+      "immutable": true
+    },
+    {
+      "path": "11-S-5_E.pdf",
+      "kind": "blank-official-form",
+      "sha256": "2b9dc53ab4baa91dc9ea735bb5100519425d3d9fe90e825b836d69657833b949",
+      "immutable": true
+    },
+    {
+      "path": "12-M-202_E.pdf",
+      "kind": "blank-official-form",
+      "sha256": "e3a64e081420f8fd73dd9b4495584189eb174ffeafa32257d523be6d5efa23d5",
+      "immutable": true
+    },
+    {
+      "path": "13-S-36_E.pdf",
+      "kind": "blank-official-form",
+      "sha256": "346b4492bc85df2184837d5bd00e9b80154309db77af0c0590aca1bf3a477e51",
+      "immutable": true
+    },
+    {
+      "path": "14-S-6_E.pdf",
+      "kind": "blank-official-form",
+      "sha256": "b9258626b5d12c140c6aa92076d99eef209356976ac75927aec5a188c4d34bbf",
+      "immutable": true
+    },
+    {
+      "path": "15-Tagalog-Group-Proposal-2026-08.pdf",
+      "kind": "supporting-evidence",
+      "as_of": "2026-08",
+      "sha256": "1528295130c39ae12aa6b58fcdf60cee342d17e80eb52440d3e0c83e15ee539d",
+      "immutable": true
+    },
+    {
+      "path": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf",
+      "kind": "supporting-evidence",
+      "as_of": "2026-06-21",
+      "sha256": "60e3d9fe7f574c020fbfb76f3c0210570d8ebfbb942e9d8ff9486d64fc1cbc11",
+      "immutable": true
+    },
+    {
+      "path": "03-checklist-progress.json",
+      "kind": "checklist-progress",
+      "schema_version": 1,
+      "sha256": "ea5aabcfa8ad15899c0049788e264200c15fd6f8518989a61e609d77a5ffe988",
+      "immutable": false
+    }
+  ],
+  "forms": [
+    {
+      "id": "s51-proposed",
+      "code": "S-51",
+      "title": "Congregation Application/Information — proposed congregation",
+      "purpose": "Records the proposed congregation’s complete name, projected publishers and pioneers, appointed men, reasons, directly involved congregations, proposed start and circuit/section.",
+      "required_for": ["proposed congregation"],
+      "timing": "Completed and sent to the circuit overseer; points 1–8 apply and the new congregation number remains blank.",
+      "owner": "Host body of elders and circuit overseer",
+      "status": "submitted",
+      "files": [
+        {"path": "09-S-51-Ashburton-Tagalog-signed.pdf", "kind": "service-committee-signed", "status": "signed"},
+        {"path": "07-S-51_E-filled.pdf", "kind": "earlier-working-copy", "status": "draft"},
+        {"path": "06-S-51_E.pdf", "kind": "blank-original", "status": "reference"}
+      ],
+      "source_references": ["S-50 par. 5(1)", "S-51 page 2 instructions"],
+    "notes": "The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026; further action depends on his or the branch office’s direction."
+    },
+    {
+      "id": "s51-ashburton",
+      "code": "S-51",
+      "title": "Congregation Application/Information — Ashburton host congregation",
+      "purpose": "Records the existing host congregation’s identity and projected post-formation points 2–4.",
+      "required_for": ["Ashburton host congregation"],
+      "timing": "Specifically requested by the circuit overseer, completed, and sent to him.",
+      "owner": "Ashburton Congregation Service Committee",
+      "status": "submitted",
+      "files": [
+        {"path": "08-S-51_E-Ashburton-working.pdf", "kind": "submitted-copy", "status": "submitted"}
+      ],
+      "source_references": ["S-50 par. 5(1)", "S-51 page 2 instructions"],
+      "notes": "The Ashburton host-congregation S-51 has been sent to the circuit overseer. The exact send date is not recorded locally."
+    },
+    {
+      "id": "s29",
+      "code": "S-29",
+      "title": "Coordinator/Secretary Change of Address",
+      "purpose": "Identifies the coordinator and secretary and provides their contact/address information.",
+      "required_for": ["proposed congregation", "any existing congregation whose coordinator or secretary changes"],
+      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "owner": "To be assigned",
+      "status": "not-started",
+      "files": [{"path": "10-S-29_E.pdf", "kind": "blank-original", "status": "reference"}],
+      "source_references": ["S-50 par. 5(2)"],
+      "notes": "Proposed coordinator and secretary require confirmation."
+    },
+    {
+      "id": "s5",
+      "code": "S-5",
+      "title": "Kingdom Hall Information",
+      "purpose": "Records the meeting place and its congregation-use arrangement.",
+      "required_for": ["proposed congregation", "existing congregations whose Kingdom Hall information changes"],
+      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "owner": "To be assigned",
+      "status": "not-started",
+      "files": [{"path": "11-S-5_E.pdf", "kind": "blank-original", "status": "reference"}],
+      "source_references": ["S-50 par. 5(3)"],
+      "notes": "The Ashburton Kingdom Hall address is known; the formal use arrangement still needs completion."
+    },
+    {
+      "id": "m202",
+      "code": "M-202",
+      "title": "Periodical Request",
+      "purpose": "Establishes periodical and Life and Ministry Meeting Workbook quantities.",
+      "required_for": ["proposed congregation", "existing congregations whose requests change"],
+      "timing": "May be included with the recommendation or entered on jw.org after approval when directed.",
+      "owner": "To be assigned",
+      "status": "needs-confirmation",
+      "files": [{"path": "12-M-202_E.pdf", "kind": "blank-original", "status": "reference"}],
+      "source_references": ["S-50 par. 5(4)"],
+      "notes": "This is the only listed item for which S-50 explicitly offers an after-approval alternative."
+    },
+    {
+      "id": "s36",
+      "code": "S-36",
+      "title": "Shipping Information",
+      "purpose": "Establishes shipping address and the Kingdom Hall Literature Group arrangement.",
+      "required_for": ["proposed congregation", "changed shipping addresses", "ship-to congregation at the meeting hall"],
+      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "owner": "To be assigned",
+      "status": "not-started",
+      "files": [{"path": "13-S-36_E.pdf", "kind": "blank-original", "status": "reference"}],
+      "source_references": ["S-50 par. 5(5)"],
+      "notes": "Required even when shipments normally go to a Regional Literature Depot."
+    },
+    {
+      "id": "s6",
+      "code": "S-6",
+      "title": "Territory Adjustment Request",
+      "purpose": "Documents proposed territory assignment and affected boundary adjustments.",
+      "required_for": ["proposed congregation", "each existing congregation whose boundaries are affected"],
+      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "owner": "Circuit overseer and affected bodies of elders",
+      "status": "not-started",
+      "files": [{"path": "14-S-6_E.pdf", "kind": "blank-original", "status": "reference"}],
+      "source_references": ["S-50 par. 5(6)"],
+      "notes": "Final language-territory boundaries and directly affected congregations require confirmation."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "s50-2-1",
+      "requirement": "A significant language-dependent population lives near the Kingdom Hall, without excessive travel or search work.",
+      "source_reference": "S-50 par. 2(1)",
+      "source_anchor": "s50-p2-item-1",
+      "status": "confirmed",
+      "evidence": ["1,605 Filipino people in Ashburton District in 2023 Census data cited in the email draft", "2.17% of Ashburton District residents able to speak Tagalog in cited 2023 Census language data", "Approximately 3,000 Filipinos in Mid Canterbury reported as an informed local estimate"],
+      "notes": "Confirmed in the S-50 review. Preserve the official district figure and the wider-area estimate as different measures."
+    },
+    {
+      "id": "s50-2-2",
+      "requirement": "Publishers depend on the language for spiritual food or language-dependent Bible students attend and progress toward baptism.",
+      "source_reference": "S-50 par. 2(2)",
+      "source_anchor": "s50-p2-item-2",
+      "status": "confirmed",
+      "evidence": ["35 publishers listed in the August proposal", "46 Bible studies printed in the June S-303", "34 progressive studies reported separately"],
+      "notes": "Confirmed in the S-50 review. The reporting date for the separate figure of 34 progressive studies remains a data-provenance question, not an S-50 blocker."
+    },
+    {
+      "id": "s50-2-3",
+      "requirement": "A solid core of spiritually mature publishers is fluent in the language.",
+      "source_reference": "S-50 par. 2(3)",
+      "source_anchor": "s50-p2-item-3",
+      "status": "confirmed",
+      "evidence": ["31 active publishers in the August proposal", "10 regular pioneers in the August proposal"],
+      "notes": "Confirmed in the S-50 review."
+    },
+    {
+      "id": "s50-2-4",
+      "requirement": "Enough appointed men, including at least one elder, can provide shepherding, handle meeting parts and lead the ministry; most are fluent.",
+      "source_reference": "S-50 par. 2(4)",
+      "source_anchor": "s50-p2-item-4",
+      "status": "confirmed",
+      "evidence": ["5 elders and 2 ministerial servants printed in the August proposal", "The June S-303 describes host-congregation strain and shepherding/training difficulty"],
+      "notes": "Confirmed in the S-50 review; the supporting counts remain recorded as evidence."
+    },
+    {
+      "id": "s50-2-5",
+      "requirement": "The congregation can conduct all weekly meetings locally without depending on JW Stream.",
+      "source_reference": "S-50 par. 2(5)",
+      "source_anchor": "s50-p2-item-5",
+      "status": "confirmed",
+      "evidence": ["June S-303: weekend meetings every week", "June S-303: full Tagalog midweek meeting once monthly and Tagalog CLAM twice monthly"],
+      "notes": "Confirmed in the S-50 review."
+    },
+    {
+      "id": "s50-2-6",
+      "requirement": "The study Watchtower and Life and Ministry Meeting Workbook are available in Tagalog or another language in which most publishers are literate.",
+      "source_reference": "S-50 par. 2(6)",
+      "source_anchor": "s50-p2-item-6",
+      "status": "confirmed",
+      "evidence": [],
+      "notes": "Confirmed in the S-50 review."
+    },
+    {
+      "id": "s50-2-7",
+      "requirement": "A Kingdom Hall or another appropriate meeting place is available.",
+      "source_reference": "S-50 par. 2(7)",
+      "source_anchor": "s50-p2-item-7",
+      "status": "confirmed",
+      "evidence": ["Working address: 262–264 Cameron Street, Ashburton 7700"],
+      "notes": "Confirmed in the S-50 review; the known meeting-place address remains recorded as evidence."
+    },
+    {
+      "id": "s50-3",
+      "requirement": "Each publisher or family head freely decides which congregation the family will attend; no one is pressured.",
+      "source_reference": "S-50 par. 3",
+      "source_anchor": "s50-p3",
+      "status": "confirmed",
+      "evidence": [],
+      "notes": "Confirmed in the S-50 review."
+    },
+    {
+      "id": "s50-5",
+      "requirement": "The circuit overseer verifies the accurately prepared recommendation information before sending it to the Service Department.",
+      "source_reference": "S-50 par. 5",
+      "source_anchor": "s50-p5",
+      "status": "confirmed",
+      "evidence": ["Proposed-congregation S-51 received and reviewed by the circuit overseer", "Ashburton host-congregation S-51 sent to the circuit overseer"],
+      "notes": "Confirmed in the S-50 review. Both requested S-51 forms have been sent; remaining forms should follow current direction."
+    },
+    {
+      "id": "s50-6",
+      "requirement": "Wait for branch approval and use the start date and further instructions in the approval letter.",
+      "source_reference": "S-50 par. 6",
+      "source_anchor": "s50-p6",
+      "status": "needs-confirmation",
+      "evidence": [],
+      "notes": "Awaiting the branch office’s approval decision, official start date, and further instructions. A proposed date is not approval to begin functioning."
+    }
+  ],
+  "statistics": [
+    {"id": "aug-township", "label": "Ashburton Township publishers", "value": 18, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-mayfield", "label": "Mayfield publishers", "value": 17, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-total", "label": "Total publishers listed", "value": 35, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-active", "label": "Active publishers", "value": 31, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-baptized", "label": "Baptized publishers", "value": 31, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-inactive", "label": "Inactive publishers", "value": 4, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-unbaptized", "label": "Unbaptized publishers", "value": 4, "unit": "publishers", "as_of": "2026-08", "kind": "calculated", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "35 listed minus 31 baptized", "confidence": "needs-confirmation", "notes": "Consistent with the June S-303 but not explicitly printed in the August proposal."},
+    {"id": "aug-rp", "label": "Regular pioneers", "value": 10, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-cap", "label": "Continuous auxiliary pioneers", "value": 2, "unit": "publishers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified", "notes": "Not the S-51 special-pioneer field."},
+    {"id": "aug-elders", "label": "Elders", "value": 5, "unit": "brothers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "aug-ms", "label": "Ministerial servants", "value": 2, "unit": "brothers", "as_of": "2026-08", "kind": "printed", "source_file": "15-Tagalog-Group-Proposal-2026-08.pdf", "source_location": "page 1", "confidence": "verified"},
+    {"id": "june-baptized", "label": "Baptized publishers", "value": 29, "unit": "publishers", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "june-unbaptized", "label": "Unbaptized publishers", "value": 4, "unit": "publishers", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "june-studies", "label": "Bible studies conducted", "value": 46, "unit": "studies", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "progressive-studies", "label": "Progressive Bible studies", "value": 34, "unit": "studies", "as_of": null, "kind": "reported", "source_file": null, "source_location": "supplied separately", "confidence": "needs-confirmation", "notes": "Reporting date and scope are not documented in the local PDFs."},
+    {"id": "june-maps", "label": "Territory maps", "value": 54, "unit": "maps", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "june-addresses", "label": "Territory addresses", "value": 760, "unit": "addresses", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "june-weekend", "label": "Weekend average attendance", "value": 40, "unit": "people", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "june-midweek", "label": "Midweek average attendance", "value": 38, "unit": "people", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "census-filipino", "label": "Filipino people in Ashburton District", "value": 1605, "unit": "people", "as_of": "2023", "kind": "reported", "source_file": "04-email-to-co-daniel-martin.md", "source_location": "Figure.NZ/Stats NZ citation", "confidence": "source-link-recorded", "source_url": "https://figure.nz/chart/kTHySRszQMlknOp2"},
+    {"id": "census-tagalog", "label": "Ashburton District residents able to speak Tagalog", "value": 2.17, "unit": "percent", "as_of": "2023", "kind": "reported", "source_file": "04-email-to-co-daniel-martin.md", "source_location": "Figure.NZ/Stats NZ citation", "confidence": "source-link-recorded", "source_url": "https://figure.nz/chart/6zVZjwr8WNRNyJ9x"},
+    {"id": "mid-canterbury-estimate", "label": "Filipinos in Mid Canterbury", "value": 3000, "unit": "people", "as_of": null, "kind": "estimated", "source_file": "04-email-to-co-daniel-martin.md", "source_location": "reported local estimate from Kristine Kaye Asuncion", "confidence": "reported-estimate", "notes": "Wider area than Ashburton District; not official census data."}
+  ],
+  "calculations": [
+    {"id": "active-rate", "label": "Active rate", "formula": "31 / 35 × 100", "inputs": ["aug-active", "aug-total"], "value": 88.6, "unit": "percent", "caution": "35 is the total listed population, not automatically the S-51 Regular field."},
+    {"id": "appointed-coverage", "label": "Active publishers per appointed brother", "formula": "31 / (5 + 2)", "inputs": ["aug-active", "aug-elders", "aug-ms"], "value": 4.4, "unit": "publishers per appointed brother", "caution": "A ratio does not prove language fluency or availability."},
+    {"id": "study-rate", "label": "Bible studies per active publisher", "formula": "46 / 31", "inputs": ["june-studies", "aug-active"], "value": 1.48, "unit": "studies per active publisher", "caution": "The numerator and denominator come from different reporting dates."},
+    {"id": "progressive-share", "label": "Progressive share of reported studies", "formula": "34 / 46 × 100", "inputs": ["progressive-studies", "june-studies"], "value": 73.9, "unit": "percent", "caution": "Use only after confirming the two figures cover the same reporting period."},
+    {"id": "publisher-growth", "label": "Publisher growth from June representation to August list", "formula": "(35 - 33) / 33 × 100", "inputs": ["aug-total", "june-baptized", "june-unbaptized"], "value": 6.1, "unit": "percent", "caution": "Compares represented/listed totals, not necessarily average active publishers."}
+  ],
+  "decisions": [
+    {
+      "id": "submission-sequence",
+      "question": "What should be sent now?",
+      "status": "confirmed",
+      "decision": "Both the proposed-congregation S-51 and the Ashburton host-congregation S-51 have been sent to the circuit overseer. Wait for his next direction and do not assume the remaining forms are presently requested.",
+      "basis": "User-confirmed submission status and S-50 pars. 5–6."
+    },
+    {
+      "id": "publisher-fields",
+      "question": "How should S-51 point 2 distinguish Total active and Regular?",
+      "status": "confirmed",
+      "decision": "The proposed-congregation S-51 was sent with the completed figures; no further local amendment is currently pending.",
+      "basis": "Both S-51 forms have been sent and S-50 has been confirmed through par. 5."
+    },
+    {
+      "id": "complete-name",
+      "question": "What complete three-part name should be proposed?",
+      "status": "confirmed",
+      "decision": "The proposed-congregation S-51 was sent with the completed name; no further local amendment is currently pending.",
+      "basis": "Both S-51 forms have been sent and S-50 has been confirmed through par. 5."
+    },
+    {
+      "id": "point-6-host",
+      "question": "Should Ashburton host congregation also be listed in proposed S-51 point 6?",
+      "status": "confirmed",
+      "decision": "Ashburton’s involvement was documented on its separate S-51, and both forms were sent to the circuit overseer. Do not alter the submitted proposed-congregation form unless it is returned for an update.",
+      "basis": "The circuit overseer requested the separate Ashburton S-51, and the user confirmed that it has now been sent."
+    },
+    {
+      "id": "weekly-meetings",
+      "question": "Can every weekly meeting be conducted locally without dependence on JW Stream?",
+      "status": "confirmed",
+      "decision": "Meeting capability was confirmed as part of the S-50 review.",
+      "basis": "User confirmed S-50 through par. 5; weekly meeting capability is the requirement at S-50 par. 2(5)."
+    },
+    {
+      "id": "progressive-study-period",
+      "question": "What date and reporting period apply to the 34 progressive Bible studies?",
+      "status": "unresolved",
+      "decision": null,
+      "basis": "The number was supplied separately and is not printed in the local proposal or S-303."
+    }
+  ],
+  "submissions": [
+    {
+      "id": "proposed-s51-to-co",
+      "package": "Proposed Ashburton Tagalog S-51",
+      "recipient": "Daniel Martin, Circuit NZ-1",
+      "date": "2026-08-09",
+      "status": "submitted",
+      "attachments": ["09-S-51-Ashburton-Tagalog-signed.pdf"],
+      "verification": "Receipt is evidenced by the circuit overseer’s reply requesting an Ashburton-congregation S-51.",
+      "notes": "Sent date recorded from the 9–13 August communication thread."
+    },
+    {
+      "id": "ashburton-s51-to-co",
+      "package": "Ashburton host-congregation S-51",
+      "recipient": "Daniel Martin, Circuit NZ-1",
+      "date": null,
+      "status": "submitted",
+      "attachments": ["08-S-51_E-Ashburton-working.pdf"],
+      "verification": "User confirmed on 2026-08-19 that the Ashburton host-congregation S-51 had been sent to the circuit overseer.",
+      "notes": "Exact send date is not recorded in the local project files."
+    }
+  ],
+  "correspondence": [
+    {
+      "id": "co-request-ashburton-s51",
+      "direction": "received",
+      "date": "2026-08-13",
+      "with": "Daniel Martin",
+      "subject": "Request for Ashburton congregation S-51",
+      "status": "confirmed",
+      "summary": "The circuit overseer requested an Ashburton-congregation S-51 after receiving the proposed-congregation form. That request has now been fulfilled.",
+      "source": "User-supplied email text; no local email file."
+    },
+    {
+      "id": "supporting-email-sent",
+      "direction": "outgoing",
+      "date": "2026-08-09",
+      "with": "Daniel Martin",
+      "subject": "Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation",
+      "status": "submitted",
+      "summary": "Supporting population, language, publisher, appointed-brother, study and attendance evidence.",
+      "source": "04-email-to-co-daniel-martin.md",
+      "attachments": ["09-S-51-Ashburton-Tagalog-signed.pdf"]
+    }
+  ],
+  "checklist": {
+    "html": "02-checklist.html",
+    "progress_json": "03-checklist-progress.json",
+    "schema_version": 1,
+    "known_item_count": 78,
+    "migration": "Preserve the existing HTML localStorage key and companion JSON schema. The 2026-08-13 evidence revision is additive so communication-backed items merge with existing browser ticks instead of replacing them."
+  },
+  "online": {
+    "default_mode": "dry-run",
+    "approved_pages": [
+      {
+        "id": "jw-docs-shared",
+        "url": "https://docs.jw.org/en/-/cds-cat-docs-shared-with-you",
+        "operations": ["inspect"]
+      },
+      {
+        "id": "meeting-locator",
+        "url": "https://hub.jw.org/meetings/en/goto/entry-point/meetings",
+        "operations": ["inspect"]
+      }
+    ],
+    "approved_mutations": []
+  }
+}

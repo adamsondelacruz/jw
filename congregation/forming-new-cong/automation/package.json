@@ -1,0 +1,18 @@
+{
+  "name": "jw-forming-new-congregation-automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only, guarded browser inspection for the Ashburton new-congregation project",
+  "scripts": {
+    "session:status": "node 05-session.mjs status",
+    "session:start": "node 05-session.mjs start",
+    "check-session": "node 06-check-session.mjs",
+    "inspect": "node 07-inspect.mjs",
+    "test": "node --test",
+    "check": "node --check 05-session.mjs && node --check 01-config.mjs && node --check 02-guardrails.mjs && node --check 03-browser.mjs && node --check 04-audit.mjs && node --check 06-check-session.mjs && node --check 07-inspect.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}
