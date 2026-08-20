@@ -46,6 +46,16 @@ PEOPLE = {
     "rlumiguid3@jwpub.org": ("Romel Lumiguid", "romel-lumiguid"),
 }
 
+PERSON_ALIASES = {
+    "Wilfredo Calaunan": "wilfredo-m-calaunan",
+    "Wilfred Calaunan": "wilfredo-m-calaunan",
+    "Louie Joy Vea": "louie-vea",
+    "Israel M Vinuya": "israel-vinuya",
+    "Jeremeias Meru": "jeremias-meru",
+    "Ferdinand Martinez": "fernando-martinez",
+    "Benjie Talbo": "bengie-talbo",
+}
+
 
 # (chart anchor, displayed role, communication record). One person may have several roles.
 ROLE_LINKS = {

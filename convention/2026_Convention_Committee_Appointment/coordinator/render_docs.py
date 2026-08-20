@@ -2,9 +2,12 @@
 """Render coordinator Markdown documents to linked standalone HTML files."""
 
 from pathlib import Path
+import json
 import os
 import re
 import subprocess
+
+from portal_links import PEOPLE, PERSON_ALIASES
 
 ROOT = Path(__file__).resolve().parent
 DOCS = [
@@ -39,10 +42,19 @@ def render(source: Path, css: str, nav: str) -> None:
     html = target.read_text(encoding="utf-8")
     html = re.sub(r'href="([^"#?]+)\.md([#?][^"]*)?"', r'href="\1.html\2"', html)
     linker = Path(os.path.relpath(ROOT.parent / "co1-links.js", target.parent)).as_posix()
-    html = html.replace("</body>", f'<script src="{linker}" data-co1="CO-1.html"></script>\n</body>')
+    link_data = Path(os.path.relpath(ROOT / "portal-link-data.js", target.parent)).as_posix()
+    html = html.replace("</body>", f'<script src="{link_data}"></script>\n<script src="{linker}" data-co1="CO-1.html"></script>\n</body>')
     target.write_text(html, encoding="utf-8")
 
 
+def write_link_data() -> None:
+    people = [{"name": name, "id": f"person-{slug}"} for name, slug in PEOPLE.values()]
+    people.extend({"name": name, "id": f"person-{slug}"} for name, slug in PERSON_ALIASES.items())
+    payload = json.dumps({"people": people}, ensure_ascii=False, separators=(",", ":"))
+    (ROOT / "portal-link-data.js").write_text(f"window.COORDINATOR_LINK_DATA={payload};\n", encoding="utf-8")
+
+
+write_link_data()
 for name in DOCS:
     render(ROOT / name, "assets/coordinator.css", "assets/nav.html")
 for source in sorted((ROOT / "templates").glob("*.md")):

@@ -245,3 +245,18 @@ input[type="checkbox"] { transform: scale(1.15); margin-right: .35rem; }
 .topic-tabs{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem;padding:.55rem;border:1px solid var(--line);border-radius:.7rem;background:var(--wash)}
 .topic-tabs a{display:inline-block;padding:.48rem .72rem;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:750;text-decoration:none}
 .topic-tabs a:hover,.topic-tabs a:focus{border-color:var(--blue);background:var(--blue-pale)}
+
+/* Automatically resolved cross-references. */
+.co1-reference, .document-reference, .portal-reference, .person-reference-link, .role-reference-link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: .14em;
+}
+.co1-reference:hover, .document-reference:hover, .portal-reference:hover, .person-reference-link:hover, .role-reference-link:hover,
+.co1-reference:focus-visible, .document-reference:focus-visible, .portal-reference:focus-visible, .person-reference-link:focus-visible, .role-reference-link:focus-visible {
+  text-decoration-thickness: 2px;
+}
+.document-reference { color: #075985; font-weight: 700; }
+.person-reference-link { color: #174f78; text-decoration-style: dotted; }
+.role-reference-link { color: #314e67; text-decoration-style: dashed; }
+[id^="form-"] { scroll-margin-top: 5.5rem; }
+[id^="form-"]:target { padding: .15rem .25rem; border-radius: .25rem; outline: 3px solid #f59e0b; background: #fff8df; }
