@@ -8,16 +8,17 @@ This is the working home for the Convention Committee coordinator’s documents.
 
 ## Start here
 
-1. [Coordinator overview](coordinator-overview.md) — what you own, what the full committee owns, and what belongs to department overseers.
-2. [Departments and personnel](departments-and-personnel.md) — your four supervised departments and the local names that require verification.
-3. [Reorganised committee chart](organisation-chart.md) — visual working chart with the current committee appointments.
-4. [Confidential contact masterlist](contact-masterlist.md) — searchable Elder/MS contact details from the workbook.
-5. [Department communications](communications.html) — recipient emails, department-specific attachments, drafts, deadlines, and delivery status.
-6. [Forms register](forms-register.md) — necessary official forms, local availability, deadlines, and missing/current-version actions.
-7. [Operational guidance](operational-guidance.md) — practical, source-linked answers, beginning with what the committee needs to know about baptism candidates.
-8. [Coordinator checklist](coordinator-checklist.md) — Appendix C plus the committee-wide tasks you need to chair or track.
-9. [Source map](source-map.md) — exact CO-1 paragraphs behind the pack.
-10. [Venue department instructions and checklists](../templates/index.html) — downloaded South Auckland Assembly Hall manuals, checklists, plans, and department files.
+1. [Search convention guidance](search.html) — full-text search across CO-1, staged forms, and coordinator guidance, with highlighted context and precise links.
+2. [Coordinator overview](coordinator-overview.md) — what you own, what the full committee owns, and what belongs to department overseers.
+3. [Departments and personnel](departments-and-personnel.md) — your four supervised departments and the local names that require verification.
+4. [Reorganised committee chart](organisation-chart.md) — visual working chart with the current committee appointments.
+5. [Confidential contact masterlist](contact-masterlist.md) — searchable Elder/MS contact details from the workbook.
+6. [Department communications](communications.html) — recipient emails, department-specific attachments, drafts, deadlines, and delivery status.
+7. [Forms register](forms-register.md) — necessary official forms, local availability, deadlines, and missing/current-version actions.
+8. [Operational guidance](operational-guidance.md) — practical, source-linked answers, beginning with what the committee needs to know about baptism candidates.
+9. [Coordinator checklist](coordinator-checklist.md) — Appendix C plus the committee-wide tasks you need to chair or track.
+10. [Source map](source-map.md) — exact CO-1 paragraphs behind the pack.
+11. [Venue department instructions and checklists](../templates/index.html) — downloaded South Auckland Assembly Hall manuals, checklists, plans, and department files.
 
 ## Upcoming meeting
 

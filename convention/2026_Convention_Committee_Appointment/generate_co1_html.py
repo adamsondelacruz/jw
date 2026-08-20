@@ -170,7 +170,7 @@ pre {{ overflow:auto; padding:1rem; border:1px solid var(--line); border-radius:
 </head>
 <body>
 <header><h1>Convention Organization Guidelines</h1><p class="meta">CO-1-E BrAUS · February 2026 · HTML working edition</p><p class="notice">This locally generated page supports precise links and does not replace the official PDF. Access and distribution remain subject to the restrictions stated in CO-1.</p></header>
-<nav aria-label="CO-1 contents">{' '.join(toc)} <a href="CO-1_s-BrAUS_E.pdf">Official PDF</a></nav>
+<nav aria-label="CO-1 contents"><a href="coordinator/search.html">Search</a> {' '.join(toc)} <a href="CO-1_s-BrAUS_E.pdf">Official PDF</a></nav>
 <main>{''.join(sections)}</main>
 </body></html>'''
     TARGET.write_text(html, encoding="utf-8")

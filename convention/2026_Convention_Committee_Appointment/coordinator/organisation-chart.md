@@ -38,6 +38,11 @@
       <div class="org-card local-only" id="role-rooming-department"><strong>Rooming Department — local</strong><span>Overseer: <a class="person-link" href="contact-masterlist.html#person-meliton-soriano">Meliton Soriano</a></span><small>Assistant: <a class="person-link" href="contact-masterlist.html#person-romel-lumiguid">Romel Lumiguid</a><br>No distinct matching Hub responsibility</small><div class="org-actions"><a href="communications.html#rooming">Correspondence</a></div></div>
     </section>
   </div>
+  <aside class="org-liaison" id="role-convention-chairman" aria-label="Convention chairman liaison">
+    <strong>Convention Chairman</strong>
+    <span>Jay Algabre</span>
+    <small>Program liaison · <a href="mailto:jayalgabre@jwpub.org">jayalgabre@jwpub.org</a></small>
+  </aside>
 </div>
 
 ## Reorganisation changes applied

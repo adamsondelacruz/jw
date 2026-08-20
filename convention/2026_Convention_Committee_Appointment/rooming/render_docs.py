@@ -5,6 +5,7 @@ from pathlib import Path
 import os
 import re
 import subprocess
+import sys
 
 
 ROOT = Path(__file__).resolve().parent
@@ -50,10 +51,15 @@ def render(source: Path, *, css: str, nav: str) -> None:
     html = target.read_text(encoding="utf-8")
     html = re.sub(r'href="([^"#?]+)\.md([#?][^"]*)?"', r'href="\1.html\2"', html)
     linker = Path(os.path.relpath(ROOT.parent / "co1-links.js", target.parent)).as_posix()
-    html = html.replace("</body>", f'<script src="{linker}" data-co1="CO-1.html"></script>\n</body>')
+    checklist_css = Path(os.path.relpath(ROOT.parent / "checklist-state.css", target.parent)).as_posix()
+    checklist_data = Path(os.path.relpath(ROOT.parent / "checklist-state-data.js", target.parent)).as_posix()
+    checklist_js = Path(os.path.relpath(ROOT.parent / "checklist-state.js", target.parent)).as_posix()
+    html = html.replace("</head>", f'<link rel="stylesheet" href="{checklist_css}">\n</head>')
+    html = html.replace("</body>", f'<script src="{checklist_data}"></script>\n<script src="{checklist_js}"></script>\n<script src="{linker}" data-co1="CO-1.html"></script>\n</body>')
     target.write_text(html, encoding="utf-8")
 
 
+subprocess.run([sys.executable, str(ROOT.parent / "build_checklist_state.py")], check=True)
 for name in DOCS:
     render(ROOT / name, css="assets/rooming.css", nav="assets/nav.html")
 

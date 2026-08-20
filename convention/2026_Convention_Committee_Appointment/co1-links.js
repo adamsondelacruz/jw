@@ -24,6 +24,8 @@
   const venuePattern = /\bM-(?:270c?|286|281|282|272[ab]?|283|273|284|285|274)\b/g;
   const pageTerms = {
     "coordinator overview": "coordinator-overview.html",
+    "search convention guidance": "search.html",
+    "convention search": "search.html",
     "departments and personnel": "departments-and-personnel.html",
     "organisation chart": "organisation-chart.html",
     "organization chart": "organisation-chart.html",
@@ -44,6 +46,7 @@
     "working chart": "organisation-chart.html",
   };
   const roleTerms = {
+    "convention chairman": "role-convention-chairman",
     "convention committee coordinator": "role-coordinator",
     "coordinator assistant": "role-coordinator-assistant",
     "program overseer assistant": "role-program-overseer-assistant",

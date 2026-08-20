@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Convention Search — 2026 Auckland Tagalog Convention</title>
+  <link rel="stylesheet" href="assets/coordinator.css">
+  <link rel="stylesheet" href="assets/search.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Coordinator documents">
+  <a href="index.html">Index</a><a href="search.html" aria-current="page">Search</a><a href="coordinator-overview.html">Overview</a>
+  <a href="organisation-chart.html">Chart</a><a href="contact-masterlist.html">Contacts</a><a href="communications.html">Communications</a>
+  <a href="forms-register.html">Forms</a><a href="operational-guidance.html">Guidance</a><a href="coordinator-checklist.html">Checklist</a>
+</nav>
+<header class="search-hero">
+  <p class="search-eyebrow">2026 Auckland Tagalog Convention</p>
+  <h1>Search convention guidance</h1>
+  <p>Search CO-1 paragraph by paragraph, then related staged forms and coordinator guidance. CO-1 results are always presented first.</p>
+  <p class="search-security"><strong>Controlled local search:</strong> Results may contain restricted convention material. Keep this page and its index within authorised users.</p>
+  <form id="search-form" role="search">
+    <label for="search-input">What do you need to find?</label>
+    <div class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" name="q" type="search" autocomplete="off" placeholder="Try: baptism candidates, CO-53, property damage…"><button type="submit">Search</button></div>
+    <p class="search-help">Use several words to narrow results. Press <kbd>/</kbd> anywhere to focus search.</p>
+  </form>
+</header>
+<main>
+  <div class="search-controls" aria-label="Search scope">
+    <div class="scope-tabs" id="scope-tabs" role="group" aria-label="Filter sources">
+      <button type="button" data-scope="all" aria-pressed="true">All sources</button>
+      <button type="button" data-scope="co1" aria-pressed="false">CO-1</button>
+      <button type="button" data-scope="form" aria-pressed="false">Forms</button>
+      <button type="button" data-scope="guidance" aria-pressed="false">Guidance</button>
+    </div>
+    <label class="source-filter">Specific source <select id="source-select"><option value="">All sources</option></select></label>
+  </div>
+  <div id="search-status" class="search-status" role="status" aria-live="polite"></div>
+  <section id="search-results" aria-label="Search results"></section>
+  <section id="search-empty" class="search-empty">
+    <h2>Start with a topic or responsibility</h2>
+    <p>The result excerpt will place your search words in context and highlight each match.</p>
+    <div class="suggestions" aria-label="Suggested searches">
+      <button type="button" data-query="baptism candidates">Baptism candidates</button>
+      <button type="button" data-query="department overseer qualifications">Department overseer qualifications</button>
+      <button type="button" data-query="CO-53 ratings">CO-53 ratings</button>
+      <button type="button" data-query="property damage incident">Property damage incident</button>
+      <button type="button" data-query="preconvention meeting">Preconvention meeting</button>
+    </div>
+    <p class="index-meta" id="index-meta"></p>
+  </section>
+</main>
+<script src="search-index.js"></script>
+<script src="search.js"></script>
+</body>
+</html>
