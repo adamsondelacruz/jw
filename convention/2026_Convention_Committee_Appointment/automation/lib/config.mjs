@@ -10,6 +10,7 @@ export const EVENT_LABEL = "AUCKLAND NS (TG) - 2026";
 export const RESPONSIBILITIES_URL = `https://hub.jw.org/convention-information/en/conventions/${CONVENTION_ID}/responsibilities`;
 export const ALLOWED_HOSTS = new Set(["hub.jw.org", "login.jw.org"]);
 export const INITIAL_ALLOWED_ROLES = new Set([
+  "Convention Committee Coordinator Assistant",
   "Accounts Overseer",
   "Accounts Overseer Assistant",
   "Attendant Overseer",

@@ -24,7 +24,7 @@ try {
   checks.exactConvention = true;
   checks.responsibilitiesPage = true;
   const before = await snapshotResponsibilities(page);
-  const target = findUniqueResponsibility(before, assignment.role);
+  const target = findUniqueResponsibility(before, assignment.role, assignment.section);
   checks.uniqueRole = true;
   checks.roleUnassigned = target.unassigned;
   if (!target.unassigned) throw Object.assign(new Error(`${assignment.role} is already assigned; replacement is prohibited.`), { code: "already-assigned" });
@@ -61,7 +61,7 @@ try {
     }
     await gotoResponsibilities(page);
     const after = await snapshotResponsibilities(page);
-    const assigned = await assignedResponsibility(page, assignment.role);
+    const assigned = await assignedResponsibility(page, assignment.role, assignment.section);
     if (!assigned) {
       throw Object.assign(new Error("Fresh Responsibilities page did not show the expected assigned person."), { code: "post-state-mismatch" });
     }

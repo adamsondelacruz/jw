@@ -3,10 +3,17 @@
   "venue": "South Auckland Assembly Hall",
   "dates": "30 October–1 November 2026",
   "response_due": "1 September 2026",
-  "updated": "18 August 2026",
+  "updated": "20 August 2026",
+  "communication_groups": [
+    {"id": "committee", "label": "Committee", "description": "Committee-wide correspondence and meetings", "open": true},
+    {"id": "coordinator-branch", "label": "Coordinator branch", "description": "Assistant, Accounts, Attendant, First Aid, Parking and Safety", "open": true},
+    {"id": "program-branch", "label": "Program branch", "description": "Audio / Video and Baptism"},
+    {"id": "rooming-branch", "label": "Rooming branch", "description": "Cleaning, Information, Lost & Found and Rooming"}
+  ],
   "communications": [
     {
       "id": "committee",
+      "group": "committee",
       "department": "Convention Committee",
       "status": "Sent",
       "to": [
@@ -37,6 +44,7 @@
     },
     {
       "id": "committee-meeting-2026-08-19",
+      "group": "committee",
       "department": "Committee Meeting — 19 August",
       "status": "Sent",
       "subject": "Convention Committee Meeting — 19 August 2026 at 10:00 PM",
@@ -62,6 +70,7 @@
     },
     {
       "id": "coordinator-assistant",
+      "group": "coordinator-branch",
       "department": "Coordinator Assistant",
       "status": "Draft — appointment follow-up",
       "to": [
@@ -82,11 +91,12 @@
         "templates/Event Oversight/SAAH Plans 5.1.24 (1).pdf",
         "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
       ],
-      "note": "New appointment follow-up. Not yet sent. Confirm whether Ron continues concurrently as Attendant overseer.",
+      "note": "Confirmed Coordinator Assistant and live-verified in JW Hub on 20 August 2026. Ron no longer serves as Attendant Overseer.",
       "variant": "committee-assistant"
     },
     {
       "id": "accounts",
+      "group": "coordinator-branch",
       "department": "Accounts",
       "status": "Sent",
       "to": [
@@ -114,6 +124,7 @@
     },
     {
       "id": "attendant",
+      "group": "coordinator-branch",
       "department": "Attendant",
       "status": "Sent",
       "to": [
@@ -139,10 +150,12 @@
         "templates/Attendants/Evacuation plan for SAAH.pdf",
         "templates/Facility Information/Department Diagram (General).pdf"
       ],
+      "note": "Historical delivery to the former Attendant Overseer. Louie Vea became Attendant Overseer on 20 August 2026 and requires a separate current communication before further department correspondence.",
       "sent_at": "2026-08-13T13:05:20.877Z"
     },
     {
       "id": "audio-video",
+      "group": "program-branch",
       "department": "Audio / Video",
       "status": "Sent",
       "to": [
@@ -175,6 +188,7 @@
     },
     {
       "id": "baptism",
+      "group": "program-branch",
       "department": "Baptism",
       "status": "Sent",
       "to": [
@@ -200,6 +214,7 @@
     },
     {
       "id": "cleaning",
+      "group": "rooming-branch",
       "department": "Cleaning",
       "status": "Sent",
       "to": [
@@ -230,6 +245,7 @@
     },
     {
       "id": "first-aid",
+      "group": "coordinator-branch",
       "department": "First Aid",
       "status": "Sent",
       "to": [
@@ -259,6 +275,7 @@
     },
     {
       "id": "parking",
+      "group": "coordinator-branch",
       "department": "Parking",
       "status": "Sent",
       "to": [
@@ -288,6 +305,7 @@
     },
     {
       "id": "information-lost-found",
+      "group": "rooming-branch",
       "department": "Information / Volunteer Service / Lost & Found",
       "status": "Sent",
       "to": [
@@ -315,6 +333,7 @@
     },
     {
       "id": "safety",
+      "group": "coordinator-branch",
       "department": "Safety",
       "status": "Sent",
       "to": [
@@ -342,6 +361,7 @@
     },
     {
       "id": "rooming",
+      "group": "rooming-branch",
       "department": "Rooming Department",
       "status": "Sent",
       "to": [
@@ -367,6 +387,7 @@
     },
     {
       "id": "daveson-receipt-check",
+      "group": "rooming-branch",
       "department": "Rooming Overseer Assistant — Receipt Check",
       "status": "Sent",
       "subject": "2026 Auckland Tagalog Convention — Rooming Documents",

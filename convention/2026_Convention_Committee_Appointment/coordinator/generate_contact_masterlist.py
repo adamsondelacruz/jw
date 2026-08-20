@@ -6,6 +6,8 @@ from html import escape
 import re
 from openpyxl import load_workbook
 
+from portal_links import ROLE_LINKS, person_id, preferred_name
+
 ROOT = Path(__file__).resolve().parent
 WORKBOOK = ROOT.parent / "2026 CONVENTION COMMITTEE.xlsx"
 SHEET = "Elder & MS Contact List"
@@ -50,6 +52,7 @@ lines = [
     f"**Source:** [{WORKBOOK.name}](../2026%20CONVENTION%20COMMITTEE.xlsx), worksheet “{SHEET}”  ",
     f"**Contacts:** {total} · **Areas/congregation groupings:** {len(groups)}  ",
     "**Data treatment:** Names, displayed phone values, email addresses, role categories, and groupings are reproduced from the workbook. Phone links are normalised to New Zealand’s +64 dialling format where possible.",
+    "**Linked records:** Assigned brothers include links back to their position on the working chart and to the related communication history.",
     "",
     '<div class="contact-tools"><label for="contact-search">Search contacts</label><input id="contact-search" type="search" placeholder="Name, congregation/area, Elder/MS, mobile or email" autocomplete="off"><p class="contact-count" id="contact-count" aria-live="polite"></p></div>',
     "",
@@ -61,13 +64,24 @@ for area, roles in groups.items():
     for role, entries in roles.items():
         if not entries:
             continue
-        lines.extend([f"<h3>{role} ({len(entries)})</h3>", "", '<table class="contact-table"><thead><tr><th>Name</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>'])
+        lines.extend([f"<h3>{role} ({len(entries)})</h3>", "", '<table class="contact-table"><thead><tr><th>Name</th><th>Current convention links</th><th>Mobile</th><th>jwpub email</th></tr></thead><tbody>'])
         for name, phone, email in entries:
-            search = " ".join([area, role, name, phone, email]).lower()
+            key = email.lower()
+            display_name = preferred_name(name, email)
+            assignments = ROLE_LINKS.get(key, [])
+            links = []
+            seen_comms = set()
+            for chart_id, role_label, communication_id in assignments:
+                links.append(f'<a class="record-link role-link" href="organisation-chart.html#{chart_id}">{escape(role_label)}</a>')
+                if communication_id and communication_id not in seen_comms:
+                    links.append(f'<a class="record-link comm-link" href="communications.html#{communication_id}">Correspondence</a>')
+                    seen_comms.add(communication_id)
+            related = "".join(links) or '<span class="not-assigned">No current chart assignment</span>'
+            search = " ".join([area, role, name, display_name, phone, email, " ".join(item[1] for item in assignments)]).lower()
             tel = phone_href(phone)
             lines.append(
-                f'<tr class="contact-row" data-search="{escape(search, quote=True)}">'
-                f'<td>{escape(name)}</td><td><a href="tel:{escape(tel, quote=True)}">{escape(phone)}</a></td>'
+                f'<tr class="contact-row" id="{person_id(name, email)}" data-search="{escape(search, quote=True)}">'
+                f'<td><a class="contact-permalink" href="#{person_id(name, email)}">{escape(display_name)}</a></td><td><div class="record-links">{related}</div></td><td><a href="tel:{escape(tel, quote=True)}">{escape(phone)}</a></td>'
                 f'<td><a href="mailto:{escape(email, quote=True)}">{escape(email)}</a></td></tr>'
             )
         lines.extend(["</tbody></table>", ""])
@@ -94,6 +108,8 @@ lines.extend([
     "    count.textContent = `${visible} of ${rows.length} contacts shown`;",
     "  }",
     "  input.addEventListener('input', filter); filter();",
+    "  function revealTarget() { const row = document.getElementById(location.hash.slice(1)); if (!row?.classList.contains('contact-row')) return; input.value = ''; filter(); row.closest('.contact-group').hidden = false; requestAnimationFrame(() => row.scrollIntoView({block: 'center'})); }",
+    "  addEventListener('hashchange', revealTarget); revealTarget();",
     "})();",
     "</script>",
 ])

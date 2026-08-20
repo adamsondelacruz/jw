@@ -21,7 +21,7 @@ export async function snapshotResponsibilities(page) {
     const clean = value => String(value ?? "").replace(/\s+/g, " ").trim();
     const candidates = [...document.querySelectorAll('a[href*="/responsibilities/"]')]
       .filter(a => /\/(?:assign|unassign)(?:\/|$)/.test(a.getAttribute("href") || ""));
-    return candidates.map(anchor => {
+    const mapped = candidates.map(anchor => {
       const card = anchor.closest("article.card");
       const cardRole = clean(card?.querySelector("h3")?.innerText);
       let container = anchor;
@@ -41,6 +41,9 @@ export async function snapshotResponsibilities(page) {
         })(),
       };
     });
+    // Responsive committee-assistant controls are rendered twice with the same
+    // destination. Treat identical actions as one responsibility.
+    return [...new Map(mapped.map(item => [`${item.href}|${item.actionText}|${item.section}`, item])).values()];
   });
 }
 
