@@ -1,0 +1,701 @@
+{
+  "studies": [
+    {
+      "id": "2026-10-17",
+      "title": "You Can Win the Battle!",
+      "week": "October 12-18, 2026",
+      "preferredFileId": "2026-10-17-md",
+      "packagePath": "/studies/2026-10-17-study-package.json",
+      "paragraphsPath": "/studies/2026-10-17-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-10-17-article-en.html",
+        "/studies/2026-10-17-article-tl.html",
+        "/studies/2026-10-17-article-en.pdf",
+        "/studies/2026-10-17-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-10-17-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-10-17-ans-bi.md"
+        },
+        {
+          "id": "2026-10-17-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-10-17-ans-bi.html"
+        },
+        {
+          "id": "2026-10-17-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-10-17-ans-bi.pdf"
+        },
+        {
+          "id": "2026-10-17-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-10-17-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10",
+      "title": "Resist Satan’s Tactics—Trust In Jehovah and In Jesus",
+      "week": "October 5-11, 2026",
+      "preferredFileId": "2026-10-10-md",
+      "packagePath": "/studies/2026-10-10-study-package.json",
+      "paragraphsPath": "/studies/2026-10-10-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-10-10-article-en.html",
+        "/studies/2026-10-10-article-tl.html",
+        "/studies/2026-10-10-article-en.pdf",
+        "/studies/2026-10-10-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-10-10-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-10-10-ans-bi.md"
+        },
+        {
+          "id": "2026-10-10-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-10-10-ans-bi.html"
+        },
+        {
+          "id": "2026-10-10-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-10-10-ans-bi.pdf"
+        },
+        {
+          "id": "2026-10-10-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-10-10-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03",
+      "title": "Help Others Come to Know Jehovah",
+      "week": "September 28–october 4, 2026",
+      "preferredFileId": "2026-10-03-md",
+      "packagePath": "/studies/2026-10-03-study-package.json",
+      "paragraphsPath": "/studies/2026-10-03-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-10-03-article-en.html",
+        "/studies/2026-10-03-article-tl.html",
+        "/studies/2026-10-03-article-en.pdf",
+        "/studies/2026-10-03-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-10-03-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-10-03-ans-bi.md"
+        },
+        {
+          "id": "2026-10-03-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-10-03-ans-bi.html"
+        },
+        {
+          "id": "2026-10-03-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-10-03-ans-bi.pdf"
+        },
+        {
+          "id": "2026-10-03-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-10-03-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-26",
+      "title": "Are You Getting to Know Jehovah Better?",
+      "week": "September 21-27, 2026",
+      "preferredFileId": "2026-09-26-md",
+      "packagePath": "/studies/2026-09-26-study-package.json",
+      "paragraphsPath": "/studies/2026-09-26-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-09-26-article-en.html",
+        "/studies/2026-09-26-article-tl.html",
+        "/studies/2026-09-26-article-en.pdf",
+        "/studies/2026-09-26-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-09-26-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-09-26-ans-bi.md"
+        },
+        {
+          "id": "2026-09-26-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-09-26-ans-bi.html"
+        },
+        {
+          "id": "2026-09-26-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-09-26-ans-bi.pdf"
+        },
+        {
+          "id": "2026-09-26-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-09-26-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-19",
+      "title": "Find Comfort in the Book of Isaiah",
+      "week": "September 14-20, 2026",
+      "preferredFileId": "2026-09-19-md",
+      "packagePath": "/studies/2026-09-19-study-package.json",
+      "paragraphsPath": "/studies/2026-09-19-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-09-19-article-en.html",
+        "/studies/2026-09-19-article-tl.html",
+        "/studies/2026-09-19-article-en.pdf",
+        "/studies/2026-09-19-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-09-19-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-09-19-ans-bi.md"
+        },
+        {
+          "id": "2026-09-19-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-09-19-ans-bi.html"
+        },
+        {
+          "id": "2026-09-19-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-09-19-ans-bi.pdf"
+        },
+        {
+          "id": "2026-09-19-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-09-19-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12",
+      "title": "Learn From the Gibeonites",
+      "week": "September 7-13, 2026",
+      "preferredFileId": "2026-09-12-md",
+      "packagePath": "/studies/2026-09-12-study-package.json",
+      "paragraphsPath": "/studies/2026-09-12-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-09-12-article-en.html",
+        "/studies/2026-09-12-article-tl.html",
+        "/studies/2026-09-12-article-en.pdf",
+        "/studies/2026-09-12-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-09-12-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-09-12-ans-bi.md"
+        },
+        {
+          "id": "2026-09-12-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-09-12-ans-bi.html"
+        },
+        {
+          "id": "2026-09-12-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-09-12-ans-bi.pdf"
+        },
+        {
+          "id": "2026-09-12-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-09-12-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-05",
+      "title": "Pay Attention to How You Listen",
+      "week": "August 31–september 6, 2026",
+      "preferredFileId": "2026-09-05-md",
+      "packagePath": "/studies/2026-09-05-study-package.json",
+      "paragraphsPath": "/studies/2026-09-05-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-09-05-article-en.html",
+        "/studies/2026-09-05-article-tl.html",
+        "/studies/2026-09-05-article-en.pdf",
+        "/studies/2026-09-05-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-09-05-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-09-05-ans-bi.md"
+        },
+        {
+          "id": "2026-09-05-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-09-05-ans-bi.html"
+        },
+        {
+          "id": "2026-09-05-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-09-05-ans-bi.pdf"
+        },
+        {
+          "id": "2026-09-05-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-09-05-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-29",
+      "title": "Benefit From the Field Service Group Arrangement",
+      "week": "August 24-30, 2026",
+      "preferredFileId": "2026-08-29-md",
+      "packagePath": "/studies/2026-08-29-study-package.json",
+      "paragraphsPath": "/studies/2026-08-29-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-08-29-article-en.html",
+        "/studies/2026-08-29-article-tl.html",
+        "/studies/2026-08-29-article-en.pdf",
+        "/studies/2026-08-29-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-08-29-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-08-29-ans-bi.md"
+        },
+        {
+          "id": "2026-08-29-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-08-29-ans-bi.html"
+        },
+        {
+          "id": "2026-08-29-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-08-29-ans-bi.pdf"
+        },
+        {
+          "id": "2026-08-29-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-08-29-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-22",
+      "title": "How to Maintain Christian Friendships",
+      "week": "August 17-23, 2026",
+      "preferredFileId": "2026-08-22-md",
+      "packagePath": "/studies/2026-08-22-study-package.json",
+      "paragraphsPath": "/studies/2026-08-22-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-08-22-article-en.html",
+        "/studies/2026-08-22-article-tl.html",
+        "/studies/2026-08-22-article-en.pdf",
+        "/studies/2026-08-22-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-08-22-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-08-22-ans-bi.md"
+        },
+        {
+          "id": "2026-08-22-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-08-22-ans-bi.html"
+        },
+        {
+          "id": "2026-08-22-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-08-22-ans-bi.pdf"
+        },
+        {
+          "id": "2026-08-22-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-08-22-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-15",
+      "title": "How to Remain Loyal When We Face Tests of Faith",
+      "week": "August 10-16, 2026",
+      "preferredFileId": "2026-08-15-md",
+      "packagePath": "/studies/2026-08-15-study-package.json",
+      "paragraphsPath": "/studies/2026-08-15-article-paragraphs.json",
+      "sourceArticleFiles": [
+        "/studies/2026-08-15-article-en.html",
+        "/studies/2026-08-15-article-tl.html",
+        "/studies/2026-08-15-article-en.pdf",
+        "/studies/2026-08-15-article-tl.pdf"
+      ],
+      "files": [
+        {
+          "id": "2026-08-15-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-08-15-ans-bi.md"
+        },
+        {
+          "id": "2026-08-15-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-08-15-ans-bi.html"
+        },
+        {
+          "id": "2026-08-15-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-08-15-ans-bi.pdf"
+        },
+        {
+          "id": "2026-08-15-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-08-15-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-08",
+      "title": "Respect the Decisions of Others",
+      "week": "August 3-9, 2026",
+      "preferredFileId": "2026-08-08-md",
+      "packagePath": "/studies/2026-08-08-study-package.json",
+      "files": [
+        {
+          "id": "2026-08-08-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-08-08-ans-bi.md"
+        },
+        {
+          "id": "2026-08-08-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-08-08-ans-bi.html"
+        },
+        {
+          "id": "2026-08-08-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-08-08-ans-bi.pdf"
+        },
+        {
+          "id": "2026-08-08-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-08-08-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-01",
+      "title": "Stay Spiritually Strong While Getting Additional Education",
+      "week": "July 27-August 2, 2026",
+      "preferredFileId": "2026-08-01-md",
+      "packagePath": "/studies/2026-08-01-study-package.json",
+      "files": [
+        {
+          "id": "2026-08-01-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-08-01-ans-bi.md"
+        },
+        {
+          "id": "2026-08-01-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-08-01-ans-bi.html"
+        },
+        {
+          "id": "2026-08-01-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-08-01-ans-bi.pdf"
+        },
+        {
+          "id": "2026-08-01-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-08-01-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-25",
+      "title": "Make Wise Decisions Regarding Additional Education",
+      "week": "July 20-26, 2026",
+      "preferredFileId": "2026-07-25-md",
+      "packagePath": "/studies/2026-07-25-study-package.json",
+      "files": [
+        {
+          "id": "2026-07-25-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-07-25-ans-bi.md"
+        },
+        {
+          "id": "2026-07-25-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-07-25-ans-bi.html"
+        },
+        {
+          "id": "2026-07-25-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-07-25-ans-bi.pdf"
+        },
+        {
+          "id": "2026-07-25-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-07-25-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-18",
+      "title": "Your Conscience - Use Bible Principles to Train It",
+      "week": "July 13-19, 2026",
+      "preferredFileId": "2026-07-18-md",
+      "packagePath": "/studies/2026-07-18-study-package.json",
+      "files": [
+        {
+          "id": "2026-07-18-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-07-18-ans-bi.md"
+        },
+        {
+          "id": "2026-07-18-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-07-18-ans-bi.html"
+        },
+        {
+          "id": "2026-07-18-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-07-18-ans-bi.pdf"
+        },
+        {
+          "id": "2026-07-18-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-07-18-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-11",
+      "title": "Bible Principles — Why Are They Important? — Bilingual (EN / TL)",
+      "week": "",
+      "preferredFileId": "2026-07-11-md",
+      "packagePath": "/studies/2026-07-11-study-package.json",
+      "files": [
+        {
+          "id": "2026-07-11-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-07-11-ans-bi.md"
+        },
+        {
+          "id": "2026-07-11-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-07-11-ans-bi.html"
+        },
+        {
+          "id": "2026-07-11-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-07-11-ans-bi.pdf"
+        },
+        {
+          "id": "2026-07-11-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-07-11-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-04",
+      "title": "Keep Strengthening Your Friendship With Your Mate — Bilingual (EN / TL)",
+      "week": "",
+      "preferredFileId": "2026-07-04-md",
+      "packagePath": "/studies/2026-07-04-study-package.json",
+      "files": [
+        {
+          "id": "2026-07-04-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-07-04-ans-bi.md"
+        },
+        {
+          "id": "2026-07-04-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-07-04-ans-bi.html"
+        },
+        {
+          "id": "2026-07-04-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-07-04-ans-bi.pdf"
+        },
+        {
+          "id": "2026-07-04-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-07-04-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-27",
+      "title": "Learn From \"the God of All Comfort\" — Bilingual (EN / TL)",
+      "week": "",
+      "preferredFileId": "2026-06-27-md",
+      "packagePath": "/studies/2026-06-27-study-package.json",
+      "files": [
+        {
+          "id": "2026-06-27-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-06-27-ans-bi.md"
+        },
+        {
+          "id": "2026-06-27-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-06-27-ans-bi.html"
+        },
+        {
+          "id": "2026-06-27-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-06-27-ans-bi.pdf"
+        },
+        {
+          "id": "2026-06-27-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-06-27-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-20",
+      "title": "Maintain the Right View of Adversity — Bilingual (EN / TL)",
+      "week": "",
+      "preferredFileId": "2026-06-20-md",
+      "packagePath": "/studies/2026-06-20-study-package.json",
+      "files": [
+        {
+          "id": "2026-06-20-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-06-20-ans-bi.md"
+        },
+        {
+          "id": "2026-06-20-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-06-20-ans-bi.html"
+        },
+        {
+          "id": "2026-06-20-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-06-20-ans-bi.pdf"
+        },
+        {
+          "id": "2026-06-20-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-06-20-study-package.json"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-13",
+      "title": "\"The God of Truth\" Always Fulfills His Purpose — Bilingual (EN / TL)",
+      "week": "",
+      "preferredFileId": "2026-06-13-md",
+      "packagePath": "/studies/2026-06-13-study-package.json",
+      "files": [
+        {
+          "id": "2026-06-13-md",
+          "kind": "markdown",
+          "name": "Bilingual answers",
+          "path": "/studies/2026-06-13-ans-bi.md"
+        },
+        {
+          "id": "2026-06-13-html",
+          "kind": "html",
+          "name": "Styled HTML",
+          "path": "/studies/2026-06-13-ans-bi.html"
+        },
+        {
+          "id": "2026-06-13-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-06-13-ans-bi.pdf"
+        },
+        {
+          "id": "2026-06-13-package",
+          "kind": "package",
+          "name": "Study package",
+          "path": "/studies/2026-06-13-study-package.json"
+        }
+      ]
+    }
+  ]
+}

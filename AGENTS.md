@@ -32,6 +32,14 @@ Current preferred output pattern:
 
 - Use the current folder structure: `watchtower/YYYY-MM/`
 - Use bilingual filenames: `YYYY-MM-DD-ans-bi.md`, `YYYY-MM-DD-ans-bi.html`, and when practical `YYYY-MM-DD-ans-bi.pdf`
+- Also generate the tablet study package alongside the normal outputs when practical:
+  - `YYYY-MM-DD-article-en.html`
+  - `YYYY-MM-DD-article-tl.html`
+  - `YYYY-MM-DD-article-en.pdf`
+  - `YYYY-MM-DD-article-tl.pdf`
+  - `YYYY-MM-DD-article-paragraphs.json`
+  - `YYYY-MM-DD-study-package.json`
+  Use `watchtower/study-app/scripts/prepare-study-source.mjs` after verifying the English and Tagalog article URLs, then run `npm run sync:library` in `watchtower/study-app` to build/copy study packages into the tablet app library.
 - The date in the filename should be the meeting/week date used by the existing Watchtower output pattern, matching the current study week.
 - Keep the tone easy to understand, natural, and suitable for comments at the meeting.
 - Each question should have two answers:
