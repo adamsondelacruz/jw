@@ -24,6 +24,9 @@
 | [14-S-6_E.pdf](../14-S-6_E.pdf) | blank-official-form | not recorded | `b9258626b5d12c14…` · immutable |
 | [15-Tagalog-Group-Proposal-2026-08.pdf](../15-Tagalog-Group-Proposal-2026-08.pdf) | supporting-evidence | 2026-08 | `1528295130c39ae1…` · immutable |
 | [16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf](../16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf) | supporting-evidence | 2026-06-21 | `60e3d9fe7f574c02…` · immutable |
+| [17-2026-Request-for-Information-on-Language-Fields.docx](../17-2026-Request-for-Information-on-Language-Fields.docx) | received-correspondence-attachment | 2026-08-25 | `22521afc49f3549d…` · immutable |
+| [18-2026-Request-for-Information-on-Language-Fields-working.docx](../18-2026-Request-for-Information-on-Language-Fields-working.docx) | working-form | 2026-08-25 | `73d67f51fe6e5a6e…` · working/mutable |
+| [18-2026-Request-for-Information-on-Language-Fields-working.pdf](../18-2026-Request-for-Information-on-Language-Fields-working.pdf) | working-form-render | 2026-08-25 | `e2ad9a4a286b12da…` · working/mutable |
 | [03-checklist-progress.json](../03-checklist-progress.json) | checklist-progress | schema 1 | `ea5aabcfa8ad1589…` · working/mutable |
 
 ## Searchable official references
@@ -39,6 +42,8 @@ These extracted pages support precise links. Always compare wording, layout, fie
 - `00-project-overview.md/.html/.pdf` — portal home and printable summary.
 - `01-meeting-pack.md/.html/.pdf` — combined meeting document with every portal register.
 - `docs/00-forms-register`, then `docs/01-` through `docs/04-` — focused forms, requirements, statistics, submissions and source pages.
+- `docs/05-communications.md/.html` — communication timeline, full substantive email text, attachments and workflow status.
+- `search.html`, `search-index.json` and `search-index.js` — local browser-side portal search.
 - `references/00-S-50-reference.html` and `references/01-S-51-reference.html` — searchable source text.
 - `data/00-project.json` — canonical structured facts and workflow state.
 - `02-checklist.html` plus `03-checklist-progress.json` — preserved interactive progress tracker.

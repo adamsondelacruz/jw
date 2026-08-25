@@ -21,9 +21,9 @@ For this convention, the expected group is currently:
 - Israel Vinuya — program overseer
 - Wilfredo M Calaunan — rooming overseer
 - Ron Mariano — coordinator assistant
-- Program overseer assistant — to be appointed
+- Kent Morata — program overseer assistant
 - Daveson Asuncion — rooming overseer assistant
-- Attendant overseer — replacement for Ron to be appointed
+- Louie Vea — attendant overseer
 - Ramon Ruiz — cleaning overseer
 
 Other department overseers do **not** complete separate ratings for everyone. They may provide useful facts through the committee member overseeing them, but they are not members of the CO-53 review group merely because they oversee a department.
@@ -63,6 +63,12 @@ Send the master copy electronically, as soon as possible, to every member of the
 
 This circulation is for observation and preparation. It does **not** mean each recipient independently submits a separate final CO-53.
 
+### Instruction to include with each observation copy
+
+> Use this copy only for private factual observations. Any ratings you enter are provisional and will not be averaged or treated as votes. The final ratings will be agreed by the authorised evaluation group after the convention. Do not rate yourself. Keep the copy confidential, return any printed working copy to the coordinator after the review for secure destruction, and delete any electronic working copy when directed.
+
+CO-1 requires the form to be distributed so the group can make meaningful observations and recommendations, and it requires the group to meet after the convention. It does not direct each recipient to prepare and submit a separate final report. Returning and securely destroying printed notes, and deleting electronic working copies, is a local confidentiality control rather than an additional CO-1 reporting requirement.
+
 ## Step 3 — Observe before rating
 
 Each evaluator should observe the listed brothers sufficiently to contribute meaningfully to the final discussion. Avoid ratings based on friendship, reputation alone, one isolated incident, or second-hand impressions. ([CO-1 2:10](../CO-1.html#co1-2-10))
@@ -84,6 +90,21 @@ The official ratings are:
 - **D — Poor**
 
 Use the rating that realistically describes the brother; do not treat every faithful brother as automatically “Excellent,” and do not use the report to settle personal differences.
+
+### Do not calculate or average the ratings
+
+The A–D choices are descriptive categories, not numerical scores. Do not convert them to points, average them, or treat them as votes. For example, five provisional B ratings and two provisional A ratings do not automatically produce a final B. The group must discuss the firsthand observations and agree on the one category that most accurately describes the brother. ([CO-1 2:10](../CO-1.html#co1-2-10))
+
+If provisional ratings differ:
+
+1. Ask what specific conduct or event supports each view.
+2. Distinguish a consistent pattern from one isolated incident.
+3. Consider whether each evaluator had sufficient opportunity for direct observation.
+4. Consider circumstances outside the brother’s control.
+5. Give appropriate weight to relevant firsthand evidence, not merely the number of matching letters.
+6. Continue the discussion until the group reaches a balanced and realistic conclusion.
+
+One lower provisional rating should not simply be outvoted. It may identify an important matter others did not observe, or it may rest on incomplete information. The coordinator should set the pace and help clarify the evidence but must not dominate the discussion. CO-1 provides no averaging formula or coordinator tie-breaker. If the group cannot reach a sound conclusion after careful discussion, seek direction rather than inventing a formula.
 
 ## Step 4 — Consider additional qualified brothers
 
@@ -107,6 +128,19 @@ For each person, agree on:
 4. Any concise, useful additional comments
 
 Checking a qualification box should reflect present qualification—not merely potential with considerable future training.
+
+### Converting observation copies into the one final master
+
+Use this sequence for each brother listed:
+
+1. The brother being evaluated steps out of the room. He does not rate himself.
+2. The remaining evaluators contribute relevant factual observations from their working copies or notes.
+3. The group discusses any differences and agrees on the four final A–D categories, qualification boxes, convention size, and comments.
+4. The coordinator records only the group’s agreed conclusions on the authoritative master CO-53. Individual working copies are not appended to the final report.
+5. The brother returns. Generally, the group does not reopen or adjust his evaluation after his return.
+6. After the entire review is completed and the coordinator has confirmed that the authoritative master accurately reflects the group’s conclusions, collect printed observation copies for secure destruction and direct recipients to delete electronic working copies.
+
+The coordinator is transcribing the group’s agreed evaluation—not averaging the provisional letters and not substituting his personal rating for the group’s conclusion.
 
 ## Step 6 — Handle a serious deficiency before submission
 
@@ -144,10 +178,11 @@ See [CO-1 2:11](../CO-1.html#co1-2-11).
 - [ ] Current CO-53 form confirmed
 - [ ] Full names and statistics verified
 - [ ] Master copy circulated only to the authorised evaluation group
+- [ ] Observation-copy instruction included; provisional letters will not be averaged or treated as votes
 - [ ] Every evaluator understands whom and what to observe
 - [ ] Additional candidates agreed by the committee
 - [ ] Postconvention evaluation meeting scheduled
 - [ ] Each evaluator steps out for his own review
+- [ ] One agreed evaluation transcribed to the authoritative master; working copies securely disposed of afterward
 - [ ] Any required counselling completed by two group members and documented
 - [ ] One final report checked and submitted by the coordinator by 8 November 2026
-

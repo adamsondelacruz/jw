@@ -94,6 +94,10 @@
       text-decoration: none;
     }
     .source-links a:hover { background: rgba(255,255,255,.12); }
+    .hero-search { display: flex; flex: 1 1 270px; justify-content: flex-end; gap: 6px; margin-left: auto; }
+    .hero-search input { width: min(100%, 270px); min-width: 120px; padding: 6px 9px; border: 1px solid rgba(255,255,255,.42); border-radius: 6px; background: #fff; color: #292326; font: inherit; font-size: .8rem; }
+    .hero-search button { padding: 6px 10px; border: 1px solid rgba(255,255,255,.42); border-radius: 6px; background: rgba(255,255,255,.12); color: #fff; font: inherit; font-size: .8rem; font-weight: 800; cursor: pointer; }
+    .hero-search button:hover { background: rgba(255,255,255,.22); }
 
     .project-card, .toolbar, .intro-card, .section, .radius-research {
       border: 1px solid var(--rule);
@@ -319,6 +323,8 @@
       <h1>Forming a New Congregation</h1>
       <p class="hero-subtitle">A plain-language working checklist based on S-50-E (7/21) and S-51-E (1/16). Complete the official forms themselves; this page is your progress tracker.</p>
       <nav class="source-links" aria-label="Source documents">
+        <a href="index.html">Project home</a>
+        <a href="docs/05-communications.html">Communications</a>
         <a href="05-S-50_E.pdf" target="_blank" rel="noopener">S-50 instructions</a>
         <a href="06-S-51_E.pdf" target="_blank" rel="noopener">S-51</a>
         <a href="07-S-51_E-filled.pdf" target="_blank" rel="noopener">S-51 — point 5 filled</a>
@@ -327,6 +333,11 @@
         <a href="12-M-202_E.pdf" target="_blank" rel="noopener">M-202</a>
         <a href="13-S-36_E.pdf" target="_blank" rel="noopener">S-36</a>
         <a href="14-S-6_E.pdf" target="_blank" rel="noopener">S-6</a>
+        <form class="hero-search" action="search.html" method="get" role="search">
+          <label class="sr-only" for="checklistSearch">Search the project portal</label>
+          <input id="checklistSearch" name="q" type="search" placeholder="Search the project">
+          <button type="submit">Search</button>
+        </form>
       </nav>
     </header>
 

@@ -11,6 +11,7 @@ export const RESPONSIBILITIES_URL = `https://hub.jw.org/convention-information/e
 export const ALLOWED_HOSTS = new Set(["hub.jw.org", "login.jw.org"]);
 export const INITIAL_ALLOWED_ROLES = new Set([
   "Convention Committee Coordinator Assistant",
+  "Program Overseer Assistant",
   "Accounts Overseer",
   "Accounts Overseer Assistant",
   "Attendant Overseer",

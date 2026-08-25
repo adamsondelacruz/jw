@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tablet Talk Teleprompter - Canonical Vision</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="canonical-vision---tablet-talk-teleprompter">Canonical Vision -
+Tablet Talk Teleprompter</h1>
+<p>Project: <strong>JW Talk Teleprompter</strong><br />
+Workspace: <code>talk/</code><br />
+Vision date: 2026-08-19</p>
+<h2 id="product-vision">Product Vision</h2>
+<p>Create a tablet-first teleprompter app that helps a speaker deliver
+public talks naturally from prepared manuscripts, extemporaneous guides,
+or PDF/HTML/Markdown files.</p>
+<p>The app should not feel like a document viewer with scrolling added.
+It should feel like a quiet stage tool: easy to read, easy to recover
+your place, and safe to use during a live talk.</p>
+<h2 id="core-purpose">Core Purpose</h2>
+<p>Help the speaker maintain eye contact and natural delivery while
+having a reliable visual guide nearby.</p>
+<p>The app should answer one practical question:</p>
+<blockquote>
+<p>If I briefly lose my place, can my eyes recover the next thought in
+less than two seconds?</p>
+</blockquote>
+<h2 id="primary-user">Primary User</h2>
+<p>The first user is a public talk speaker using a tablet on stage.</p>
+<p>The speaker may:</p>
+<ul>
+<li>deliver from a full manuscript.</li>
+<li>deliver from an extemporaneous keyword guide.</li>
+<li>switch between portrait and landscape orientation.</li>
+<li>need large type and strong visual anchors.</li>
+<li>want scrolling to follow the pace of delivery.</li>
+<li>need manual control when automatic scrolling is not reliable.</li>
+</ul>
+<h2 id="home-screen">Home Screen</h2>
+<p>The home screen should show all available talks as a simple
+library.</p>
+<p>Each talk appears as a row or card with:</p>
+<ul>
+<li>talk number.</li>
+<li>theme/title.</li>
+<li>available versions: manuscript, extemp guide, metrics, PDF, HTML,
+MD.</li>
+<li>last modified date.</li>
+<li>estimated delivery time.</li>
+<li>quick launch button for the preferred delivery file.</li>
+</ul>
+<p>Expected talk folder pattern:</p>
+<pre class="text"><code>talk/
+  055/
+    index.md
+    draft-talk-v3.md
+    draft-talk-v3.html
+    draft-talk-v3.pdf
+    v3-extemp-guide.md
+    metrics-index.md</code></pre>
+<p>The app should prefer metadata from each talk folder's
+<code>index.md</code> and metrics files when available.</p>
+<h2 id="reader-experience">Reader Experience</h2>
+<p>The reader must be optimized for stage use:</p>
+<ul>
+<li>large text by default.</li>
+<li>high contrast without harsh glare.</li>
+<li>generous line height.</li>
+<li>clear paragraph spacing.</li>
+<li>visible current line or current paragraph.</li>
+<li>no distracting toolbars while speaking.</li>
+<li>quick access to pause, resume, speed, jump, and font size.</li>
+<li>safe full-screen mode.</li>
+<li>works in portrait and landscape.</li>
+<li>remembers position per talk.</li>
+</ul>
+<h2 id="teleprompter-behavior">Teleprompter Behavior</h2>
+<p>The app should support three scrolling modes:</p>
+<h3 id="1-manual-mode">1. Manual Mode</h3>
+<p>The speaker controls movement by touch, keyboard, remote, or foot
+pedal.</p>
+<p>This must be the most reliable mode.</p>
+<h3 id="2-timed-mode">2. Timed Mode</h3>
+<p>The speaker sets a target duration or section duration. The app
+scrolls at a calculated pace.</p>
+<p>The speaker can adjust speed live.</p>
+<h3 id="3-voice-assisted-mode">3. Voice-Assisted Mode</h3>
+<p>The app listens for approximate progress and scrolls when the spoken
+content appears close to the visible manuscript.</p>
+<p>This should be optional. It should never be the only control
+method.</p>
+<p>Voice-assisted scrolling should be forgiving:</p>
+<ul>
+<li>match phrases approximately.</li>
+<li>tolerate skipped subtle text.</li>
+<li>tolerate paraphrasing.</li>
+<li>pause when confidence is low.</li>
+<li>never jump far without confirmation or a gentle visual cue.</li>
+</ul>
+<h2 id="supported-source-formats">Supported Source Formats</h2>
+<h3 id="markdown">Markdown</h3>
+<p>Preferred authoring format. The app should parse headings, cues,
+scriptures, keywords, and highlight spans.</p>
+<h3 id="html">HTML</h3>
+<p>Preferred display format when already rendered from Markdown. It
+preserves styling such as highlight colors, cues, and indentation.</p>
+<h3 id="pdf">PDF</h3>
+<p>Useful for final print-like delivery. PDF support should allow
+viewing and manual/timed scrolling. Voice-assisted sync is harder with
+PDF and should depend on extracted text when available.</p>
+<h2 id="visual-language">Visual Language</h2>
+<p>The app should preserve useful manuscript markup:</p>
+<ul>
+<li>green highlights: main idea / spiritual landing point.</li>
+<li>orange highlights: contrast / warning / turning point.</li>
+<li>blue highlights: action cue / question / practical step.</li>
+<li>small italic cues: delivery tone or action.</li>
+<li>headings with start minute and section duration.</li>
+</ul>
+<p>The visual language should stay calm. Highlighting is for recovery,
+not decoration.</p>
+<h2 id="orientation">Orientation</h2>
+<p>The app must work in both portrait and landscape.</p>
+<p>Portrait:</p>
+<ul>
+<li>best for manuscript reading.</li>
+<li>more vertical context.</li>
+<li>comfortable one-column delivery.</li>
+</ul>
+<p>Landscape:</p>
+<ul>
+<li>best for wider phrases and larger text.</li>
+<li>optional two-pane layout: current paragraph and next anchor.</li>
+<li>control bar can sit at side or bottom depending on tablet size.</li>
+</ul>
+<p>The app should reflow instantly when the tablet rotates and keep the
+current paragraph in view.</p>
+<h2 id="talk-library">Talk Library</h2>
+<p>The app should scan <code>talk/</code> for talk folders.</p>
+<p>A talk folder is any folder with:</p>
+<ul>
+<li>a numeric folder name, such as <code>055</code>, or</li>
+<li>an <code>index.md</code> file with a talk title.</li>
+</ul>
+<p>The app should ignore temporary lock files, zip files, and
+resource-only folders unless explicitly opened.</p>
+<h2 id="ideal-delivery-screen">Ideal Delivery Screen</h2>
+<p>During delivery, the screen should show:</p>
+<ul>
+<li>current section heading.</li>
+<li>readable manuscript or guide.</li>
+<li>current paragraph subtly emphasized.</li>
+<li>upcoming anchor visible below.</li>
+<li>progress bar by time and document position.</li>
+<li>remaining time estimate.</li>
+<li>simple controls that can hide.</li>
+</ul>
+<p>Possible controls:</p>
+<ul>
+<li>play/pause.</li>
+<li>speed down/up.</li>
+<li>jump to previous/next heading.</li>
+<li>font size down/up.</li>
+<li>brightness/theme.</li>
+<li>manual scroll lock.</li>
+</ul>
+<h2 id="production-quality-standard">Production Quality Standard</h2>
+<p>The app is production ready when:</p>
+<ul>
+<li>it can load talk folders reliably.</li>
+<li>it can display MD, HTML, and PDF files.</li>
+<li>it works offline after installation.</li>
+<li>it works in portrait and landscape.</li>
+<li>text is readable from stage distance.</li>
+<li>manual mode is dependable.</li>
+<li>timed mode is adjustable during delivery.</li>
+<li>voice-assisted mode fails safely.</li>
+<li>position is autosaved.</li>
+<li>no network is required for normal use.</li>
+<li>no private speech/audio leaves the device by default.</li>
+<li>it has a clear error state for unsupported files.</li>
+<li>it has basic tests for parsing, talk discovery, and reader
+state.</li>
+</ul>
+<h2 id="guiding-principle">Guiding Principle</h2>
+<p>The app should help the speaker sound less like he is reading, not
+more.</p>
+<p>Every design choice should support calm delivery, quick recovery, and
+confidence on stage.</p>
+</body>
+</html>

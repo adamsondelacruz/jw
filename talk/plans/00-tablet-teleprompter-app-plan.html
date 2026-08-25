@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tablet Talk Teleprompter - Plan</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="plan---tablet-talk-teleprompter-app">Plan - Tablet Talk
+Teleprompter App</h1>
+<p>Project: <strong>JW Talk Teleprompter</strong><br />
+Goal: production-ready tablet app for talk delivery<br />
+Created: 2026-08-19</p>
+<h2 id="objective">Objective</h2>
+<p>Build a tablet-friendly teleprompter app that loads talk manuscripts,
+guides, and rendered files from the <code>talk/</code> workspace and
+helps the speaker deliver naturally with readable text, reliable
+scrolling, and fast recovery cues.</p>
+<h2 id="scope">Scope</h2>
+<h3 id="must-have">Must Have</h3>
+<ul>
+<li>Home screen listing available talks.</li>
+<li>Talk number and theme visible.</li>
+<li>Load files from talk folders.</li>
+<li>Support Markdown and HTML for first production version.</li>
+<li>Support PDF viewing after core reader is stable.</li>
+<li>Manual scrolling that is dependable on tablet.</li>
+<li>Timed scrolling with live speed control.</li>
+<li>Portrait and landscape layouts.</li>
+<li>Large readable type and stage-safe spacing.</li>
+<li>Preserve existing highlight cues from
+<code>draft-talk-v3.html</code>.</li>
+<li>Remember last position and display preferences.</li>
+<li>Offline-capable PWA behavior.</li>
+</ul>
+<h3 id="should-have">Should Have</h3>
+<ul>
+<li>Current section indicator.</li>
+<li>Next anchor preview.</li>
+<li>Progress by document position and estimated time.</li>
+<li>Brightness/theme controls.</li>
+<li>Tap zones for next/previous paragraph.</li>
+<li>Keyboard/Bluetooth presenter support.</li>
+<li>Talk manifest generated from folders.</li>
+</ul>
+<h3 id="later">Later</h3>
+<ul>
+<li>Voice-assisted scrolling.</li>
+<li>PDF text sync.</li>
+<li>Rehearsal timing logs.</li>
+<li>Import/export talk packages.</li>
+<li>Native wrapper for iPad/Android if browser PWA is insufficient.</li>
+</ul>
+<h2 id="phase-1---app-foundation">Phase 1 - App Foundation</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Create <code>talk/teleprompter/</code>.</li>
+<li>Add Vite + React + TypeScript.</li>
+<li>Add app shell with routing:
+<ul>
+<li>home/library.</li>
+<li>reader.</li>
+<li>settings.</li>
+</ul></li>
+<li>Add base responsive CSS.</li>
+<li>Add sample static manifest for <code>talk/055</code>.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>App starts locally.</li>
+<li>Home screen shows Talk 055.</li>
+<li>Reader route opens a selected file.</li>
+<li>Works at tablet portrait and landscape viewport sizes.</li>
+</ul>
+<h2 id="phase-2---talk-library">Phase 2 - Talk Library</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Define <code>Talk</code>, <code>TalkFile</code>, and
+<code>ReaderState</code> types.</li>
+<li>Load <code>talk-manifest.json</code>.</li>
+<li>Detect file role:
+<ul>
+<li>manuscript.</li>
+<li>extemp guide.</li>
+<li>metrics.</li>
+<li>source outline.</li>
+</ul></li>
+<li>Show talk number, theme, file types, and preferred launch.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>Talk 055 displays as
+<code>055 - How Can You Make a Good Name With God?</code>.</li>
+<li><code>draft-talk-v3.html</code>, <code>v3-extemp-guide.html</code>,
+and <code>metrics-index.html</code> are visible.</li>
+<li>Recent/preferred file is remembered.</li>
+</ul>
+<h2 id="phase-3---htmlmarkdown-reader">Phase 3 - HTML/Markdown
+Reader</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Render HTML files safely.</li>
+<li>Render Markdown files safely.</li>
+<li>Preserve delivery classes:
+<ul>
+<li><code>.kw</code></li>
+<li><code>.kw-green</code></li>
+<li><code>.kw-orange</code></li>
+<li><code>.kw-blue</code></li>
+<li><code>.subtle</code></li>
+</ul></li>
+<li>Split document into readable blocks.</li>
+<li>Add current block highlighting.</li>
+<li>Add heading navigation.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li><code>draft-talk-v3.html</code> displays with highlighting
+intact.</li>
+<li>The reader can jump by section.</li>
+<li>Text remains readable in portrait and landscape.</li>
+<li>No overlapping text or broken wrapping.</li>
+</ul>
+<h2 id="phase-4---manual-teleprompter-controls">Phase 4 - Manual
+Teleprompter Controls</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Touch scroll.</li>
+<li>Tap zones:
+<ul>
+<li>lower area: next block.</li>
+<li>upper area: previous block.</li>
+</ul></li>
+<li>Keyboard controls:
+<ul>
+<li>Space: play/pause timed mode.</li>
+<li>ArrowDown/PageDown: next block.</li>
+<li>ArrowUp/PageUp: previous block.</li>
+<li>Plus/minus: font size.</li>
+</ul></li>
+<li>Hideable control bar.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>Speaker can deliver without touching small controls.</li>
+<li>Current paragraph remains visible.</li>
+<li>Manual override works during timed mode.</li>
+</ul>
+<h2 id="phase-5---timed-scroll">Phase 5 - Timed Scroll</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Target duration setting.</li>
+<li>Section duration awareness when headings contain minutes.</li>
+<li>Play/pause.</li>
+<li>Speed multiplier.</li>
+<li>Remaining time display.</li>
+<li>Pause or slow near read scripture prompts.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>Timed mode can complete a talk in a chosen target time.</li>
+<li>User can adjust speed live without losing place.</li>
+<li>Timed mode does not fight manual scrolling.</li>
+</ul>
+<h2 id="phase-6---persistence-and-offline">Phase 6 - Persistence And
+Offline</h2>
+<p>Deliverables:</p>
+<ul>
+<li>IndexedDB store for:
+<ul>
+<li>talk metadata.</li>
+<li>reader position.</li>
+<li>display settings.</li>
+<li>timing settings.</li>
+</ul></li>
+<li>PWA manifest.</li>
+<li>Service worker caching app shell and manifest.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>App works after refresh.</li>
+<li>Last opened talk and scroll position restore.</li>
+<li>App opens offline after first load.</li>
+</ul>
+<h2 id="phase-7---pdf-support">Phase 7 - PDF Support</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Add PDF.js.</li>
+<li>Render pages in reader.</li>
+<li>Manual/timed scroll support for PDF.</li>
+<li>Page thumbnails or section/page jump.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li><code>draft-talk-v3.pdf</code> opens and scrolls smoothly.</li>
+<li>Page count and position display correctly.</li>
+<li>PDF mode has the same basic controls as HTML/Markdown.</li>
+</ul>
+<h2 id="phase-8---voice-assisted-prototype">Phase 8 - Voice-Assisted
+Prototype</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Web Speech API detection.</li>
+<li>Microphone permission prompt only when enabling voice mode.</li>
+<li>Approximate text matching near current block.</li>
+<li>Conservative auto-advance.</li>
+<li>Clear status:
+<ul>
+<li>listening.</li>
+<li>following.</li>
+<li>uncertain.</li>
+<li>paused.</li>
+</ul></li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>Voice mode follows a practiced reading under good conditions.</li>
+<li>If confidence drops, it pauses instead of jumping.</li>
+<li>Manual control immediately overrides voice mode.</li>
+</ul>
+<h2 id="phase-9---production-hardening">Phase 9 - Production
+Hardening</h2>
+<p>Deliverables:</p>
+<ul>
+<li>Playwright tests.</li>
+<li>Tablet viewport screenshots:
+<ul>
+<li>iPad portrait.</li>
+<li>iPad landscape.</li>
+<li>Android tablet portrait.</li>
+<li>Android tablet landscape.</li>
+</ul></li>
+<li>Accessibility checks:
+<ul>
+<li>contrast.</li>
+<li>focus states.</li>
+<li>controls reachable.</li>
+</ul></li>
+<li>Error states:
+<ul>
+<li>missing file.</li>
+<li>unsupported file.</li>
+<li>corrupted manifest.</li>
+</ul></li>
+<li>Build script.</li>
+</ul>
+<p>Acceptance:</p>
+<ul>
+<li>Tests pass.</li>
+<li>Production build succeeds.</li>
+<li>App can be used end-to-end with Talk 055.</li>
+<li>No network is required for normal delivery.</li>
+</ul>
+<h2 id="first-build-decision">First Build Decision</h2>
+<p>Start with:</p>
+<ul>
+<li>Vite + React + TypeScript.</li>
+<li>Static manifest.</li>
+<li>HTML and Markdown reader.</li>
+<li>Manual mode.</li>
+<li>Timed mode.</li>
+<li>Portrait/landscape responsive layout.</li>
+</ul>
+<p>Defer:</p>
+<ul>
+<li>PDF.js until the reader works well.</li>
+<li>Voice-assisted scrolling until manual/timed modes are
+dependable.</li>
+</ul>
+<h2 id="definition-of-done">Definition Of Done</h2>
+<p>The app is production ready when a speaker can:</p>
+<ol type="1">
+<li>Open the app on a tablet.</li>
+<li>Select Talk 055 from the home screen.</li>
+<li>Open <code>draft-talk-v3.html</code>.</li>
+<li>Use large readable text in portrait or landscape.</li>
+<li>Start timed scrolling for a 30-minute talk.</li>
+<li>Pause or adjust speed instantly.</li>
+<li>Recover place using highlighted keywords.</li>
+<li>Close and reopen the app with position restored.</li>
+<li>Use the app offline.</li>
+</ol>
+<h2 id="immediate-next-steps">Immediate Next Steps</h2>
+<ol type="1">
+<li>Scaffold <code>talk/teleprompter/</code>.</li>
+<li>Create sample <code>talk-manifest.json</code> for existing talk
+folders.</li>
+<li>Implement home screen and reader route.</li>
+<li>Load Talk 055 HTML as first real fixture.</li>
+<li>Add manual controls and font controls.</li>
+<li>Add timed mode.</li>
+<li>Verify portrait and landscape with screenshots.</li>
+</ol>
+</body>
+</html>

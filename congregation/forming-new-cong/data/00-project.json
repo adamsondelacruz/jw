@@ -7,10 +7,10 @@
     "circuit": "NZ-1",
     "proposed_circuit_section": "NZ-1B",
     "kingdom_hall": "262–264 Cameron Street, Ashburton 7700",
-    "status": "submitted-to-circuit-overseer",
-    "updated_at": "2026-08-19T13:05:46+12:00",
-    "current_direction": "Both S-51 forms—the proposed Ashburton Tagalog congregation and the Ashburton host congregation—have been sent to the circuit overseer. S-50 through par. 5 has been confirmed; par. 6 remains pending because branch approval and start instructions have not yet been received.",
-    "next_action": "Wait for the circuit overseer’s next direction and, under S-50 par. 6, the branch office’s approval letter. Do not begin functioning or assume a start date before that letter."
+    "status": "action-required",
+    "updated_at": "2026-08-25T18:15:00+12:00",
+    "current_direction": "The circuit overseer has confirmed receipt of the S-51 and has now requested the remaining S-50 par. 5 forms: S-29, S-5, M-202, S-36 and S-6. He also requested the body’s recommendation(s) for the prospective coordinator and a separate 2026 language-fields information form. A working copy of that return now contains all figures established from the proposal and DeckHand; only the 2026-service-year baptism count is marked TBC. Branch approval under S-50 par. 6 remains pending.",
+    "next_action": "Await Daniel's reply confirming whether the language-fields return should contain only the Ashburton Tagalog Group or cover other fields in the circuit. In parallel, confirm the number baptized in the Ashburton Tagalog field during the 2026 service year, prepare the five requested par. 5 forms, and obtain the body's coordinator recommendation(s). Send nothing further until the completed material has been reviewed and explicitly authorised."
   },
   "source_documents": [
     {
@@ -93,6 +93,27 @@
       "immutable": true
     },
     {
+      "path": "17-2026-Request-for-Information-on-Language-Fields.docx",
+      "kind": "received-correspondence-attachment",
+      "as_of": "2026-08-25",
+      "sha256": "22521afc49f3549db79805e831f95f37248d4d880720508371022da1c947beb4",
+      "immutable": true
+    },
+    {
+      "path": "18-2026-Request-for-Information-on-Language-Fields-working.docx",
+      "kind": "working-form",
+      "as_of": "2026-08-25",
+      "sha256": "73d67f51fe6e5a6ea794975a66bf1bdaf46f368f4a102fef92aee686669e1e81",
+      "immutable": false
+    },
+    {
+      "path": "18-2026-Request-for-Information-on-Language-Fields-working.pdf",
+      "kind": "working-form-render",
+      "as_of": "2026-08-25",
+      "sha256": "e2ad9a4a286b12daf9ea172f0c46d984df48732f072943d38bc738526bd2b8c3",
+      "immutable": false
+    },
+    {
       "path": "03-checklist-progress.json",
       "kind": "checklist-progress",
       "schema_version": 1,
@@ -139,12 +160,12 @@
       "title": "Coordinator/Secretary Change of Address",
       "purpose": "Identifies the coordinator and secretary and provides their contact/address information.",
       "required_for": ["proposed congregation", "any existing congregation whose coordinator or secretary changes"],
-      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "timing": "Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package.",
       "owner": "To be assigned",
-      "status": "not-started",
+      "status": "needs-confirmation",
       "files": [{"path": "10-S-29_E.pdf", "kind": "blank-original", "status": "reference"}],
       "source_references": ["S-50 par. 5(2)"],
-      "notes": "Proposed coordinator and secretary require confirmation."
+      "notes": "The body’s coordinator recommendation(s) are required as soon as possible. The proposed coordinator and secretary still require confirmation."
     },
     {
       "id": "s5",
@@ -152,7 +173,7 @@
       "title": "Kingdom Hall Information",
       "purpose": "Records the meeting place and its congregation-use arrangement.",
       "required_for": ["proposed congregation", "existing congregations whose Kingdom Hall information changes"],
-      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "timing": "Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package.",
       "owner": "To be assigned",
       "status": "not-started",
       "files": [{"path": "11-S-5_E.pdf", "kind": "blank-original", "status": "reference"}],
@@ -165,7 +186,7 @@
       "title": "Periodical Request",
       "purpose": "Establishes periodical and Life and Ministry Meeting Workbook quantities.",
       "required_for": ["proposed congregation", "existing congregations whose requests change"],
-      "timing": "May be included with the recommendation or entered on jw.org after approval when directed.",
+      "timing": "Explicitly requested by the circuit overseer on 25 August 2026 for the current package, although S-50 also allows the information to be entered on jw.org after approval when directed.",
       "owner": "To be assigned",
       "status": "needs-confirmation",
       "files": [{"path": "12-M-202_E.pdf", "kind": "blank-original", "status": "reference"}],
@@ -178,7 +199,7 @@
       "title": "Shipping Information",
       "purpose": "Establishes shipping address and the Kingdom Hall Literature Group arrangement.",
       "required_for": ["proposed congregation", "changed shipping addresses", "ship-to congregation at the meeting hall"],
-      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "timing": "Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package.",
       "owner": "To be assigned",
       "status": "not-started",
       "files": [{"path": "13-S-36_E.pdf", "kind": "blank-original", "status": "reference"}],
@@ -191,9 +212,9 @@
       "title": "Territory Adjustment Request",
       "purpose": "Documents proposed territory assignment and affected boundary adjustments.",
       "required_for": ["proposed congregation", "each existing congregation whose boundaries are affected"],
-      "timing": "Part of the eventual recommendation package unless the circuit overseer directs otherwise.",
+      "timing": "Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package.",
       "owner": "Circuit overseer and affected bodies of elders",
-      "status": "not-started",
+      "status": "needs-confirmation",
       "files": [{"path": "14-S-6_E.pdf", "kind": "blank-original", "status": "reference"}],
       "source_references": ["S-50 par. 5(6)"],
       "notes": "Final language-territory boundaries and directly affected congregations require confirmation."
@@ -306,6 +327,9 @@
     {"id": "june-baptized", "label": "Baptized publishers", "value": 29, "unit": "publishers", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
     {"id": "june-unbaptized", "label": "Unbaptized publishers", "value": 4, "unit": "publishers", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
     {"id": "june-studies", "label": "Bible studies conducted", "value": 46, "unit": "studies", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
+    {"id": "deckhand-july-studies", "label": "Bible studies reported by the 35 proposed-group publishers", "value": 47, "unit": "studies", "as_of": "2026-07", "kind": "calculated", "source_file": null, "source_location": "DeckHand Reports > All Groups, July 2026; read-only aggregate of the 35 names in the August proposal", "confidence": "verified", "notes": "The raw DeckHand exports remain outside the repository because they contain publisher personal information. This is the figure entered in the language-fields working copy. It is distinct from the separately reported 34 progressive studies."},
+    {"id": "deckhand-record-match", "label": "August proposal names reconciled to DeckHand", "value": 35, "unit": "publishers", "as_of": "2026-08-25", "kind": "calculated", "source_file": null, "source_location": "DeckHand standard and circuit-assistant exports plus July 2026 report views", "confidence": "verified", "notes": "Thirty-two names matched the publisher/associate exports directly; three additional associate names were reconciled in the July Ashburton West report view. Aggregate checks reproduce 5 elders, 2 ministerial servants, 10 regular pioneers, 4 inactive publishers and therefore 31 active publishers."},
+    {"id": "deckhand-baptism-date-coverage", "label": "Ashburton DeckHand records with a baptism date populated", "value": 0, "unit": "records", "as_of": "2026-08-25", "kind": "calculated", "source_file": null, "source_location": "DeckHand Circuit Assistant export, 228 records", "confidence": "verified", "notes": "This is a data-completeness finding, not evidence that zero persons were baptized. The 2026-service-year baptism count remains unresolved."},
     {"id": "progressive-studies", "label": "Progressive Bible studies", "value": 34, "unit": "studies", "as_of": null, "kind": "reported", "source_file": null, "source_location": "supplied separately", "confidence": "needs-confirmation", "notes": "Reporting date and scope are not documented in the local PDFs."},
     {"id": "june-maps", "label": "Territory maps", "value": 54, "unit": "maps", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
     {"id": "june-addresses", "label": "Territory addresses", "value": 760, "unit": "addresses", "as_of": "2026-06-21", "kind": "printed", "source_file": "16-S-303-Ashburton-Tagalog-2026-06-16-to-21.pdf", "source_location": "page 1 narrative", "confidence": "verified"},
@@ -327,8 +351,8 @@
       "id": "submission-sequence",
       "question": "What should be sent now?",
       "status": "confirmed",
-      "decision": "Both the proposed-congregation S-51 and the Ashburton host-congregation S-51 have been sent to the circuit overseer. Wait for his next direction and do not assume the remaining forms are presently requested.",
-      "basis": "User-confirmed submission status and S-50 pars. 5–6."
+      "decision": "Both S-51 forms have been sent. Daniel Martin has now explicitly requested S-29, S-5, M-202, S-36 and S-6, together with the body’s coordinator recommendation(s). Prepare and review that package before any further transmission.",
+      "basis": "Daniel Martin’s 25 August 2026 email and S-50 par. 5."
     },
     {
       "id": "publisher-fields",
@@ -363,7 +387,28 @@
       "question": "What date and reporting period apply to the 34 progressive Bible studies?",
       "status": "unresolved",
       "decision": null,
-      "basis": "The number was supplied separately and is not printed in the local proposal or S-303."
+      "basis": "The number was supplied separately and is not printed in the local proposal or S-303. DeckHand reports 47 total Bible studies for the proposed group in July 2026, confirming that 34 progressive studies is a narrower measure and should not replace the form’s Bible Studies figure."
+    },
+    {
+      "id": "prospective-coordinator-recommendations",
+      "question": "Whom will the body recommend for appointment as coordinator of the prospective congregation?",
+      "status": "unresolved",
+      "decision": null,
+      "basis": "Daniel requested the body’s recommendation(s) as soon as possible in his 25 August 2026 email, citing SFG 1:11, 12."
+    },
+    {
+      "id": "language-fields-scope",
+      "question": "Does Daniel want only the Ashburton Tagalog group row or a wider language-field return?",
+      "status": "unresolved",
+      "decision": null,
+      "basis": "The attached form is generic and plural, but Daniel’s email to Adamson does not state the required reporting scope."
+    },
+    {
+      "id": "language-fields-baptized-2026",
+      "question": "How many persons were baptized in the Ashburton Tagalog field during the 2026 service year?",
+      "status": "unresolved",
+      "decision": null,
+      "basis": "The attached form asks for baptisms during the service year, not the total number of baptized publishers. DeckHand’s circuit-assistant export provides a baptism-date column, but it is blank for all 228 Ashburton records, so it cannot establish this figure. The working form correctly marks this cell TBC."
     }
   ],
   "submissions": [
@@ -388,27 +433,100 @@
       "notes": "Exact send date is not recorded in the local project files."
     }
   ],
+  "communication_groups": [
+    {
+      "id": "s51-recommendation",
+      "label": "S-51 recommendation",
+      "description": "Submission, receipt and host-congregation follow-up"
+    },
+    {
+      "id": "par5-package",
+      "label": "S-50 par. 5 package",
+      "description": "Remaining forms and prospective coordinator recommendation"
+    },
+    {
+      "id": "language-fields",
+      "label": "Language-field reporting",
+      "description": "2026 congregation, group and pregroup information return"
+    }
+  ],
   "correspondence": [
     {
       "id": "co-request-ashburton-s51",
+      "group": "s51-recommendation",
       "direction": "received",
       "date": "2026-08-13",
       "with": "Daniel Martin",
       "subject": "Request for Ashburton congregation S-51",
       "status": "confirmed",
       "summary": "The circuit overseer requested an Ashburton-congregation S-51 after receiving the proposed-congregation form. That request has now been fulfilled.",
+      "action": "Completed — the Ashburton host-congregation S-51 was subsequently sent.",
       "source": "User-supplied email text; no local email file."
     },
     {
       "id": "supporting-email-sent",
+      "group": "s51-recommendation",
       "direction": "outgoing",
       "date": "2026-08-09",
       "with": "Daniel Martin",
       "subject": "Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation",
       "status": "submitted",
       "summary": "Supporting population, language, publisher, appointed-brother, study and attendance evidence.",
+      "action": "Completed — Daniel acknowledged receipt on 13 August 2026.",
       "source": "04-email-to-co-daniel-martin.md",
       "attachments": ["09-S-51-Ashburton-Tagalog-signed.pdf"]
+    },
+    {
+      "id": "co-request-par5-package",
+      "group": "par5-package",
+      "direction": "received",
+      "date": "2026-08-25",
+      "time": "11:29",
+      "with": "Daniel Martin",
+      "subject": "Application - Tagalog Congregation Ashburton",
+      "status": "action-required",
+      "summary": "Daniel confirmed receipt of the S-51 and requested S-29, S-5, M-202, S-36 and S-6. He also asked for the body’s recommendation(s) for the prospective coordinator as soon as possible.",
+      "action": "Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel.",
+      "references": ["S-50 par. 5", "SFG 1:11, 12"],
+      "body": "Dear Brothers,\n\nThank you for submitting the S-51 form.\n\nCan you please now submit the following documents as mentioned in paragraph 5 of the Instructions for Recommending New Congregations (S-50):\n\n• Coordinator of the Body of Elders/Secretary Change of Address (S-29)\n• Kingdom Hall Information (S-5)\n• Periodical Request (M-202)\n• Shipping Information (S-36)\n• Territory Adjustment Request (S-6)\n\nOnce you have completed these forms, please send them to me.\n\nAs a side note, please forward the body’s recommendation(s) for COBE as soon as possible, as I will need to appoint a coordinator for the new congregation if it is approved. SFG 1:11, 12\n\nThank you for your hard work, brothers.\n\nWarm regards,\nDaniel Martin\nCircuit NZ-1",
+      "source": "JWPub mailbox; read-only verification on 2026-08-25.",
+      "attachments": []
+    },
+    {
+      "id": "co-request-language-fields-2026",
+      "group": "language-fields",
+      "direction": "received",
+      "date": "2026-08-25",
+      "time": "13:48",
+      "with": "Daniel Martin",
+      "subject": "2026 Request for Information on Language Fields",
+      "status": "needs-confirmation",
+      "summary": "Daniel asked Adamson to complete the attached 2026 language-fields information form. Adamson replied at 2:19 p.m. confirming that he would fill it in and send it back.",
+      "action": "A clarification reply was sent at 7:10 p.m. on 25 August 2026. Await Daniel's scope confirmation and obtain the number baptized during the 2026 service year before replacing TBC.",
+      "body": "Hi Adamson,\n\nI hope you are well; we are looking forward to seeing you soon.\n\nWould you please fill in the form for me?\n\nThank you again.\n\nWarm regards,\nDaniel Martin\nCircuit NZ-1",
+      "reply": {
+        "date": "2026-08-25",
+        "time": "14:19",
+        "status": "submitted",
+        "summary": "Adamson confirmed that he would fill in the form and send it to Daniel."
+      },
+      "source": "JWPub mailbox; read-only verification on 2026-08-25.",
+      "attachments": ["17-2026-Request-for-Information-on-Language-Fields.docx", "18-2026-Request-for-Information-on-Language-Fields-working.docx", "18-2026-Request-for-Information-on-Language-Fields-working.pdf"]
+    },
+    {
+      "id": "draft-language-fields-scope-clarification",
+      "group": "language-fields",
+      "direction": "outgoing",
+      "date": "2026-08-25",
+      "time": "19:10",
+      "with": "Daniel Martin",
+      "subject": "Clarification — 2026 Request for Information on Language Fields",
+      "status": "submitted",
+      "summary": "Sent reply asking Daniel to confirm whether the return should contain only the Ashburton Tagalog Group or cover other language fields in the circuit.",
+      "action": "Sent and independently verified in Sent Items at 7:10 p.m. on 25 August 2026. Await Daniel's reply.",
+      "body": "Hi Daniel,\n\nJust to confirm the scope of the form, would you like me to enter only the Ashburton Tagalog Group in the ‘Groups and Pregroups’ section, leaving the ‘Congregations’ section blank? Or is the return meant to cover other language fields in the circuit as well?\n\nI’m also confirming the number baptized in the group during the 2026 service year.\n\nWarm regards,\nAdamson",
+      "source": "JWPub mailbox; sent and independently verified in Sent Items on 2026-08-25 at 19:10 NZST.",
+      "attachments": []
     }
   ],
   "checklist": {
@@ -430,8 +548,30 @@
         "id": "meeting-locator",
         "url": "https://hub.jw.org/meetings/en/goto/entry-point/meetings",
         "operations": ["inspect"]
+      },
+      {
+        "id": "jwpub-mail",
+        "url": "https://mail.jwpub.org/owa/#path=/mail",
+        "operations": ["inspect", "reply-email"]
       }
     ],
-    "approved_mutations": []
+    "approved_mutations": [
+      {
+        "id": "reply-language-fields-scope-clarification",
+        "operation": "reply-email",
+        "page_id": "jwpub-mail",
+        "source_correspondence_id": "draft-language-fields-scope-clarification",
+        "expected_account_title": "Mail - 1delaCruzAdamson@jwpub.org",
+        "expected_sender": "Martin, Daniel",
+        "expected_subject": "2026 Request for Information on Language Fields",
+        "expected_received_time": "1:48 p.m.",
+        "attachments": [],
+        "status": "completed-verified",
+        "authorised_at": "2026-08-25T18:45:00+12:00",
+        "authorisation": "User explicitly requested that the approved clarification draft be sent as a reply to Daniel's email.",
+        "completed_at": "2026-08-25T19:10:16+12:00",
+        "verification": "Sent Items contains the complete approved clarification text; recipient Martin, Daniel; zero attachments."
+      }
+    ]
   }
 }

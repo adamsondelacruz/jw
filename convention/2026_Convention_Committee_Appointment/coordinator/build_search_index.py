@@ -78,9 +78,9 @@ class CO1Parser(HTMLParser):
 
 
 class GuidanceParser(HTMLParser):
-    def __init__(self, source_id: str, source: str, url: str, priority: int):
+    def __init__(self, source_id: str, source: str, url: str, priority: int, reference: str = "Guidance"):
         super().__init__()
-        self.source_id, self.source, self.url, self.priority = source_id, source, url, priority
+        self.source_id, self.source, self.url, self.priority, self.reference = source_id, source, url, priority, reference
         self.heading = source
         self.capture = None
         self.buffer = []
@@ -113,11 +113,11 @@ class GuidanceParser(HTMLParser):
         elif self.capture == "block" and tag in {"p", "li", "td"}:
             text = clean("".join(self.buffer))
             if len(text) >= 28:
-                suffix = f"#{self.heading_id}" if self.heading_id else ""
+                suffix = f"#{self.heading_id}" if self.heading_id and not self.url.lower().endswith(".pdf") else ""
                 self.entries.append({
                     "id": f"{self.source_id}-{len(self.entries) + 1}", "sourceId": self.source_id,
                     "source": self.source, "type": "guidance", "title": self.heading,
-                    "reference": "Guidance", "url": f"{self.url}{suffix}", "text": text,
+                    "reference": self.reference, "url": f"{self.url}{suffix}", "text": text,
                     "priority": self.priority,
                 })
             self.capture = None
@@ -163,16 +163,22 @@ def build():
         entries.extend(pdf_pages(ROOT / "forms" / filename, code, title, 10 + offset))
 
     guidance = [
-        ("overview", "Coordinator Overview", "coordinator-overview.html", 30),
-        ("checklist", "Coordinator Checklist", "coordinator-checklist.html", 31),
-        ("forms-register", "Forms Register", "forms-register.html", 32),
-        ("operational-guidance", "Operational Guidance", "operational-guidance.html", 33),
-        ("co53-guide", "CO-53 Guide", "co-53-guide.html", 34),
-        ("personnel", "Departments and Personnel", "departments-and-personnel.html", 35),
+        ("overview", "Coordinator Overview", ROOT / "coordinator-overview.html", "coordinator-overview.html", 30, "Guidance"),
+        ("checklist", "Coordinator Checklist", ROOT / "coordinator-checklist.html", "coordinator-checklist.html", 31, "Checklist"),
+        ("forms-register", "Forms Register", ROOT / "forms-register.html", "forms-register.html", 32, "Forms guide"),
+        ("operational-guidance", "Operational Guidance", ROOT / "operational-guidance.html", "operational-guidance.html", 33, "Guidance"),
+        ("co53-guide", "CO-53 Easy Guide", ROOT / "co-53-guide.html", "co-53-guide.pdf", 11.5, "Easy guide · PDF"),
+        ("personnel", "Departments and Personnel", ROOT / "departments-and-personnel.html", "departments-and-personnel.html", 35, "Guidance"),
+        ("rooming-overview", "Rooming Easy Guide — Overview", PROJECT / "rooming/rooming-overview.html", "../rooming/rooming-overview.html", 20, "Easy guide"),
+        ("rooming-checklist", "Rooming Easy Guide — Checklist", PROJECT / "rooming/rooming-overseer-checklist.html", "../rooming/rooming-overseer-checklist.html", 21, "Checklist"),
+        ("rooming-forms", "Rooming Forms Guide", PROJECT / "rooming/forms-register.html", "../rooming/forms-register.html", 22, "Forms guide"),
+        ("rooming-personnel", "Rooming Departments and Personnel", PROJECT / "rooming/departments-and-personnel.html", "../rooming/departments-and-personnel.html", 23, "Guidance"),
+        ("rooming-source-map", "Rooming Source Map", PROJECT / "rooming/source-map.html", "../rooming/source-map.html", 24, "Reference map"),
+        ("rooming-glossary", "Rooming Glossary", PROJECT / "rooming/glossary.html", "../rooming/glossary.html", 25, "Glossary"),
     ]
-    for source_id, source, filename, priority in guidance:
-        parser = GuidanceParser(source_id, source, filename, priority)
-        parser.feed((ROOT / filename).read_text(encoding="utf-8"))
+    for source_id, source, source_path, url, priority, reference in guidance:
+        parser = GuidanceParser(source_id, source, url, priority, reference)
+        parser.feed(source_path.read_text(encoding="utf-8"))
         entries.extend(parser.entries)
 
     sources = [
@@ -180,7 +186,7 @@ def build():
         *[{"id": code.lower(), "name": code, "title": title, "type": "form", "priority": 10 + i}
           for i, (code, title, _) in enumerate(forms)],
         *[{"id": sid, "name": name, "title": name, "type": "guidance", "priority": priority}
-          for sid, name, _, priority in guidance],
+          for sid, name, _, _, priority, _ in guidance],
     ]
     payload = {"version": 1, "entries": entries, "sources": sources}
     compact = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))

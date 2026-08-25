@@ -3,12 +3,30 @@
   "venue": "South Auckland Assembly Hall",
   "dates": "30 October–1 November 2026",
   "response_due": "1 September 2026",
-  "updated": "20 August 2026",
+  "updated": "21 August 2026",
   "communication_groups": [
-    {"id": "committee", "label": "Committee", "description": "Committee-wide correspondence and meetings", "open": true},
-    {"id": "coordinator-branch", "label": "Coordinator branch", "description": "Assistant, Accounts, Attendant, First Aid, Parking and Safety", "open": true},
-    {"id": "program-branch", "label": "Program branch", "description": "Audio / Video and Baptism"},
-    {"id": "rooming-branch", "label": "Rooming branch", "description": "Cleaning, Information, Lost & Found and Rooming"}
+    {
+      "id": "committee",
+      "label": "Committee",
+      "description": "Committee-wide correspondence and meetings",
+      "open": true
+    },
+    {
+      "id": "coordinator-branch",
+      "label": "Coordinator branch",
+      "description": "Assistant, Accounts, Attendant, First Aid, Parking and Safety",
+      "open": true
+    },
+    {
+      "id": "program-branch",
+      "label": "Program branch",
+      "description": "Audio / Video and Baptism"
+    },
+    {
+      "id": "rooming-branch",
+      "label": "Rooming branch",
+      "description": "Cleaning, Information, Lost & Found and Rooming"
+    }
   ],
   "communications": [
     {
@@ -69,10 +87,55 @@
       "sent_at": "2026-08-16T23:26:45.154Z"
     },
     {
+      "id": "co53-meeting-2026-08-22",
+      "group": "committee",
+      "department": "CO-53 Meeting — 22 August",
+      "status": "Sent",
+      "subject": "CO-53 Evaluation Group Meeting — 22 August 2026 at 10:00 PM",
+      "response_due": "Please confirm availability as soon as possible",
+      "to": [
+        {
+          "name": "Israel Vinuya",
+          "email": "IVinuya@jwpub.org"
+        },
+        {
+          "name": "Wilfredo M Calaunan",
+          "email": "WilfredoCalaunan@jwpub.org"
+        },
+        {
+          "name": "Ron Mariano",
+          "email": "RonKennethMariano@jwpub.org"
+        },
+        {
+          "name": "Kent Morata",
+          "email": "MorataKent13@jwpub.org"
+        },
+        {
+          "name": "Daveson Asuncion",
+          "email": "asunciondaveson20@jwpub.org"
+        },
+        {
+          "name": "Louie Vea",
+          "email": "LVea12@jwpub.org"
+        },
+        {
+          "name": "Ramon Ruiz",
+          "email": "ruizramon26@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "coordinator/forms/01-CO-53-master_Auckland-NS-TG-2026.pdf"
+      ],
+      "note": "Sent to the authorised CO-53 evaluation group with the official prefilled CO-53 master copy attached. Birth and baptism dates remain blank pending secure verification. The easy guide was intentionally withheld so Adamson can present it first.",
+      "variant": "co53-meeting",
+      "sent_at": "2026-08-21T10:43:16.410Z"
+    },
+    {
       "id": "coordinator-assistant",
       "group": "coordinator-branch",
       "department": "Coordinator Assistant",
-      "status": "Draft — appointment follow-up",
+      "status": "Sent",
       "to": [
         {
           "name": "Ron Mariano",
@@ -92,7 +155,8 @@
         "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
       ],
       "note": "Confirmed Coordinator Assistant and live-verified in JW Hub on 20 August 2026. Ron no longer serves as Attendant Overseer.",
-      "variant": "committee-assistant"
+      "variant": "committee-assistant",
+      "sent_at": "2026-08-21T08:12:26.754Z"
     },
     {
       "id": "accounts",
@@ -403,6 +467,108 @@
       "note": "Receipt check only. No attachments. Ask whether Wilfredo's documents were received and can be opened.",
       "variant": "receipt-check",
       "sent_at": "2026-08-18T03:45:00.158Z"
+    },
+    {
+      "id": "program-overseer-assistant-kent",
+      "group": "program-branch",
+      "department": "Program Overseer Assistant",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Kent Morata",
+          "email": "MorataKent13@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Convention Committee/RC 2026_Auckland.xlsx",
+        "templates/Event Oversight/M-270 Assembly Hall Operating Manual - complete.pdf",
+        "templates/Event Oversight/M-270c Information - Event Oversight.pdf",
+        "templates/Event Oversight/M-286 Checklist - Event Oversight.pdf",
+        "templates/Event Oversight/CO-161_E Emergency Preparedness Plan.pdf",
+        "templates/Event Oversight/SAAH Evacuation Plan.pdf",
+        "templates/Event Oversight/SAAH Plans 5.1.24 (1).pdf",
+        "templates/Event Oversight/SAAH Department Diagram (Confidential).pdf"
+      ],
+      "note": "Current Program Overseer Assistant pack following Kent's move from Audio/Video Overseer. The confidential diagram must not be forwarded.",
+      "variant": "committee-assistant",
+      "sent_at": "2026-08-21T08:13:09.835Z"
+    },
+    {
+      "id": "audio-video-overseer-ferdinand",
+      "group": "program-branch",
+      "department": "Audio / Video Overseer",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Ferdinand Martinez",
+          "email": "23FernandoM@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Audio Video/M-272 Assembly Hall Operating Manual - Audio Video.pdf",
+        "templates/Audio Video/M-272a Checklist - Audio Video.pdf",
+        "templates/Audio Video/M-272b Checklist - Platform.pdf",
+        "templates/Audio Video/AV Startup & Shutdown Procedure.pdf",
+        "templates/Audio Video/Recording Convention Programs.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "note": "Current overseer pack following Ferdinand's move from Audio/Video assistant.",
+      "variant": "role-change",
+      "sent_at": "2026-08-21T08:13:42.984Z"
+    },
+    {
+      "id": "audio-video-assistant-george",
+      "group": "program-branch",
+      "department": "Audio / Video Assistant",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "George Intic",
+          "email": "GEORGEINTIC4@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Audio Video/M-272 Assembly Hall Operating Manual - Audio Video.pdf",
+        "templates/Audio Video/M-272a Checklist - Audio Video.pdf",
+        "templates/Audio Video/M-272b Checklist - Platform.pdf",
+        "templates/Audio Video/AV Startup & Shutdown Procedure.pdf",
+        "templates/Audio Video/Recording Convention Programs.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf",
+        "templates/Facility Information/Evacuation plan for SAAH.pdf"
+      ],
+      "note": "Current pack for the newly confirmed Audio/Video assistant.",
+      "variant": "role-change",
+      "sent_at": "2026-08-21T08:14:27.716Z"
+    },
+    {
+      "id": "attendant-overseer-louie",
+      "group": "coordinator-branch",
+      "department": "Attendant Overseer",
+      "status": "Sent",
+      "to": [
+        {
+          "name": "Louie Vea",
+          "email": "LVea12@jwpub.org"
+        }
+      ],
+      "cc": [],
+      "attachments": [
+        "CO-1_s-BrAUS_E.pdf",
+        "templates/Attendants/M-282 Assembly Hall Operating Manual - Attendant.pdf",
+        "templates/Attendants/M-282 Checklist - Attendant.pdf",
+        "templates/Attendants/Evacuation plan for SAAH.pdf",
+        "templates/Facility Information/Department Diagram (General).pdf"
+      ],
+      "note": "Current overseer pack following Louie's appointment to replace Ron Mariano. Louie remains Baptism Overseer Assistant.",
+      "variant": "role-change",
+      "sent_at": "2026-08-21T08:15:00.880Z"
     }
   ]
 }

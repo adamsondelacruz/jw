@@ -1,0 +1,58 @@
+{
+  "talks": [
+    {
+      "id": "055",
+      "number": "55",
+      "title": "How Can You Make a Good Name With God?",
+      "updatedAt": "2026-08-19",
+      "estimatedMinutes": "28-31",
+      "preferredFileId": "055-draft-v3-html",
+      "files": [
+        {
+          "id": "055-draft-v3-html",
+          "name": "draft-talk-v3.html",
+          "kind": "html",
+          "role": "manuscript",
+          "version": "v3",
+          "title": "Draft Talk v3",
+          "path": "/talks/055/draft-talk-v3.html"
+        },
+        {
+          "id": "055-guide-v3-html",
+          "name": "v3-extemp-guide.html",
+          "kind": "html",
+          "role": "extemp",
+          "version": "v3",
+          "title": "V3 Extemporaneous Guide",
+          "path": "/talks/055/v3-extemp-guide.html"
+        },
+        {
+          "id": "055-metrics-html",
+          "name": "metrics-index.html",
+          "kind": "html",
+          "role": "metrics",
+          "title": "Metrics Index",
+          "path": "/talks/055/metrics-index.html"
+        },
+        {
+          "id": "055-draft-v3-md",
+          "name": "draft-talk-v3.md",
+          "kind": "markdown",
+          "role": "manuscript",
+          "version": "v3",
+          "title": "Draft Talk v3 Markdown",
+          "path": "/talks/055/draft-talk-v3.md"
+        },
+        {
+          "id": "055-draft-v3-pdf",
+          "name": "draft-talk-v3.pdf",
+          "kind": "pdf",
+          "role": "manuscript",
+          "version": "v3",
+          "title": "Draft Talk v3 PDF",
+          "path": "/talks/055/draft-talk-v3.pdf"
+        }
+      ]
+    }
+  ]
+}

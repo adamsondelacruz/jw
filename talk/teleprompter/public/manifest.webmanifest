@@ -1,0 +1,9 @@
+{
+  "name": "JW Talk Teleprompter",
+  "short_name": "Talk Prompter",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ef",
+  "theme_color": "#182437",
+  "icons": []
+}

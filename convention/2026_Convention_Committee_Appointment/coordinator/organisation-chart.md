@@ -3,14 +3,14 @@
 **Auckland NS (TG) · South Auckland Assembly Hall · 30 October–1 November 2026**
 
 <div class="warning-note">
-<strong>Hub reconciliation completed 12 August 2026:</strong> A green check means the named person was independently verified against the live Auckland NS (TG) — 2026 Responsibilities page. Unchecked TBC/local-only entries still require resolution outside this sync.
+<strong>Hub reconciliation updated 21 August 2026:</strong> A green check means the named person was independently verified against the live Auckland NS (TG) — 2026 Responsibilities page.
 </div>
 
-<div class="warning-note pending-note">
-<strong>Remaining local TBC changes recorded 19 August 2026:</strong> Kent Morata as Program Overseer Assistant; Ferdinand Martinez as Audio/Video Overseer; and George Intic as an Audio/Video assistant. These changes have <strong>not</strong> been synced to JW Hub. Louie Vea’s Attendant Overseer appointment and Ron Mariano’s Coordinator Assistant appointment were live-verified on 20 August 2026.
+<div class="warning-note">
+<strong>Confirmed and synced 21 August 2026:</strong> Kent Morata as Program Overseer Assistant; Ferdinand Martinez as Audio/Video Overseer; and George Intic as an Audio/Video assistant. The exact JW Hub account for the working-chart name Ferdinand is “Martinez, Fernando Dinopol Jr.”
 </div>
 
-<p class="sync-legend"><span class="sync-check" aria-label="Synced with JW Hub">✓</span> Live-verified in JW Hub Convention Information · <span class="tbc-badge">TBC</span> Local working change, not synced</p>
+<p class="sync-legend"><span class="sync-check" aria-label="Synced with JW Hub">✓</span> Live-verified in JW Hub Convention Information</p>
 
 <div class="org-chart" aria-label="Organisation chart showing Adamson dela Cruz as Convention Committee coordinator, Israel Vinuya as program overseer, and Wilfredo M Calaunan as rooming overseer, with their assistants and departments.">
   <div class="org-title">2026 CONVENTION COMMITTEE <span>OCT 30–NOV 1</span></div>
@@ -26,8 +26,8 @@
     </section>
     <section class="org-branch program-branch">
       <div class="org-card committee-card confirmed synced" id="role-program-overseer"><strong>Program Overseer</strong><span><a class="person-link" href="contact-masterlist.html#person-israel-vinuya">Israel Vinuya</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span></span><div class="org-actions"><a href="communications.html#committee">Correspondence</a></div></div>
-      <div class="org-card pending" id="role-program-overseer-assistant"><strong>Program Overseer Assistant</strong><span><a class="person-link" href="contact-masterlist.html#person-kent-morata">Kent Morata</a> <span class="tbc-badge">TBC</span></span><small>Local working change · not synced to JW Hub</small></div>
-      <div class="org-card pending" id="role-audio-video"><strong>Audio / Video</strong><span>Overseer: <a class="person-link" href="contact-masterlist.html#person-fernando-martinez" title="Workbook contact is Fernando Martinez; working chart says Ferdinand">Ferdinand Martinez</a> <span class="tbc-badge">TBC</span></span><small>Assistants: <a class="person-link" href="contact-masterlist.html#person-joel-dela-cruz">Joel Dela Cruz</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span><br><a class="person-link" href="contact-masterlist.html#person-george-intic">George Intic</a> <span class="tbc-badge">TBC</span><br>Local working changes · not synced to JW Hub</small><div class="org-actions"><a href="communications.html#audio-video">Correspondence</a></div></div>
+      <div class="org-card confirmed synced" id="role-program-overseer-assistant"><strong>Program Overseer Assistant</strong><span><a class="person-link" href="contact-masterlist.html#person-kent-morata">Kent Morata</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span></span><small>Confirmed and live-verified 21 August 2026</small><div class="org-actions"><a href="communications.html#co53-meeting-2026-08-22">Correspondence</a></div></div>
+      <div class="org-card confirmed synced" id="role-audio-video"><strong>Audio / Video</strong><span>Overseer: <a class="person-link" href="contact-masterlist.html#person-fernando-martinez" title="Working chart: Ferdinand Martinez; JW Hub account: Martinez, Fernando Dinopol Jr">Ferdinand Martinez</a> <span class="sync-check" title="Live-verified in JW Hub as Martinez, Fernando Dinopol Jr">✓</span></span><small>Assistants: <a class="person-link" href="contact-masterlist.html#person-joel-dela-cruz">Joel Dela Cruz</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span><br><a class="person-link" href="contact-masterlist.html#person-george-intic">George Intic</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span><br>Confirmed and live-verified 21 August 2026</small><div class="org-actions"><a href="communications.html#audio-video">Correspondence</a></div></div>
       <div class="org-card synced" id="role-baptism"><strong>Baptism</strong><span>Overseer: <a class="person-link" href="contact-masterlist.html#person-emmanuel-laxamana">Emmanuel Laxamana</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span></span><small>Assistant: <a class="person-link" href="contact-masterlist.html#person-louie-vea">Louie Vea</a> <span class="sync-check" title="Live-verified in JW Hub">✓</span><br>Also serves as Attendant Overseer <span class="sync-check" title="Live-verified in JW Hub">✓</span></small><div class="org-actions"><a href="communications.html#baptism">Correspondence</a></div></div>
     </section>
     <section class="org-branch rooming-branch">
@@ -55,29 +55,29 @@
 | Coordinator assistant | Mark Ibe | **To be confirmed** | Reconfirm after coordinator change |
 | Program overseer assistant | Wilfred Calaunan | **To be confirmed** | Wilfredo now serves on the committee as Rooming Overseer |
 | Coordinator assistant update | To be confirmed | **Ron Mariano** | Accepted and live-verified in JW Hub, 20 August 2026 |
-| Program overseer assistant | To be confirmed | **Kent Morata — TBC** | Local working decision, 19 August 2026; do not sync yet |
-| Audio/Video overseer | Kent Morata | **Ferdinand Martinez — TBC** | Local working decision, 19 August 2026; contact masterlist currently spells the name “Fernando Martinez”; verify before sync |
-| Audio/Video assistant | — | **George Intic — TBC** | Local working decision, 19 August 2026; do not sync yet |
+| Program overseer assistant | To be confirmed | **Kent Morata** | Confirmed and live-verified in JW Hub, 21 August 2026 |
+| Audio/Video overseer | Kent Morata | **Ferdinand Martinez** | Confirmed and live-verified in JW Hub, 21 August 2026; exact Hub account is “Martinez, Fernando Dinopol Jr” |
+| Audio/Video assistant | — | **George Intic** | Confirmed and live-verified in JW Hub, 21 August 2026 |
 | Attendant overseer | Ron Mariano | **Louie Vea** | Accepted and live-verified in JW Hub, 20 August 2026; Louie remains Baptism Overseer Assistant |
 
 ## Update checklist
 
 - [x] Confirm Ron Mariano as coordinator assistant.
 - [x] Assign and live-verify Louie Vea as Attendant overseer; retain his Baptism Overseer Assistant assignment.
-- [ ] Finalise and sync Kent Morata as Program Overseer Assistant.
-- [ ] Verify whether “Ferdinand Martinez” is the same brother listed in the contact masterlist as “Fernando Martinez” before finalising or syncing the Audio/Video Overseer assignment.
-- [ ] Finalise and sync George Intic as an Audio/Video assistant.
+- [x] Finalise and sync Kent Morata as Program Overseer Assistant.
+- [x] Verify and sync the exact `23FernandoM@jwpub.org` account (“Martinez, Fernando Dinopol Jr”) as Audio/Video Overseer for the working-chart entry Ferdinand Martinez.
+- [x] Finalise and sync George Intic as an Audio/Video assistant.
 - [x] Confirm Daveson Asuncion remains the rooming overseer assistant under Wilfredo.
 - [x] Verify and sync every unambiguous chart mapping in JW Hub Convention Information.
 - [x] Reconcile this working chart with the authoritative JW Hub assignment state.
 
 ## JW Hub sync record
 
-- **27 chart-to-Hub mappings live-verified** through 20 August 2026.
-- **24 unique people synced**; Jeremias Meru and Luis Limaco each map to both Information/Volunteer Service and Lost & Found/Checkroom.
-- **Not synced:** the TBC changes for Kent Morata, Ferdinand Martinez, and George Intic; and local Rooming Department overseer Meliton Soriano and assistant Romel Lumiguid because JW Hub exposes no distinct matching responsibility.
+- **28 chart-to-Hub mappings live-verified** through 21 August 2026.
+- **25 unique people synced**; Jeremias Meru and Luis Limaco each map to both Information/Volunteer Service and Lost & Found/Checkroom.
+- **Not synced:** local Rooming Department overseer Meliton Soriano and assistant Romel Lumiguid because JW Hub exposes no distinct matching responsibility.
 - **Account-name aliases verified:** Benjie Talbo → Bengie Talbo; Ivander Montemayor → Vanic Montemayor.
 - **Spelling corrected:** Xavier Serio now matches the live JW Hub identity.
-- Latest private automation audit: `automation/artifacts/2026-08-12T10-41-20-608Z-batch-audit.json`.
+- Latest private automation audit: `automation/artifacts/2026-08-20T19-06-03-199Z-batch-audit.json`.
 
 [View the original chart](../commitee.jpeg) · [Review personnel notes](departments-and-personnel.md)

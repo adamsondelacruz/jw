@@ -12,8 +12,9 @@
     "verify-all": "node verify-all-assignments.mjs",
     "assign": "node assign-responsibility.mjs",
     "sync": "node sync-responsibilities.mjs",
+    "confirm-program-av": "node confirm-program-av-reorganisation.mjs",
     "test": "node --test",
-    "check": "node --check login.mjs && node --check check-session.mjs && node --check inspect-responsibilities.mjs && node --check assign-responsibility.mjs && node --check sync-responsibilities.mjs && node --check verify-assignment.mjs && node --check verify-all-assignments.mjs"
+    "check": "node --check login.mjs && node --check check-session.mjs && node --check inspect-responsibilities.mjs && node --check assign-responsibility.mjs && node --check sync-responsibilities.mjs && node --check verify-assignment.mjs && node --check verify-all-assignments.mjs && node --check confirm-program-av-reorganisation.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

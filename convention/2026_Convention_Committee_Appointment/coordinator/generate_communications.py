@@ -49,20 +49,33 @@ Meeting ID: <strong>816 2732 6064</strong><br>
 Passcode: <strong>2026RC</strong></p>
 <p>Please confirm that you are available for the meeting.</p>
 <p>Your brother,<br>Adamson dela Cruz<br>Convention Committee Coordinator<br>Auckland NS (TG) — 2026</p>'''
+    if record.get("variant") == "co53-meeting":
+        return '''<p>Dear Brothers,</p>
+<p>We will have a meeting tomorrow, <strong>Saturday, 22 August 2026, at 10:00 PM NZST</strong>, to review and discuss the <strong>Convention Personnel Evaluation (CO-53)</strong> process.</p>
+<p>The purpose is to make sure that our authorised evaluation group has the same understanding before the convention. We will discuss:</p>
+<ol><li>Who participates in the observations and evaluation.</li><li>Which assigned brothers are to be evaluated.</li><li>How to record balanced, factual observations and apply the rating criteria consistently.</li><li>How the postconvention evaluation, counsel, and submission are handled.</li></ol>
+<p>I have attached our official CO-53 master copy, prefilled with the current names and assignments. Birth and baptism dates still need secure verification. Please review the entries before the meeting and be ready to identify any corrections or missing information. I will present the easy guide during the meeting before circulating it separately.</p>
+<p><strong>Zoom meeting details</strong><br>
+Join meeting: <a href="https://us02web.zoom.us/j/82319399530?pwd=gGDAkvf8KozgrjKKUROx13HlJ8EYZU.1">https://us02web.zoom.us/j/82319399530?pwd=gGDAkvf8KozgrjKKUROx13HlJ8EYZU.1</a><br>
+Meeting chat: <a href="https://us02web.zoom.us/launch/jc/82319399530">https://us02web.zoom.us/launch/jc/82319399530</a><br>
+Meeting ID: <strong>823 1939 9530</strong><br>
+Passcode: <strong>371011</strong></p>
+<p>Please confirm that you are available.</p>
+<p>Your brother,<br>Adamson dela Cruz<br>Convention Committee Coordinator<br>Auckland NS (TG) — 2026</p>'''
     if record.get("variant") == "receipt-check":
         return '''<p>Dear Brother Daveson,</p>
 <p>I am checking whether you received the convention documents for your assignment as Rooming Overseer Assistant from Brother Wilfredo Calaunan.</p>
 <p>Could you please confirm whether you received them and whether you are able to open the files? If anything is missing or cannot be opened, please let me know which documents so we can arrange for them to be forwarded.</p>
 <p>Thank you.</p>
 <p>Your brother,<br>Adamson dela Cruz<br>Convention Committee Coordinator<br>Auckland NS (TG) — 2026</p>'''
-    introduction = ("Thank you for accepting the appointment to serve as Convention Committee Coordinator Assistant for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026."
+    introduction = (f'Thank you for accepting the appointment to serve as <strong>{escape(record["department"])}</strong> for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026.'
                     if record.get("variant") == "committee-assistant" else
                     f'Thank you for accepting the assignment to serve with the <strong>{escape(record["department"])}</strong> for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026.')
     special = ""
     if record.get("variant") == "committee":
         special = "<p>Please review these committee and event-oversight documents together. The confidential department diagram is a controlled document and must not be forwarded.</p>"
     elif record.get("variant") == "committee-assistant":
-        special = "<p>This package follows your appointment as Convention Committee Coordinator Assistant. Please review the committee and event-oversight material. The confidential department diagram is a controlled document and must not be forwarded.</p>"
+        special = f'<p>This package follows your appointment as {escape(record["department"])}. Please review the committee and event-oversight material. The confidential department diagram is a controlled document and must not be forwarded.</p>'
     elif record.get("variant") == "confidential":
         special = "<p>The emergency plan, evacuation material, site plan, and confidential department diagram are controlled operational documents. Please review them with your assistant, keep them secure, and do not forward the confidential diagram.</p>"
     elif record["id"] == "information-lost-found":

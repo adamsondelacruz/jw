@@ -84,14 +84,14 @@
     const visible = matches.slice(0, 8);
     const details = document.createElement("details");
     details.className = "result-group";
-    details.open = index < 3;
+    details.open = index < 3 || terms.every(term => normalized(source.name).includes(term));
     details.innerHTML = `<summary><span class="source-heading"><strong>${escape(source.name)}</strong><small>${escape(source.title)}</small></span><span class="result-count">${matches.length} result${matches.length === 1 ? "" : "s"}</span></summary><div class="result-list"></div>`;
     const list = details.querySelector(".result-list");
     function append(items) {
       for (const {entry} of items) {
         const article = document.createElement("article");
         article.className = "search-result";
-        const target = entry.type === "co1" ? ' target="co1_reference"' : entry.type === "form" ? ' target="_blank" rel="noopener"' : "";
+        const target = entry.type === "co1" ? ' target="co1_reference"' : (entry.type === "form" || /\.pdf(?:$|#)/i.test(entry.url)) ? ' target="_blank" rel="noopener"' : "";
         const label = entry.type === "co1" ? `CO-1 ${entry.reference}` : `${entry.source} · ${entry.reference}`;
         article.innerHTML = `<div class="result-topline"><a class="result-title" href="${escape(entry.url)}"${target}>${escape(label)} — ${escape(entry.title)}</a><span class="result-reference">${escape(entry.type === "co1" ? entry.title : entry.source)}</span></div><p class="result-context">${excerpt(entry.text, terms)}</p>`;
         if (entry.type === "co1") article.querySelector(".result-title").addEventListener("click", event => {

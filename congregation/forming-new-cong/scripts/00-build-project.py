@@ -11,6 +11,7 @@ import os
 import re
 import subprocess
 import tempfile
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote
 
@@ -27,6 +28,11 @@ ROOT_PDF = ROOT / "00-project-overview.pdf"
 PACK_MD = ROOT / "01-meeting-pack.md"
 PACK_HTML = ROOT / "01-meeting-pack.html"
 PACK_PDF = ROOT / "01-meeting-pack.pdf"
+COMMS_MD = DOCS_DIR / "05-communications.md"
+COMMS_HTML = DOCS_DIR / "05-communications.html"
+SEARCH_HTML = ROOT / "search.html"
+SEARCH_INDEX_JSON = ROOT / "search-index.json"
+SEARCH_INDEX_JS = ROOT / "search-index.js"
 
 
 def sha256(path: Path) -> str:
@@ -101,10 +107,12 @@ def common_nav(depth: int, current: str) -> str:
     prefix = "../" * depth
     links = [
         ("Home", f"{prefix}index.html", "home"),
+        ("Search", f"{prefix}search.html", "search"),
         ("Forms", f"{prefix}docs/00-forms-register.html", "forms"),
         ("Requirements", f"{prefix}docs/01-requirements.html", "requirements"),
         ("Statistics", f"{prefix}docs/02-statistics.html", "statistics"),
         ("Submissions", f"{prefix}docs/03-submissions.html", "submissions"),
+        ("Communications", f"{prefix}docs/05-communications.html", "communications"),
         ("Sources", f"{prefix}docs/04-source-map.html", "sources"),
         ("Checklist", f"{prefix}02-checklist.html", "checklist"),
     ]
@@ -112,7 +120,13 @@ def common_nav(depth: int, current: str) -> str:
     for label, href, key in links:
         active = ' aria-current="page"' if key == current else ""
         values.append(f'<a href="{html.escape(href)}"{active}>{html.escape(label)}</a>')
-    return '<nav class="portal-nav" aria-label="Project navigation">' + "".join(values) + "</nav>"
+    search = (
+        f'<form class="nav-search" action="{prefix}search.html" method="get" role="search">'
+        '<label class="sr-only" for="nav-search-input">Search the project portal</label>'
+        '<input id="nav-search-input" name="q" type="search" placeholder="Search project" autocomplete="off">'
+        '<button type="submit">Search</button></form>'
+    )
+    return '<nav class="portal-nav" aria-label="Project navigation"><div class="nav-links">' + "".join(values) + "</div>" + search + "</nav>"
 
 
 def title_from_markdown(text: str) -> str:
@@ -212,6 +226,7 @@ def build_home(data: dict) -> str:
         "",
         "<div class=\"actions screen-only\">",
         '<a class="button" href="02-checklist.html">Open the 78-item checklist</a>',
+        '<a class="button" href="docs/05-communications.html">Open communications</a>',
         '<a class="button" href="01-meeting-pack.pdf">Open the complete meeting pack</a>',
         '<a class="button secondary" href="09-S-51-Ashburton-Tagalog-signed.pdf">Open signed proposed S-51</a>',
         '<a class="button secondary" href="08-S-51_E-Ashburton-working.pdf">Open submitted Ashburton S-51</a>',
@@ -222,9 +237,11 @@ def build_home(data: dict) -> str:
         "1. [Forms register](docs/00-forms-register.md) — what each form is for, who needs it, its current version and status.",
         "2. [Requirements and evidence](docs/01-requirements.md) — every S-50 gate linked to the exact instruction text.",
         "3. [Statistics](docs/02-statistics.md) — printed facts, reported estimates, calculations and cautions.",
-        "4. [Submissions and correspondence](docs/03-submissions.md) — what has been sent, requested and still needs review.",
-        "5. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.",
-        "6. [Persistent master checklist](02-checklist.html) — existing ticks, notes and JSON save workflow, preserved unchanged.",
+        "4. [Submissions](docs/03-submissions.md) — packages already sent and their verification state.",
+        "5. [Communications](docs/05-communications.md) — Daniel Martin’s requests, attachments, replies, action status and next step.",
+        "6. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.",
+        "7. [Persistent master checklist](02-checklist.html) — existing ticks, notes and JSON save workflow, preserved unchanged.",
+        "8. [Search](search.html) — search forms, requirements, statistics, communications, checklist items and official references.",
         "",
         "## Present position",
         "",
@@ -277,7 +294,7 @@ def build_forms(data: dict) -> str:
     lines = [
         "# Forms Register",
         "",
-        "> **Current sequence:** Both requested S-51 forms have been sent to the circuit overseer. S-50 through par. 5 is confirmed; par. 6 remains pending. This register shows the eventual S-50 package but does not imply that every remaining form should be sent now.",
+        "> **Current sequence:** Both S-51 forms have been sent. On 25 August 2026, the circuit overseer explicitly requested S-29, S-5, M-202, S-36 and S-6, together with the body’s recommendation(s) for the prospective coordinator. Par. 6 remains pending after this package is prepared and reviewed.",
         "",
         "| Form | Purpose | Required for / timing | Owner | Status | Working files |",
         "|---|---|---|---|---|---|",
@@ -296,8 +313,9 @@ def build_forms(data: dict) -> str:
         "",
         "1. The proposed Ashburton Tagalog S-51 has been sent to the circuit overseer.",
         "2. The separate Ashburton host-congregation S-51 has also been sent to him.",
-        "3. S-50 through par. 5 is confirmed. Wait for the branch-office decision and instructions described in S-50 par. 6.",
-        "4. Prepare or submit S-29, S-5, M-202, S-36 and S-6 only when current direction requires them.",
+        "3. On 25 August 2026, Daniel Martin requested S-29, S-5, M-202, S-36 and S-6 under S-50 par. 5.",
+        "4. The body’s recommendation(s) for the prospective coordinator are also required as soon as possible.",
+        "5. After the requested package is prepared and reviewed, await the branch-office decision and instructions described in S-50 par. 6.",
         "",
         "## Submitted S-51 record",
         "",
@@ -372,7 +390,7 @@ def build_statistics(data: dict) -> str:
 
 def build_submissions(data: dict) -> str:
     lines = [
-        "# Submissions and Correspondence",
+        "# Submissions",
         "",
         "## Submission register",
         "",
@@ -385,21 +403,163 @@ def build_submissions(data: dict) -> str:
         lines.append(f"| {md_cell(item['package'])} | {md_cell(item['recipient'])} | {md_cell(item['date'])} | {status(item['status'])} | {files} | {md_cell(verification)} |")
     lines.extend([
         "",
-        "## Correspondence register",
+        "## Communication summary",
         "",
-        "| Direction | With | Subject | Status | Summary | Source |",
+        "| Date | Direction | With | Subject | Status | Action |",
         "|---|---|---|---|---|---|",
     ])
     for item in data["correspondence"]:
-        source = file_link(item["source"], "../") if item["source"].endswith((".md", ".html", ".pdf")) else md_cell(item["source"])
-        lines.append(f"| {md_cell(item['direction'])} | {md_cell(item['with'])} | {md_cell(item['subject'])} | {status(item['status'])} | {md_cell(item['summary'])} | {source} |")
+        lines.append(f"| {md_cell(item['date'])} | {md_cell(item['direction'])} | {md_cell(item['with'])} | [{md_cell(item['subject'])}](05-communications.html#{item['id']}) | {status(item['status'])} | {md_cell(item.get('action') or item['summary'])} |")
     lines.extend([
+        "",
+        "[Open the complete communications register](05-communications.html) for full email text, attachments, replies and action notes.",
         "",
         "## External-action gate",
         "",
         "No portal button sends email, uploads a form, or submits a recommendation. Online automation remains read-only until a reviewed, exact action is separately authorised with an explicit confirmation and an independent verification step.",
     ])
     return "\n".join(lines) + "\n"
+
+
+def communication_timestamp(item: dict) -> str:
+    return f"{item['date']} {item.get('time', '')}".strip()
+
+
+def build_communications_markdown(data: dict) -> str:
+    lines = [
+        "# Communications",
+        "",
+        "> **Working register:** Received messages are evidence of current direction. A reply or acknowledgement does not mean that the requested forms or information have been completed.",
+        "",
+        "| Date/time | Direction | Subject | Status | Current action |",
+        "|---|---|---|---|---|",
+    ]
+    records = sorted(data["correspondence"], key=communication_timestamp)
+    for item in records:
+        date_time = communication_timestamp(item)
+        lines.append(
+            f"| {md_cell(date_time)} | {md_cell(item['direction'])} | [{md_cell(item['subject'])}](#{item['id']}) | "
+            f"{status(item['status'])} | {md_cell(item.get('action') or item['summary'])} |"
+        )
+    for item in records:
+        lines.extend([
+            "",
+            f'<div id="{item["id"]}"></div>',
+            "",
+            f"## {item['date']} — {item['subject']}",
+            "",
+            f"- **Direction:** {item['direction'].title()}",
+            f"- **With:** {item['with']}",
+            f"- **Status:** {status(item['status'])}",
+            f"- **Summary:** {item['summary']}",
+            f"- **Current action:** {item.get('action') or 'No further action recorded.'}",
+        ])
+        if item.get("references"):
+            lines.append(f"- **References:** {', '.join(item['references'])}")
+        if item.get("attachments"):
+            attachments = " · ".join(file_link(value, "../") for value in item["attachments"])
+            lines.append(f"- **Attachments:** {attachments}")
+        source = item.get("source", "")
+        if source.endswith((".md", ".html", ".pdf", ".docx")):
+            source = file_link(source, "../")
+        lines.append(f"- **Evidence source:** {source or '—'}")
+        if item.get("reply"):
+            reply = item["reply"]
+            lines.append(
+                f"- **Reply:** {reply['date']} {reply.get('time', '')} — {status(reply['status'])} {reply['summary']}"
+            )
+        if item.get("body"):
+            quoted = "\n> ".join(item["body"].splitlines())
+            lines.extend(["", "### Substantive email text", "", f"> {quoted}"])
+    lines.extend([
+        "",
+        "## External-action gate",
+        "",
+        "This register does not send email or submit attachments. Completion, review and explicit authorisation are required before any external action.",
+    ])
+    return "\n".join(lines) + "\n"
+
+
+def write_communications_html(data: dict) -> None:
+    groups = data.get("communication_groups", [])
+    records_by_group = {group["id"]: [] for group in groups}
+    for item in sorted(data["correspondence"], key=communication_timestamp):
+        records_by_group.setdefault(item.get("group", "other"), []).append(item)
+
+    tree_groups = []
+    for group in groups:
+        records = records_by_group.get(group["id"], [])
+        pending = sum(item["status"] in {"action-required", "needs-confirmation", "not-started", "draft"} for item in records)
+        links = []
+        for item in records:
+            search_value = " ".join(
+                [item["subject"], item["with"], item["direction"], item["status"], item["summary"], item.get("action", ""), " ".join(item.get("references", []))]
+            ).lower()
+            links.append(
+                f'<a class="comm-select" href="#{html.escape(item["id"])}" data-target="{html.escape(item["id"])}" '
+                f'data-search="{html.escape(search_value)}"><span>{html.escape(item["subject"])}</span>'
+                f'<small>{html.escape(communication_timestamp(item))} · {html.escape(item["direction"].title())}</small>'
+                f'<b class="status-mini {html.escape(item["status"])}">{html.escape(item["status"].replace("-", " ").title())}</b></a>'
+            )
+        tree_groups.append(
+            f'<details class="comm-group" data-group="{html.escape(group["id"])}" open><summary><span>'
+            f'<strong>{html.escape(group["label"])}</strong><small>{html.escape(group["description"])}</small></span>'
+            f'<b>{pending} pending</b></summary><div class="comm-children">{"".join(links)}</div></details>'
+        )
+
+    cards = []
+    for item in sorted(data["correspondence"], key=communication_timestamp):
+        attachments = []
+        for filename in item.get("attachments", []):
+            target = ROOT / filename
+            available = target.exists()
+            attachments.append(
+                f'<li class="{"ready" if available else "missing"}"><a href="../{qpath(filename)}">{html.escape(Path(filename).name)}</a>'
+                f'<span>{"Available" if available else "Missing"}</span></li>'
+            )
+        references = []
+        for reference in item.get("references", []):
+            if reference.startswith("S-50 par. 5"):
+                references.append('<a href="../references/00-S-50-reference.html#s50-p5">S-50 par. 5</a>')
+            else:
+                references.append(html.escape(reference))
+        source = item.get("source", "—")
+        if source.endswith((".md", ".html", ".pdf", ".docx")):
+            source_html = f'<a href="../{qpath(source)}">{html.escape(Path(source).name)}</a>'
+        else:
+            source_html = html.escape(source)
+        body = ""
+        if item.get("body"):
+            body_text = html.escape(item["body"]).replace("\n", "<br>\n")
+            body = f'<details open><summary>Substantive email text</summary><div class="email-body">{body_text}</div></details>'
+        reply = ""
+        if item.get("reply"):
+            value = item["reply"]
+            reply = (
+                f'<div class="reply-record"><strong>Reply recorded</strong><span>{html.escape(value["date"])} '
+                f'{html.escape(value.get("time", ""))} · {status(value["status"])}</span><p>{html.escape(value["summary"])}</p></div>'
+            )
+        cards.append(
+            f'''<article class="comm-detail" id="{html.escape(item['id'])}" data-status="{html.escape(item['status'])}">
+<header><div><p class="eyebrow">{html.escape(item['direction'])} communication</p><h2>{html.escape(item['subject'])}</h2></div>{status(item['status'])}</header>
+<dl><dt>Date/time</dt><dd>{html.escape(communication_timestamp(item))}</dd><dt>With</dt><dd>{html.escape(item['with'])}</dd><dt>Direction</dt><dd>{html.escape(item['direction'].title())}</dd><dt>References</dt><dd>{' · '.join(references) or '—'}</dd><dt>Evidence source</dt><dd>{source_html}</dd></dl>
+<p>{html.escape(item['summary'])}</p><p class="record-note"><strong>Current action:</strong> {html.escape(item.get('action') or 'No further action recorded.')}</p>
+{reply}
+<details open><summary>Attachments <span>{len(attachments)}</span></summary><ul class="attachments">{''.join(attachments) or '<li>None</li>'}</ul></details>
+{body}
+</article>'''
+        )
+
+    pending_total = sum(item["status"] in {"action-required", "needs-confirmation", "not-started", "draft"} for item in data["correspondence"])
+    page = f'''<!doctype html>
+<html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Communications — Ashburton Tagalog</title><link rel="stylesheet" href="../assets/00-portal.css"></head>
+<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Communications</h1><p>Daniel Martin correspondence, attachments, replies and action status. Mailbox inspection is read-only; this page sends nothing.</p></header>
+{common_nav(1, 'communications')}
+<main><blockquote class="notice warning"><p><strong>{pending_total} communication workstream(s) need action or confirmation.</strong> Acknowledging an email does not mean its requested form or package is complete.</p></blockquote>
+<div class="comm-shell"><aside class="comm-sidebar"><h2>Communication tree</h2><input class="comm-search" id="comm-search" type="search" placeholder="Search subject, status or action" aria-label="Filter communications">{''.join(tree_groups)}</aside><div class="comm-content">{''.join(cards)}</div></div></main>
+<p class="footer">Generated from <code>data/00-project.json</code>. This register does not replace the original email, attachment or current direction.</p>
+<script>(()=>{{const links=[...document.querySelectorAll('.comm-select')],cards=[...document.querySelectorAll('.comm-detail')],groups=[...document.querySelectorAll('.comm-group')],search=document.getElementById('comm-search');function show(id,push=false){{const target=document.getElementById(id);if(!target)return;links.forEach(link=>link.classList.toggle('active',link.dataset.target===id));cards.forEach(card=>card.classList.toggle('active',card.id===id));const link=links.find(item=>item.dataset.target===id);if(link)link.closest('.comm-group').open=true;if(push&&location.hash!=='#'+id)history.pushState(null,'','#'+id)}}links.forEach(link=>link.addEventListener('click',event=>{{event.preventDefault();show(link.dataset.target,true)}}));function route(){{const id=location.hash.slice(1);show(document.getElementById(id)?.classList.contains('comm-detail')?id:links[links.length-1].dataset.target)}}addEventListener('hashchange',route);search.addEventListener('input',()=>{{const terms=search.value.toLowerCase().trim().split(/\\s+/).filter(Boolean);links.forEach(link=>link.hidden=!terms.every(term=>link.dataset.search.includes(term)));groups.forEach(group=>{{const visible=group.querySelector('.comm-select:not([hidden])');group.hidden=!visible;if(terms.length&&visible)group.open=true}})}});route()}})();</script></body></html>'''
+    COMMS_HTML.write_text(page, encoding="utf-8")
 
 
 def build_source_map(data: dict, actual_hashes: dict[str, str]) -> str:
@@ -441,6 +601,8 @@ def build_source_map(data: dict, actual_hashes: dict[str, str]) -> str:
         "- `00-project-overview.md/.html/.pdf` — portal home and printable summary.",
         "- `01-meeting-pack.md/.html/.pdf` — combined meeting document with every portal register.",
         "- `docs/00-forms-register`, then `docs/01-` through `docs/04-` — focused forms, requirements, statistics, submissions and source pages.",
+        "- `docs/05-communications.md/.html` — communication timeline, full substantive email text, attachments and workflow status.",
+        "- `search.html`, `search-index.json` and `search-index.js` — local browser-side portal search.",
         "- `references/00-S-50-reference.html` and `references/01-S-51-reference.html` — searchable source text.",
         "- `data/00-project.json` — canonical structured facts and workflow state.",
         "- `02-checklist.html` plus `03-checklist-progress.json` — preserved interactive progress tracker.",
@@ -451,6 +613,7 @@ def build_source_map(data: dict, actual_hashes: dict[str, str]) -> str:
 def meeting_section(markdown: str) -> str:
     body = re.sub(r"(?m)^#\s+[^\n]+\n?", "", markdown, count=1).strip()
     body = re.sub(r"(?m)^(#{2,5})(\s+)", lambda match: "#" + match.group(1) + match.group(2), body)
+    body = body.replace("](05-communications.html", "](docs/05-communications.html")
     return body.replace("](../", "](")
 
 
@@ -460,7 +623,8 @@ def build_meeting_pack(data: dict, actual_hashes: dict[str, str]) -> str:
         ("Forms Register", build_forms(data)),
         ("Requirements and Evidence", build_requirements(data)),
         ("Statistics and Provenance", build_statistics(data)),
-        ("Submissions and Correspondence", build_submissions(data)),
+        ("Submissions", build_submissions(data)),
+        ("Communications", build_communications_markdown(data)),
         ("Source Map and Integrity Register", build_source_map(data, actual_hashes)),
     ]
     lines = [
@@ -570,6 +734,154 @@ def build_reference(code: str, source: Path, target: Path, revision: str) -> Non
     target.write_text(page, encoding="utf-8")
 
 
+def clean_search_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value.replace("\u00ad", "").replace("\uf0a8", " ").replace("\uf0fe", " ")).strip()
+
+
+class PortalSearchParser(HTMLParser):
+    block_tags = {"p", "li", "td", "dd", "dt", "summary", "blockquote", "pre"}
+    skip_tags = {"nav", "script", "style", "form"}
+    void_tags = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
+
+    def __init__(self, source: dict):
+        super().__init__()
+        self.source = source
+        self.entries: list[dict] = []
+        self.heading = source["title"]
+        self.heading_id = ""
+        self.skip = 0
+        self.capture: str | None = None
+        self.capture_depth = 0
+        self.capture_buffer: list[str] = []
+        self.capture_id = ""
+        self.capture_tag = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = dict(attrs)
+        if tag in self.skip_tags:
+            self.skip += 1
+            return
+        if self.skip:
+            return
+        if self.capture:
+            if tag not in self.void_tags:
+                self.capture_depth += 1
+            return
+        classes = set((values.get("class") or "").split())
+        if tag in {"h1", "h2", "h3", "h4"}:
+            self.capture = "heading"
+        elif tag in self.block_tags or classes.intersection({"task-title", "task-detail", "gate", "record-note"}):
+            self.capture = "block"
+        else:
+            return
+        self.capture_depth = 1
+        self.capture_buffer = []
+        self.capture_id = values.get("id") or ""
+        self.capture_tag = tag
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in self.skip_tags and self.skip:
+            self.skip -= 1
+            return
+        if self.skip or not self.capture:
+            return
+        if tag not in self.void_tags:
+            self.capture_depth -= 1
+        if self.capture_depth > 0:
+            return
+        text = clean_search_text("".join(self.capture_buffer))
+        if self.capture == "heading":
+            if text:
+                self.heading = text
+                self.heading_id = self.capture_id
+        elif len(text) >= 14:
+            anchor = self.capture_id or self.heading_id
+            url = self.source["url"] + (f"#{anchor}" if anchor else "")
+            words = text.split()
+            passages = [text] if self.capture_tag != "pre" or len(words) <= 130 else [" ".join(words[start:start + 130]) for start in range(0, len(words), 100)]
+            for passage in passages:
+                self.entries.append({
+                    "id": f"{self.source['id']}-{len(self.entries) + 1}",
+                    "sourceId": self.source["id"],
+                    "source": self.source["name"],
+                    "type": self.source["type"],
+                    "title": self.heading,
+                    "reference": self.heading,
+                    "url": url,
+                    "text": passage,
+                    "priority": self.source["priority"],
+                })
+        self.capture = None
+        self.capture_depth = 0
+        self.capture_buffer = []
+        self.capture_id = ""
+        self.capture_tag = ""
+
+    def handle_data(self, value: str) -> None:
+        if self.capture and not self.skip:
+            self.capture_buffer.append(value)
+
+
+def write_search_page() -> None:
+    page = f'''<!doctype html>
+<html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search — Ashburton Tagalog Project</title><link rel="stylesheet" href="assets/00-portal.css"><script src="search-index.js" defer></script><script src="assets/01-search.js" defer></script></head>
+<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Search the project</h1><p>Search forms, requirements, statistics, communications, checklist items and deep-linked S-50/S-51 references.</p></header>
+{common_nav(0, 'search')}
+<main class="search-page"><form class="search-panel" id="search-form" role="search"><label for="search-input">Search words or an exact phrase</label><div class="search-row"><input id="search-input" type="search" placeholder="Try S-29, Daniel Martin, baptized, or par. 5" autocomplete="off" autofocus><button type="submit">Search</button></div><div class="search-options"><label for="search-type">Limit to</label><select id="search-type"><option value="">All project sources</option><option value="communications">Communications</option><option value="official">Official references</option><option value="forms">Forms and submissions</option><option value="checklist">Checklist</option><option value="portal">Project guidance</option></select><span id="search-meta"></span></div></form><p class="search-status" id="search-status" aria-live="polite"></p><div class="search-empty" id="search-empty"><h2>One search box for the whole project</h2><p>Use ordinary words, a form code, a name, or an exact phrase in quotation marks. Press <kbd>/</kbd> anywhere on this page to focus the search box.</p></div><div class="search-results" id="search-results"></div></main>
+<p class="footer">The index is built only from local project files. Search results are working aids and do not replace the official source.</p></body></html>'''
+    SEARCH_HTML.write_text(page, encoding="utf-8")
+
+
+def build_search_index() -> None:
+    sources = [
+        {"id": "communications", "name": "Communications", "title": "Daniel Martin correspondence and action status", "type": "communications", "priority": 0, "path": COMMS_HTML, "url": "docs/05-communications.html"},
+        {"id": "s50", "name": "S-50", "title": "Instructions for Recommending New Congregations", "type": "official", "priority": 1, "path": REFS_DIR / "00-S-50-reference.html", "url": "references/00-S-50-reference.html"},
+        {"id": "s51", "name": "S-51", "title": "Congregation Application/Information", "type": "official", "priority": 2, "path": REFS_DIR / "01-S-51-reference.html", "url": "references/01-S-51-reference.html"},
+        {"id": "forms", "name": "Forms", "title": "Forms register", "type": "forms", "priority": 3, "path": DOCS_DIR / "00-forms-register.html", "url": "docs/00-forms-register.html"},
+        {"id": "submissions", "name": "Submissions", "title": "Submission register", "type": "forms", "priority": 4, "path": DOCS_DIR / "03-submissions.html", "url": "docs/03-submissions.html"},
+        {"id": "requirements", "name": "Requirements", "title": "Requirements and evidence", "type": "portal", "priority": 5, "path": DOCS_DIR / "01-requirements.html", "url": "docs/01-requirements.html"},
+        {"id": "statistics", "name": "Statistics", "title": "Statistics and provenance", "type": "portal", "priority": 6, "path": DOCS_DIR / "02-statistics.html", "url": "docs/02-statistics.html"},
+        {"id": "checklist", "name": "Checklist", "title": "Forming a New Congregation checklist", "type": "checklist", "priority": 7, "path": ROOT / "02-checklist.html", "url": "02-checklist.html"},
+        {"id": "overview", "name": "Overview", "title": "Project overview", "type": "portal", "priority": 8, "path": ROOT_HTML, "url": "00-project-overview.html"},
+        {"id": "sources", "name": "Sources", "title": "Source map and integrity register", "type": "portal", "priority": 9, "path": DOCS_DIR / "04-source-map.html", "url": "docs/04-source-map.html"},
+    ]
+    entries = []
+    for source in sources:
+        parser = PortalSearchParser(source)
+        source_text = source["path"].read_text(encoding="utf-8")
+        parser.feed(source_text)
+        entries.extend(parser.entries)
+        if source["id"] == "checklist":
+            item_pattern = re.compile(
+                r'\{\s*id:\s*"([^"]+)",\s*ref:\s*"([^"]+)",\s*title:\s*"([^"]+)"(?:,\s*detail:\s*"([^"]*)")?\s*\}'
+            )
+            for item_id, reference, title, detail in item_pattern.findall(source_text):
+                entries.append({
+                    "id": f"checklist-{item_id}",
+                    "sourceId": "checklist",
+                    "source": "Checklist",
+                    "type": "checklist",
+                    "title": f"Checklist — {reference}",
+                    "reference": reference,
+                    "url": "02-checklist.html",
+                    "text": clean_search_text(f"{title} {detail}"),
+                    "priority": source["priority"],
+                })
+    seen = set()
+    unique = []
+    for entry in entries:
+        key = (entry["url"], entry["text"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(entry)
+    public_sources = [{key: source[key] for key in ("id", "name", "title", "type", "priority")} for source in sources]
+    payload = {"version": 1, "entries": unique, "sources": public_sources}
+    compact = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    SEARCH_INDEX_JSON.write_text(compact + "\n", encoding="utf-8")
+    SEARCH_INDEX_JS.write_text(f"window.FORMING_CONG_SEARCH_INDEX={compact};\n", encoding="utf-8")
+
+
 def print_pdf(html_path: Path, pdf_path: Path) -> None:
     chrome = os.environ.get("CHROME_BIN", "/usr/bin/google-chrome")
     with tempfile.TemporaryDirectory(prefix="forming-new-cong-render-") as profile:
@@ -615,6 +927,10 @@ def main() -> int:
     for markdown_path, html_path, current, depth, content in documents:
         markdown_path.write_text(content, encoding="utf-8")
         render_markdown(markdown_path, html_path, current, depth)
+    COMMS_MD.write_text(build_communications_markdown(data), encoding="utf-8")
+    write_communications_html(data)
+    write_search_page()
+    build_search_index()
     write_entry_alias()
 
     if not args.no_pdf:
@@ -624,7 +940,7 @@ def main() -> int:
     hashes_after = verify_preserved_files(data)
     if hashes_after[data["checklist"]["progress_json"]] != progress_hash:
         raise RuntimeError("Checklist progress JSON changed during generation; refusing handoff.")
-    print(f"Built index.html, {len(documents)} Markdown/HTML portal documents, 2 deep-reference pages" + (" and 2 PDFs." if not args.no_pdf else "."))
+    print(f"Built index.html, search, {len(documents) + 1} Markdown/HTML portal documents, 2 deep-reference pages" + (" and 2 PDFs." if not args.no_pdf else "."))
     print("Verified immutable source hashes and preserved checklist progress JSON.")
     return 0
 

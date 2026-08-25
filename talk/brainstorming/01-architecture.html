@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tablet Talk Teleprompter - Architecture</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="architecture---tablet-talk-teleprompter">Architecture - Tablet
+Talk Teleprompter</h1>
+<p>Project: <strong>JW Talk Teleprompter</strong><br />
+Status: proposed architecture<br />
+Vision source: <a
+href="00-canonical-vision.md">00-canonical-vision.md</a></p>
+<h2 id="architecture-goals">Architecture Goals</h2>
+<ul>
+<li>Local-first and offline-capable.</li>
+<li>Tablet-first reader with portrait and landscape support.</li>
+<li>Supports MD, HTML, and PDF delivery files.</li>
+<li>Discovers talks from the existing <code>talk/</code> folder
+structure.</li>
+<li>Offers reliable manual scrolling first, then timed scrolling, then
+optional voice-assisted scrolling.</li>
+<li>Keeps speech/audio private by default.</li>
+<li>Has a production path for tests, packaging, and deployment.</li>
+</ul>
+<h2 id="recommended-app-shape">Recommended App Shape</h2>
+<p>Build as a <strong>Progressive Web App</strong>.</p>
+<p>Why:</p>
+<ul>
+<li>Works on tablets without app-store packaging at first.</li>
+<li>Can run full screen from a browser.</li>
+<li>Can cache assets for offline use.</li>
+<li>Can use local file access APIs where supported.</li>
+<li>Can later be wrapped as a native app if needed.</li>
+</ul>
+<p>Recommended stack:</p>
+<ul>
+<li><strong>Vite + React + TypeScript</strong> for the app.</li>
+<li><strong>CSS modules or plain CSS</strong> for predictable tablet
+styling.</li>
+<li><strong>Marked or markdown-it</strong> for Markdown rendering.</li>
+<li><strong>DOMPurify</strong> for sanitizing imported HTML/Markdown
+output.</li>
+<li><strong>PDF.js</strong> for PDF rendering.</li>
+<li><strong>IndexedDB</strong> for talk library metadata, reading
+positions, preferences, and cached files.</li>
+<li><strong>Web Speech API</strong> for optional voice-assisted mode
+where browser support allows.</li>
+<li><strong>Playwright</strong> for layout and interaction tests.</li>
+</ul>
+<h2 id="proposed-location">Proposed Location</h2>
+<pre class="text"><code>talk/
+  teleprompter/
+    package.json
+    src/
+    public/
+    tests/
+    README.md</code></pre>
+<p>This keeps the app close to the talk material while separate from
+individual talk folders.</p>
+<h2 id="data-model">Data Model</h2>
+<h3 id="talk">Talk</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">type</span> Talk <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  id<span class="op">:</span> <span class="dt">string</span><span class="op">;</span>              <span class="co">// &quot;055&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  number<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span>         <span class="co">// &quot;55&quot;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  title<span class="op">:</span> <span class="dt">string</span><span class="op">;</span>           <span class="co">// &quot;How Can You Make a Good Name With God?&quot;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  folderPath<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span>     <span class="co">// local folder handle/path when available</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  files<span class="op">:</span> TalkFile[]<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  metrics<span class="op">?:</span> TalkMetrics<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  lastOpenedFileId<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  updatedAt<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+<h3 id="talk-file">Talk File</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">type</span> TalkFile <span class="op">=</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  id<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  name<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  kind<span class="op">:</span> <span class="st">&quot;markdown&quot;</span> <span class="op">|</span> <span class="st">&quot;html&quot;</span> <span class="op">|</span> <span class="st">&quot;pdf&quot;</span> <span class="op">|</span> <span class="st">&quot;docx&quot;</span> <span class="op">|</span> <span class="st">&quot;unknown&quot;</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  role<span class="op">?:</span> <span class="st">&quot;manuscript&quot;</span> <span class="op">|</span> <span class="st">&quot;extemp&quot;</span> <span class="op">|</span> <span class="st">&quot;metrics&quot;</span> <span class="op">|</span> <span class="st">&quot;resources&quot;</span> <span class="op">|</span> <span class="st">&quot;outline&quot;</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  version<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span>        <span class="co">// &quot;v3&quot;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  title<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  wordCount<span class="op">?:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  readScriptures<span class="op">?:</span> <span class="dt">string</span>[]<span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  sourceUrl<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+<h3 id="reader-state">Reader State</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ts"><code class="sourceCode typescript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">type</span> ReaderState <span class="op">=</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  talkId<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  fileId<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  scrollTop<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  activeBlockId<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  mode<span class="op">:</span> <span class="st">&quot;manual&quot;</span> <span class="op">|</span> <span class="st">&quot;timed&quot;</span> <span class="op">|</span> <span class="st">&quot;voice&quot;</span><span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  fontScale<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  lineHeight<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  theme<span class="op">:</span> <span class="st">&quot;light&quot;</span> <span class="op">|</span> <span class="st">&quot;warm&quot;</span> <span class="op">|</span> <span class="st">&quot;dark&quot;</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  orientation<span class="op">:</span> <span class="st">&quot;portrait&quot;</span> <span class="op">|</span> <span class="st">&quot;landscape&quot;</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  targetMinutes<span class="op">?:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  speedMultiplier<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+<h2 id="talk-discovery">Talk Discovery</h2>
+<p>The app should support two discovery paths:</p>
+<h3 id="browser-file-picker">Browser File Picker</h3>
+<p>User chooses the root <code>talk/</code> folder.</p>
+<p>The app scans:</p>
+<ul>
+<li>numeric folders, such as <code>055</code>.</li>
+<li><code>index.md</code>.</li>
+<li>manuscript candidates: <code>draft-talk*.md</code>,
+<code>draft-talk*.html</code>, <code>*.pdf</code>.</li>
+<li>guide candidates: <code>*extemp*.md</code>,
+<code>*guide*.md</code>.</li>
+<li>metrics candidates: <code>metrics-index.md</code>,
+<code>metrics-index.html</code>.</li>
+</ul>
+<h3 id="static-manifest">Static Manifest</h3>
+<p>For hosted or local server use, generate a
+<code>talk-manifest.json</code> file.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;talks&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;055&quot;</span><span class="fu">,</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;How Can You Make a Good Name With God?&quot;</span><span class="fu">,</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;files&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;draft-talk-v3.html&quot;</span><span class="ot">,</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;draft-talk-v3.pdf&quot;</span><span class="ot">,</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;v3-extemp-guide.html&quot;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p>The static manifest is simpler and more reliable for first production
+version.</p>
+<h2 id="document-pipeline">Document Pipeline</h2>
+<h3 id="markdown">Markdown</h3>
+<ol type="1">
+<li>Read Markdown.</li>
+<li>Extract metadata:
+<ul>
+<li>title.</li>
+<li>section headings.</li>
+<li>start minutes.</li>
+<li>read scriptures.</li>
+<li>highlight spans.</li>
+</ul></li>
+<li>Render sanitized HTML.</li>
+<li>Split content into blocks:
+<ul>
+<li>headings.</li>
+<li>cue paragraphs.</li>
+<li>manuscript paragraphs.</li>
+<li>scripture prompts.</li>
+<li>lists.</li>
+</ul></li>
+<li>Assign stable block IDs.</li>
+</ol>
+<h3 id="html">HTML</h3>
+<ol type="1">
+<li>Load sanitized HTML.</li>
+<li>Preserve existing classes:
+<ul>
+<li><code>.kw</code></li>
+<li><code>.kw-green</code></li>
+<li><code>.kw-orange</code></li>
+<li><code>.kw-blue</code></li>
+<li><code>.subtle</code></li>
+<li>delivery cues.</li>
+</ul></li>
+<li>Extract text blocks for progress tracking.</li>
+</ol>
+<h3 id="pdf">PDF</h3>
+<ol type="1">
+<li>Render pages using PDF.js.</li>
+<li>Allow manual and timed scrolling by page/position.</li>
+<li>Extract text layer when available.</li>
+<li>Voice-assisted mode should be treated as experimental for PDF.</li>
+</ol>
+<h2 id="scrolling-modes">Scrolling Modes</h2>
+<h3 id="manual-mode">Manual Mode</h3>
+<p>Manual mode is the baseline and must always work.</p>
+<p>Inputs:</p>
+<ul>
+<li>touch drag.</li>
+<li>tap zones.</li>
+<li>keyboard arrows.</li>
+<li>Bluetooth presenter.</li>
+<li>optional foot pedal mapped to keyboard.</li>
+</ul>
+<p>Behaviors:</p>
+<ul>
+<li>tap lower third: advance one paragraph.</li>
+<li>tap upper third: go back one paragraph.</li>
+<li>two-finger tap: pause/resume.</li>
+<li>swipe: free scroll.</li>
+</ul>
+<h3 id="timed-mode">Timed Mode</h3>
+<p>Timed mode estimates scroll speed from:</p>
+<ul>
+<li>total document height.</li>
+<li>target duration.</li>
+<li>current position.</li>
+<li>remaining time.</li>
+</ul>
+<p>Controls:</p>
+<ul>
+<li>start/pause.</li>
+<li>speed down/up.</li>
+<li>jump to heading.</li>
+<li>reset to current section.</li>
+</ul>
+<p>Timed mode should slow around headings and read scriptures. It should
+not scroll continuously during a scripture-reading pause unless
+configured.</p>
+<h3 id="voice-assisted-mode">Voice-Assisted Mode</h3>
+<p>Voice-assisted mode should be optional and conservative.</p>
+<p>Possible implementation:</p>
+<ol type="1">
+<li>Preprocess document into short searchable chunks.</li>
+<li>Listen through Web Speech API.</li>
+<li>Normalize recognized speech and document chunks.</li>
+<li>Match recent spoken phrase against nearby chunks.</li>
+<li>If confidence is high, advance active block.</li>
+<li>If confidence is low, do nothing.</li>
+</ol>
+<p>Important safeguards:</p>
+<ul>
+<li>Never jump more than a small number of blocks automatically.</li>
+<li>Show a subtle "following" or "paused" status.</li>
+<li>Allow instant manual override.</li>
+<li>Do not send audio to custom servers.</li>
+</ul>
+<h2 id="layout">Layout</h2>
+<h3 id="home">Home</h3>
+<p>Views:</p>
+<ul>
+<li>Talk library.</li>
+<li>Recent talks.</li>
+<li>Search/filter by number or title.</li>
+<li>File badges: MD, HTML, PDF, guide, metrics.</li>
+</ul>
+<h3 id="reader">Reader</h3>
+<p>Portrait:</p>
+<ul>
+<li>single-column text.</li>
+<li>current block highlighted.</li>
+<li>controls hidden by default.</li>
+<li>bottom progress bar.</li>
+</ul>
+<p>Landscape:</p>
+<ul>
+<li>wider single-column text, or</li>
+<li>optional side rail with:
+<ul>
+<li>section list.</li>
+<li>current time.</li>
+<li>next anchor.</li>
+</ul></li>
+</ul>
+<h3 id="typography">Typography</h3>
+<p>Defaults:</p>
+<ul>
+<li>font size: large.</li>
+<li>line height: 1.45 to 1.65.</li>
+<li>max line length controlled.</li>
+<li>high contrast but not harsh.</li>
+<li>warm/light/dark themes.</li>
+<li>highlight colors must be visible in daylight.</li>
+</ul>
+<h2 id="persistence">Persistence</h2>
+<p>Use IndexedDB for:</p>
+<ul>
+<li>imported talks.</li>
+<li>file metadata.</li>
+<li>reading position.</li>
+<li>display preferences.</li>
+<li>last opened talk.</li>
+<li>rehearsal timing logs.</li>
+</ul>
+<p>Use localStorage only for small noncritical preferences.</p>
+<h2 id="privacy">Privacy</h2>
+<ul>
+<li>All normal operation should work offline.</li>
+<li>Speech recognition should use browser capability only.</li>
+<li>No manuscript or audio should be uploaded by default.</li>
+<li>If any cloud feature is added later, it must be opt-in and clearly
+labeled.</li>
+</ul>
+<h2 id="testing">Testing</h2>
+<p>Minimum production tests:</p>
+<ul>
+<li>talk discovery from sample folders.</li>
+<li>metadata extraction from Markdown.</li>
+<li>HTML sanitization preserves highlight classes.</li>
+<li>reader restores last position.</li>
+<li>portrait and landscape screenshots.</li>
+<li>timed scroll pause/resume.</li>
+<li>keyboard/remote controls.</li>
+<li>PDF rendering smoke test.</li>
+</ul>
+<h2 id="first-production-slice">First Production Slice</h2>
+<p>The first production-ready version should include:</p>
+<ul>
+<li>static talk manifest.</li>
+<li>home library.</li>
+<li>HTML/Markdown reader.</li>
+<li>manual mode.</li>
+<li>timed mode.</li>
+<li>persistent settings.</li>
+<li>responsive portrait/landscape layout.</li>
+<li>generated sample manifest for <code>talk/055</code>.</li>
+<li>Playwright visual checks.</li>
+</ul>
+<p>PDF.js and voice-assisted mode can follow once the core reader is
+reliable.</p>
+<h2 id="key-risks">Key Risks</h2>
+<ul>
+<li>Voice recognition may be inconsistent on tablets and browsers.</li>
+<li>PDF text extraction may not match visual order.</li>
+<li>Browser local folder access varies by platform.</li>
+<li>Over-automation could distract the speaker.</li>
+</ul>
+<p>Design response:</p>
+<ul>
+<li>Make manual mode excellent.</li>
+<li>Make timed mode simple and adjustable.</li>
+<li>Make voice mode optional and conservative.</li>
+</ul>
+</body>
+</html>

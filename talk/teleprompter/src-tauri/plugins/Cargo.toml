@@ -1,0 +1,17 @@
+[package]
+name = "tauri-plugin-speech-recognition"
+version = "0.1.0"
+authors = [ "JW Talk Teleprompter" ]
+description = "Native Android speech recognition for the JW Talk Teleprompter"
+edition = "2021"
+rust-version = "1.77.2"
+exclude = ["/examples", "/dist-js", "/guest-js", "/node_modules"]
+links = "tauri-plugin-speech-recognition"
+
+[dependencies]
+tauri = { version = "2.11.3" }
+serde = "1.0"
+thiserror = "2"
+
+[build-dependencies]
+tauri-plugin = { version = "2.6.3", features = ["build"] }

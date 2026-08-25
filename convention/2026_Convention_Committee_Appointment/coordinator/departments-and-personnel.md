@@ -11,6 +11,7 @@
 | Current coordinator appointment | Adamson DeLa Cruz |
 | Coordinator assistant | Ron Mariano — accepted and live-verified in JW Hub, 20 August 2026 |
 | Program overseer | Israel Vinuya |
+| Program overseer assistant | Kent Morata — confirmed and live-verified in JW Hub, 21 August 2026 |
 | Rooming overseer | Wilfredo M Calaunan |
 | Contract representative | Stuart Brown |
 | Rooming coordinator | Lewis Olding |
@@ -30,6 +31,13 @@ The remaining names below are transcribed from that same chart and are therefore
 | First Aid | Xavier Serio | Francisco Arienza; Samuel Natural | Confirm staffing, confidentiality, emergency transport route, TO-5 triggers. |
 | Parking | Jeric Avinante | Ralf Jumanoy; Benjie Talbo | Confirm Assembly Hall parking plan, CO-65 access, and whether help from other conventions is needed. |
 | Safety coordinator | Joan Rey Lawag | Melquesedec Torzar | Confirm appointment, CO-161 briefing, inspection routine, and departmental DC-85 controls. |
+
+## Departments under the program overseer
+
+| Department | Overseer | Assistants | Status |
+|---|---|---|---|
+| Audio / Video | Ferdinand Martinez (JW Hub account: Martinez, Fernando Dinopol Jr) | Joel Dela Cruz; George Intic | Confirmed and live-verified in JW Hub, 21 August 2026 |
+| Baptism | Emmanuel Laxamana | Louie Vea | Live-verified in JW Hub; Louie also serves as Attendant Overseer |
 
 ## Committee-wide personnel actions
 

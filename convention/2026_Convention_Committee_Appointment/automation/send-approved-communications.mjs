@@ -51,14 +51,39 @@ Your brother,
 Adamson dela Cruz
 Convention Committee Coordinator
 Auckland NS (TG) — 2026`;
+  if (record.variant === "co53-meeting") return `Dear Brothers,
+
+We will have a meeting tomorrow, Saturday, 22 August 2026, at 10:00 PM NZST, to review and discuss the Convention Personnel Evaluation (CO-53) process.
+
+The purpose is to make sure that our authorised evaluation group has the same understanding before the convention. We will discuss:
+
+1. Who participates in the observations and evaluation.
+2. Which assigned brothers are to be evaluated.
+3. How to record balanced, factual observations and apply the rating criteria consistently.
+4. How the postconvention evaluation, counsel, and submission are handled.
+
+I have attached our official CO-53 master copy, prefilled with the current names and assignments. Birth and baptism dates still need secure verification. Please review the entries before the meeting and be ready to identify any corrections or missing information. I will present the easy guide during the meeting before circulating it separately.
+
+Zoom meeting details
+Join meeting: https://us02web.zoom.us/j/82319399530?pwd=gGDAkvf8KozgrjKKUROx13HlJ8EYZU.1
+Meeting chat: https://us02web.zoom.us/launch/jc/82319399530
+Meeting ID: 823 1939 9530
+Passcode: 371011
+
+Please confirm that you are available.
+
+Your brother,
+Adamson dela Cruz
+Convention Committee Coordinator
+Auckland NS (TG) — 2026`;
   const greeting = record.to.length > 1 ? "Dear Brothers," : `Dear Brother ${record.to[0].name.split(" ")[0]},`;
   const introduction = record.variant === "committee-assistant"
-    ? "Thank you for accepting the appointment to serve as Convention Committee Coordinator Assistant for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026."
+    ? `Thank you for accepting the appointment to serve as ${record.department} for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026.`
     : `Thank you for accepting the assignment to serve with the ${record.department} for the Auckland Tagalog Convention at the South Auckland Assembly Hall, 30 October–1 November 2026.`;
   const special = record.variant === "committee"
     ? "\nPlease review these committee and event-oversight documents together. The confidential department diagram is a controlled document and must not be forwarded.\n"
     : record.variant === "committee-assistant"
-      ? "\nThis package follows your appointment as Convention Committee Coordinator Assistant. Please review the committee and event-oversight material. The confidential department diagram is a controlled document and must not be forwarded.\n"
+      ? `\nThis package follows your appointment as ${record.department}. Please review the committee and event-oversight material. The confidential department diagram is a controlled document and must not be forwarded.\n`
     : record.variant === "confidential"
       ? "\nThe emergency plan, evacuation material, site plan, and confidential department diagram are controlled operational documents. Please review them with your assistant, keep them secure, and do not forward the confidential diagram.\n"
       : record.id === "information-lost-found"
@@ -122,6 +147,28 @@ async function waitForAttachments(page, files) {
   }, expected.length, { timeout: 30_000 });
 }
 
+async function attachFilesSequentially(page, files) {
+  const input = page.locator('input[type="file"][multiple]:not([accept])');
+  for (const filename of files) {
+    const name = path.basename(filename);
+    await input.setInputFiles(filename);
+    await page.waitForFunction((expected) => {
+      const cards = [...document.querySelectorAll('[autoid="_ay_2"]')];
+      return cards.some((card) => {
+        const label = card.querySelector(`[title="${CSS.escape(expected)}"]`);
+        const link = card.querySelector('a[href*="GetFileAttachment"]');
+        const busy = card.querySelector('[role="marquee"][aria-busy="true"]');
+        const error = card.querySelector('.owa-color-neutral-red:not([style*="display: none"])');
+        return label && link && !busy && !error;
+      });
+    }, name, { timeout: 180_000 });
+    // Give OWA a quiet interval before selecting the next file. This prevents
+    // larger batches from leaving later attachments indefinitely in progress.
+    await page.waitForTimeout(1_500);
+  }
+  await waitForAttachments(page, files);
+}
+
 async function dismissOpenDraft(page) {
   const subject = page.getByPlaceholder("Add a subject");
   if (!(await subject.count())) return;
@@ -175,8 +222,7 @@ try {
     const subjectText = record.subject || `2026 Auckland Tagalog Convention — ${record.department} Instructions and Checklist`;
     await page.getByPlaceholder("Add a subject").fill(subjectText);
     await page.getByRole("textbox", { name: "Message body", exact: true }).fill(bodyFor(record));
-    await page.locator('input[type="file"][multiple]:not([accept])').setInputFiles(files);
-    await waitForAttachments(page, files);
+    await attachFilesSequentially(page, files);
 
     const sendButton = await visible(page.getByRole("button", { name: "Send", exact: true }));
     if (!sendButton) throw new Error(`${record.id}: no visible Send button`);

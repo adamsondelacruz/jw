@@ -47,14 +47,14 @@ function sanitizedUrl(raw) {
   }
 }
 
-export async function writeAudit({ id, operation, pageKey, expectedUrl, finalUrl, title, checks, artifact = null, status, error = null }) {
+export async function writeAudit({ id, mode = "dry-run", operation, pageKey, expectedUrl, finalUrl, title, checks, artifact = null, status, error = null, details = null }) {
   await prepareArtifacts();
   const record = {
     schema_version: 1,
     timestamp: new Date().toISOString(),
     timezone: TIMEZONE,
     project_id: PROJECT_ID,
-    mode: "dry-run",
+    mode,
     operation,
     page_key: pageKey,
     ...(await evidence()),
@@ -64,6 +64,7 @@ export async function writeAudit({ id, operation, pageKey, expectedUrl, finalUrl
     checks,
     artifact: artifact ? path.basename(artifact) : null,
     status,
+    details,
     error: error ? { name: error.name, code: error.code ?? "unexpected", message: error.message } : null,
   };
   const target = path.join(ARTIFACTS_DIR, `${id}-audit.json`);
