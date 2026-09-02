@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { BookOpen, ChevronLeft, ChevronRight, FileInput, FileText, GalleryHorizontalEnd, Home, LayoutList, PanelTopOpen, ZoomIn, ZoomOut } from "lucide-react";
 import type { LoadedStudy, ParagraphMap, Study, StudyFile, StudyPackage, StudyQuestion } from "../types";
 import { loadStudyManifest } from "../lib/manifest";
-import { loadStudyFile, parseStudyPackage } from "../lib/studyParser";
+import { loadStudyFile, parseStudyPackage, validateStudyPackage } from "../lib/studyParser";
 
 type ActiveStudy = {
   study: Study;
@@ -276,6 +276,7 @@ function studyFromPackage(pkg: StudyPackage): Study {
   if (pkg.schema !== "jw-study-package/v1") {
     throw new Error("This is not a supported Watchtower study package.");
   }
+  validateStudyPackage(pkg);
   return {
     id: pkg.id,
     title: pkg.title,
@@ -296,7 +297,17 @@ function studyFromPackage(pkg: StudyPackage): Study {
 function loadImportedStudies(): Study[] {
   try {
     const packages = JSON.parse(localStorage.getItem(importedPackagesKey) ?? "[]") as StudyPackage[];
-    return packages.map(studyFromPackage);
+    const studies = packages.flatMap((pkg) => {
+      try {
+        return [studyFromPackage(pkg)];
+      } catch {
+        return [];
+      }
+    });
+    if (studies.length !== packages.length) {
+      localStorage.setItem(importedPackagesKey, JSON.stringify(studies.map((study) => study.packageData).filter(Boolean)));
+    }
+    return studies;
   } catch {
     return [];
   }

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readFile } from "node:fs/promises";
-import { parseHtmlStudy, parseMarkdownStudy, parseStudyPackage } from "./studyParser";
+import { parseHtmlStudy, parseMarkdownStudy, parseStudyPackage, validateStudyPackage } from "./studyParser";
 
 describe("study parser", () => {
   it("loads the bilingual markdown answer contract", async () => {
@@ -66,4 +66,46 @@ describe("study parser", () => {
     expect(study.questions).toHaveLength(18);
     expect(study.questions[0].paragraph?.en).toContain("Capernaum");
   });
+
+  it("keeps package answers separate from article paragraphs", async () => {
+    const pkg = JSON.parse(await readFile("public/studies/2026-08-29-study-package.json", "utf8"));
+    const study = parseStudyPackage(pkg);
+
+    expect(study.kind).toBe("study");
+    if (study.kind !== "study") return;
+
+    const seenDeeper = new Set<string>();
+    for (const question of study.questions) {
+      for (const language of ["en", "tl"] as const) {
+        const direct = normalizeForExpectation(question.direct[language]);
+        const paragraph = normalizeForExpectation(question.paragraph?.[language]);
+        const deeper = normalizeForExpectation(question.deeper[language]);
+
+        expect(paragraph.startsWith(direct)).toBe(false);
+        expect(seenDeeper.has(`${language}:${deeper}`)).toBe(false);
+        seenDeeper.add(`${language}:${deeper}`);
+      }
+    }
+  });
+
+  it("rejects corrupted packages with paragraph-copy or repeated deeper answers", async () => {
+    const pkg = JSON.parse(await readFile("public/studies/2026-08-29-study-package.json", "utf8"));
+    const paragraphCopy = structuredClone(pkg);
+    paragraphCopy.questions[0].direct.en = paragraphCopy.questions[0].paragraph.en.slice(0, 180);
+
+    expect(() => validateStudyPackage(paragraphCopy)).toThrow(/copied from the paragraph/);
+
+    const repeated = structuredClone(pkg);
+    repeated.questions[1].deeper.en = repeated.questions[0].deeper.en;
+
+    expect(() => validateStudyPackage(repeated)).toThrow(/repeated deeper answers/);
+  });
 });
+
+function normalizeForExpectation(value: string | undefined) {
+  return (value ?? "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}

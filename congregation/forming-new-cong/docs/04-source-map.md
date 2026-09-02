@@ -27,6 +27,12 @@
 | [17-2026-Request-for-Information-on-Language-Fields.docx](../17-2026-Request-for-Information-on-Language-Fields.docx) | received-correspondence-attachment | 2026-08-25 | `22521afc49f3549d…` · immutable |
 | [18-2026-Request-for-Information-on-Language-Fields-working.docx](../18-2026-Request-for-Information-on-Language-Fields-working.docx) | working-form | 2026-08-25 | `73d67f51fe6e5a6e…` · working/mutable |
 | [18-2026-Request-for-Information-on-Language-Fields-working.pdf](../18-2026-Request-for-Information-on-Language-Fields-working.pdf) | working-form-render | 2026-08-25 | `e2ad9a4a286b12da…` · working/mutable |
+| [21-S-29-Ashburton-Tagalog-signed.pdf](../21-S-29-Ashburton-Tagalog-signed.pdf) | signed-evidence | S-29-E 7/14 | `8980ca919f58e691…` · immutable |
+| [22-S-6-Ashburton-Tagalog-signed.pdf](../22-S-6-Ashburton-Tagalog-signed.pdf) | signed-evidence | S-6-E 3/09 | `b150535c2454f883…` · immutable |
+| [23-M-202-Ashburton-Tagalog-signed.pdf](../23-M-202-Ashburton-Tagalog-signed.pdf) | signed-evidence | M-202-E 9/23 | `c8a3f33b2507d617…` · immutable |
+| [24-S-5_E.pdf](../24-S-5_E.pdf) | working-form | S-5-E 3/19 | `8cef8f0d0a101946…` · working/mutable |
+| [25-S-36_E 2.pdf](../25-S-36_E%202.pdf) | working-form | S-36-E 2/26 | `de463ff62bb19d6d…` · working/mutable |
+| [26-S-5-Ashburton-Tagalog-working.pdf](../26-S-5-Ashburton-Tagalog-working.pdf) | working-form | S-5-E 3/19 | `70ed576612b0a4bb…` · working/mutable |
 | [03-checklist-progress.json](../03-checklist-progress.json) | checklist-progress | schema 1 | `ea5aabcfa8ad1589…` · working/mutable |
 
 ## Searchable official references

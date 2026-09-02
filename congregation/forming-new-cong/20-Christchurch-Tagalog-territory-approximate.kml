@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Christchurch Tagalog Congregation Territory — Approximate Reconstruction</name>
+    <description><![CDATA[
+      <p><strong>Working reconstruction only.</strong> This boundary was traced from the photographed map saved as <code>19-Christchurch-Tagalog-territory-source.jpg</code>.</p>
+      <p>The raster image contained no embedded geographic coordinates. Labeled Canterbury towns were used as control points, and their OpenStreetMap/Nominatim coordinates were fitted to the photograph with an affine transformation. The thick boundary line was then traced through 35 image points.</p>
+      <p>Expected uncertainty is roughly 1–4 km and may be greater between labeled control points or along offshore/coastal segments. Verify this reconstruction against the official congregation territory assignment before using it for decisions or submissions.</p>
+      <p>Created: 28 August 2026 (Pacific/Auckland).</p>
+    ]]></description>
+
+    <Style id="territory-style">
+      <LineStyle>
+        <color>ff70452e</color>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3370452e</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
+    <Placemark>
+      <name>Approximate Christchurch Tagalog congregation territory</name>
+      <description><![CDATA[
+        <p>Digitised from the supplied photographed map. This polygon follows the centre of the visible thick boundary line.</p>
+        <p><strong>Accuracy:</strong> approximate; verify against the authoritative territory map.</p>
+      ]]></description>
+      <styleUrl>#territory-style</styleUrl>
+      <ExtendedData>
+        <Data name="source_image"><value>19-Christchurch-Tagalog-territory-source.jpg</value></Data>
+        <Data name="source_dimensions"><value>1600 x 1200 pixels</value></Data>
+        <Data name="method"><value>Manual boundary trace plus affine georeferencing from labeled towns</value></Data>
+        <Data name="control_points"><value>Oxford; Cust; Rangiora; Rolleston; Lincoln; Darfield; Dunsandel; Southbridge; Akaroa</value></Data>
+        <Data name="estimated_uncertainty"><value>Approximately 1–4 km; potentially greater between control points</value></Data>
+        <Data name="status"><value>Working reconstruction — not an official territory assignment</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              172.258584,-43.278869,0
+              172.213055,-43.353457,0
+              172.170533,-43.428000,0
+              172.157571,-43.487330,0
+              172.152499,-43.542848,0
+              172.150591,-43.602756,0
+              172.159270,-43.649942,0
+              172.182401,-43.708747,0
+              172.208634,-43.741632,0
+              172.245153,-43.781761,0
+              172.299208,-43.835681,0
+              172.339685,-43.874274,0
+              172.432132,-43.878845,0
+              172.536600,-43.854410,0
+              172.656678,-43.846012,0
+              172.729150,-43.853091,0
+              172.803793,-43.893405,0
+              172.869299,-43.902064,0
+              172.949377,-43.897204,0
+              173.031814,-43.873829,0
+              173.097950,-43.843297,0
+              173.142029,-43.813086,0
+              173.139693,-43.746587,0
+              173.117564,-43.687768,0
+              173.066007,-43.647857,0
+              173.010034,-43.625014,0
+              172.874086,-43.609986,0
+              172.788441,-43.570571,0
+              172.756640,-43.493411,0
+              172.747027,-43.419625,0
+              172.738156,-43.338435,0
+              172.733072,-43.279368,0
+              172.671654,-43.272868,0
+              172.521264,-43.275053,0
+              172.360849,-43.277383,0
+              172.258584,-43.278869,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

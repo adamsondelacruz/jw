@@ -4,14 +4,14 @@
 <div class="metric"><strong>7</strong><span>form workstreams</span></div>
 <div class="metric"><strong>10</strong><span>tracked instruction gates</span></div>
 <div class="metric"><strong>1</strong><span>S-50 items not yet confirmed</span></div>
-<div class="metric"><strong>4</strong><span>open control decisions</span></div>
+<div class="metric"><strong>3</strong><span>open control decisions</span></div>
 </div>
 
 <blockquote class="notice warning">
 
-**Current control point:** The circuit overseer has confirmed receipt of the S-51 and has now requested the remaining S-50 par. 5 forms: S-29, S-5, M-202, S-36 and S-6. He also requested the body’s recommendation(s) for the prospective coordinator and a separate 2026 language-fields information form. A working copy of that return now contains all figures established from the proposal and DeckHand; only the 2026-service-year baptism count is marked TBC. Branch approval under S-50 par. 6 remains pending.
+**Current control point:** The S-50 par. 5 reply and seven-file attachment package were sent to Daniel Martin at 10:03 p.m. on 30 August 2026 in the original Application - Tagalog Congregation Ashburton thread. Sent Items independently showed the complete approved message, all five requested PDF forms and both supporting S-6 territory-map PNGs. The signed S-29 records the body’s prospective coordinator. A separate 2026 language-fields return is awaiting Daniel's scope clarification and the 2026-service-year baptism count. Branch approval under S-50 par. 6 remains pending.
 
-**Next action:** Await Daniel's reply confirming whether the language-fields return should contain only the Ashburton Tagalog Group or cover other fields in the circuit. In parallel, confirm the number baptized in the Ashburton Tagalog field during the 2026 service year, prepare the five requested par. 5 forms, and obtain the body's coordinator recommendation(s). Send nothing further until the completed material has been reviewed and explicitly authorised.
+**Next action:** Await Daniel's response on the submitted S-50 par. 5 package and his scope clarification for the 2026 language-fields return. Confirm the 2026-service-year baptism count, then complete that return. Do not mark S-50 par. 6 complete until branch approval and instructions are received.
 
 </blockquote>
 
@@ -19,17 +19,17 @@ This combined document is designed for review at a planning meeting. Use the [in
 
 ## Forms Register
 
-> **Current sequence:** Both S-51 forms have been sent. On 25 August 2026, the circuit overseer explicitly requested S-29, S-5, M-202, S-36 and S-6, together with the body’s recommendation(s) for the prospective coordinator. Par. 6 remains pending after this package is prepared and reviewed.
+> **Current sequence:** Both S-51 forms have been sent. The S-29, S-5, M-202, S-36 and S-6 package, together with two supporting territory maps, was sent to the circuit overseer on 30 August 2026. Par. 6 remains pending until the branch office communicates its decision and instructions.
 
 | Form | Purpose | Required for / timing | Owner | Status | Working files |
 |---|---|---|---|---|---|
 | **S-51 — Congregation Application/Information — proposed congregation**<br>[S-50 par. 5(1)](references/00-S-50-reference.html#s50-p5-item-1), [S-51 page 2 instructions](references/01-S-51-reference.html#s51-page-2-instructions) | Records the proposed congregation’s complete name, projected publishers and pioneers, appointed men, reasons, directly involved congregations, proposed start and circuit/section. | proposed congregation<br><br>Completed and sent to the circuit overseer; points 1–8 apply and the new congregation number remains blank. | Host body of elders and circuit overseer | <span class="status submitted">Submitted</span> | [09-S-51-Ashburton-Tagalog-signed.pdf](09-S-51-Ashburton-Tagalog-signed.pdf) · [07-S-51_E-filled.pdf](07-S-51_E-filled.pdf) · [06-S-51_E.pdf](06-S-51_E.pdf)<br><br>The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026; further action depends on his or the branch office’s direction. |
 | **S-51 — Congregation Application/Information — Ashburton host congregation**<br>[S-50 par. 5(1)](references/00-S-50-reference.html#s50-p5-item-1), [S-51 page 2 instructions](references/01-S-51-reference.html#s51-page-2-instructions) | Records the existing host congregation’s identity and projected post-formation points 2–4. | Ashburton host congregation<br><br>Specifically requested by the circuit overseer, completed, and sent to him. | Ashburton Congregation Service Committee | <span class="status submitted">Submitted</span> | [08-S-51_E-Ashburton-working.pdf](08-S-51_E-Ashburton-working.pdf)<br><br>The Ashburton host-congregation S-51 has been sent to the circuit overseer. The exact send date is not recorded locally. |
-| **S-29 — Coordinator/Secretary Change of Address**<br>[S-50 par. 5(2)](references/00-S-50-reference.html#s50-p5-item-2) | Identifies the coordinator and secretary and provides their contact/address information. | proposed congregation; any existing congregation whose coordinator or secretary changes<br><br>Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package. | To be assigned | <span class="status needs-confirmation">Needs Confirmation</span> | [10-S-29_E.pdf](10-S-29_E.pdf)<br><br>The body’s coordinator recommendation(s) are required as soon as possible. The proposed coordinator and secretary still require confirmation. |
-| **S-5 — Kingdom Hall Information**<br>[S-50 par. 5(3)](references/00-S-50-reference.html#s50-p5-item-3) | Records the meeting place and its congregation-use arrangement. | proposed congregation; existing congregations whose Kingdom Hall information changes<br><br>Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package. | To be assigned | <span class="status not-started">Not Started</span> | [11-S-5_E.pdf](11-S-5_E.pdf)<br><br>The Ashburton Kingdom Hall address is known; the formal use arrangement still needs completion. |
-| **M-202 — Periodical Request**<br>[S-50 par. 5(4)](references/00-S-50-reference.html#s50-p5-item-4) | Establishes periodical and Life and Ministry Meeting Workbook quantities. | proposed congregation; existing congregations whose requests change<br><br>Explicitly requested by the circuit overseer on 25 August 2026 for the current package, although S-50 also allows the information to be entered on jw.org after approval when directed. | To be assigned | <span class="status needs-confirmation">Needs Confirmation</span> | [12-M-202_E.pdf](12-M-202_E.pdf)<br><br>This is the only listed item for which S-50 explicitly offers an after-approval alternative. |
-| **S-36 — Shipping Information**<br>[S-50 par. 5(5)](references/00-S-50-reference.html#s50-p5-item-5) | Establishes shipping address and the Kingdom Hall Literature Group arrangement. | proposed congregation; changed shipping addresses; ship-to congregation at the meeting hall<br><br>Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package. | To be assigned | <span class="status not-started">Not Started</span> | [13-S-36_E.pdf](13-S-36_E.pdf)<br><br>Required even when shipments normally go to a Regional Literature Depot. |
-| **S-6 — Territory Adjustment Request**<br>[S-50 par. 5(6)](references/00-S-50-reference.html#s50-p5-item-6) | Documents proposed territory assignment and affected boundary adjustments. | proposed congregation; each existing congregation whose boundaries are affected<br><br>Explicitly requested by the circuit overseer on 25 August 2026 as part of the current S-50 par. 5 package. | Circuit overseer and affected bodies of elders | <span class="status needs-confirmation">Needs Confirmation</span> | [14-S-6_E.pdf](14-S-6_E.pdf)<br><br>Final language-territory boundaries and directly affected congregations require confirmation. |
+| **S-29 — Coordinator/Secretary Change of Address**<br>[S-50 par. 5(2)](references/00-S-50-reference.html#s50-p5-item-2) | Identifies the coordinator and secretary and provides their contact/address information. | proposed congregation; any existing congregation whose coordinator or secretary changes<br><br>Explicitly requested by the circuit overseer on 25 August 2026 and submitted to him at 10:03 p.m. on 30 August 2026. | Ashburton body of elders | <span class="status submitted">Submitted</span> | [10-S-29_E.pdf](10-S-29_E.pdf) · [21-S-29-Ashburton-Tagalog-signed.pdf](21-S-29-Ashburton-Tagalog-signed.pdf)<br><br>The completed signed scan was submitted on 30 August 2026. The user confirmed that this S-29 records the body’s prospective coordinator, Adamson Dela Cruz; no separate recommendation statement was included in the reply. |
+| **S-5 — Kingdom Hall Information**<br>[S-50 par. 5(3)](references/00-S-50-reference.html#s50-p5-item-3) | Records the meeting place and its congregation-use arrangement. | proposed congregation; existing congregations whose Kingdom Hall information changes<br><br>Explicitly requested by the circuit overseer on 25 August 2026 and submitted to him at 10:03 p.m. on 30 August 2026. | Host body of elders | <span class="status submitted">Submitted</span> | [11-S-5_E.pdf](11-S-5_E.pdf) · [26-S-5-Ashburton-Tagalog-working.pdf](26-S-5-Ashburton-Tagalog-working.pdf) · [24-S-5_E.pdf](24-S-5_E.pdf)<br><br>The submitted copy records the proposed name, 1 November 2026 effective date, street address, GPS coordinates, contact number, Thursday 7:15 p.m. midweek meeting, and Saturday 7:00 p.m. weekend meeting. The congregation number is intentionally blank for the proposed congregation. The city, province or state, and zone or code lines were blank in the transmitted copy; retain this as a possible correction point if Daniel requests an update. |
+| **M-202 — Periodical Request**<br>[S-50 par. 5(4)](references/00-S-50-reference.html#s50-p5-item-4) | Establishes periodical and Life and Ministry Meeting Workbook quantities. | proposed congregation; existing congregations whose requests change<br><br>Explicitly requested by the circuit overseer on 25 August 2026 and submitted to him at 10:03 p.m. on 30 August 2026, although S-50 also allows the information to be entered on jw.org after approval when directed. | To be assigned | <span class="status submitted">Submitted</span> | [12-M-202_E.pdf](12-M-202_E.pdf) · [23-M-202-Ashburton-Tagalog-signed.pdf](23-M-202-Ashburton-Tagalog-signed.pdf)<br><br>The completed signed scan was submitted on 30 August 2026. This is the only listed item for which S-50 explicitly offers an after-approval alternative. |
+| **S-36 — Shipping Information**<br>[S-50 par. 5(5)](references/00-S-50-reference.html#s50-p5-item-5) | Establishes shipping address and the Kingdom Hall Literature Group arrangement. | proposed congregation; changed shipping addresses; ship-to congregation at the meeting hall<br><br>Explicitly requested by the circuit overseer on 25 August 2026 and submitted to him at 10:03 p.m. on 30 August 2026. | Host body of elders | <span class="status submitted">Submitted</span> | [13-S-36_E.pdf](13-S-36_E.pdf) · [25-S-36_E 2.pdf](25-S-36_E%202.pdf)<br><br>The submitted copy leaves the ship-to congregation number, ship-to congregation name and date blank and lists only Ashburton Tagalog in the literature group. S-50 par. 5(5) directs that all congregations in the Kingdom Hall Literature Group be listed and that the ship-to congregation complete a copy. Retain this as a possible correction point if Daniel requests an updated S-36. |
+| **S-6 — Territory Adjustment Request**<br>[S-50 par. 5(6)](references/00-S-50-reference.html#s50-p5-item-6) | Documents proposed territory assignment and affected boundary adjustments. | proposed congregation; each existing congregation whose boundaries are affected<br><br>Explicitly requested by the circuit overseer on 25 August 2026 and submitted to him at 10:03 p.m. on 30 August 2026. | Circuit overseer and affected bodies of elders | <span class="status submitted">Submitted</span> | [14-S-6_E.pdf](14-S-6_E.pdf) · [22-S-6-Ashburton-Tagalog-signed.pdf](22-S-6-Ashburton-Tagalog-signed.pdf)<br><br>The completed signed scan and two supporting territory maps were submitted on 30 August 2026. |
 
 ### Current submission position
 
@@ -37,7 +37,7 @@ This combined document is designed for review at a planning meeting. Use the [in
 2. The separate Ashburton host-congregation S-51 has also been sent to him.
 3. On 25 August 2026, Daniel Martin requested S-29, S-5, M-202, S-36 and S-6 under S-50 par. 5.
 4. The body’s recommendation(s) for the prospective coordinator are also required as soon as possible.
-5. After the requested package is prepared and reviewed, await the branch-office decision and instructions described in S-50 par. 6.
+5. The requested package was submitted on 30 August 2026; await the branch-office decision and instructions described in S-50 par. 6.
 
 ### Submitted S-51 record
 
@@ -122,6 +122,7 @@ Wait for the branch office to state whether the new congregation is approved. It
 |---|---|---|---|---|---|
 | Proposed Ashburton Tagalog S-51 | Daniel Martin, Circuit NZ-1 | 2026-08-09 | <span class="status submitted">Submitted</span> | [09-S-51-Ashburton-Tagalog-signed.pdf](09-S-51-Ashburton-Tagalog-signed.pdf) | Receipt is evidenced by the circuit overseer’s reply requesting an Ashburton-congregation S-51. |
 | Ashburton host-congregation S-51 | Daniel Martin, Circuit NZ-1 | — | <span class="status submitted">Submitted</span> | [08-S-51_E-Ashburton-working.pdf](08-S-51_E-Ashburton-working.pdf) | User confirmed on 2026-08-19 that the Ashburton host-congregation S-51 had been sent to the circuit overseer. |
+| S-50 par. 5 forms and S-6 territory maps | Daniel Martin, Circuit NZ-1 | 2026-08-30 | <span class="status submitted">Submitted</span> | [S-29-Ashburton-Tagalog-signed.pdf](pack/S-29-Ashburton-Tagalog-signed.pdf) · [S-5_E.pdf](pack/S-5_E.pdf) · [M-202-Ashburton-Tagalog-signed.pdf](pack/M-202-Ashburton-Tagalog-signed.pdf) · [S-36_E 2.pdf](pack/S-36_E%202.pdf) · [S-6-Ashburton-Tagalog-signed.pdf](pack/S-6-Ashburton-Tagalog-signed.pdf) · [S-6-ashburton-territory.png](pack/S-6-ashburton-territory.png) · [S-6-ashburton-territory-2.png](pack/S-6-ashburton-territory-2.png) | Sent Items independently verified the complete approved reply to Martin, Daniel at 10:03 p.m. on 2026-08-30. It showed all five requested PDF forms and both supporting S-6 territory-map PNGs. |
 
 ### Communication summary
 
@@ -129,9 +130,10 @@ Wait for the branch office to state whether the new congregation is approved. It
 |---|---|---|---|---|---|
 | 2026-08-13 | received | Daniel Martin | [Request for Ashburton congregation S-51](docs/05-communications.html#co-request-ashburton-s51) | <span class="status confirmed">Confirmed</span> | Completed — the Ashburton host-congregation S-51 was subsequently sent. |
 | 2026-08-09 | outgoing | Daniel Martin | [Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation](docs/05-communications.html#supporting-email-sent) | <span class="status submitted">Submitted</span> | Completed — Daniel acknowledged receipt on 13 August 2026. |
-| 2026-08-25 | received | Daniel Martin | [Application - Tagalog Congregation Ashburton](docs/05-communications.html#co-request-par5-package) | <span class="status action-required">Action Required</span> | Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel. |
+| 2026-08-25 | received | Daniel Martin | [Application - Tagalog Congregation Ashburton](docs/05-communications.html#co-request-par5-package) | <span class="status confirmed">Confirmed</span> | Completed — the requested S-50 par. 5 package was sent to Daniel at 10:03 p.m. on 30 August 2026 with all seven files and independently verified in Sent Items. |
 | 2026-08-25 | received | Daniel Martin | [2026 Request for Information on Language Fields](docs/05-communications.html#co-request-language-fields-2026) | <span class="status needs-confirmation">Needs Confirmation</span> | A clarification reply was sent at 7:10 p.m. on 25 August 2026. Await Daniel's scope confirmation and obtain the number baptized during the 2026 service year before replacing TBC. |
 | 2026-08-25 | outgoing | Daniel Martin | [Clarification — 2026 Request for Information on Language Fields](docs/05-communications.html#draft-language-fields-scope-clarification) | <span class="status submitted">Submitted</span> | Sent and independently verified in Sent Items at 7:10 p.m. on 25 August 2026. Await Daniel's reply. |
+| 2026-08-30 | outgoing | Daniel Martin | [Re: Application - Tagalog Congregation Ashburton](docs/05-communications.html#draft-par5-package-reply) | <span class="status submitted">Submitted</span> | Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items. |
 
 [Open the complete communications register](docs/05-communications.html) for full email text, attachments, replies and action notes.
 
@@ -147,9 +149,10 @@ No portal button sends email, uploads a form, or submits a recommendation. Onlin
 |---|---|---|---|---|
 | 2026-08-09 | outgoing | [Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation](#supporting-email-sent) | <span class="status submitted">Submitted</span> | Completed — Daniel acknowledged receipt on 13 August 2026. |
 | 2026-08-13 | received | [Request for Ashburton congregation S-51](#co-request-ashburton-s51) | <span class="status confirmed">Confirmed</span> | Completed — the Ashburton host-congregation S-51 was subsequently sent. |
-| 2026-08-25 11:29 | received | [Application - Tagalog Congregation Ashburton](#co-request-par5-package) | <span class="status action-required">Action Required</span> | Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel. |
+| 2026-08-25 11:29 | received | [Application - Tagalog Congregation Ashburton](#co-request-par5-package) | <span class="status confirmed">Confirmed</span> | Completed — the requested S-50 par. 5 package was sent to Daniel at 10:03 p.m. on 30 August 2026 with all seven files and independently verified in Sent Items. |
 | 2026-08-25 13:48 | received | [2026 Request for Information on Language Fields](#co-request-language-fields-2026) | <span class="status needs-confirmation">Needs Confirmation</span> | A clarification reply was sent at 7:10 p.m. on 25 August 2026. Await Daniel's scope confirmation and obtain the number baptized during the 2026 service year before replacing TBC. |
 | 2026-08-25 19:10 | outgoing | [Clarification — 2026 Request for Information on Language Fields](#draft-language-fields-scope-clarification) | <span class="status submitted">Submitted</span> | Sent and independently verified in Sent Items at 7:10 p.m. on 25 August 2026. Await Daniel's reply. |
+| 2026-08-30 22:03 | outgoing | [Re: Application - Tagalog Congregation Ashburton](#draft-par5-package-reply) | <span class="status submitted">Submitted</span> | Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items. |
 
 <div id="supporting-email-sent"></div>
 
@@ -180,9 +183,9 @@ No portal button sends email, uploads a form, or submits a recommendation. Onlin
 
 - **Direction:** Received
 - **With:** Daniel Martin
-- **Status:** <span class="status action-required">Action Required</span>
+- **Status:** <span class="status confirmed">Confirmed</span>
 - **Summary:** Daniel confirmed receipt of the S-51 and requested S-29, S-5, M-202, S-36 and S-6. He also asked for the body’s recommendation(s) for the prospective coordinator as soon as possible.
-- **Current action:** Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel.
+- **Current action:** Completed — the requested S-50 par. 5 package was sent to Daniel at 10:03 p.m. on 30 August 2026 with all seven files and independently verified in Sent Items.
 - **References:** S-50 par. 5, SFG 1:11, 12
 - **Evidence source:** JWPub mailbox; read-only verification on 2026-08-25.
 
@@ -259,6 +262,40 @@ No portal button sends email, uploads a form, or submits a recommendation. Onlin
 > Warm regards,
 > Adamson
 
+<div id="draft-par5-package-reply"></div>
+
+### 2026-08-30 — Re: Application - Tagalog Congregation Ashburton
+
+- **Direction:** Outgoing
+- **With:** Daniel Martin
+- **Status:** <span class="status submitted">Submitted</span>
+- **Summary:** Sent reply to Daniel with the five requested S-50 par. 5 forms and two supporting S-6 territory maps.
+- **Current action:** Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items.
+- **Attachments:** [S-29-Ashburton-Tagalog-signed.pdf](pack/S-29-Ashburton-Tagalog-signed.pdf) · [S-5_E.pdf](pack/S-5_E.pdf) · [M-202-Ashburton-Tagalog-signed.pdf](pack/M-202-Ashburton-Tagalog-signed.pdf) · [S-36_E 2.pdf](pack/S-36_E%202.pdf) · [S-6-Ashburton-Tagalog-signed.pdf](pack/S-6-Ashburton-Tagalog-signed.pdf) · [S-6-ashburton-territory.png](pack/S-6-ashburton-territory.png) · [S-6-ashburton-territory-2.png](pack/S-6-ashburton-territory-2.png)
+- **Evidence source:** JWPub mailbox; sent and independently verified in Sent Items on 2026-08-30 at 22:03 NZST.
+
+#### Substantive email text
+
+> Hi Daniel,
+> 
+> Thank you for your email and direction.
+> 
+> Please find attached the documents requested for the proposed Ashburton Tagalog Congregation:
+> 
+> • Coordinator of the Body of Elders/Secretary Change of Address (S-29)
+> • Kingdom Hall Information (S-5)
+> • Periodical Request (M-202)
+> • Shipping Information (S-36)
+> • Territory Adjustment Request (S-6)
+> 
+> I have also attached two territory maps supporting the S-6.
+> 
+> Please let us know if any further information or adjustments are needed.
+> 
+> Warm regards,
+> Adam
+> for the Ashburton Body of Elders
+
 ### External-action gate
 
 This register does not send email or submit attachments. Completion, review and explicit authorisation are required before any external action.
@@ -292,6 +329,12 @@ This register does not send email or submit attachments. Completion, review and 
 | [17-2026-Request-for-Information-on-Language-Fields.docx](17-2026-Request-for-Information-on-Language-Fields.docx) | received-correspondence-attachment | 2026-08-25 | `22521afc49f3549d…` · immutable |
 | [18-2026-Request-for-Information-on-Language-Fields-working.docx](18-2026-Request-for-Information-on-Language-Fields-working.docx) | working-form | 2026-08-25 | `73d67f51fe6e5a6e…` · working/mutable |
 | [18-2026-Request-for-Information-on-Language-Fields-working.pdf](18-2026-Request-for-Information-on-Language-Fields-working.pdf) | working-form-render | 2026-08-25 | `e2ad9a4a286b12da…` · working/mutable |
+| [21-S-29-Ashburton-Tagalog-signed.pdf](21-S-29-Ashburton-Tagalog-signed.pdf) | signed-evidence | S-29-E 7/14 | `8980ca919f58e691…` · immutable |
+| [22-S-6-Ashburton-Tagalog-signed.pdf](22-S-6-Ashburton-Tagalog-signed.pdf) | signed-evidence | S-6-E 3/09 | `b150535c2454f883…` · immutable |
+| [23-M-202-Ashburton-Tagalog-signed.pdf](23-M-202-Ashburton-Tagalog-signed.pdf) | signed-evidence | M-202-E 9/23 | `c8a3f33b2507d617…` · immutable |
+| [24-S-5_E.pdf](24-S-5_E.pdf) | working-form | S-5-E 3/19 | `8cef8f0d0a101946…` · working/mutable |
+| [25-S-36_E 2.pdf](25-S-36_E%202.pdf) | working-form | S-36-E 2/26 | `de463ff62bb19d6d…` · working/mutable |
+| [26-S-5-Ashburton-Tagalog-working.pdf](26-S-5-Ashburton-Tagalog-working.pdf) | working-form | S-5-E 3/19 | `70ed576612b0a4bb…` · working/mutable |
 | [03-checklist-progress.json](03-checklist-progress.json) | checklist-progress | schema 1 | `ea5aabcfa8ad1589…` · working/mutable |
 
 ### Searchable official references

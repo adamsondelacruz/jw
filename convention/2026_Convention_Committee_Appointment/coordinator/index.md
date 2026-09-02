@@ -8,7 +8,7 @@ This is the working home for the Convention Committee coordinator’s documents.
 
 ## Start here
 
-1. [Search convention guidance](search.html) — full-text search across CO-1, staged forms, and coordinator guidance, with highlighted context and precise links.
+1. [Search convention guidance](search.html) — full-text search across CO-1, CO-160, staged forms, and coordinator guidance, with highlighted context and precise links.
 2. [Coordinator overview](coordinator-overview.md) — what you own, what the full committee owns, and what belongs to department overseers.
 3. [Departments and personnel](departments-and-personnel.md) — your four supervised departments and the local names that require verification.
 4. [Reorganised committee chart](organisation-chart.md) — visual working chart with the current committee appointments.
@@ -25,6 +25,7 @@ This is the working home for the Convention Committee coordinator’s documents.
 - [Convention Committee meeting — 19 August 2026, 10:00 PM](meetings/00-2026-08-19-convention-committee-agenda.md)
 - Main decisions: Program Overseer Assistant and replacement Attendant Overseer
 - Supporting reference: [CO-53 easy guide](co-53-guide.md)
+- [CO-162 streaming meeting — presiding notes](meetings/01-co-162-streaming-presiding-notes.md)
 
 ## Immediate answer to “Do I just reply?”
 
@@ -53,6 +54,12 @@ These five files are genuine existing local copies, not newly retrieved current 
 
 - [Appointment letter, 11 August 2026](../CNV_03_Convention%20Committee%20Appointment-E%20Au.pdf)
 - [CO-1, February 2026](../CO-1_s-BrAUS_E.pdf)
+- [CO-160, May 2024 — official PDF](../CO-160_E.pdf)
+- [CO-160 searchable HTML working edition](../CO-160.html)
+- [CO-160a New Zealand addendum — official PDF](../CO-160a_s-Nz_E.pdf)
+- [CO-160a searchable HTML working edition](../CO-160a.html)
+- [CO-162 livestreaming instructions — official PDF](../CO-162_E.pdf)
+- [CO-162 searchable HTML working edition](../CO-162.html)
 - [Local organisation chart — requires update](../commitee.jpeg)
 
 *Prepared 12 August 2026. Later JW Hub direction supersedes this working pack.*

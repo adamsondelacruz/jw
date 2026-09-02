@@ -57,6 +57,7 @@ export function parseStudyPackage(pkg: StudyPackage): LoadedStudy {
   if (pkg.schema !== "jw-study-package/v1") {
     throw new Error("Unsupported study package format.");
   }
+  validateStudyPackage(pkg);
 
   return {
     kind: "study",
@@ -84,6 +85,30 @@ export function parseStudyPackage(pkg: StudyPackage): LoadedStudy {
         : undefined,
     })),
   };
+}
+
+export function validateStudyPackage(pkg: StudyPackage) {
+  const repeated = new Set<string>();
+
+  for (const question of pkg.questions) {
+    for (const language of ["en", "tl"] as const) {
+      const direct = normalizeForValidation(question.direct[language]);
+      const deeper = normalizeForValidation(question.deeper[language]);
+      const paragraph = normalizeForValidation(question.paragraph?.[language]);
+
+      if (direct.length > 120 && paragraph.startsWith(direct)) {
+        throw new Error(`Question ${question.number} has an answer copied from the paragraph.`);
+      }
+
+      if (deeper.length > 80) {
+        const key = `${language}:${deeper}`;
+        if (repeated.has(key)) {
+          throw new Error("This package has repeated deeper answers and needs to be regenerated.");
+        }
+        repeated.add(key);
+      }
+    }
+  }
 }
 
 async function extractPdfText(path: string) {
@@ -372,4 +397,12 @@ function stripMarkdown(value: string) {
 
 function cleanText(value: string | null | undefined) {
   return (value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function normalizeForValidation(value: string | undefined) {
+  return stripMarkdown(value ?? "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }

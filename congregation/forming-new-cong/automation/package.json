@@ -10,8 +10,9 @@
     "check-session": "node 06-check-session.mjs",
     "inspect": "node 07-inspect.mjs",
     "reply:language-fields": "node 08-reply-language-fields.mjs",
+    "send:par5-package": "node 09-send-par5-package.mjs",
     "test": "node --test",
-    "check": "node --check 05-session.mjs && node --check 01-config.mjs && node --check 02-guardrails.mjs && node --check 03-browser.mjs && node --check 04-audit.mjs && node --check 06-check-session.mjs && node --check 07-inspect.mjs && node --check 08-reply-language-fields.mjs"
+    "check": "node --check 05-session.mjs && node --check 01-config.mjs && node --check 02-guardrails.mjs && node --check 03-browser.mjs && node --check 04-audit.mjs && node --check 06-check-session.mjs && node --check 07-inspect.mjs && node --check 08-reply-language-fields.mjs && node --check 09-send-par5-package.mjs"
   },
   "dependencies": {
     "playwright": "^1.62.1"

@@ -294,7 +294,7 @@ def build_forms(data: dict) -> str:
     lines = [
         "# Forms Register",
         "",
-        "> **Current sequence:** Both S-51 forms have been sent. On 25 August 2026, the circuit overseer explicitly requested S-29, S-5, M-202, S-36 and S-6, together with the body’s recommendation(s) for the prospective coordinator. Par. 6 remains pending after this package is prepared and reviewed.",
+        "> **Current sequence:** Both S-51 forms have been sent. The S-29, S-5, M-202, S-36 and S-6 package, together with two supporting territory maps, was sent to the circuit overseer on 30 August 2026. Par. 6 remains pending until the branch office communicates its decision and instructions.",
         "",
         "| Form | Purpose | Required for / timing | Owner | Status | Working files |",
         "|---|---|---|---|---|---|",
@@ -315,7 +315,7 @@ def build_forms(data: dict) -> str:
         "2. The separate Ashburton host-congregation S-51 has also been sent to him.",
         "3. On 25 August 2026, Daniel Martin requested S-29, S-5, M-202, S-36 and S-6 under S-50 par. 5.",
         "4. The body’s recommendation(s) for the prospective coordinator are also required as soon as possible.",
-        "5. After the requested package is prepared and reviewed, await the branch-office decision and instructions described in S-50 par. 6.",
+        "5. The requested package was submitted on 30 August 2026; await the branch-office decision and instructions described in S-50 par. 6.",
         "",
         "## Submitted S-51 record",
         "",

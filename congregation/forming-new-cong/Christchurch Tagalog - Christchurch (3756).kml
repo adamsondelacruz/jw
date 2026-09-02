@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Christchurch Tagalog - Christchurch (3756)</name><Style id="territory-unit"><IconStyle><color>7fb27550</color><scale>1.5</scale></IconStyle><LabelStyle><color>7fb27550</color><scale>1.5</scale></LabelStyle><LineStyle><color>efb27550</color><width>5</width></LineStyle><PolyStyle><color>7fb27550</color></PolyStyle><BalloonStyle><text><![CDATA[
+      <h1><b>$[Name]</b></h1>
+      <b> Type </b> $[Type]
+      <br/>
+      <b> Language </b> $[Language]
+      <br/>
+      <b> Last Updated </b> $[LastUpdated]
+      <br/>
+      <h2><b> Boundaries </b></h2>
+<b> North </b> $[BorderNorth]
+<br/>
+<b> East </b> $[BorderEast]
+<br/>
+<b> South </b> $[BorderSouth]
+<br/>
+<b> West </b> $[BorderWest]
+<br/>]]></text></BalloonStyle></Style><Style id="territory-unit-without-boundaries"><IconStyle><color>7fb27550</color><scale>1.5</scale></IconStyle><LabelStyle><color>7fb27550</color><scale>1.5</scale></LabelStyle><LineStyle><color>efb27550</color><width>5</width></LineStyle><PolyStyle><color>7fb27550</color></PolyStyle><BalloonStyle><text><![CDATA[
+      <h1><b>$[Name]</b></h1>
+      <b> Type </b> $[Type]
+      <br/>
+      <b> Language </b> $[Language]
+      <br/>
+      <b> Last Updated </b> $[LastUpdated]
+      <br/>
+      <h2><b> Boundaries </b></h2>
+Not entered
+<br/>]]></text></BalloonStyle></Style><Placemark><name>Christchurch Tagalog</name><styleUrl>#territory-unit</styleUrl><ExtendedData><Data name="Name"><value><![CDATA[Christchurch Tagalog]]></value></Data><Data name="Type"><value><![CDATA[Congregation Assignment]]></value></Data><Data name="Language"><value><![CDATA[Tagalog]]></value></Data><Data name="LastUpdated"><value><![CDATA[May 3, 2022]]></value></Data><Data name="LastUpdatedIso"><value><![CDATA[2022-05-03]]></value></Data><Data name="BorderNorth"><value><![CDATA[All Filipino households in Christchurch City and the surrounding greater Christchurch region.]]></value></Data><Data name="BorderEast"><value><![CDATA[-]]></value></Data><Data name="BorderSouth"><value><![CDATA[-]]></value></Data><Data name="BorderWest"><value><![CDATA[-]]></value></Data></ExtendedData><Polygon><outerBoundaryIs><LinearRing><coordinates>173.137847,-43.808393,0
+173.130986,-43.714762,0
+173.072244,-43.654084,0
+172.960502,-43.61692,0
+172.861358,-43.595702,0
+172.795354,-43.570929,0
+172.764752,-43.476546,0
+172.735599,-43.403812,0
+172.738009,-43.351203,0
+172.727254,-43.314619,0
+172.729038,-43.290393,0
+172.732533,-43.278594,0
+172.671121,-43.273991,0
+172.639634,-43.277593,0
+172.261018,-43.278546,0
+172.164831,-43.423624,0
+172.13828,-43.594783,0
+172.170317,-43.707203,0
+172.234469,-43.782174,0
+172.32751,-43.87125,0
+172.399635,-43.868062,0
+172.429904,-43.856188,0
+172.457468,-43.856319,0
+172.493427,-43.857987,0
+172.561754,-43.852224,0
+172.658309,-43.841933,0
+172.727861,-43.849658,0
+172.799731,-43.893317,0
+172.88086,-43.905303,0
+173.04898,-43.870885,0
+173.137847,-43.808393,0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark></Document></kml>

@@ -25,6 +25,8 @@ const questions = parseMarkdownQuestions(markdown).map((question) => {
   };
 });
 
+validateQuestions(questions);
+
 const studyPackage = {
   schema: "jw-study-package/v1",
   id: date,
@@ -104,4 +106,42 @@ function stripMarkdown(value) {
 
 function joinAnswer(current, next) {
   return current ? `${current}\n\n${next}` : next;
+}
+
+function validateQuestions(questions) {
+  const repeated = new Map();
+
+  for (const question of questions) {
+    for (const language of ["en", "tl"]) {
+      const direct = normalizeForValidation(question.direct[language]);
+      const deeper = normalizeForValidation(question.deeper[language]);
+      const paragraph = normalizeForValidation(question.paragraph[language]);
+
+      if (direct.length > 120 && paragraph.startsWith(direct)) {
+        throw new Error(
+          `Question ${question.number} ${language.toUpperCase()} direct answer appears to be copied from the paragraph.`
+        );
+      }
+
+      if (deeper.length > 80) {
+        const key = `${language}:${deeper}`;
+        repeated.set(key, [...(repeated.get(key) ?? []), question.number]);
+      }
+    }
+  }
+
+  for (const [key, numbers] of repeated.entries()) {
+    if (numbers.length > 1) {
+      const language = key.slice(0, 2).toUpperCase();
+      throw new Error(`Repeated ${language} deeper answer in questions: ${numbers.join(", ")}`);
+    }
+  }
+}
+
+function normalizeForValidation(value) {
+  return stripMarkdown(value ?? "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }

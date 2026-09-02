@@ -4,14 +4,14 @@
 <div class="metric"><strong>7</strong><span>form workstreams</span></div>
 <div class="metric"><strong>10</strong><span>tracked instruction gates</span></div>
 <div class="metric"><strong>1</strong><span>S-50 items not yet confirmed</span></div>
-<div class="metric"><strong>4</strong><span>open control decisions</span></div>
+<div class="metric"><strong>3</strong><span>open control decisions</span></div>
 </div>
 
 <blockquote class="notice warning">
 
-**Current control point:** The circuit overseer has confirmed receipt of the S-51 and has now requested the remaining S-50 par. 5 forms: S-29, S-5, M-202, S-36 and S-6. He also requested the body’s recommendation(s) for the prospective coordinator and a separate 2026 language-fields information form. A working copy of that return now contains all figures established from the proposal and DeckHand; only the 2026-service-year baptism count is marked TBC. Branch approval under S-50 par. 6 remains pending.
+**Current control point:** The S-50 par. 5 reply and seven-file attachment package were sent to Daniel Martin at 10:03 p.m. on 30 August 2026 in the original Application - Tagalog Congregation Ashburton thread. Sent Items independently showed the complete approved message, all five requested PDF forms and both supporting S-6 territory-map PNGs. The signed S-29 records the body’s prospective coordinator. A separate 2026 language-fields return is awaiting Daniel's scope clarification and the 2026-service-year baptism count. Branch approval under S-50 par. 6 remains pending.
 
-**Next action:** Await Daniel's reply confirming whether the language-fields return should contain only the Ashburton Tagalog Group or cover other fields in the circuit. In parallel, confirm the number baptized in the Ashburton Tagalog field during the 2026 service year, prepare the five requested par. 5 forms, and obtain the body's coordinator recommendation(s). Send nothing further until the completed material has been reviewed and explicitly authorised.
+**Next action:** Await Daniel's response on the submitted S-50 par. 5 package and his scope clarification for the 2026 language-fields return. Confirm the 2026-service-year baptism count, then complete that return. Do not mark S-50 par. 6 complete until branch approval and instructions are received.
 
 </blockquote>
 
@@ -40,11 +40,11 @@
 |---|---|
 | **S-51 — Congregation Application/Information — proposed congregation** | <span class="status submitted">Submitted</span> The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026; further action depends on his or the branch office’s direction. |
 | **S-51 — Congregation Application/Information — Ashburton host congregation** | <span class="status submitted">Submitted</span> The Ashburton host-congregation S-51 has been sent to the circuit overseer. The exact send date is not recorded locally. |
-| **S-29 — Coordinator/Secretary Change of Address** | <span class="status needs-confirmation">Needs Confirmation</span> The body’s coordinator recommendation(s) are required as soon as possible. The proposed coordinator and secretary still require confirmation. |
-| **S-5 — Kingdom Hall Information** | <span class="status not-started">Not Started</span> The Ashburton Kingdom Hall address is known; the formal use arrangement still needs completion. |
-| **M-202 — Periodical Request** | <span class="status needs-confirmation">Needs Confirmation</span> This is the only listed item for which S-50 explicitly offers an after-approval alternative. |
-| **S-36 — Shipping Information** | <span class="status not-started">Not Started</span> Required even when shipments normally go to a Regional Literature Depot. |
-| **S-6 — Territory Adjustment Request** | <span class="status needs-confirmation">Needs Confirmation</span> Final language-territory boundaries and directly affected congregations require confirmation. |
+| **S-29 — Coordinator/Secretary Change of Address** | <span class="status submitted">Submitted</span> The completed signed scan was submitted on 30 August 2026. The user confirmed that this S-29 records the body’s prospective coordinator, Adamson Dela Cruz; no separate recommendation statement was included in the reply. |
+| **S-5 — Kingdom Hall Information** | <span class="status submitted">Submitted</span> The submitted copy records the proposed name, 1 November 2026 effective date, street address, GPS coordinates, contact number, Thursday 7:15 p.m. midweek meeting, and Saturday 7:00 p.m. weekend meeting. The congregation number is intentionally blank for the proposed congregation. The city, province or state, and zone or code lines were blank in the transmitted copy; retain this as a possible correction point if Daniel requests an update. |
+| **M-202 — Periodical Request** | <span class="status submitted">Submitted</span> The completed signed scan was submitted on 30 August 2026. This is the only listed item for which S-50 explicitly offers an after-approval alternative. |
+| **S-36 — Shipping Information** | <span class="status submitted">Submitted</span> The submitted copy leaves the ship-to congregation number, ship-to congregation name and date blank and lists only Ashburton Tagalog in the literature group. S-50 par. 5(5) directs that all congregations in the Kingdom Hall Literature Group be listed and that the ship-to congregation complete a copy. Retain this as a possible correction point if Daniel requests an updated S-36. |
+| **S-6 — Territory Adjustment Request** | <span class="status submitted">Submitted</span> The completed signed scan and two supporting territory maps were submitted on 30 August 2026. |
 
 ## Evidence at a glance
 
@@ -65,7 +65,6 @@
 ## Decisions requiring confirmation
 
 - **What date and reporting period apply to the 34 progressive Bible studies?** — The number was supplied separately and is not printed in the local proposal or S-303. DeckHand reports 47 total Bible studies for the proposed group in July 2026, confirming that 34 progressive studies is a narrower measure and should not replace the form’s Bible Studies figure.
-- **Whom will the body recommend for appointment as coordinator of the prospective congregation?** — Daniel requested the body’s recommendation(s) as soon as possible in his 25 August 2026 email, citing SFG 1:11, 12.
 - **Does Daniel want only the Ashburton Tagalog group row or a wider language-field return?** — The attached form is generic and plural, but Daniel’s email to Adamson does not state the required reporting scope.
 - **How many persons were baptized in the Ashburton Tagalog field during the 2026 service year?** — The attached form asks for baptisms during the service year, not the total number of baptized publishers. DeckHand’s circuit-assistant export provides a baptism-date column, but it is blank for all 228 Ashburton records, so it cannot establish this figure. The working form correctly marks this cell TBC.
 

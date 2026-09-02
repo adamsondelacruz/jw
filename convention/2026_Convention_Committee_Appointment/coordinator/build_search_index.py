@@ -152,6 +152,25 @@ def build():
     parser.feed((PROJECT / "CO-1.html").read_text(encoding="utf-8"))
     entries = parser.entries
 
+    co160_entries = pdf_pages(PROJECT / "CO-160_E.pdf", "CO-160", "Audio/Video Guidelines for Assemblies and Conventions", 1)
+    for entry in co160_entries:
+        page = entry["reference"].removeprefix("Page ")
+        entry["type"] = "guidance"
+        entry["url"] = f"../CO-160.html#co160-page-{page}"
+    entries.extend(co160_entries)
+
+    related_av = [
+        ("CO-160a", "Audio/Video Guidelines for Assemblies and Conventions Addendum — New Zealand", "CO-160a_s-Nz_E.pdf", "CO-160a.html", 2),
+        ("CO-162", "Instructions for Livestreaming Conventions", "CO-162_E.pdf", "CO-162.html", 3),
+    ]
+    for code, title, filename, html_name, priority in related_av:
+        document_entries = pdf_pages(PROJECT / filename, code, title, priority)
+        for entry in document_entries:
+            page = entry["reference"].removeprefix("Page ")
+            entry["type"] = "guidance"
+            entry["url"] = f"../{html_name}#{code.lower()}-page-{page}"
+        entries.extend(document_entries)
+
     forms = [
         ("CO-68", "Convention Committee Acceptance and Rooming Information", "00-CO-68_E.pdf"),
         ("CO-53", "Convention Personnel Report", "01-CO-53_E.pdf"),
@@ -168,6 +187,7 @@ def build():
         ("forms-register", "Forms Register", ROOT / "forms-register.html", "forms-register.html", 32, "Forms guide"),
         ("operational-guidance", "Operational Guidance", ROOT / "operational-guidance.html", "operational-guidance.html", 33, "Guidance"),
         ("co53-guide", "CO-53 Easy Guide", ROOT / "co-53-guide.html", "co-53-guide.pdf", 11.5, "Easy guide · PDF"),
+        ("streaming-meeting-notes", "CO-162 Streaming Meeting Notes", ROOT / "meetings/01-co-162-streaming-presiding-notes.html", "meetings/01-co-162-streaming-presiding-notes.html", 4, "Presiding notes"),
         ("personnel", "Departments and Personnel", ROOT / "departments-and-personnel.html", "departments-and-personnel.html", 35, "Guidance"),
         ("rooming-overview", "Rooming Easy Guide — Overview", PROJECT / "rooming/rooming-overview.html", "../rooming/rooming-overview.html", 20, "Easy guide"),
         ("rooming-checklist", "Rooming Easy Guide — Checklist", PROJECT / "rooming/rooming-overseer-checklist.html", "../rooming/rooming-overseer-checklist.html", 21, "Checklist"),
@@ -183,6 +203,9 @@ def build():
 
     sources = [
         {"id": "co1", "name": "CO-1", "title": "Convention Organization Guidelines", "type": "co1", "priority": 0},
+        {"id": "co-160", "name": "CO-160", "title": "Audio/Video Guidelines for Assemblies and Conventions", "type": "guidance", "priority": 1},
+        *[{"id": code.lower(), "name": code, "title": title, "type": "guidance", "priority": priority}
+          for code, title, _, _, priority in related_av],
         *[{"id": code.lower(), "name": code, "title": title, "type": "form", "priority": 10 + i}
           for i, (code, title, _) in enumerate(forms)],
         *[{"id": sid, "name": name, "title": name, "type": "guidance", "priority": priority}

@@ -6,9 +6,10 @@
 |---|---|---|---|---|
 | 2026-08-09 | outgoing | [Signed S-51 and Supporting Information — Proposed Ashburton Tagalog Congregation](#supporting-email-sent) | <span class="status submitted">Submitted</span> | Completed — Daniel acknowledged receipt on 13 August 2026. |
 | 2026-08-13 | received | [Request for Ashburton congregation S-51](#co-request-ashburton-s51) | <span class="status confirmed">Confirmed</span> | Completed — the Ashburton host-congregation S-51 was subsequently sent. |
-| 2026-08-25 11:29 | received | [Application - Tagalog Congregation Ashburton](#co-request-par5-package) | <span class="status action-required">Action Required</span> | Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel. |
+| 2026-08-25 11:29 | received | [Application - Tagalog Congregation Ashburton](#co-request-par5-package) | <span class="status confirmed">Confirmed</span> | Completed — the requested S-50 par. 5 package was sent to Daniel at 10:03 p.m. on 30 August 2026 with all seven files and independently verified in Sent Items. |
 | 2026-08-25 13:48 | received | [2026 Request for Information on Language Fields](#co-request-language-fields-2026) | <span class="status needs-confirmation">Needs Confirmation</span> | A clarification reply was sent at 7:10 p.m. on 25 August 2026. Await Daniel's scope confirmation and obtain the number baptized during the 2026 service year before replacing TBC. |
 | 2026-08-25 19:10 | outgoing | [Clarification — 2026 Request for Information on Language Fields](#draft-language-fields-scope-clarification) | <span class="status submitted">Submitted</span> | Sent and independently verified in Sent Items at 7:10 p.m. on 25 August 2026. Await Daniel's reply. |
+| 2026-08-30 22:03 | outgoing | [Re: Application - Tagalog Congregation Ashburton](#draft-par5-package-reply) | <span class="status submitted">Submitted</span> | Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items. |
 
 <div id="supporting-email-sent"></div>
 
@@ -39,9 +40,9 @@
 
 - **Direction:** Received
 - **With:** Daniel Martin
-- **Status:** <span class="status action-required">Action Required</span>
+- **Status:** <span class="status confirmed">Confirmed</span>
 - **Summary:** Daniel confirmed receipt of the S-51 and requested S-29, S-5, M-202, S-36 and S-6. He also asked for the body’s recommendation(s) for the prospective coordinator as soon as possible.
-- **Current action:** Prepare and review the five forms and obtain the body’s coordinator recommendation(s) before returning the package to Daniel.
+- **Current action:** Completed — the requested S-50 par. 5 package was sent to Daniel at 10:03 p.m. on 30 August 2026 with all seven files and independently verified in Sent Items.
 - **References:** S-50 par. 5, SFG 1:11, 12
 - **Evidence source:** JWPub mailbox; read-only verification on 2026-08-25.
 
@@ -117,6 +118,40 @@
 > 
 > Warm regards,
 > Adamson
+
+<div id="draft-par5-package-reply"></div>
+
+## 2026-08-30 — Re: Application - Tagalog Congregation Ashburton
+
+- **Direction:** Outgoing
+- **With:** Daniel Martin
+- **Status:** <span class="status submitted">Submitted</span>
+- **Summary:** Sent reply to Daniel with the five requested S-50 par. 5 forms and two supporting S-6 territory maps.
+- **Current action:** Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items.
+- **Attachments:** [S-29-Ashburton-Tagalog-signed.pdf](../pack/S-29-Ashburton-Tagalog-signed.pdf) · [S-5_E.pdf](../pack/S-5_E.pdf) · [M-202-Ashburton-Tagalog-signed.pdf](../pack/M-202-Ashburton-Tagalog-signed.pdf) · [S-36_E 2.pdf](../pack/S-36_E%202.pdf) · [S-6-Ashburton-Tagalog-signed.pdf](../pack/S-6-Ashburton-Tagalog-signed.pdf) · [S-6-ashburton-territory.png](../pack/S-6-ashburton-territory.png) · [S-6-ashburton-territory-2.png](../pack/S-6-ashburton-territory-2.png)
+- **Evidence source:** JWPub mailbox; sent and independently verified in Sent Items on 2026-08-30 at 22:03 NZST.
+
+### Substantive email text
+
+> Hi Daniel,
+> 
+> Thank you for your email and direction.
+> 
+> Please find attached the documents requested for the proposed Ashburton Tagalog Congregation:
+> 
+> • Coordinator of the Body of Elders/Secretary Change of Address (S-29)
+> • Kingdom Hall Information (S-5)
+> • Periodical Request (M-202)
+> • Shipping Information (S-36)
+> • Territory Adjustment Request (S-6)
+> 
+> I have also attached two territory maps supporting the S-6.
+> 
+> Please let us know if any further information or adjustments are needed.
+> 
+> Warm regards,
+> Adam
+> for the Ashburton Body of Elders
 
 ## External-action gate
 
