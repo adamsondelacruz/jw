@@ -1,6 +1,39 @@
 {
   "studies": [
     {
+      "id": "2026-09-05-midweek",
+      "title": "Midweek Meeting Audience Answers",
+      "week": "August 31-September 6, 2026",
+      "preferredFileId": "2026-09-05-midweek-md",
+      "packagePath": "/studies/2026-09-05-midweek-study-package.json",
+      "files": [
+        {
+          "id": "2026-09-05-midweek-md",
+          "kind": "markdown",
+          "name": "Audience answers",
+          "path": "/studies/2026-09-05-midweek-answers.md"
+        },
+        {
+          "id": "2026-09-05-midweek-html",
+          "kind": "html",
+          "name": "Standalone HTML",
+          "path": "/studies/2026-09-05-midweek-answers.html"
+        },
+        {
+          "id": "2026-09-05-midweek-pdf",
+          "kind": "pdf",
+          "name": "PDF",
+          "path": "/studies/2026-09-05-midweek-answers.pdf"
+        },
+        {
+          "id": "2026-09-05-midweek-package",
+          "kind": "package",
+          "name": "App package",
+          "path": "/studies/2026-09-05-midweek-study-package.json"
+        }
+      ]
+    },
+    {
       "id": "2026-10-17",
       "title": "You Can Win the Battle!",
       "week": "October 12-18, 2026",
