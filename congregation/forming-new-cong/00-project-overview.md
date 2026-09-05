@@ -1,24 +1,30 @@
-# Ashburton Tagalog — New Congregation Recommendation
+# Ashburton Tagalog Congregation — Approval and Launch
 
 <div class="dashboard">
 <div class="metric"><strong>7</strong><span>form workstreams</span></div>
 <div class="metric"><strong>10</strong><span>tracked instruction gates</span></div>
-<div class="metric"><strong>1</strong><span>S-50 items not yet confirmed</span></div>
-<div class="metric"><strong>3</strong><span>open control decisions</span></div>
+<div class="metric"><strong>2</strong><span>confirmed role assignments</span></div>
+<div class="metric"><strong>17</strong><span>roles or rosters to fill</span></div>
 </div>
 
 <blockquote class="notice warning">
 
-**Current control point:** The S-50 par. 5 reply and seven-file attachment package were sent to Daniel Martin at 10:03 p.m. on 30 August 2026 in the original Application - Tagalog Congregation Ashburton thread. Sent Items independently showed the complete approved message, all five requested PDF forms and both supporting S-6 territory-map PNGs. The signed S-29 records the body’s prospective coordinator. A separate 2026 language-fields return is awaiting Daniel's scope clarification and the 2026-service-year baptism count. Branch approval under S-50 par. 6 remains pending.
+**Current control point:** The branch approved the Ashburton Tagalog Congregation on 2 September 2026. Congregation 3814 will begin functioning on 1 November 2026 in Circuit NZ-2 under circuit overseer Anthony Radi. Until then, complete the confidential postscript’s transition instructions while the group remains under the Ashburton host body of elders.
 
-**Next action:** Await Daniel's response on the submitted S-50 par. 5 package and his scope clarification for the 2026 language-fields return. Confirm the 2026-service-year baptism count, then complete that return. Do not mark S-50 par. 6 complete until branch approval and instructions are received.
+**Next action:** Read the approval letter—without its confidential postscript—at the first midweek meeting after receipt and then post it. Ask the branch Accounting/Legal function to confirm the exact legal entity, charity/tax identifiers and bank-account process for congregation 3814; meanwhile complete leadership, JW Hub, shared-hall, accounting, meeting and ministry readiness for 1 November 2026.
 
 </blockquote>
 
 <div class="actions screen-only">
-<a class="button" href="02-checklist.html">Open the 78-item checklist</a>
+<a class="button" href="02-checklist.html">Open the 118-item checklist</a>
+<a class="button" href="docs/06-organisation-chart.html">Open the role chart</a>
+<a class="button" href="docs/06-organisation-chart.html#oversight-view">Open the oversight view</a>
+<a class="button" href="docs/07-congregation-start-checklist.html">Open the congregation start checklist</a>
+<a class="button" href="docs/08-preparation-meeting-agenda.html">Open the preparation-meeting agenda</a>
+<a class="button" href="docs/09-regular-pioneer-review.html">Open the regular-pioneer review topic</a>
 <a class="button" href="docs/05-communications.html">Open communications</a>
 <a class="button" href="01-meeting-pack.pdf">Open the complete meeting pack</a>
+<a class="button secondary" href="27-AUS2824311_1.pdf">Open branch approval letter</a>
 <a class="button secondary" href="09-S-51-Ashburton-Tagalog-signed.pdf">Open signed proposed S-51</a>
 <a class="button secondary" href="08-S-51_E-Ashburton-working.pdf">Open submitted Ashburton S-51</a>
 </div>
@@ -30,17 +36,21 @@
 3. [Statistics](docs/02-statistics.md) — printed facts, reported estimates, calculations and cautions.
 4. [Submissions](docs/03-submissions.md) — packages already sent and their verification state.
 5. [Communications](docs/05-communications.md) — Daniel Martin’s requests, attachments, replies, action status and next step.
-6. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.
-7. [Persistent master checklist](02-checklist.html) — existing ticks, notes and JSON save workflow, preserved unchanged.
-8. [Search](search.html) — search forms, requirements, statistics, communications, checklist items and official references.
+6. [Organisation chart](docs/06-organisation-chart.md) — congregation roles, confirmed names and vacancies to fill.
+7. [Congregation start checklist](docs/07-congregation-start-checklist.md) — what must be ready before 1 November, what happens at launch, and conditional legal/financial work.
+8. [Preparation-meeting agenda](docs/08-preparation-meeting-agenda.md) — a timed informal agenda, proposed-role worksheet and action register.
+9. [Regular-pioneer review](docs/09-regular-pioneer-review.md) — elders’ working topic on hour shortfalls, assistance, exceptions, decisions and transfers.
+10. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.
+11. [Persistent master checklist](02-checklist.html) — existing ticks and notes plus the branch launch actions.
+12. [Search](search.html) — search forms, requirements, statistics, communications, roles, checklist items and official references.
 
 ## Present position
 
 | Workstream | Current position |
 |---|---|
-| **S-51 — Congregation Application/Information — proposed congregation** | <span class="status submitted">Submitted</span> The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026; further action depends on his or the branch office’s direction. |
+| **S-51 — Congregation Application/Information — proposed congregation** | <span class="status submitted">Submitted</span> The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026 and formed part of the approved recommendation. The official branch identity is congregation 3814 in Circuit NZ-2. |
 | **S-51 — Congregation Application/Information — Ashburton host congregation** | <span class="status submitted">Submitted</span> The Ashburton host-congregation S-51 has been sent to the circuit overseer. The exact send date is not recorded locally. |
-| **S-29 — Coordinator/Secretary Change of Address** | <span class="status submitted">Submitted</span> The completed signed scan was submitted on 30 August 2026. The user confirmed that this S-29 records the body’s prospective coordinator, Adamson Dela Cruz; no separate recommendation statement was included in the reply. |
+| **S-29 — Coordinator/Secretary Change of Address** | <span class="status submitted">Submitted</span> The completed signed scan was submitted on 30 August 2026. Adamson dela Cruz is now confirmed as coordinator for the approved congregation; the branch postscript says no S-62 is needed for the assigned coordinator. |
 | **S-5 — Kingdom Hall Information** | <span class="status submitted">Submitted</span> The submitted copy records the proposed name, 1 November 2026 effective date, street address, GPS coordinates, contact number, Thursday 7:15 p.m. midweek meeting, and Saturday 7:00 p.m. weekend meeting. The congregation number is intentionally blank for the proposed congregation. The city, province or state, and zone or code lines were blank in the transmitted copy; retain this as a possible correction point if Daniel requests an update. |
 | **M-202 — Periodical Request** | <span class="status submitted">Submitted</span> The completed signed scan was submitted on 30 August 2026. This is the only listed item for which S-50 explicitly offers an after-approval alternative. |
 | **S-36 — Shipping Information** | <span class="status submitted">Submitted</span> The submitted copy leaves the ship-to congregation number, ship-to congregation name and date blank and lists only Ashburton Tagalog in the literature group. S-50 par. 5(5) directs that all congregations in the Kingdom Hall Literature Group be listed and that the ship-to congregation complete a copy. Retain this as a possible correction point if Daniel requests an updated S-36. |
@@ -68,9 +78,9 @@
 - **Does Daniel want only the Ashburton Tagalog group row or a wider language-field return?** — The attached form is generic and plural, but Daniel’s email to Adamson does not state the required reporting scope.
 - **How many persons were baptized in the Ashburton Tagalog field during the 2026 service year?** — The attached form asks for baptisms during the service year, not the total number of baptized publishers. DeckHand’s circuit-assistant export provides a baptism-date column, but it is blank for all 228 Ashburton records, so it cannot establish this figure. The working form correctly marks this cell TBC.
 
-<blockquote class="notice danger">
+<blockquote class="notice success">
 
-**Approval gate:** Both S-51 forms have been sent to the circuit overseer, and S-50 through par. 5 has been confirmed. S-50 par. 6 remains pending until the branch office communicates its decision, official start date, and further instructions.
+**Approved:** The official name is **Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand**. Congregation **3814** begins functioning **1 November 2026** in **Circuit NZ-2** under **Anthony Radi**. The confidential launch instructions are now the controlling workstream.
 
 </blockquote>
 

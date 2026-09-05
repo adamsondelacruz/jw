@@ -30,6 +30,18 @@ PACK_HTML = ROOT / "01-meeting-pack.html"
 PACK_PDF = ROOT / "01-meeting-pack.pdf"
 COMMS_MD = DOCS_DIR / "05-communications.md"
 COMMS_HTML = DOCS_DIR / "05-communications.html"
+ORG_MD = DOCS_DIR / "06-organisation-chart.md"
+ORG_HTML = DOCS_DIR / "06-organisation-chart.html"
+ORG_PDF = DOCS_DIR / "06-organisation-chart.pdf"
+START_MD = DOCS_DIR / "07-congregation-start-checklist.md"
+START_HTML = DOCS_DIR / "07-congregation-start-checklist.html"
+START_PDF = DOCS_DIR / "07-congregation-start-checklist.pdf"
+AGENDA_MD = DOCS_DIR / "08-preparation-meeting-agenda.md"
+AGENDA_HTML = DOCS_DIR / "08-preparation-meeting-agenda.html"
+AGENDA_PDF = DOCS_DIR / "08-preparation-meeting-agenda.pdf"
+PIONEER_MD = DOCS_DIR / "09-regular-pioneer-review.md"
+PIONEER_HTML = DOCS_DIR / "09-regular-pioneer-review.html"
+PIONEER_PDF = DOCS_DIR / "09-regular-pioneer-review.pdf"
 SEARCH_HTML = ROOT / "search.html"
 SEARCH_INDEX_JSON = ROOT / "search-index.json"
 SEARCH_INDEX_JS = ROOT / "search-index.js"
@@ -103,6 +115,31 @@ def verify_preserved_files(data: dict) -> dict[str, str]:
     return hashes
 
 
+def validate_checklist_contract(data: dict) -> None:
+    """Keep canonical launch tasks, the interactive tracker and saved progress aligned."""
+    source = (ROOT / data["checklist"]["html"]).read_text(encoding="utf-8")
+    item_ids = re.findall(r'\{\s*id:\s*"([^"]+)",\s*ref:', source)
+    unique_ids = set(item_ids)
+    expected = data["checklist"]["known_item_count"]
+    failures = []
+    if len(item_ids) != len(unique_ids):
+        failures.append("interactive checklist contains duplicate item IDs")
+    if len(unique_ids) != expected:
+        failures.append(f"interactive checklist has {len(unique_ids)} items; canonical count is {expected}")
+    startup_ids = {item["id"] for phase in data["startup"]["phases"] for item in phase["items"]}
+    missing = sorted(startup_ids - unique_ids)
+    if missing:
+        failures.append("startup tasks missing from interactive checklist: " + ", ".join(missing))
+    progress = json.loads((ROOT / data["checklist"]["progress_json"]).read_text(encoding="utf-8"))
+    if progress.get("knownItemCount") != expected:
+        failures.append("saved progress item count does not match canonical count")
+    stale = sorted((set(progress.get("checks", {})) | set(progress.get("notes", {}))) - unique_ids)
+    if stale:
+        failures.append("saved progress contains unknown task IDs: " + ", ".join(stale))
+    if failures:
+        raise RuntimeError("Checklist-contract validation failed:\n- " + "\n- ".join(failures))
+
+
 def common_nav(depth: int, current: str) -> str:
     prefix = "../" * depth
     links = [
@@ -113,6 +150,10 @@ def common_nav(depth: int, current: str) -> str:
         ("Statistics", f"{prefix}docs/02-statistics.html", "statistics"),
         ("Submissions", f"{prefix}docs/03-submissions.html", "submissions"),
         ("Communications", f"{prefix}docs/05-communications.html", "communications"),
+        ("Roles", f"{prefix}docs/06-organisation-chart.html", "organisation"),
+        ("Start", f"{prefix}docs/07-congregation-start-checklist.html", "startup"),
+        ("Agenda", f"{prefix}docs/08-preparation-meeting-agenda.html", "agenda"),
+        ("Pioneers", f"{prefix}docs/09-regular-pioneer-review.html", "pioneers"),
         ("Sources", f"{prefix}docs/04-source-map.html", "sources"),
         ("Checklist", f"{prefix}02-checklist.html", "checklist"),
     ]
@@ -157,7 +198,7 @@ def render_markdown(source: Path, target: Path, current: str, depth: int) -> Non
 <title>{html.escape(title)}</title>
 <link rel="stylesheet" href="{css}">
 </head>
-<body>
+<body class="page-{html.escape(current)}">
 <header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>{html.escape(title)}</h1><p>Evidence-backed working aid. Current official direction and original documents remain authoritative.</p></header>
 {common_nav(depth, current)}
 <main>{body}</main>
@@ -197,13 +238,14 @@ def write_entry_alias() -> None:
 
 
 def dashboard(data: dict) -> str:
-    unresolved = sum(1 for item in data["decisions"] if item["status"] == "unresolved")
-    needs = sum(1 for item in data["requirements"] if item["status"] == "needs-confirmation")
+    roles = [role for group in data["organisation"]["groups"] for role in group["roles"]]
+    confirmed_roles = sum(role["status"] == "confirmed" for role in roles)
+    open_roles = sum(role["status"] == "to-fill" for role in roles)
     return f'''<div class="dashboard">
 <div class="metric"><strong>{len(data['forms'])}</strong><span>form workstreams</span></div>
 <div class="metric"><strong>{len(data['requirements'])}</strong><span>tracked instruction gates</span></div>
-<div class="metric"><strong>{needs}</strong><span>S-50 items not yet confirmed</span></div>
-<div class="metric"><strong>{unresolved}</strong><span>open control decisions</span></div>
+<div class="metric"><strong>{confirmed_roles}</strong><span>confirmed role assignments</span></div>
+<div class="metric"><strong>{open_roles}</strong><span>roles or rosters to fill</span></div>
 </div>'''
 
 
@@ -225,9 +267,15 @@ def build_home(data: dict) -> str:
         "</blockquote>",
         "",
         "<div class=\"actions screen-only\">",
-        '<a class="button" href="02-checklist.html">Open the 78-item checklist</a>',
+        f'<a class="button" href="02-checklist.html">Open the {data["checklist"]["known_item_count"]}-item checklist</a>',
+        '<a class="button" href="docs/06-organisation-chart.html">Open the role chart</a>',
+        '<a class="button" href="docs/06-organisation-chart.html#oversight-view">Open the oversight view</a>',
+        '<a class="button" href="docs/07-congregation-start-checklist.html">Open the congregation start checklist</a>',
+        '<a class="button" href="docs/08-preparation-meeting-agenda.html">Open the preparation-meeting agenda</a>',
+        '<a class="button" href="docs/09-regular-pioneer-review.html">Open the regular-pioneer review topic</a>',
         '<a class="button" href="docs/05-communications.html">Open communications</a>',
         '<a class="button" href="01-meeting-pack.pdf">Open the complete meeting pack</a>',
+        '<a class="button secondary" href="27-AUS2824311_1.pdf">Open branch approval letter</a>',
         '<a class="button secondary" href="09-S-51-Ashburton-Tagalog-signed.pdf">Open signed proposed S-51</a>',
         '<a class="button secondary" href="08-S-51_E-Ashburton-working.pdf">Open submitted Ashburton S-51</a>',
         "</div>",
@@ -239,9 +287,13 @@ def build_home(data: dict) -> str:
         "3. [Statistics](docs/02-statistics.md) — printed facts, reported estimates, calculations and cautions.",
         "4. [Submissions](docs/03-submissions.md) — packages already sent and their verification state.",
         "5. [Communications](docs/05-communications.md) — Daniel Martin’s requests, attachments, replies, action status and next step.",
-        "6. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.",
-        "7. [Persistent master checklist](02-checklist.html) — existing ticks, notes and JSON save workflow, preserved unchanged.",
-        "8. [Search](search.html) — search forms, requirements, statistics, communications, checklist items and official references.",
+        "6. [Organisation chart](docs/06-organisation-chart.md) — congregation roles, confirmed names and vacancies to fill.",
+        "7. [Congregation start checklist](docs/07-congregation-start-checklist.md) — what must be ready before 1 November, what happens at launch, and conditional legal/financial work.",
+        "8. [Preparation-meeting agenda](docs/08-preparation-meeting-agenda.md) — a timed informal agenda, proposed-role worksheet and action register.",
+        "9. [Regular-pioneer review](docs/09-regular-pioneer-review.md) — elders’ working topic on hour shortfalls, assistance, exceptions, decisions and transfers.",
+        "10. [Source map](docs/04-source-map.md) — original PDFs, signed evidence, generated derivatives and hashes.",
+        "11. [Persistent master checklist](02-checklist.html) — existing ticks and notes plus the branch launch actions.",
+        "12. [Search](search.html) — search forms, requirements, statistics, communications, roles, checklist items and official references.",
         "",
         "## Present position",
         "",
@@ -269,9 +321,9 @@ def build_home(data: dict) -> str:
         lines.append(f"- **{md_cell(item['question'])}** — {md_cell(item['basis'])}")
     lines.extend([
         "",
-        '<blockquote class="notice danger">',
+        '<blockquote class="notice success">',
         "",
-        "**Approval gate:** Both S-51 forms have been sent to the circuit overseer, and S-50 through par. 5 has been confirmed. S-50 par. 6 remains pending until the branch office communicates its decision, official start date, and further instructions.",
+        "**Approved:** The official name is **Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand**. Congregation **3814** begins functioning **1 November 2026** in **Circuit NZ-2** under **Anthony Radi**. The confidential launch instructions are now the controlling workstream.",
         "",
         "</blockquote>",
         "",
@@ -294,7 +346,7 @@ def build_forms(data: dict) -> str:
     lines = [
         "# Forms Register",
         "",
-        "> **Current sequence:** Both S-51 forms have been sent. The S-29, S-5, M-202, S-36 and S-6 package, together with two supporting territory maps, was sent to the circuit overseer on 30 August 2026. Par. 6 remains pending until the branch office communicates its decision and instructions.",
+        "> **Current sequence:** The recommendation package was submitted and the branch approved congregation 3814 on 2 September 2026. These forms are now the evidence record for the approved congregation and its 1 November 2026 launch.",
         "",
         "| Form | Purpose | Required for / timing | Owner | Status | Working files |",
         "|---|---|---|---|---|---|",
@@ -315,7 +367,7 @@ def build_forms(data: dict) -> str:
         "2. The separate Ashburton host-congregation S-51 has also been sent to him.",
         "3. On 25 August 2026, Daniel Martin requested S-29, S-5, M-202, S-36 and S-6 under S-50 par. 5.",
         "4. The body’s recommendation(s) for the prospective coordinator are also required as soon as possible.",
-        "5. The requested package was submitted on 30 August 2026; await the branch-office decision and instructions described in S-50 par. 6.",
+        "5. The requested package was submitted on 30 August 2026, and the branch approval and launch instructions were received on 2 September 2026.",
         "",
         "## Submitted S-51 record",
         "",
@@ -330,7 +382,7 @@ def build_requirements(data: dict) -> str:
     lines = [
         "# Requirements and Evidence",
         "",
-        "> **Confirmed position:** S-50 through par. 5 has been confirmed. Par. 6 is the remaining approval stage and can be completed only when the branch office communicates its decision and instructions.",
+        "> **Confirmed position:** All S-50 gates, including par. 6, are confirmed. The official approval letter sets 1 November 2026 as the start date and supplies the transition instructions.",
         "",
         "| Requirement | Current evidence | Status / what remains |",
         "|---|---|---|",
@@ -341,9 +393,9 @@ def build_requirements(data: dict) -> str:
         lines.append(f"| **{ref}**<br>{md_cell(item['requirement'])} | {evidence} | {status(item['status'])}<br>{md_cell(item['notes'])} |")
     lines.extend([
         "",
-        "## What remains under S-50 par. 6",
+        "## S-50 par. 6 outcome",
         "",
-        "Wait for the branch office to state whether the new congregation is approved. Its letter will provide the official start date and further instructions. Until that direction is received, do not begin functioning as a congregation or treat a proposed date as approved.",
+        "The branch approved the congregation on 2 September 2026. Congregation 3814 begins functioning on 1 November 2026 in Circuit NZ-2. The remaining work is implementation of the confidential postscript, not further approval.",
     ])
     return "\n".join(lines) + "\n"
 
@@ -480,6 +532,150 @@ def build_communications_markdown(data: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def build_organisation(data: dict) -> str:
+    organisation = data["organisation"]
+    groups = organisation["groups"]
+    eligibility = organisation["eligibility"]
+    eligibility_by_id = {item["id"]: item for item in eligibility["legend"]}
+    role_categories = eligibility["role_categories"]
+    roles = [role for group in groups for role in group["roles"]]
+    roles_by_id = {role["id"]: role for role in roles}
+    oversight = organisation["oversight"]
+    confirmed = sum(role["status"] == "confirmed" for role in roles)
+    to_fill = sum(role["status"] == "to-fill" for role in roles)
+    optional = sum(role["status"] == "if-needed" for role in roles)
+    lines = [
+        "# Congregation Organisation Chart",
+        "",
+        '<div class="org-summary">',
+        f'<div><strong>{confirmed}</strong><span>confirmed</span></div>',
+        f'<div><strong>{to_fill}</strong><span>to fill</span></div>',
+        f'<div><strong>{optional}</strong><span>if needed</span></div>',
+        '<div><strong>1 Nov 2026</strong><span>begins functioning</span></div>',
+        "</div>",
+        "",
+        '<div class="eligibility-legend" aria-label="Ministerial servant eligibility legend">',
+    ]
+    for item in eligibility["legend"]:
+        lines.append(
+            f'<span class="eligibility-badge {item["id"]}" title="{html.escape(item["label"])}">'
+            f'<b>{html.escape(item["symbol"])}</b><small>{html.escape(item["label"])}</small></span>'
+        )
+    lines.extend([
+        "</div>",
+        "",
+        '<blockquote class="notice info">',
+        "",
+        f"**Planning boundary:** {organisation['scope_note']}",
+        "",
+        "</blockquote>",
+        "",
+        '<div class="org-chart">',
+        '<div class="org-root"><span>Ashburton Tagalog Congregation</span><strong>3814 · Circuit NZ-2</strong><small>Effective 1 November 2026</small></div>',
+        '<div class="org-trunk" aria-hidden="true"></div>',
+        '<div class="org-columns">',
+    ])
+    for group in groups:
+        lines.extend([
+            f'<section class="org-branch" id="{group["id"]}">',
+            f'<header><h2>{html.escape(group["title"])}</h2><p>{html.escape(group["description"])}</p></header>',
+            '<div class="org-role-list">',
+        ])
+        for role in group["roles"]:
+            label = role["status"].replace("-", " ").title()
+            eligibility_id = role_categories[role["id"]]
+            role_eligibility = eligibility_by_id[eligibility_id]
+            lines.extend([
+                f'<article class="org-card {role["status"]}" id="role-{role["id"]}">',
+                f'<div class="org-card-top"><span class="org-role-status">{html.escape(label)}</span>'
+                f'<span class="eligibility-badge compact {eligibility_id}" title="{html.escape(role_eligibility["label"])}">'
+                f'{html.escape(role_eligibility["symbol"])}</span><small>{html.escape(role["reference"])}</small></div>',
+                f'<h3>{html.escape(role["title"])}</h3>',
+                f'<strong class="org-name">{html.escape(role["name"])}</strong>',
+                f'<p>{html.escape(role["note"])}</p>',
+                '</article>',
+            ])
+        lines.extend(['</div>', '</section>'])
+    lines.extend([
+        "</div>",
+        "</div>",
+        "",
+        "## Oversight and responsibility view",
+        "",
+        '<section class="oversight-view" id="oversight-view">',
+        f'<div class="oversight-principle"><strong>{html.escape(oversight["title"])}</strong><p>{html.escape(oversight["principle"])}</p></div>',
+        '<div class="oversight-top">',
+        f'<div class="oversight-root"><span>{html.escape(oversight["root"]["subtitle"])}</span><strong>{html.escape(oversight["root"]["title"])}</strong><small>{html.escape(oversight["root"]["reference"])}</small></div>',
+        f'<div class="appointment-note">{html.escape(oversight["appointment_note"])}</div>',
+        '</div>',
+        '<div class="oversight-connector" aria-hidden="true"></div>',
+        '<div class="service-committee-map">',
+        f'<div><span>{html.escape(oversight["service_committee"]["title"])}</span><strong>'
+        + " · ".join(html.escape(roles_by_id[role_id]["title"]) for role_id in oversight["service_committee"]["members"])
+        + f'</strong><small>{html.escape(oversight["service_committee"]["note"])} · {html.escape(oversight["service_committee"]["reference"])}</small></div>',
+        '</div>',
+        '<div class="oversight-lanes">',
+    ])
+    for lane in oversight["lanes"]:
+        owner_status = ""
+        if lane.get("owner_role_id"):
+            owner_role = roles_by_id[lane["owner_role_id"]]
+            owner_status = status(owner_role["status"])
+        lines.extend([
+            f'<section class="oversight-lane" id="{html.escape(lane["id"])}">',
+            f'<header><span>{html.escape(lane["reference"])}</span><h3>{html.escape(lane["title"])}</h3><strong>{html.escape(lane["name"])}</strong>{owner_status}</header>',
+            '<div class="oversight-items">',
+        ])
+        for item in lane["items"]:
+            title_value = html.escape(item["title"])
+            title_html = f'<a href="#role-{html.escape(item["role_id"])}">{title_value}</a>' if item.get("role_id") else f'<span>{title_value}</span>'
+            lines.append(
+                f'<article><div>{title_html}<b>{html.escape(item["relationship"])}</b></div>'
+                f'<small>{html.escape(item["reference"])}</small></article>'
+            )
+        lines.extend(['</div>', '</section>'])
+    lines.extend([
+        '</div>',
+        '<div class="oversight-clarifications"><h3>How to read the lines</h3><ul>',
+    ])
+    for note in oversight["clarifications"]:
+        lines.append(f'<li>{html.escape(note)}</li>')
+    lines.extend([
+        '</ul></div>',
+        '</section>',
+        "",
+        "## Assignment register",
+        "",
+        "| Area | Role | Name | Status | MS eligibility | Reference | Notes |",
+        "|---|---|---|---|---|---|---|",
+    ])
+    for group in groups:
+        for role in group["roles"]:
+            eligibility_id = role_categories[role["id"]]
+            role_eligibility = eligibility_by_id[eligibility_id]
+            lines.append(
+                f"| {md_cell(group['title'])} | **{md_cell(role['title'])}** | {md_cell(role['name'])} | "
+                f"{status(role['status'])} | <span class=\"eligibility-badge compact {eligibility_id}\" title=\"{html.escape(role_eligibility['label'])}\">{html.escape(role_eligibility['symbol'])}</span> | "
+                f"{md_cell(role['reference'])} | {md_cell(role['note'])} |"
+            )
+    lines.extend([
+        "",
+        "## Important launch notes",
+        "",
+        "- Adamson dela Cruz and Dave Asuncion are the only names currently recorded as confirmed in this chart.",
+        "- The service overseer is the first vacancy to settle because that assignment completes the Congregation Service Committee.",
+        "- The branch letter says S-62 recommendations are submitted after the new congregation begins functioning for elders and ministerial servants who transfer. No S-62 is needed for the brothers assigned as coordinator and secretary.",
+        "- Because the Kingdom Hall is shared, the chart records a Kingdom Hall Operating Committee representative or liaison, not a separate maintenance coordinator for the new congregation.",
+        "- Public talk chairmen and Watchtower readers are rosters, not single offices; additional assistants are assigned only if needed.",
+        "",
+        "## Ministerial-servant eligibility notes",
+        "",
+    ])
+    for note in eligibility["notes"]:
+        lines.append(f"- {note}")
+    return "\n".join(lines) + "\n"
+
+
 def write_communications_html(data: dict) -> None:
     groups = data.get("communication_groups", [])
     records_by_group = {group["id"]: [] for group in groups}
@@ -553,7 +749,7 @@ def write_communications_html(data: dict) -> None:
     pending_total = sum(item["status"] in {"action-required", "needs-confirmation", "not-started", "draft"} for item in data["correspondence"])
     page = f'''<!doctype html>
 <html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Communications — Ashburton Tagalog</title><link rel="stylesheet" href="../assets/00-portal.css"></head>
-<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Communications</h1><p>Daniel Martin correspondence, attachments, replies and action status. Mailbox inspection is read-only; this page sends nothing.</p></header>
+<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Communications</h1><p>Circuit-overseer and branch correspondence, attachments, replies and action status. Mailbox inspection is read-only; this page sends nothing.</p></header>
 {common_nav(1, 'communications')}
 <main><blockquote class="notice warning"><p><strong>{pending_total} communication workstream(s) need action or confirmation.</strong> Acknowledging an email does not mean its requested form or package is complete.</p></blockquote>
 <div class="comm-shell"><aside class="comm-sidebar"><h2>Communication tree</h2><input class="comm-search" id="comm-search" type="search" placeholder="Search subject, status or action" aria-label="Filter communications">{''.join(tree_groups)}</aside><div class="comm-content">{''.join(cards)}</div></div></main>
@@ -602,6 +798,10 @@ def build_source_map(data: dict, actual_hashes: dict[str, str]) -> str:
         "- `01-meeting-pack.md/.html/.pdf` — combined meeting document with every portal register.",
         "- `docs/00-forms-register`, then `docs/01-` through `docs/04-` — focused forms, requirements, statistics, submissions and source pages.",
         "- `docs/05-communications.md/.html` — communication timeline, full substantive email text, attachments and workflow status.",
+        "- `docs/06-organisation-chart.md/.html/.pdf` — congregation roles, confirmed names, vacancies and planning notes.",
+        "- `docs/07-congregation-start-checklist.md/.html/.pdf` — phase-based launch, legal, banking, records and first-month checklist.",
+        "- `docs/08-preparation-meeting-agenda.md/.html/.pdf` — timed informal agenda, responsibility worksheet and action register.",
+        "- `docs/09-regular-pioneer-review.md/.html/.pdf` — confidential elders’ working topic on pioneer hour review and shepherding.",
         "- `search.html`, `search-index.json` and `search-index.js` — local browser-side portal search.",
         "- `references/00-S-50-reference.html` and `references/01-S-51-reference.html` — searchable source text.",
         "- `data/00-project.json` — canonical structured facts and workflow state.",
@@ -614,12 +814,334 @@ def meeting_section(markdown: str) -> str:
     body = re.sub(r"(?m)^#\s+[^\n]+\n?", "", markdown, count=1).strip()
     body = re.sub(r"(?m)^(#{2,5})(\s+)", lambda match: "#" + match.group(1) + match.group(2), body)
     body = body.replace("](05-communications.html", "](docs/05-communications.html")
+    body = body.replace("](06-organisation-chart.md", "](docs/06-organisation-chart.md")
+    body = body.replace("](07-congregation-start-checklist.md", "](docs/07-congregation-start-checklist.md")
+    body = body.replace("](09-regular-pioneer-review.md", "](docs/09-regular-pioneer-review.md")
     return body.replace("](../", "](")
+
+
+def build_startup(data: dict) -> str:
+    startup = data["startup"]
+    lines = [
+        "# Congregation Start Checklist",
+        "",
+        f"**Official start:** {data['project']['effective_date']} · **Congregation:** {data['project']['congregation_number']} · **Circuit:** {data['project']['circuit']}",
+        "",
+        '<blockquote class="notice warning">',
+        "",
+        f"**Legal and banking control:** {startup['legal_control']}",
+        "",
+        "</blockquote>",
+        "",
+        "## The short version",
+        "",
+        startup["short_version"],
+        "",
+        "Use the [persistent master checklist](../02-checklist.html) to tick these tasks and save notes. This page is the meeting-friendly launch view; the branch letter and current official direction remain controlling.",
+        "",
+        "## Launch gates",
+        "",
+        "| Gate | Meaning |",
+        "|---|---|",
+    ]
+    for gate in startup["gates"]:
+        lines.append(f"| {status(gate['id'])} | {md_cell(gate['meaning'])} |")
+    for phase in startup["phases"]:
+        lines.extend([
+            "",
+            f"## {md_cell(phase['title'])}",
+            "",
+            md_cell(phase["purpose"]),
+            "",
+            "| Done | Task | Owner | Gate | Source / evidence |",
+            "|:---:|---|---|---|---|",
+        ])
+        for item in phase["items"]:
+            refs = "; ".join(item["references"])
+            lines.append(
+                f"| ☐ | **{md_cell(item['title'])}**<br>{md_cell(item.get('detail', ''))} | "
+                f"{md_cell(item['owner'])} | {status(item['gate'])} | {md_cell(refs)} |"
+            )
+    lines.extend([
+        "",
+        "## Forms and instructions to have at hand",
+        "",
+        "| Reference | What it controls | Availability |",
+        "|---|---|---|",
+    ])
+    for item in startup["guidelines"]:
+        lines.append(f"| **{md_cell(item['code'])}** | {md_cell(item['purpose'])} | {md_cell(item['availability'])} |")
+    lines.extend([
+        "",
+        "## New Zealand official references",
+        "",
+        "These are decision support for a structure approved by the branch—not authority to create a separate entity independently.",
+        "",
+    ])
+    for item in startup["external_sources"]:
+        lines.append(f"- [{md_cell(item['title'])}]({item['url']}) — {md_cell(item['use'])}")
+    lines.extend([
+        "",
+        '<blockquote class="notice">',
+        "",
+        "**Research conclusion:** Charities Services says registration is voluntary. Public-register research located nationwide Jehovah’s Witnesses charitable entities, but did not establish that congregation 3814 must register separately. Therefore the safe first action is written confirmation from the branch Accounting/Legal function of the correct entity, IRD, charity and bank arrangement.",
+        "",
+        "</blockquote>",
+    ])
+    return "\n".join(lines) + "\n"
+
+
+def build_preparation_agenda(data: dict) -> str:
+    meeting = data["preparation_meeting"]
+    organisation = data["organisation"]
+    roles = {role["id"]: role for group in organisation["groups"] for role in group["roles"]}
+    categories = organisation["eligibility"]["role_categories"]
+    symbols = {item["id"]: item["symbol"] for item in organisation["eligibility"]["legend"]}
+    confirmation = {
+        "service-overseer": "Authorised body / current direction",
+        "group-overseers": "Body of elders",
+        "group-assistants": "Body of elders",
+        "khoc-representative": "Combined bodies of elders",
+    }
+    lines = [
+        f"# {meeting['title']}",
+        "",
+        '<div class="meeting-fields">',
+        '<p><strong>Date:</strong> ____________________</p>',
+        '<p><strong>Time:</strong> ____________________</p>',
+        '<p><strong>Location:</strong> ____________________</p>',
+        '<p><strong>Chairman:</strong> ____________________</p>',
+        '</div>',
+        "",
+        f"**Suggested duration:** {meeting['recommended_duration']}<br>",
+        f"**Purpose:** {meeting['purpose']}",
+        "",
+        '<blockquote class="notice warning">',
+        "",
+        f"**Meeting boundary:** {meeting['authority_note']}",
+        "",
+        "</blockquote>",
+        "",
+        "## What this meeting should produce",
+        "",
+        "- Proposed names or follow-up owners for every priority responsibility.",
+        "- Owners and deadlines for the first month of meetings, ministry, records and Kingdom Hall arrangements.",
+        "- A clear list of matters requiring formal approval or outside direction.",
+        "- One action owner for the Branch Accounting/Legal inquiry; no unauthorised charity, tax or banking action.",
+        "",
+        "## Timed agenda",
+        "",
+        "| Time | Agenda item | Discussion | Required result |",
+        "|---:|---|---|---|",
+    ]
+    for item in meeting["agenda"]:
+        lines.append(f"| **{md_cell(item['minutes'])}** | **{md_cell(item['topic'])}** | {md_cell(item['discussion'])} | {md_cell(item['outcome'])} |")
+    lines.extend([
+        "",
+        "## Responsibility worksheet",
+        "",
+        "**Eligibility key:** ✓ MS = qualified ministerial servant may be assigned · △ MS = conditional/only when the stated need applies · Elder = elder assignment.",
+    ])
+    for group in meeting["role_groups"]:
+        lines.extend([
+            "",
+            f"### {md_cell(group['title'])}",
+            "",
+            "| Responsibility | Current position | Eligibility | Proposed name / action | Formal confirmation | Reference |",
+            "|---|---|---|---|---|---|",
+        ])
+        for role_id in group["role_ids"]:
+            role = roles[role_id]
+            eligibility = symbols[categories[role_id]]
+            approver = confirmation.get(role_id, "Body of elders")
+            lines.append(
+                f"| **{md_cell(role['title'])}** | {md_cell(role['name'])} | **{md_cell(eligibility)}** | "
+                f"____________________ | {md_cell(approver)} | {md_cell(role['reference'])} |"
+            )
+    lines.extend([
+        "",
+        "## Questions to work through",
+        "",
+    ])
+    for question in meeting["discussion_questions"]:
+        lines.append(f"- ☐ {question}")
+    lines.extend([
+        "",
+        "## Optional discussion — charity, tax, bank and accounts",
+        "",
+        '<blockquote class="notice info">',
+        "",
+        meeting["optional_finance_note"],
+        "",
+        "</blockquote>",
+        "",
+        "Suggested discussion only:",
+        "",
+        "1. Who will ask Branch Accounting/Legal which legal entity, official account name, charity/IRD identifiers and bank process apply to congregation 3814?",
+        "2. Who will obtain the current S-27 and accounting tutorials?",
+        "3. Who can prepare—but not yet submit—the likely bank documents, identity evidence and draft minutes?",
+        "4. If the Branch directs a separate registration, who will coordinate the approved governing documents, officers and statutory calendar?",
+        "",
+        "## Action register",
+        "",
+        "| Action | Owner | Approver / consulted party | Due date | Status / notes |",
+        "|---|---|---|---|---|",
+    ])
+    for _ in range(10):
+        lines.append("| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |")
+    lines.extend([
+        "",
+        "## Park for the next meeting",
+        "",
+        "- ________________________________________________________________________________",
+        "- ________________________________________________________________________________",
+        "- ________________________________________________________________________________",
+        "",
+        "**Next preparation review:** ____________________<br>",
+        "**Closing prayer:** ____________________",
+        "",
+        "Useful working links: [organisation chart](06-organisation-chart.md) · [congregation start checklist](07-congregation-start-checklist.md) · [regular-pioneer review](09-regular-pioneer-review.md) · [persistent checklist](../02-checklist.html)",
+    ])
+    return "\n".join(lines) + "\n"
+
+
+def build_pioneer_review(data: dict) -> str:
+    review = data["regular_pioneer_review"]
+    lines = [
+        f"# {review['title']}",
+        "",
+        f"**Audience:** {review['audience']} · **Reviewed:** {review['as_of']}",
+        "",
+        '<blockquote class="notice danger">',
+        "",
+        f"**Confidentiality:** {review['confidentiality_note']}",
+        "",
+        "</blockquote>",
+        "",
+        '<blockquote class="notice warning">',
+        "",
+        f"**Authority boundary:** {review['authority_note']}",
+        "",
+        "</blockquote>",
+        "",
+        '<div class="dashboard pioneer-metrics">',
+        '<div class="metric"><strong>600</strong><span>annual requirement</span></div>',
+        '<div class="metric"><strong>50</strong><span>monthly review average</span></div>',
+        '<div class="metric"><strong>560</strong><span>year-end continuation benchmark</span></div>',
+        '<div class="metric"><strong>Prompt</strong><span>Service Committee review below 560</span></div>',
+        '</div>',
+        "",
+        "## Bottom line",
+        "",
+        review["bottom_line"],
+        "",
+        "## Thresholds and what they mean",
+        "",
+        "| Measure | Figure | Direction | Reference |",
+        "|---|---:|---|---|",
+    ]
+    for item in review["thresholds"]:
+        lines.append(f"| **{md_cell(item['measure'])}** | **{md_cell(item['value'])}** | {md_cell(item['meaning'])} | {md_cell(item['reference'])} |")
+    lines.extend([
+        "",
+        '<blockquote class="notice info">',
+        "",
+        "**Important:** 600 hours is the annual requirement; 560 hours is the separate year-end benchmark stated in Shepherd for continuation. Do not replace either figure with a locally invented rule.",
+        "",
+        "</blockquote>",
+        "",
+        "## Decision flow",
+        "",
+    ])
+    for item in review["decision_flow"]:
+        lines.extend([
+            f"### {item['step']}. {md_cell(item['title'])}",
+            "",
+            f"**Owner:** {md_cell(item['owner'])} · **Reference:** {md_cell(item['reference'])}",
+            "",
+        ])
+        for action in item["actions"]:
+            lines.append(f"- ☐ {action}")
+        lines.append("")
+    lines.extend([
+        "## Provisions and circumstances to distinguish",
+        "",
+        "| Situation | Criteria | Possible outcome | Reference |",
+        "|---|---|---|---|",
+    ])
+    for item in review["exceptions"]:
+        lines.append(f"| **{md_cell(item['title'])}** | {md_cell(item['criteria'])} | {md_cell(item['outcome'])} | {md_cell(item['reference'])} |")
+    lines.extend([
+        "",
+        "## How to conduct the conversation",
+        "",
+        "### Principles",
+        "",
+    ])
+    for item in review["conversation"]["principles"]:
+        lines.append(f"- {item}")
+    lines.extend([
+        "",
+        "### Questions that invite an honest assessment",
+        "",
+    ])
+    for item in review["conversation"]["questions"]:
+        lines.append(f"- {item}")
+    lines.extend([
+        "",
+        "### Suggested opening",
+        "",
+        "> " + review["conversation"]["sample_opening"],
+        "",
+        "### Avoid",
+        "",
+        "- Beginning with a predetermined request that the person discontinue.",
+        "- Saying, “You failed to make your time,” or implying that the congregation was let down.",
+        "- Equating hours or a pioneer appointment with Jehovah’s approval of the person.",
+        "- Pressuring the pioneer to pursue an unsafe or unrealistic catch-up schedule.",
+        "- Leaving a year-end case below 560 hours unresolved.",
+        "",
+        "## If discontinuation is determined",
+        "",
+        "1. Obtain and consider the appropriate group overseer’s comments.",
+        "2. Check whether special consideration or the infirm-pioneer provision applies.",
+        "3. The Congregation Service Committee makes the determination using balanced judgment.",
+        "4. Update the body of elders before any announcement.",
+        "5. Two Service Committee members inform the pioneer personally before the announcement.",
+        "6. Use the current JW Hub procedure and only the prescribed announcement.",
+        "7. Continue warm shepherding; a temporary discontinuation is not discipline and does not diminish the person’s faithful service.",
+        "",
+        "## Ashburton transition application",
+        "",
+        f"- **Who handles the completed service year:** {review['ashburton_transfer']['current_owner']}",
+        f"- **What the transfer letter must resolve:** {review['ashburton_transfer']['transfer_requirement']}",
+        f"- **What the new congregation does:** {review['ashburton_transfer']['new_congregation_action']}",
+        f"- **Reference:** {review['ashburton_transfer']['reference']}",
+        "",
+        '<blockquote class="notice success">',
+        "",
+        "**Practical control:** Resolve or clearly document each regular pioneer’s recommendation before the 1 November transfer. The new congregation should not inherit an ambiguous pioneer status.",
+        "",
+        "</blockquote>",
+        "",
+        "## Sources",
+        "",
+    ])
+    for source in review["sources"]:
+        if source.get("path"):
+            label = f"[{md_cell(source['title'])}]({qpath(source['path'])})"
+        else:
+            label = f"[{md_cell(source['title'])}]({source['url']})"
+        lines.append(f"- {label} — {md_cell(source['reference'])}; {md_cell(source['kind'])}.")
+    return "\n".join(lines) + "\n"
 
 
 def build_meeting_pack(data: dict, actual_hashes: dict[str, str]) -> str:
     project = data["project"]
     sections = [
+        ("Preparation Meeting Agenda", build_preparation_agenda(data)),
+        ("Congregation Organisation Chart", build_organisation(data)),
+        ("Congregation Start Checklist", build_startup(data)),
         ("Forms Register", build_forms(data)),
         ("Requirements and Evidence", build_requirements(data)),
         ("Statistics and Provenance", build_statistics(data)),
@@ -825,25 +1347,29 @@ class PortalSearchParser(HTMLParser):
 def write_search_page() -> None:
     page = f'''<!doctype html>
 <html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search — Ashburton Tagalog Project</title><link rel="stylesheet" href="assets/00-portal.css"><script src="search-index.js" defer></script><script src="assets/01-search.js" defer></script></head>
-<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Search the project</h1><p>Search forms, requirements, statistics, communications, checklist items and deep-linked S-50/S-51 references.</p></header>
+<body><header class="hero"><p class="eyebrow">Ashburton Tagalog · Working project portal</p><h1>Search the project</h1><p>Search forms, requirements, statistics, communications, roles, agendas, pioneer guidance, start tasks, checklist items and deep-linked S-50/S-51 references.</p></header>
 {common_nav(0, 'search')}
-<main class="search-page"><form class="search-panel" id="search-form" role="search"><label for="search-input">Search words or an exact phrase</label><div class="search-row"><input id="search-input" type="search" placeholder="Try S-29, Daniel Martin, baptized, or par. 5" autocomplete="off" autofocus><button type="submit">Search</button></div><div class="search-options"><label for="search-type">Limit to</label><select id="search-type"><option value="">All project sources</option><option value="communications">Communications</option><option value="official">Official references</option><option value="forms">Forms and submissions</option><option value="checklist">Checklist</option><option value="portal">Project guidance</option></select><span id="search-meta"></span></div></form><p class="search-status" id="search-status" aria-live="polite"></p><div class="search-empty" id="search-empty"><h2>One search box for the whole project</h2><p>Use ordinary words, a form code, a name, or an exact phrase in quotation marks. Press <kbd>/</kbd> anywhere on this page to focus the search box.</p></div><div class="search-results" id="search-results"></div></main>
+<main class="search-page"><form class="search-panel" id="search-form" role="search"><label for="search-input">Search words or an exact phrase</label><div class="search-row"><input id="search-input" type="search" placeholder="Try S-29, Adamson, service overseer, or par. 6" autocomplete="off" autofocus><button type="submit">Search</button></div><div class="search-options"><label for="search-type">Limit to</label><select id="search-type"><option value="">All project sources</option><option value="communications">Communications</option><option value="official">Official references</option><option value="forms">Forms and submissions</option><option value="organisation">Organisation and roles</option><option value="checklist">Checklist</option><option value="portal">Project guidance</option></select><span id="search-meta"></span></div></form><p class="search-status" id="search-status" aria-live="polite"></p><div class="search-empty" id="search-empty"><h2>One search box for the whole project</h2><p>Use ordinary words, a form code, a name, or an exact phrase in quotation marks. Press <kbd>/</kbd> anywhere on this page to focus the search box.</p></div><div class="search-results" id="search-results"></div></main>
 <p class="footer">The index is built only from local project files. Search results are working aids and do not replace the official source.</p></body></html>'''
     SEARCH_HTML.write_text(page, encoding="utf-8")
 
 
 def build_search_index() -> None:
     sources = [
-        {"id": "communications", "name": "Communications", "title": "Daniel Martin correspondence and action status", "type": "communications", "priority": 0, "path": COMMS_HTML, "url": "docs/05-communications.html"},
+        {"id": "communications", "name": "Communications", "title": "Circuit-overseer and branch correspondence", "type": "communications", "priority": 0, "path": COMMS_HTML, "url": "docs/05-communications.html"},
         {"id": "s50", "name": "S-50", "title": "Instructions for Recommending New Congregations", "type": "official", "priority": 1, "path": REFS_DIR / "00-S-50-reference.html", "url": "references/00-S-50-reference.html"},
         {"id": "s51", "name": "S-51", "title": "Congregation Application/Information", "type": "official", "priority": 2, "path": REFS_DIR / "01-S-51-reference.html", "url": "references/01-S-51-reference.html"},
         {"id": "forms", "name": "Forms", "title": "Forms register", "type": "forms", "priority": 3, "path": DOCS_DIR / "00-forms-register.html", "url": "docs/00-forms-register.html"},
         {"id": "submissions", "name": "Submissions", "title": "Submission register", "type": "forms", "priority": 4, "path": DOCS_DIR / "03-submissions.html", "url": "docs/03-submissions.html"},
-        {"id": "requirements", "name": "Requirements", "title": "Requirements and evidence", "type": "portal", "priority": 5, "path": DOCS_DIR / "01-requirements.html", "url": "docs/01-requirements.html"},
-        {"id": "statistics", "name": "Statistics", "title": "Statistics and provenance", "type": "portal", "priority": 6, "path": DOCS_DIR / "02-statistics.html", "url": "docs/02-statistics.html"},
-        {"id": "checklist", "name": "Checklist", "title": "Forming a New Congregation checklist", "type": "checklist", "priority": 7, "path": ROOT / "02-checklist.html", "url": "02-checklist.html"},
-        {"id": "overview", "name": "Overview", "title": "Project overview", "type": "portal", "priority": 8, "path": ROOT_HTML, "url": "00-project-overview.html"},
-        {"id": "sources", "name": "Sources", "title": "Source map and integrity register", "type": "portal", "priority": 9, "path": DOCS_DIR / "04-source-map.html", "url": "docs/04-source-map.html"},
+        {"id": "organisation", "name": "Organisation", "title": "Congregation organisation chart", "type": "organisation", "priority": 5, "path": ORG_HTML, "url": "docs/06-organisation-chart.html"},
+        {"id": "startup", "name": "Start", "title": "Congregation start checklist", "type": "checklist", "priority": 5, "path": START_HTML, "url": "docs/07-congregation-start-checklist.html"},
+        {"id": "agenda", "name": "Agenda", "title": "Informal congregation preparation meeting", "type": "organisation", "priority": 5, "path": AGENDA_HTML, "url": "docs/08-preparation-meeting-agenda.html"},
+        {"id": "pioneers", "name": "Pioneers", "title": "Regular pioneer hour review and shepherding guide", "type": "organisation", "priority": 5, "path": PIONEER_HTML, "url": "docs/09-regular-pioneer-review.html"},
+        {"id": "requirements", "name": "Requirements", "title": "Requirements and evidence", "type": "portal", "priority": 6, "path": DOCS_DIR / "01-requirements.html", "url": "docs/01-requirements.html"},
+        {"id": "statistics", "name": "Statistics", "title": "Statistics and provenance", "type": "portal", "priority": 7, "path": DOCS_DIR / "02-statistics.html", "url": "docs/02-statistics.html"},
+        {"id": "checklist", "name": "Checklist", "title": "Forming a New Congregation checklist", "type": "checklist", "priority": 8, "path": ROOT / "02-checklist.html", "url": "02-checklist.html"},
+        {"id": "overview", "name": "Overview", "title": "Project overview", "type": "portal", "priority": 9, "path": ROOT_HTML, "url": "00-project-overview.html"},
+        {"id": "sources", "name": "Sources", "title": "Source map and integrity register", "type": "portal", "priority": 10, "path": DOCS_DIR / "04-source-map.html", "url": "docs/04-source-map.html"},
     ]
     entries = []
     for source in sources:
@@ -908,6 +1434,7 @@ def main() -> int:
     args = parser.parse_args()
     data = load_data()
     hashes_before = verify_preserved_files(data)
+    validate_checklist_contract(data)
     progress_hash = hashes_before[data["checklist"]["progress_json"]]
     DOCS_DIR.mkdir(exist_ok=True)
     REFS_DIR.mkdir(exist_ok=True)
@@ -923,6 +1450,10 @@ def main() -> int:
         (DOCS_DIR / "02-statistics.md", DOCS_DIR / "02-statistics.html", "statistics", 1, build_statistics(data)),
         (DOCS_DIR / "03-submissions.md", DOCS_DIR / "03-submissions.html", "submissions", 1, build_submissions(data)),
         (DOCS_DIR / "04-source-map.md", DOCS_DIR / "04-source-map.html", "sources", 1, build_source_map(data, hashes_before)),
+        (ORG_MD, ORG_HTML, "organisation", 1, build_organisation(data)),
+        (START_MD, START_HTML, "startup", 1, build_startup(data)),
+        (AGENDA_MD, AGENDA_HTML, "agenda", 1, build_preparation_agenda(data)),
+        (PIONEER_MD, PIONEER_HTML, "pioneers", 1, build_pioneer_review(data)),
     ]
     for markdown_path, html_path, current, depth, content in documents:
         markdown_path.write_text(content, encoding="utf-8")
@@ -936,11 +1467,15 @@ def main() -> int:
     if not args.no_pdf:
         print_pdf(ROOT_HTML, ROOT_PDF)
         print_pdf(PACK_HTML, PACK_PDF)
+        print_pdf(ORG_HTML, ORG_PDF)
+        print_pdf(START_HTML, START_PDF)
+        print_pdf(AGENDA_HTML, AGENDA_PDF)
+        print_pdf(PIONEER_HTML, PIONEER_PDF)
 
     hashes_after = verify_preserved_files(data)
     if hashes_after[data["checklist"]["progress_json"]] != progress_hash:
         raise RuntimeError("Checklist progress JSON changed during generation; refusing handoff.")
-    print(f"Built index.html, search, {len(documents) + 1} Markdown/HTML portal documents, 2 deep-reference pages" + (" and 2 PDFs." if not args.no_pdf else "."))
+    print(f"Built index.html, search, {len(documents) + 1} Markdown/HTML portal documents, 2 deep-reference pages" + (" and 6 PDFs." if not args.no_pdf else "."))
     print("Verified immutable source hashes and preserved checklist progress JSON.")
     return 0
 

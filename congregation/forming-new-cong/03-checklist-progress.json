@@ -5,14 +5,14 @@
     "S-50-E 7/21",
     "S-51-E 1/16"
   ],
-  "knownItemCount": 78,
-  "savedAt": "2026-08-19T13:05:46+12:00",
+  "knownItemCount": 118,
+  "savedAt": "2026-09-03T16:30:00+12:00",
   "mergeMode": "additive",
-  "evidenceRevision": "2026-08-13-email-and-s51",
+  "evidenceRevision": "2026-09-02-branch-approval",
   "project": {
-    "name": "",
-    "lead": "",
-    "targetDate": ""
+    "name": "Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand",
+    "lead": "Adamson dela Cruz",
+    "targetDate": "2026-11-01"
   },
   "checks": {
     "forms-number-blank": true,
@@ -32,7 +32,12 @@
     "s51-ms": true,
     "s51-reasons": true,
     "s51-start": true,
-    "final-language": true
+    "final-language": true,
+    "approval-wait": true,
+    "approval-letter": true,
+    "approval-date": true,
+    "approval-official-name": true,
+    "approval-circuit-identity": true
   },
   "notes": {
     "forms-number-blank": "Signed S-51 attachment: the proposed congregation-number field is blank.",
@@ -52,7 +57,12 @@
     "s51-ms": "Signed S-51 attachment and 9 August email: 2 ministerial servants are recorded.",
     "s51-reasons": "Signed S-51 attachment contains the completed factual reason for forming the congregation.",
     "s51-start": "Signed S-51 attachment and 9 August email record November 2026 as the proposed start month—not branch approval.",
-    "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence."
+    "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence.",
+    "approval-wait": "Completed: the branch approval letter is dated 2 September 2026.",
+    "approval-letter": "Official two-page branch approval letter AUS2824311_1 received and reviewed.",
+    "approval-date": "The approved start date is 1 November 2026.",
+    "approval-official-name": "Approved complete name: Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand.",
+    "approval-circuit-identity": "Official identity: congregation 3814, Circuit NZ-2, circuit overseer Anthony Radi."
   },
   "sectionOpen": {
     "forms": true,
@@ -61,6 +71,10 @@
     "s51-new": true,
     "naming": true,
     "final-review": true,
-    "approval": true
+    "approval": true,
+    "startup-control": true,
+    "startup-finance": true,
+    "startup-activate": true,
+    "startup-first-month": true
   }
 }

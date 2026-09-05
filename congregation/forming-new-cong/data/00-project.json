@@ -1,16 +1,22 @@
 {
   "schema_version": 1,
   "project": {
-    "name": "Ashburton Tagalog — New Congregation Recommendation",
-    "working_arrangement": "Ashburton Tagalog group under the Ashburton host body of elders",
+    "name": "Ashburton Tagalog Congregation — Approval and Launch",
+    "official_name": "Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand",
+    "congregation_number": "3814",
+    "working_arrangement": "Approved new congregation; the Ashburton Tagalog group remains under the Ashburton host body of elders until the official start date",
     "host_congregation": "Ashburton (1016)",
-    "circuit": "NZ-1",
-    "proposed_circuit_section": "NZ-1B",
+    "circuit": "NZ-2",
+    "circuit_overseer": "Anthony Radi",
+    "former_circuit": "NZ-1",
+    "application_proposed_circuit_section": "NZ-1B",
     "kingdom_hall": "262–264 Cameron Street, Ashburton 7700",
-    "status": "action-required",
-    "updated_at": "2026-08-30T22:03:00+12:00",
-    "current_direction": "The S-50 par. 5 reply and seven-file attachment package were sent to Daniel Martin at 10:03 p.m. on 30 August 2026 in the original Application - Tagalog Congregation Ashburton thread. Sent Items independently showed the complete approved message, all five requested PDF forms and both supporting S-6 territory-map PNGs. The signed S-29 records the body’s prospective coordinator. A separate 2026 language-fields return is awaiting Daniel's scope clarification and the 2026-service-year baptism count. Branch approval under S-50 par. 6 remains pending.",
-    "next_action": "Await Daniel's response on the submitted S-50 par. 5 package and his scope clarification for the 2026 language-fields return. Confirm the 2026-service-year baptism count, then complete that return. Do not mark S-50 par. 6 complete until branch approval and instructions are received."
+    "status": "approved-launch-pending",
+    "approval_date": "2026-09-02",
+    "effective_date": "2026-11-01",
+    "updated_at": "2026-09-05T17:40:00+12:00",
+    "current_direction": "The branch approved the Ashburton Tagalog Congregation on 2 September 2026. Congregation 3814 will begin functioning on 1 November 2026 in Circuit NZ-2 under circuit overseer Anthony Radi. Until then, complete the confidential postscript’s transition instructions while the group remains under the Ashburton host body of elders.",
+    "next_action": "Read the approval letter—without its confidential postscript—at the first midweek meeting after receipt and then post it. Ask the branch Accounting/Legal function to confirm the exact legal entity, charity/tax identifiers and bank-account process for congregation 3814; meanwhile complete leadership, JW Hub, shared-hall, accounting, meeting and ministry readiness for 1 November 2026."
   },
   "source_documents": [
     {
@@ -162,10 +168,17 @@
       "immutable": false
     },
     {
+      "path": "27-AUS2824311_1.pdf",
+      "kind": "official-branch-approval",
+      "as_of": "2026-09-02",
+      "sha256": "40feaa539db32c35a1f3ab83c592b90752e1e1128690097805fd1856626e4056",
+      "immutable": true
+    },
+    {
       "path": "03-checklist-progress.json",
       "kind": "checklist-progress",
       "schema_version": 1,
-      "sha256": "ea5aabcfa8ad15899c0049788e264200c15fd6f8518989a61e609d77a5ffe988",
+      "sha256": "6b70982a9381bbbefb7981e8b641bf67788fb54432208ab5c69e60bbd151b1e9",
       "immutable": false
     }
   ],
@@ -185,7 +198,7 @@
         {"path": "06-S-51_E.pdf", "kind": "blank-original", "status": "reference"}
       ],
       "source_references": ["S-50 par. 5(1)", "S-51 page 2 instructions"],
-    "notes": "The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026; further action depends on his or the branch office’s direction."
+      "notes": "The signed proposed-congregation S-51 was sent to the circuit overseer on 9 August 2026 and formed part of the approved recommendation. The official branch identity is congregation 3814 in Circuit NZ-2."
     },
     {
       "id": "s51-ashburton",
@@ -216,7 +229,7 @@
         {"path": "21-S-29-Ashburton-Tagalog-signed.pdf", "kind": "signed-scan", "status": "signed", "date": "2026-08-30", "sha256": "8980ca919f58e6917888a3fd443662a35a319029e2fa9c8dd05ac3812cd9d775"}
       ],
       "source_references": ["S-50 par. 5(2)"],
-      "notes": "The completed signed scan was submitted on 30 August 2026. The user confirmed that this S-29 records the body’s prospective coordinator, Adamson Dela Cruz; no separate recommendation statement was included in the reply."
+      "notes": "The completed signed scan was submitted on 30 August 2026. Adamson dela Cruz is now confirmed as coordinator for the approved congregation; the branch postscript says no S-62 is needed for the assigned coordinator."
     },
     {
       "id": "s5",
@@ -371,9 +384,14 @@
       "requirement": "Wait for branch approval and use the start date and further instructions in the approval letter.",
       "source_reference": "S-50 par. 6",
       "source_anchor": "s50-p6",
-      "status": "needs-confirmation",
-      "evidence": [],
-      "notes": "Awaiting the branch office’s approval decision, official start date, and further instructions. A proposed date is not approval to begin functioning."
+      "status": "confirmed",
+      "evidence": [
+        "Branch approval letter dated 2 September 2026",
+        "Official start date: 1 November 2026",
+        "Congregation number: 3814",
+        "Circuit assignment: NZ-2 under Anthony Radi"
+      ],
+      "notes": "Approval and the official start date have been received. The congregation must now carry out the further instructions in the letter’s confidential postscript."
     }
   ],
   "statistics": [
@@ -457,8 +475,8 @@
       "id": "prospective-coordinator-recommendations",
       "question": "Whom will the body recommend for appointment as coordinator of the prospective congregation?",
       "status": "confirmed",
-      "decision": "The signed S-29 records Adamson Dela Cruz as the body’s prospective coordinator for the proposed congregation.",
-      "basis": "Signed S-29 dated 30 August 2026 and the user’s clarification on 30 August 2026."
+      "decision": "Adamson dela Cruz is confirmed as coordinator of the body of elders for the approved congregation.",
+      "basis": "Signed S-29 dated 30 August 2026, the branch approval dated 2 September 2026, and the user’s confirmation on 3 September 2026."
     },
     {
       "id": "language-fields-scope",
@@ -473,6 +491,20 @@
       "status": "unresolved",
       "decision": null,
       "basis": "The attached form asks for baptisms during the service year, not the total number of baptized publishers. DeckHand’s circuit-assistant export provides a baptism-date column, but it is blank for all 228 Ashburton records, so it cannot establish this figure. The working form correctly marks this cell TBC."
+    },
+    {
+      "id": "branch-approval",
+      "question": "Has the branch approved the new congregation, and what official identity and start date apply?",
+      "status": "confirmed",
+      "decision": "Approved as Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand; congregation 3814; Circuit NZ-2; begins functioning 1 November 2026.",
+      "basis": "Official branch approval letter AUS2824311_1 dated 2 September 2026."
+    },
+    {
+      "id": "confirmed-secretary",
+      "question": "Who will serve as secretary of the approved congregation?",
+      "status": "confirmed",
+      "decision": "Dave Asuncion is confirmed as secretary.",
+      "basis": "User confirmation on 3 September 2026. The branch postscript says no S-62 is needed for the brother assigned as secretary."
     }
   ],
   "submissions": [
@@ -513,6 +545,16 @@
       ],
       "verification": "Sent Items independently verified the complete approved reply to Martin, Daniel at 10:03 p.m. on 2026-08-30. It showed all five requested PDF forms and both supporting S-6 territory-map PNGs.",
       "notes": "Submitted in Daniel Martin's original Application - Tagalog Congregation Ashburton thread. The seven-file pack totals about 4.1 MB. The signed S-29 records the body's prospective coordinator."
+    },
+    {
+      "id": "branch-approval-received",
+      "package": "Official branch approval and launch instructions",
+      "recipient": "Body of Elders, Ashburton (1016)",
+      "date": "2026-09-02",
+      "status": "approved",
+      "attachments": ["27-AUS2824311_1.pdf"],
+      "verification": "Official two-page branch letter received from the Service Department’s Preaching Needs Desk and downloaded from the authenticated JWPub mailbox.",
+      "notes": "Approves congregation 3814 for a 1 November 2026 start in Circuit NZ-2. Page 2 is a confidential postscript and must not be read or posted."
     }
   ],
   "communication_groups": [
@@ -530,6 +572,11 @@
       "id": "language-fields",
       "label": "Language-field reporting",
       "description": "2026 congregation, group and pregroup information return"
+    },
+    {
+      "id": "branch-approval",
+      "label": "Branch approval and launch",
+      "description": "Official approval, identity, effective date and transition instructions"
     }
   ],
   "correspondence": [
@@ -632,14 +679,394 @@
         "pack/S-6-ashburton-territory.png",
         "pack/S-6-ashburton-territory-2.png"
       ]
+    },
+    {
+      "id": "branch-approval-email",
+      "group": "branch-approval",
+      "direction": "received",
+      "date": "2026-09-02",
+      "time": "15:29",
+      "with": "SRV—Preaching Needs Desk",
+      "subject": "Approval of New Congregation",
+      "status": "approved",
+      "summary": "The branch approved the Ashburton Tagalog Congregation, assigned congregation number 3814, set 1 November 2026 as the start date, and assigned it to Circuit NZ-2 under Anthony Radi.",
+      "action": "Read page 1 at the first midweek meeting after receipt and then post it on the information board. Do not read or post the confidential postscript. Complete the transition actions before and after 1 November 2026.",
+      "body": "Please find attached a letter for your attention.",
+      "source": "JWPub mailbox; read-only verification on 2026-09-03.",
+      "attachments": ["27-AUS2824311_1.pdf"]
     }
   ],
+  "organisation": {
+    "as_of": "2026-09-03",
+    "scope_note": "This is a planning register, not an appointment record. Confirmed names are based on the user’s instruction. All other entries remain to be decided by the body of elders or the responsible appointing brother according to current direction. Eligibility badges show whether a ministerial servant may be considered; they do not approve or appoint anyone.",
+    "eligibility": {
+      "legend": [
+        {"id": "ms-yes", "symbol": "✓ MS", "label": "A qualified ministerial servant may be assigned"},
+        {"id": "ms-conditional", "symbol": "△ MS", "label": "A qualified ministerial servant may be used only when the stated need or current direction applies"},
+        {"id": "elder-only", "symbol": "Elder", "label": "This chart treats the role as an elder assignment"}
+      ],
+      "role_categories": {
+        "coordinator": "elder-only",
+        "secretary": "elder-only",
+        "service-overseer": "elder-only",
+        "life-ministry-overseer": "elder-only",
+        "watchtower-conductor": "elder-only",
+        "watchtower-substitute": "elder-only",
+        "public-talk-coordinator": "ms-yes",
+        "auxiliary-counselor": "ms-conditional",
+        "av-coordinator": "ms-yes",
+        "attendant-coordinator": "ms-yes",
+        "accounts-servant": "ms-yes",
+        "literature-servant": "ms-yes",
+        "territory-servant": "ms-yes",
+        "group-overseers": "ms-conditional",
+        "group-assistants": "ms-yes",
+        "cleaning-coordinator": "ms-yes",
+        "khoc-representative": "ms-yes",
+        "assistant-secretary": "ms-yes",
+        "assistant-service-overseer": "elder-only",
+        "public-talk-chairmen": "ms-yes",
+        "watchtower-readers": "ms-yes"
+      },
+      "notes": [
+        "For field service groups, an elder is a group overseer; when there are not enough elders, a qualified ministerial servant may serve as group servant or group assistant (SFG 1:21).",
+        "For auxiliary counselor, an experienced elder should be used whenever possible; the conditional badge flags that an MS should not be treated as the normal choice (SFG 4:15).",
+        "A Kingdom Hall Operating Committee may include elders or ministerial servants, but its coordinator should be an experienced elder (SFG 13:6).",
+        "Secretary support means assistance with field-service reporting tasks under the secretary, not appointment as the congregation secretary (SFG 1:14)."
+      ]
+    },
+    "oversight": {
+      "title": "Oversight and Responsibility View",
+      "principle": "The body of elders provides collective spiritual oversight. The coordinator helps the body work in an orderly way but is not the coordinator of the congregation and does not independently direct the other elders.",
+      "root": {
+        "title": "Body of Elders",
+        "subtitle": "Collective responsibility and direction",
+        "reference": "SFG 1:1-10"
+      },
+      "appointment_note": "The circuit overseer appoints the coordinator of the body of elders (SFG 1:11).",
+      "service_committee": {
+        "title": "Congregation Service Committee",
+        "members": ["coordinator", "secretary", "service-overseer"],
+        "note": "The coordinator, secretary and service overseer serve together. Its decisions harmonize with the thinking of the body of elders; it is not a superior body over the elders.",
+        "reference": "SFG 1:10"
+      },
+      "lanes": [
+        {
+          "id": "coordinator-lane",
+          "owner_role_id": "coordinator",
+          "title": "Coordinator",
+          "name": "Adamson dela Cruz",
+          "reference": "SFG 1:11-12",
+          "items": [
+            {"role_id": "attendant-coordinator", "title": "Attendants / attendant coordination", "relationship": "Oversees", "reference": "SFG 1:12"},
+            {"role_id": "public-talk-coordinator", "title": "Public Talk Coordinator", "relationship": "Oversees", "reference": "SFG 1:12"},
+            {"role_id": "av-coordinator", "title": "Audio/Video Support Coordinator", "relationship": "Oversees", "reference": "SFG 1:12"},
+            {"role_id": "public-talk-chairmen", "title": "Public Talk Chairmen roster", "relationship": "Schedules", "reference": "SFG 1:12"},
+            {"role_id": "watchtower-readers", "title": "Watchtower Readers roster", "relationship": "Schedules", "reference": "SFG 1:12"},
+            {"title": "Congregation account audits", "relationship": "Arranges", "reference": "SFG 1:12"}
+          ]
+        },
+        {
+          "id": "secretary-lane",
+          "owner_role_id": "secretary",
+          "title": "Secretary",
+          "name": "Dave Asuncion",
+          "reference": "SFG 1:13-14",
+          "items": [
+            {"role_id": "accounts-servant", "title": "Accounts Servant", "relationship": "Oversees", "reference": "SFG 1:14"},
+            {"role_id": "assistant-secretary", "title": "Field-report support", "relationship": "Supervises assigned tasks", "reference": "SFG 1:14"},
+            {"title": "Convention matters", "relationship": "Oversees", "reference": "SFG 1:14"},
+            {"title": "Legal and financial responsibilities", "relationship": "Ensures timely handling", "reference": "SFG 1:14"}
+          ]
+        },
+        {
+          "id": "service-overseer-lane",
+          "owner_role_id": "service-overseer",
+          "title": "Service Overseer",
+          "name": "To be confirmed",
+          "reference": "SFG 1:15-17",
+          "items": [
+            {"role_id": "literature-servant", "title": "Literature Servant", "relationship": "Oversees", "reference": "SFG 1:16"},
+            {"role_id": "territory-servant", "title": "Territory Servant", "relationship": "Oversees", "reference": "SFG 1:16"},
+            {"title": "Holiday and special-campaign witnessing", "relationship": "Organizes", "reference": "SFG 1:16"},
+            {"role_id": "group-overseers", "title": "Field service groups", "relationship": "Visits annually and coordinates", "reference": "SFG 1:17-18"}
+          ]
+        },
+        {
+          "id": "body-direct-lane",
+          "title": "Body of Elders — Direct Assignments",
+          "name": "Collective decision",
+          "reference": "SFG 1:4; 4:9, 12, 15; 13:8",
+          "items": [
+            {"role_id": "life-ministry-overseer", "title": "Life and Ministry Meeting Overseer", "relationship": "Selects / assigns", "reference": "SFG 4:14; S-38"},
+            {"role_id": "watchtower-conductor", "title": "Watchtower Study Conductor and substitute", "relationship": "Selects", "reference": "SFG 4:12"},
+            {"role_id": "auxiliary-counselor", "title": "Auxiliary Counselor", "relationship": "Selects", "reference": "SFG 4:15"},
+            {"role_id": "group-overseers", "title": "Group overseers/servants and assistants", "relationship": "Determines assignments", "reference": "SFG 1:18, 21"},
+            {"role_id": "cleaning-coordinator", "title": "Kingdom Hall Cleaning Coordinator", "relationship": "Assigns", "reference": "SFG 13:8"}
+          ]
+        },
+        {
+          "id": "shared-hall-lane",
+          "title": "Combined Bodies of Elders",
+          "name": "Shared Kingdom Hall arrangement",
+          "reference": "SFG 13:5-6",
+          "items": [
+            {"role_id": "khoc-representative", "title": "Kingdom Hall Operating Committee", "relationship": "Appoints committee", "reference": "SFG 13:6"},
+            {"title": "Operating Committee Coordinator", "relationship": "Appoints experienced elder", "reference": "SFG 13:6"},
+            {"title": "Kingdom Hall cleaning and maintenance", "relationship": "Committee organizes", "reference": "SFG 13:6"}
+          ]
+        }
+      ],
+      "clarifications": [
+        "A role may be selected by the body of elders but have day-to-day oversight from one service-committee member. For example, the body decides who serves as public talk coordinator, while the coordinator of the body of elders oversees that work.",
+        "Field service group overseers or servants are determined by the body of elders; the service overseer visits and coordinates with the groups, and the Congregation Service Committee assigns publishers to groups.",
+        "The shared-hall operating committee is appointed by the combined bodies of elders, not by the new congregation’s coordinator alone."
+      ]
+    },
+    "groups": [
+      {
+        "id": "service-committee",
+        "title": "Congregation Service Committee",
+        "description": "The coordinator, secretary and service overseer serve together as the Congregation Service Committee.",
+        "roles": [
+          {"id": "coordinator", "title": "Coordinator of the Body of Elders", "name": "Adamson dela Cruz", "status": "confirmed", "reference": "SFG 1:10-12", "note": "Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as coordinator."},
+          {"id": "secretary", "title": "Secretary", "name": "Dave Asuncion", "status": "confirmed", "reference": "SFG 1:10, 13-14", "note": "Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as secretary."},
+          {"id": "service-overseer", "title": "Service Overseer", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:10, 15-17", "note": "Needed to complete the Congregation Service Committee."}
+        ]
+      },
+      {
+        "id": "meetings-teaching",
+        "title": "Meetings and Teaching",
+        "description": "Congregation assignments overseen by the body of elders and coordinator.",
+        "roles": [
+          {"id": "life-ministry-overseer", "title": "Life and Ministry Meeting Overseer", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 4:14", "note": "Include any approved assistant or substitute arrangement in the working roster."},
+          {"id": "watchtower-conductor", "title": "Watchtower Study Conductor", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 4:12-13", "note": "The body also selects an approved substitute."},
+          {"id": "watchtower-substitute", "title": "Substitute Watchtower Study Conductor", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 4:13", "note": "Used when the conductor is away."},
+          {"id": "public-talk-coordinator", "title": "Public Talk Coordinator", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:12; 4:9(5)", "note": "Coordinates visiting speakers and the public-talk schedule."},
+          {"id": "auxiliary-counselor", "title": "Auxiliary Counselor", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 4:15", "note": "Provides private counsel to elders and ministerial servants on speaking assignments."},
+          {"id": "av-coordinator", "title": "Audio/Video Support Coordinator", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:4, 12", "note": "Coordinates audio/video support and its approved roster."},
+          {"id": "attendant-coordinator", "title": "Attendant Coordinator", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:12", "note": "Coordinates attendants and their roster."}
+        ]
+      },
+      {
+        "id": "ministry-administration",
+        "title": "Ministry, Records and Support",
+        "description": "Operational assignments needed for congregation ministry, records, supplies and shared Kingdom Hall use.",
+        "roles": [
+          {"id": "accounts-servant", "title": "Accounts Servant", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:4, 14", "note": "Serves under the secretary’s oversight."},
+          {"id": "literature-servant", "title": "Literature Servant", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:4, 17", "note": "Serves under the service overseer’s oversight."},
+          {"id": "territory-servant", "title": "Territory Servant", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:4, 17", "note": "Works with the approved territory assignment; submitted S-6 boundaries apply until the branch supplies updated assignments."},
+          {"id": "group-overseers", "title": "Field Service Group Overseer(s)/Servant(s)", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:18-19", "note": "Record one name for each field service group once the groups are arranged."},
+          {"id": "group-assistants", "title": "Field Service Group Assistant(s)", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 1:18-19", "note": "Optional per group as local circumstances require."},
+          {"id": "cleaning-coordinator", "title": "Kingdom Hall Cleaning Coordinator", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 13:8", "note": "Coordinates the new congregation’s cleaning assignments."},
+          {"id": "khoc-representative", "title": "Kingdom Hall Operating Committee Representative", "name": "To be confirmed", "status": "to-fill", "reference": "SFG 13:6", "note": "The hall is shared, so record the congregation’s representative or liaison to the combined operating arrangement."}
+        ]
+      },
+      {
+        "id": "optional-assistants-rosters",
+        "title": "Optional Assistants and Rosters",
+        "description": "Assign only as needed; these do not all require one permanent officeholder.",
+        "roles": [
+          {"id": "assistant-secretary", "title": "Secretary Support / Field Report Assistant", "name": "If needed", "status": "if-needed", "reference": "SFG 1:14", "note": "A qualified ministerial servant may assist with compiling, posting and submitting field service activity under the secretary."},
+          {"id": "assistant-service-overseer", "title": "Assistant Service Overseer", "name": "If needed", "status": "if-needed", "reference": "SFG 1:15", "note": "May be assigned according to local need."},
+          {"id": "public-talk-chairmen", "title": "Public Talk Chairmen", "name": "Roster to be prepared", "status": "to-fill", "reference": "SFG 1:12", "note": "Maintain an approved roster rather than treating this as a single office."},
+          {"id": "watchtower-readers", "title": "Watchtower Readers", "name": "Roster to be prepared", "status": "to-fill", "reference": "SFG 1:12", "note": "Maintain an approved roster."}
+        ]
+      }
+    ]
+  },
+  "regular_pioneer_review": {
+    "title": "Regular Pioneer Hour Review and Shepherding Guide",
+    "as_of": "2026-09-05",
+    "audience": "Elders’ working topic",
+    "confidentiality_note": "The controlling Shepherd material is confidential. Keep this derived working topic within the authorised elders’ project and do not circulate it as a public policy statement.",
+    "authority_note": "This is a paraphrased working aid based on the September 2025 Shepherd edition and the public Organized book. Check the current Shepherd Addendum, JW Hub instructions and Branch direction before acting.",
+    "bottom_line": "Do not begin by asking a pioneer to step down. First verify the record, understand the person’s circumstances and offer help. A total below 560 hours at service-year end requires a prompt, balanced Congregation Service Committee determination; it is not automatic deletion. If discontinuation is best, present it as a potentially temporary, stress-relieving adjustment—not as discipline or a judgment of spiritual worth.",
+    "thresholds": [
+      {"measure": "Annual requirement", "value": "600 hours", "meaning": "An applicant should have organised personal affairs so the annual requirement can realistically be reached.", "reference": "SFG 14:1(3)"},
+      {"measure": "Review indicator", "value": "Consistently below an average of 50 hours per month", "meaning": "After factoring in hour credit, the service overseer and group overseer meet with the pioneer to offer assistance and assess whether the annual requirement is realistic.", "reference": "SFG 14:5"},
+      {"measure": "Year-end continuation benchmark", "value": "At least 560 hours", "meaning": "Hours in field service plus applicable hour credit; the pioneer may continue.", "reference": "SFG 14:6"},
+      {"measure": "Year-end decision point", "value": "Below 560 hours", "meaning": "The Service Committee promptly decides whether the pioneer should continue, using balanced judgment. This is not an automatic deletion rule.", "reference": "SFG 14:6-7"}
+    ],
+    "decision_flow": [
+      {"step": 1, "title": "Verify the record", "actions": ["Confirm the service year and months appointed", "Reconcile reported field-service hours", "Confirm properly recorded hour credit", "Check for missing or late reports", "Identify approved theocratic-project work that may require special consideration"], "owner": "Secretary / Service Overseer", "reference": "SFG 14:5-8"},
+      {"step": 2, "title": "Meet to understand and assist", "actions": ["The service overseer and appropriate group overseer meet with the pioneer", "Commend specific faithful service", "Ask about health, family, employment, schedule and other circumstances", "Offer practical help before discussing discontinuation", "Assess whether the new service year’s requirement is realistically sustainable"], "owner": "Service Overseer / Group Overseer", "reference": "SFG 14:5"},
+      {"step": 3, "title": "Check special provisions", "actions": ["Consider approved-project special consideration", "Consider the rare infirm-pioneer provision only if all criteria may apply", "Consult the circuit overseer where the infirm provision requires it", "Check the current Addendum and JW Hub direction"], "owner": "Congregation Service Committee / Body of elders", "reference": "SFG 14:3, 8-10"},
+      {"step": 4, "title": "Make a balanced determination", "actions": ["Consider the length of full-time service", "Consider age and whether circumstances are temporary or continuing", "Consider the pioneer’s best interests", "Uphold the standard for regular pioneer service", "Do not leave a below-560 case unresolved or place the burden on the pioneer to volunteer a resignation"], "owner": "Congregation Service Committee", "reference": "SFG 14:6-7"},
+      {"step": 5, "title": "Communicate and record the outcome", "actions": ["Update the body of elders before an announcement", "If discontinuing, two Service Committee members inform the individual first", "Use the current JW Hub process", "Use only the prescribed announcement", "Record special or infirm consideration on S-21 when applicable"], "owner": "Congregation Service Committee", "reference": "SFG 14:3, 8-10"}
+    ],
+    "exceptions": [
+      {"title": "Approved-project special consideration", "criteria": "The pioneer missed the annual requirement because extensive work on approved theocratic projects exceeded the hour credit available.", "outcome": "The pioneer may continue, should be warmly commended and has the special consideration noted on S-21.", "reference": "SFG 14:8"},
+      {"title": "Infirm regular pioneer", "criteria": "Rare provision: exemplary, over 50 years old, at least 15 cumulative years pioneering and a heartfelt desire to continue; the circuit overseer must be consulted.", "outcome": "If the body approves, the pioneer may serve without an hour requirement; two Service Committee members explain the provision and it is noted on S-21.", "reference": "SFG 14:9"},
+      {"title": "Ordinary changed circumstances", "criteria": "Health, employment, family responsibilities or another adverse circumstance makes the annual requirement unrealistic but does not meet a special provision.", "outcome": "Temporary discontinuation may be in the person’s best interests and relieve pressure until circumstances change.", "reference": "SFG 14:6-7"}
+    ],
+    "conversation": {
+      "principles": [
+        "Use the meeting to listen and assist, not to announce a predetermined outcome.",
+        "Separate the privilege of regular pioneering from the person’s spirituality and value to Jehovah or the congregation.",
+        "Use verified figures without accusatory expressions such as ‘you failed to make your time.’",
+        "Do not pressure the pioneer to chase an unsafe or unrealistic deficit.",
+        "If discontinuation is considered, use the official idea of discontinuing for a time rather than the status-oriented expression ‘step down.’"
+      ],
+      "questions": [
+        "How have you been, and what circumstances affected your ministry during the service year?",
+        "Is any report or approved hour credit missing from the record?",
+        "What practical assistance could the elders or congregation provide?",
+        "Looking at your present circumstances, is reaching the annual requirement during the new service year realistic?",
+        "Would a workable adjustment make continuation sustainable, or would discontinuing for a time relieve pressure until circumstances change?"
+      ],
+      "sample_opening": "We appreciate your service and want this to be an encouraging conversation, not a disciplinary one. Your value to Jehovah and the congregation is not measured by a title or a number of hours. We would first like to understand what affected your service, confirm that the record is accurate and see what practical help we can offer. Then we can consider together whether continuing regular pioneer service is realistic in your present circumstances."
+    },
+    "ashburton_transfer": {
+      "current_owner": "Until 1 November 2026, the pioneer remains under the current congregation, so that congregation’s Service Committee should resolve the completed service-year review.",
+      "transfer_requirement": "The letter of introduction should plainly state whether the existing body recommends that the pioneer continue.",
+      "new_congregation_action": "If the recommendation is favourable, the new Ashburton Tagalog Congregation Service Committee confirms that the pioneer wishes to continue and, absent an exceptional reason, arranges the announcement at the next midweek meeting.",
+      "reference": "SFG 14:4; approval letter p. 2"
+    },
+    "sources": [
+      {"title": "Shepherd the Flock of God — September 2025", "reference": "Chapter 14, paragraphs 1, 3-10", "kind": "confidential controlling local source", "path": "../../../elder/sfg_E.pdf"},
+      {"title": "Organized to Do Jehovah’s Will", "reference": "Chapter 10, paragraphs 11-13", "kind": "public official source", "url": "https://wol.jw.org/en/wol/d/r1/lp-e/1102014940"},
+      {"title": "The Christian Congregation—A Source of Strengthening Aid", "reference": "The experience concerning guilt after discontinuing pioneering", "kind": "public pastoral support", "url": "https://wol.jw.org/en/wol/d/r1/lp-e/1999365"},
+      {"title": "Were You Once a Regular Pioneer?", "reference": "Paragraph 4", "kind": "public pastoral support", "url": "https://wol.jw.org/en/wol/d/r1/lp-e/202011085"}
+    ]
+  },
+  "preparation_meeting": {
+    "title": "Informal Congregation Preparation Meeting",
+    "recommended_duration": "90 minutes",
+    "purpose": "Prepare the Ashburton Tagalog Congregation to begin functioning on 1 November 2026 by identifying proposed role assignments, assigning preparation work and surfacing decisions that require formal approval or Branch direction.",
+    "authority_note": "This is a preparation meeting, not a body-of-elders meeting. Record proposed names and action owners. Formal appointments, congregation decisions, shared-hall decisions and external legal or banking actions must be made or confirmed by the authorised brothers or body under current direction.",
+    "agenda": [
+      {"minutes": "0–5", "topic": "Opening and purpose", "discussion": "Prayer; restate the 1 November start date and the purpose of tonight’s discussion.", "outcome": "Everyone understands what may be prepared, proposed or formally decided."},
+      {"minutes": "5–12", "topic": "Where the project stands", "discussion": "Approval received; congregation 3814 in Circuit NZ-2; Adamson dela Cruz confirmed as coordinator and Dave Asuncion as secretary; review the Branch transition instructions without circulating confidential material.", "outcome": "One shared understanding of the approved identity, effective date and current arrangement."},
+      {"minutes": "12–37", "topic": "Priority responsibilities and proposed brothers", "discussion": "Work through the priority role table: service overseer, meeting oversight, accounts, literature, territory, field service groups, cleaning and shared-hall liaison.", "outcome": "A proposed name or a named follow-up owner for every priority vacancy."},
+      {"minutes": "37–52", "topic": "Meetings and teaching", "discussion": "First-month schedule; public talks; Life and Ministry assignments; Watchtower conductor and substitute; chairmen, readers, A/V and attendants; confirm Thursday 7:15 p.m. and Saturday 7:00 p.m.", "outcome": "Owners and target dates for the first four weeks of meeting schedules and rosters."},
+      {"minutes": "52–65", "topic": "Ministry and publisher care", "discussion": "Field service group structure; publisher placements; interim S-6 territory; literature and periodical requests; pioneer and publisher-record transition after 1 November.", "outcome": "Proposed group structure and named owners for territory, literature and record reconciliation."},
+      {"minutes": "65–75", "topic": "Administration, JW Hub and Kingdom Hall", "discussion": "JW Hub access; secure congregation file; S-21/S-88 records; information board; cleaning schedule; emergency contacts; S-46 shared-hall matters and Kingdom Hall Operating Committee liaison.", "outcome": "Administrative setup tasks assigned, with any combined-body decisions clearly flagged."},
+      {"minutes": "75–83", "topic": "Optional: charity, tax, bank and accounting preparation", "discussion": "Confirm that Branch Accounting/Legal direction is needed first; identify who will obtain current S-27 and clarify the legal entity/account name; list—but do not yet execute—bank onboarding and conditional charity/IRD steps.", "outcome": "One inquiry owner and a document-gathering owner; no unauthorised registration or account opening."},
+      {"minutes": "83–90", "topic": "Actions, deadlines and next review", "discussion": "Read back every action with owner and due date; identify what goes to the host body, prospective/new body, combined bodies, circuit overseer or Branch; set the next preparation review.", "outcome": "A complete action register and date for the next review."}
+    ],
+    "role_groups": [
+      {"title": "Priority — fill or propose first", "role_ids": ["service-overseer", "life-ministry-overseer", "watchtower-conductor", "accounts-servant", "literature-servant", "territory-servant", "group-overseers", "cleaning-coordinator", "khoc-representative"]},
+      {"title": "Meeting support — prepare rosters", "role_ids": ["watchtower-substitute", "public-talk-coordinator", "auxiliary-counselor", "av-coordinator", "attendant-coordinator", "public-talk-chairmen", "watchtower-readers"]},
+      {"title": "Optional or as needed", "role_ids": ["group-assistants", "assistant-secretary", "assistant-service-overseer"]}
+    ],
+    "discussion_questions": [
+      "Which roles absolutely need a named brother before the first meeting, and which can be covered temporarily?",
+      "Do the proposed brothers have the availability, ability and eligibility indicated in the organisation chart?",
+      "Who has formal authority to confirm each proposal, and by what date should that confirmation be obtained?",
+      "How many field service groups should begin on 1 November, and who will care for each group?",
+      "Who will prepare and check the first four weeks of meeting, ministry and Kingdom Hall rosters?",
+      "What records, access, supplies or information must come from Ashburton or other former congregations?",
+      "What must be agreed with the other bodies using the Kingdom Hall?",
+      "Who will contact Branch Accounting/Legal for the legal-entity and bank-account instructions?"
+    ],
+    "optional_finance_note": "Discuss only enough to assign preparation work. Do not create an entity, register with Charities Services, apply for an IRD number or open an account under an assumed name before Branch Accounting/Legal identifies the approved arrangement. Obtain the current S-27 before designing the accounting workflow.",
+    "action_columns": ["Action", "Owner", "Approver / consulted party", "Due date", "Status / notes"]
+  },
+  "startup": {
+    "as_of": "2026-09-03",
+    "legal_control": "Do not independently create a charitable trust, register a charity, obtain a new IRD number, or open an account under an assumed entity. First obtain written direction from the branch Accounting/Legal function identifying the legal entity, official account name, tax/charity identifiers, governing documents and authorised banking process for congregation 3814.",
+    "short_version": "Before 1 November, complete the announcement, leadership, JW Hub, accounting, shared-hall, meeting and ministry setup. On or shortly after 1 November, transfer people and records, confirm pioneers and appointed brothers, and begin congregation records. After November, submit the first field service report and operate the monthly accounting and compliance routines. Charity registration is conditional on branch direction; bank-account preparation may begin now, but the legal account holder must be confirmed first.",
+    "gates": [
+      {"id": "branch-required", "meaning": "Explicitly required by the approval letter or another cited official instruction."},
+      {"id": "operational-readiness", "meaning": "Needed so the congregation can function cleanly from the start, even if the approval letter does not list it."},
+      {"id": "confirm-first", "meaning": "Do not execute until the branch or other named authority confirms the exact arrangement."},
+      {"id": "post-start", "meaning": "Complete on or after 1 November, or during the first reporting cycle."}
+    ],
+    "phases": [
+      {
+        "id": "before-start",
+        "title": "A. Before 1 November — establish control and readiness",
+        "purpose": "These items give the new body a functioning decision structure, secure records, meeting arrangements and ministry support before the effective date.",
+        "items": [
+          {"id": "approval-announce", "title": "Read page 1 of the approval letter at the first midweek meeting after receipt.", "detail": "Do not read the confidential postscript.", "owner": "Coordinator", "gate": "branch-required", "references": ["Approval letter p. 2"]},
+          {"id": "approval-post", "title": "Post page 1 of the approval letter on the information board after the announcement.", "detail": "The coordinator approves information-board content.", "owner": "Coordinator", "gate": "branch-required", "references": ["Approval letter p. 2", "SFG 13:14"]},
+          {"id": "approval-postscript-confidential", "title": "Secure the confidential postscript and limit it to those authorised to use it.", "detail": "Do not read or post page 2.", "owner": "Secretary", "gate": "branch-required", "references": ["Approval letter p. 2", "SFG 17:1-6"]},
+          {"id": "startup-csc", "title": "Complete the Congregation Service Committee.", "detail": "Adamson dela Cruz and Dave Asuncion are confirmed; the service overseer remains to be confirmed.", "owner": "Body of elders / circuit overseer", "gate": "operational-readiness", "references": ["SFG 1:10"]},
+          {"id": "startup-role-assign", "title": "Assign the essential congregation roles and rosters.", "detail": "Prioritise accounts, literature, territory, meeting oversight, public talks, A/V, attendants, field service groups and cleaning; use the organisation chart as the working register.", "owner": "Body of elders", "gate": "operational-readiness", "references": ["SFG 1:4, 12, 14-19", "Organisation chart"]},
+          {"id": "approval-hub", "title": "Prepare the new JW Hub domain and access transition.", "detail": "Confirm the coordinator and secretary can see the new domain during the branch transition window.", "owner": "Coordinator / Secretary", "gate": "branch-required", "references": ["Approval letter p. 2"]},
+          {"id": "startup-s135", "title": "Obtain and review the current Instructions for Congregation Use of JW Hub (S-135).", "detail": "Use it for access, person transfers, official correspondence and record handling.", "owner": "Secretary", "gate": "operational-readiness", "references": ["SFG 17:4, 8, 11"]},
+          {"id": "startup-cong-file", "title": "Create a secure congregation file and its required categories.", "detail": "Accounts; circuit overseer reports; confidential records; elders and ministerial servants; Kingdom Hall; letters of introduction; territory.", "owner": "Secretary", "gate": "operational-readiness", "references": ["SFG 17:1-2"]},
+          {"id": "startup-s46", "title": "Update the shared Kingdom Hall Agreement (S-46).", "detail": "Record meeting times, use and care, each congregation’s operating-expense responsibility, operating-account balance and extraordinary-expense limits.", "owner": "Combined bodies of elders", "gate": "operational-readiness", "references": ["SFG 13:5"]},
+          {"id": "startup-meeting-readiness", "title": "Publish the first month of meeting assignments and support rosters.", "detail": "Include chairmen, readers, A/V, attendants, talks, Life and Ministry parts and approved substitutes; verify the approved Thursday 7:15 p.m. and Saturday 7:00 p.m. times.", "owner": "Coordinator / meeting overseers", "gate": "operational-readiness", "references": ["SFG 4", "S-5"]},
+          {"id": "startup-ministry-ready", "title": "Establish field service groups and ministry support.", "detail": "Assign publishers, group overseers/servants and assistants; prepare territory and literature handling.", "owner": "Service Committee / Service Overseer", "gate": "operational-readiness", "references": ["SFG 1:15-19"]},
+          {"id": "startup-emergency", "title": "Prepare congregation emergency contacts and shared-hall safety procedures.", "detail": "Apply privacy safeguards; know the current security, incident and life-safety direction.", "owner": "Body of elders / Kingdom Hall Operating Committee", "gate": "operational-readiness", "references": ["SFG 11:6, 11", "SFG 13:1, 13"]}
+        ]
+      },
+      {
+        "id": "legal-financial",
+        "title": "B. Legal, charity, tax and banking — confirm the structure first",
+        "purpose": "The account and accounting system are operational needs. Separate legal-entity, charity and tax registrations are conditional because the available branch letter and S-50 do not instruct this congregation to register independently.",
+        "items": [
+          {"id": "startup-legal-confirm", "title": "Ask the branch Accounting/Legal function to identify the approved legal and banking structure for congregation 3814.", "detail": "Confirm whether the congregation uses an existing nationwide entity/registration or needs any separate local entity; obtain the exact legal name, IRD/charity identifiers and process in writing.", "owner": "Secretary / Coordinator", "gate": "confirm-first", "references": ["SFG 1:14", "Charities Register research"]},
+          {"id": "startup-s27", "title": "Obtain and review the current Instructions for Congregation Accounting (S-27) and tutorial videos.", "detail": "Treat S-27 as the controlling accounting checklist; this project does not have a current local copy.", "owner": "Coordinator / Secretary / Accounts Servant", "gate": "branch-required", "references": ["SFG 1:12, 14", "SFG 13:11"]},
+          {"id": "startup-accounts-servant", "title": "Appoint and train the accounts servant.", "detail": "The secretary oversees the work; the coordinator arranges audits.", "owner": "Body of elders", "gate": "operational-readiness", "references": ["SFG 1:4, 12, 14"]},
+          {"id": "startup-bank-resolution", "title": "Approve and minute the bank-account resolution.", "detail": "Use the exact branch-approved legal/account name, address, account operators and authorisations. Have the number of signers and approval controls match S-27.", "owner": "Body of elders / Service Committee", "gate": "confirm-first", "references": ["SFG 1:14", "BNZ group-account requirements"]},
+          {"id": "startup-bank-docs", "title": "Assemble the bank onboarding pack.", "detail": "Expect entity or registration evidence if applicable, recent signed minutes, authorised-person identity/address verification and tax-residency information; follow the selected bank’s current checklist.", "owner": "Secretary / Accounts Servant", "gate": "confirm-first", "references": ["BNZ group-account requirements", "DIA customer due diligence guidance"]},
+          {"id": "startup-bank-open", "title": "Open and verify the congregation bank account and online access.", "detail": "Test deposits, authorised payments, statements and handover access before relying on it; do not receive funds under an assumed entity name.", "owner": "Authorised brothers", "gate": "operational-readiness", "references": ["S-27 (current edition required)"]},
+          {"id": "startup-accounting-records", "title": "Set up the congregation accounting records and approved payment/donation workflow.", "detail": "Record opening balances, statement cycle, approvals, reports, receipts and secure retention exactly as directed by S-27.", "owner": "Accounts Servant / Secretary", "gate": "operational-readiness", "references": ["SFG 1:12, 14", "SFG 17:2"]},
+          {"id": "startup-audit", "title": "Schedule the first congregation accounts audit and future audit cycle.", "detail": "Record who will audit, the period covered and where the report will be filed.", "owner": "Coordinator", "gate": "operational-readiness", "references": ["SFG 1:12", "S-27 (current edition required)"]},
+          {"id": "startup-charity-if-directed", "title": "Only if directed, complete the approved entity/Charities Services registration path.", "detail": "Use branch-approved rules and officers. Charities Services registration is voluntary generally and is not established here as a separate start condition; current applications may take up to 20 weeks.", "owner": "Authorised officers", "gate": "confirm-first", "references": ["Charities Services registration guidance", "Companies Office if incorporation is directed"]},
+          {"id": "startup-tax-if-directed", "title": "Only if directed, complete the correct IRD, donee-status and tax setup.", "detail": "If registering with Charities Services, do not separately apply for an IRD number; Inland Revenue says it supplies one after registration. Otherwise use the route specified for the approved entity.", "owner": "Authorised officers / Accounts Servant", "gate": "confirm-first", "references": ["Inland Revenue not-for-profit IRD guidance"]}
+        ]
+      },
+      {
+        "id": "effective-date",
+        "title": "C. On or shortly after 1 November — activate the congregation",
+        "purpose": "These transfers and confirmations take effect when congregation 3814 begins functioning, not while the Tagalog group remains under the host congregation.",
+        "items": [
+          {"id": "approval-records-letters", "title": "Receive letters of introduction and S-21 records from former congregations.", "detail": "Former secretaries send them on or shortly after 1 November.", "owner": "Former secretaries / Dave Asuncion", "gate": "branch-required", "references": ["Approval letter p. 2", "SFG 17:10-11"]},
+          {"id": "approval-records-transfer", "title": "Receive Congregation Persons transfers in JW Hub.", "detail": "Reconcile every expected publisher with the proposed list and investigate omissions or duplicates.", "owner": "Former secretaries / Dave Asuncion", "gate": "branch-required", "references": ["Approval letter p. 2", "S-135"]},
+          {"id": "approval-s62", "title": "Submit S-62 recommendations for elders and ministerial servants who transfer.", "detail": "No S-62 is needed for the brothers assigned as coordinator and secretary.", "owner": "New Congregation Service Committee", "gate": "branch-required", "references": ["Approval letter p. 2"]},
+          {"id": "startup-pioneers", "title": "Review and confirm transferred regular pioneers.", "detail": "Check the introduction-letter recommendation, confirm each pioneer wishes to continue and announce favourable confirmations at the next midweek meeting.", "owner": "Congregation Service Committee", "gate": "post-start", "references": ["SFG 14:4"]},
+          {"id": "startup-appointments-announce", "title": "Make the authorised appointment and pioneer announcements at the proper time.", "detail": "Do not announce prospective assignments before they are effective or confirmed under current direction.", "owner": "Coordinator", "gate": "post-start", "references": ["Approval letter p. 2", "SFG 14:4"]},
+          {"id": "startup-territory", "title": "Put the interim territory arrangement into operation.", "detail": "Use the boundaries submitted with S-6 until updated territory assignments arrive; create controlled territory records and assignments.", "owner": "Service Overseer / Territory Servant", "gate": "branch-required", "references": ["Approval letter p. 2", "S-6"]},
+          {"id": "startup-publications", "title": "Activate literature, periodical, workbook and shipping arrangements.", "detail": "Verify the M-202 request, literature handling and the S-36/Kingdom Hall Literature Group arrangement; avoid duplicate orders during the handover.", "owner": "Service Overseer / Literature Servant / Secretary", "gate": "operational-readiness", "references": ["S-36", "M-202", "SFG 1:17"]},
+          {"id": "startup-attendance-records", "title": "Begin separate S-88 attendance and S-21 publisher records for the new congregation.", "detail": "Use the electronic or printed method decided by the body and preserve confidentiality.", "owner": "Secretary", "gate": "post-start", "references": ["SFG 17:13-15"]}
+        ]
+      },
+      {
+        "id": "first-month",
+        "title": "D. First month and ongoing — prove the system works",
+        "purpose": "Close the launch by completing the first reports, testing routines and recording all recurring obligations.",
+        "items": [
+          {"id": "approval-first-report", "title": "Submit the congregation’s first field service report after the end of November.", "detail": "Reconcile publisher reports first; the general monthly deadline in SFG is no later than the 20th.", "owner": "Secretary", "gate": "branch-required", "references": ["Approval letter p. 2", "SFG 17:14"]},
+          {"id": "startup-monthly-accounts", "title": "Complete and review the first monthly congregation accounts report.", "detail": "Confirm statement reconciliation, approvals, target balance and filing under the current S-27.", "owner": "Accounts Servant / Secretary / Body of elders", "gate": "post-start", "references": ["S-27 (current edition required)"]},
+          {"id": "startup-information-board", "title": "Establish the new congregation’s controlled information-board routine.", "detail": "Coordinator approval is required; post only congregation-activity information and the current cleaning schedule.", "owner": "Coordinator / Secretary", "gate": "operational-readiness", "references": ["SFG 13:9, 14"]},
+          {"id": "startup-hall-cleaning", "title": "Run the first cleaning cycle and confirm supplies and safety instructions.", "detail": "Coordinate with the shared-hall operating committee; post the schedule.", "owner": "Cleaning Coordinator", "gate": "operational-readiness", "references": ["SFG 13:8-9"]},
+          {"id": "startup-khoc", "title": "Confirm the congregation’s participation in the shared Kingdom Hall operating arrangement.", "detail": "The combined bodies appoint the operating committee; record the new congregation’s representative, expenses and communication route.", "owner": "Combined bodies of elders", "gate": "operational-readiness", "references": ["SFG 13:4-6"]},
+          {"id": "startup-review-30", "title": "Hold a 30-day launch review.", "detail": "Reconcile people, appointments, meetings, ministry, territory, literature, bank/accounting, hall use and unresolved correspondence; assign corrective actions.", "owner": "Body of elders", "gate": "post-start", "references": ["Project control review"]},
+          {"id": "startup-compliance-calendar", "title": "Create the recurring compliance and review calendar.", "detail": "Include monthly reports/accounts, audits, January file review, hall/agreement reviews and—only if the approved entity is separately registered—Charities Services annual return within six months of balance date and change notifications.", "owner": "Secretary / Coordinator", "gate": "post-start", "references": ["SFG 17:2", "Charities Services annual returns"]}
+        ]
+      }
+    ],
+    "guidelines": [
+      {"code": "Approval letter AUS2824311_1", "purpose": "Controls the official identity, effective date and transition instructions.", "availability": "Local original: 27-AUS2824311_1.pdf"},
+      {"code": "S-27", "purpose": "Congregation accounting, bank/payment controls, reports, target balance and audits.", "availability": "Current copy still needs to be obtained from JW Docs."},
+      {"code": "S-135", "purpose": "JW Hub access, person records and electronic congregation workflow.", "availability": "Current copy still needs to be obtained from JW Docs."},
+      {"code": "S-46", "purpose": "Shared Kingdom Hall decisions and financial/use arrangements.", "availability": "Use/update the hall’s current agreement; blank/current copy not found locally."},
+      {"code": "S-42", "purpose": "Kingdom Hall Operating Committee accounting.", "availability": "Relevant to the shared-hall committee; current copy not found locally."},
+      {"code": "S-283 / S-288 / S-287", "purpose": "Life safety, security plan and Kingdom Hall internet service.", "availability": "Review current versions with the operating committee."},
+      {"code": "S-21 / S-88 / S-62", "purpose": "Publisher records, meeting attendance and appointed-brother recommendations.", "availability": "Use via current JW Hub/branch workflow."}
+    ],
+    "external_sources": [
+      {"title": "Charities Services — About the Charities Register", "url": "https://www.charities.govt.nz/charities-in-new-zealand/the-charities-register/about-the-charities-register", "use": "Confirms registration is voluntary and describes public information on the register."},
+      {"title": "Charities Services — Online registration application", "url": "https://register.charities.govt.nz/Home/RegisterOnline", "use": "Lists the entity, rules, officers, activities and documents required if separate registration is directed."},
+      {"title": "Charities Services — Register search and processing notice", "url": "https://register.charities.govt.nz/AdvancedSearch", "use": "Current service notice says registration applications may take up to 20 weeks."},
+      {"title": "Charities Services — Annual returns", "url": "https://www.charities.govt.nz/reporting-standards/annual-return", "use": "Registered charities file an annual return within six months after balance date."},
+      {"title": "Inland Revenue — IRD number for a not-for-profit", "url": "https://www.ird.govt.nz/roles/not-for-profits-and-charities/before-you-start/ird-number", "use": "Explains entity sequencing and that intended Charities Services applicants should not separately apply for an IRD number."},
+      {"title": "Companies Office — Charitable Trusts Register", "url": "https://www.ct-register.companiesoffice.govt.nz/", "use": "Incorporation path only if that legal structure is directed."},
+      {"title": "BNZ — Opening an account for a group or society", "url": "https://www.bnz.co.nz/business-banking/support/opening-a-non-personal-account/group-or-society", "use": "Illustrates current bank evidence, minutes, key-person ID and tax-residency requirements; use the selected bank’s own checklist."},
+      {"title": "DIA — AML/CFT customer due diligence", "url": "https://www.dia.govt.nz/AML-CFT-Frequently-Asked-Questions-for-DIA-Reporting-Entities", "use": "Explains why banks identify the entity, beneficial owners/controllers and people acting for it."},
+      {"title": "Christian Congregation of Jehovah’s Witnesses of New Zealand — CC36365", "url": "https://register.charities.govt.nz/Charity/CC36365", "use": "Public evidence that a nationwide entity is registered; it does not by itself establish the legal arrangement for congregation 3814."}
+    ]
+  },
   "checklist": {
     "html": "02-checklist.html",
     "progress_json": "03-checklist-progress.json",
     "schema_version": 1,
-    "known_item_count": 78,
-    "migration": "Preserve the existing HTML localStorage key and companion JSON schema. The 2026-08-13 evidence revision is additive so communication-backed items merge with existing browser ticks instead of replacing them."
+    "known_item_count": 118,
+    "migration": "Preserve the existing HTML localStorage key and companion JSON schema. The 2026-09-03 startup research revision adds 29 unchecked operational, legal, banking, hall, records and first-month tasks while retaining every existing tick and note."
   },
   "online": {
     "default_mode": "dry-run",

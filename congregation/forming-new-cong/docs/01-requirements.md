@@ -1,6 +1,6 @@
 # Requirements and Evidence
 
-> **Confirmed position:** S-50 through par. 5 has been confirmed. Par. 6 is the remaining approval stage and can be completed only when the branch office communicates its decision and instructions.
+> **Confirmed position:** All S-50 gates, including par. 6, are confirmed. The official approval letter sets 1 November 2026 as the start date and supplies the transition instructions.
 
 | Requirement | Current evidence | Status / what remains |
 |---|---|---|
@@ -13,8 +13,8 @@
 | **[S-50 par. 2(7)](../references/00-S-50-reference.html#s50-p2-item-7)**<br>A Kingdom Hall or another appropriate meeting place is available. | • Working address: 262–264 Cameron Street, Ashburton 7700 | <span class="status confirmed">Confirmed</span><br>Confirmed in the S-50 review; the known meeting-place address remains recorded as evidence. |
 | **[S-50 par. 3](../references/00-S-50-reference.html#s50-p3)**<br>Each publisher or family head freely decides which congregation the family will attend; no one is pressured. | — | <span class="status confirmed">Confirmed</span><br>Confirmed in the S-50 review. |
 | **[S-50 par. 5](../references/00-S-50-reference.html#s50-p5)**<br>The circuit overseer verifies the accurately prepared recommendation information before sending it to the Service Department. | • Proposed-congregation S-51 received and reviewed by the circuit overseer<br>• Ashburton host-congregation S-51 sent to the circuit overseer | <span class="status confirmed">Confirmed</span><br>Confirmed in the S-50 review. Both requested S-51 forms have been sent; remaining forms should follow current direction. |
-| **[S-50 par. 6](../references/00-S-50-reference.html#s50-p6)**<br>Wait for branch approval and use the start date and further instructions in the approval letter. | — | <span class="status needs-confirmation">Needs Confirmation</span><br>Awaiting the branch office’s approval decision, official start date, and further instructions. A proposed date is not approval to begin functioning. |
+| **[S-50 par. 6](../references/00-S-50-reference.html#s50-p6)**<br>Wait for branch approval and use the start date and further instructions in the approval letter. | • Branch approval letter dated 2 September 2026<br>• Official start date: 1 November 2026<br>• Congregation number: 3814<br>• Circuit assignment: NZ-2 under Anthony Radi | <span class="status confirmed">Confirmed</span><br>Approval and the official start date have been received. The congregation must now carry out the further instructions in the letter’s confidential postscript. |
 
-## What remains under S-50 par. 6
+## S-50 par. 6 outcome
 
-Wait for the branch office to state whether the new congregation is approved. Its letter will provide the official start date and further instructions. Until that direction is received, do not begin functioning as a congregation or treat a proposed date as approved.
+The branch approved the congregation on 2 September 2026. Congregation 3814 begins functioning on 1 November 2026 in Circuit NZ-2. The remaining work is implementation of the confidential postscript, not further approval.

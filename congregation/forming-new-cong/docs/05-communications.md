@@ -10,6 +10,7 @@
 | 2026-08-25 13:48 | received | [2026 Request for Information on Language Fields](#co-request-language-fields-2026) | <span class="status needs-confirmation">Needs Confirmation</span> | A clarification reply was sent at 7:10 p.m. on 25 August 2026. Await Daniel's scope confirmation and obtain the number baptized during the 2026 service year before replacing TBC. |
 | 2026-08-25 19:10 | outgoing | [Clarification — 2026 Request for Information on Language Fields](#draft-language-fields-scope-clarification) | <span class="status submitted">Submitted</span> | Sent and independently verified in Sent Items at 7:10 p.m. on 25 August 2026. Await Daniel's reply. |
 | 2026-08-30 22:03 | outgoing | [Re: Application - Tagalog Congregation Ashburton](#draft-par5-package-reply) | <span class="status submitted">Submitted</span> | Completed — sent to Martin, Daniel at 10:03 p.m. on 30 August 2026 in the original thread and independently verified in Sent Items. |
+| 2026-09-02 15:29 | received | [Approval of New Congregation](#branch-approval-email) | <span class="status approved">Approved</span> | Read page 1 at the first midweek meeting after receipt and then post it on the information board. Do not read or post the confidential postscript. Complete the transition actions before and after 1 November 2026. |
 
 <div id="supporting-email-sent"></div>
 
@@ -152,6 +153,22 @@
 > Warm regards,
 > Adam
 > for the Ashburton Body of Elders
+
+<div id="branch-approval-email"></div>
+
+## 2026-09-02 — Approval of New Congregation
+
+- **Direction:** Received
+- **With:** SRV—Preaching Needs Desk
+- **Status:** <span class="status approved">Approved</span>
+- **Summary:** The branch approved the Ashburton Tagalog Congregation, assigned congregation number 3814, set 1 November 2026 as the start date, and assigned it to Circuit NZ-2 under Anthony Radi.
+- **Current action:** Read page 1 at the first midweek meeting after receipt and then post it on the information board. Do not read or post the confidential postscript. Complete the transition actions before and after 1 November 2026.
+- **Attachments:** [27-AUS2824311_1.pdf](../27-AUS2824311_1.pdf)
+- **Evidence source:** JWPub mailbox; read-only verification on 2026-09-03.
+
+### Substantive email text
+
+> Please find attached a letter for your attention.
 
 ## External-action gate
 

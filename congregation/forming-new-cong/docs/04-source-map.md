@@ -33,7 +33,8 @@
 | [24-S-5_E.pdf](../24-S-5_E.pdf) | working-form | S-5-E 3/19 | `8cef8f0d0a101946…` · working/mutable |
 | [25-S-36_E 2.pdf](../25-S-36_E%202.pdf) | working-form | S-36-E 2/26 | `de463ff62bb19d6d…` · working/mutable |
 | [26-S-5-Ashburton-Tagalog-working.pdf](../26-S-5-Ashburton-Tagalog-working.pdf) | working-form | S-5-E 3/19 | `70ed576612b0a4bb…` · working/mutable |
-| [03-checklist-progress.json](../03-checklist-progress.json) | checklist-progress | schema 1 | `ea5aabcfa8ad1589…` · working/mutable |
+| [27-AUS2824311_1.pdf](../27-AUS2824311_1.pdf) | official-branch-approval | 2026-09-02 | `40feaa539db32c35…` · immutable |
+| [03-checklist-progress.json](../03-checklist-progress.json) | checklist-progress | schema 1 | `6b70982a9381bbbe…` · working/mutable |
 
 ## Searchable official references
 
@@ -49,6 +50,10 @@ These extracted pages support precise links. Always compare wording, layout, fie
 - `01-meeting-pack.md/.html/.pdf` — combined meeting document with every portal register.
 - `docs/00-forms-register`, then `docs/01-` through `docs/04-` — focused forms, requirements, statistics, submissions and source pages.
 - `docs/05-communications.md/.html` — communication timeline, full substantive email text, attachments and workflow status.
+- `docs/06-organisation-chart.md/.html/.pdf` — congregation roles, confirmed names, vacancies and planning notes.
+- `docs/07-congregation-start-checklist.md/.html/.pdf` — phase-based launch, legal, banking, records and first-month checklist.
+- `docs/08-preparation-meeting-agenda.md/.html/.pdf` — timed informal agenda, responsibility worksheet and action register.
+- `docs/09-regular-pioneer-review.md/.html/.pdf` — confidential elders’ working topic on pioneer hour review and shepherding.
 - `search.html`, `search-index.json` and `search-index.js` — local browser-side portal search.
 - `references/00-S-50-reference.html` and `references/01-S-51-reference.html` — searchable source text.
 - `data/00-project.json` — canonical structured facts and workflow state.

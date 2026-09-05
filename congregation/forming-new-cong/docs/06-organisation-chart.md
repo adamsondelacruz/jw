@@ -1,0 +1,282 @@
+# Congregation Organisation Chart
+
+<div class="org-summary">
+<div><strong>2</strong><span>confirmed</span></div>
+<div><strong>17</strong><span>to fill</span></div>
+<div><strong>2</strong><span>if needed</span></div>
+<div><strong>1 Nov 2026</strong><span>begins functioning</span></div>
+</div>
+
+<div class="eligibility-legend" aria-label="Ministerial servant eligibility legend">
+<span class="eligibility-badge ms-yes" title="A qualified ministerial servant may be assigned"><b>✓ MS</b><small>A qualified ministerial servant may be assigned</small></span>
+<span class="eligibility-badge ms-conditional" title="A qualified ministerial servant may be used only when the stated need or current direction applies"><b>△ MS</b><small>A qualified ministerial servant may be used only when the stated need or current direction applies</small></span>
+<span class="eligibility-badge elder-only" title="This chart treats the role as an elder assignment"><b>Elder</b><small>This chart treats the role as an elder assignment</small></span>
+</div>
+
+<blockquote class="notice info">
+
+**Planning boundary:** This is a planning register, not an appointment record. Confirmed names are based on the user’s instruction. All other entries remain to be decided by the body of elders or the responsible appointing brother according to current direction. Eligibility badges show whether a ministerial servant may be considered; they do not approve or appoint anyone.
+
+</blockquote>
+
+<div class="org-chart">
+<div class="org-root"><span>Ashburton Tagalog Congregation</span><strong>3814 · Circuit NZ-2</strong><small>Effective 1 November 2026</small></div>
+<div class="org-trunk" aria-hidden="true"></div>
+<div class="org-columns">
+<section class="org-branch" id="service-committee">
+<header><h2>Congregation Service Committee</h2><p>The coordinator, secretary and service overseer serve together as the Congregation Service Committee.</p></header>
+<div class="org-role-list">
+<article class="org-card confirmed" id="role-coordinator">
+<div class="org-card-top"><span class="org-role-status">Confirmed</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 1:10-12</small></div>
+<h3>Coordinator of the Body of Elders</h3>
+<strong class="org-name">Adamson dela Cruz</strong>
+<p>Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as coordinator.</p>
+</article>
+<article class="org-card confirmed" id="role-secretary">
+<div class="org-card-top"><span class="org-role-status">Confirmed</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 1:10, 13-14</small></div>
+<h3>Secretary</h3>
+<strong class="org-name">Dave Asuncion</strong>
+<p>Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as secretary.</p>
+</article>
+<article class="org-card to-fill" id="role-service-overseer">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 1:10, 15-17</small></div>
+<h3>Service Overseer</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Needed to complete the Congregation Service Committee.</p>
+</article>
+</div>
+</section>
+<section class="org-branch" id="meetings-teaching">
+<header><h2>Meetings and Teaching</h2><p>Congregation assignments overseen by the body of elders and coordinator.</p></header>
+<div class="org-role-list">
+<article class="org-card to-fill" id="role-life-ministry-overseer">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 4:14</small></div>
+<h3>Life and Ministry Meeting Overseer</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Include any approved assistant or substitute arrangement in the working roster.</p>
+</article>
+<article class="org-card to-fill" id="role-watchtower-conductor">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 4:12-13</small></div>
+<h3>Watchtower Study Conductor</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>The body also selects an approved substitute.</p>
+</article>
+<article class="org-card to-fill" id="role-watchtower-substitute">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 4:13</small></div>
+<h3>Substitute Watchtower Study Conductor</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Used when the conductor is away.</p>
+</article>
+<article class="org-card to-fill" id="role-public-talk-coordinator">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:12; 4:9(5)</small></div>
+<h3>Public Talk Coordinator</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Coordinates visiting speakers and the public-talk schedule.</p>
+</article>
+<article class="org-card to-fill" id="role-auxiliary-counselor">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-conditional" title="A qualified ministerial servant may be used only when the stated need or current direction applies">△ MS</span><small>SFG 4:15</small></div>
+<h3>Auxiliary Counselor</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Provides private counsel to elders and ministerial servants on speaking assignments.</p>
+</article>
+<article class="org-card to-fill" id="role-av-coordinator">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:4, 12</small></div>
+<h3>Audio/Video Support Coordinator</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Coordinates audio/video support and its approved roster.</p>
+</article>
+<article class="org-card to-fill" id="role-attendant-coordinator">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:12</small></div>
+<h3>Attendant Coordinator</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Coordinates attendants and their roster.</p>
+</article>
+</div>
+</section>
+<section class="org-branch" id="ministry-administration">
+<header><h2>Ministry, Records and Support</h2><p>Operational assignments needed for congregation ministry, records, supplies and shared Kingdom Hall use.</p></header>
+<div class="org-role-list">
+<article class="org-card to-fill" id="role-accounts-servant">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:4, 14</small></div>
+<h3>Accounts Servant</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Serves under the secretary’s oversight.</p>
+</article>
+<article class="org-card to-fill" id="role-literature-servant">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:4, 17</small></div>
+<h3>Literature Servant</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Serves under the service overseer’s oversight.</p>
+</article>
+<article class="org-card to-fill" id="role-territory-servant">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:4, 17</small></div>
+<h3>Territory Servant</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Works with the approved territory assignment; submitted S-6 boundaries apply until the branch supplies updated assignments.</p>
+</article>
+<article class="org-card to-fill" id="role-group-overseers">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-conditional" title="A qualified ministerial servant may be used only when the stated need or current direction applies">△ MS</span><small>SFG 1:18-19</small></div>
+<h3>Field Service Group Overseer(s)/Servant(s)</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Record one name for each field service group once the groups are arranged.</p>
+</article>
+<article class="org-card to-fill" id="role-group-assistants">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:18-19</small></div>
+<h3>Field Service Group Assistant(s)</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Optional per group as local circumstances require.</p>
+</article>
+<article class="org-card to-fill" id="role-cleaning-coordinator">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 13:8</small></div>
+<h3>Kingdom Hall Cleaning Coordinator</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>Coordinates the new congregation’s cleaning assignments.</p>
+</article>
+<article class="org-card to-fill" id="role-khoc-representative">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 13:6</small></div>
+<h3>Kingdom Hall Operating Committee Representative</h3>
+<strong class="org-name">To be confirmed</strong>
+<p>The hall is shared, so record the congregation’s representative or liaison to the combined operating arrangement.</p>
+</article>
+</div>
+</section>
+<section class="org-branch" id="optional-assistants-rosters">
+<header><h2>Optional Assistants and Rosters</h2><p>Assign only as needed; these do not all require one permanent officeholder.</p></header>
+<div class="org-role-list">
+<article class="org-card if-needed" id="role-assistant-secretary">
+<div class="org-card-top"><span class="org-role-status">If Needed</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:14</small></div>
+<h3>Secretary Support / Field Report Assistant</h3>
+<strong class="org-name">If needed</strong>
+<p>A qualified ministerial servant may assist with compiling, posting and submitting field service activity under the secretary.</p>
+</article>
+<article class="org-card if-needed" id="role-assistant-service-overseer">
+<div class="org-card-top"><span class="org-role-status">If Needed</span><span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span><small>SFG 1:15</small></div>
+<h3>Assistant Service Overseer</h3>
+<strong class="org-name">If needed</strong>
+<p>May be assigned according to local need.</p>
+</article>
+<article class="org-card to-fill" id="role-public-talk-chairmen">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:12</small></div>
+<h3>Public Talk Chairmen</h3>
+<strong class="org-name">Roster to be prepared</strong>
+<p>Maintain an approved roster rather than treating this as a single office.</p>
+</article>
+<article class="org-card to-fill" id="role-watchtower-readers">
+<div class="org-card-top"><span class="org-role-status">To Fill</span><span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span><small>SFG 1:12</small></div>
+<h3>Watchtower Readers</h3>
+<strong class="org-name">Roster to be prepared</strong>
+<p>Maintain an approved roster.</p>
+</article>
+</div>
+</section>
+</div>
+</div>
+
+## Oversight and responsibility view
+
+<section class="oversight-view" id="oversight-view">
+<div class="oversight-principle"><strong>Oversight and Responsibility View</strong><p>The body of elders provides collective spiritual oversight. The coordinator helps the body work in an orderly way but is not the coordinator of the congregation and does not independently direct the other elders.</p></div>
+<div class="oversight-top">
+<div class="oversight-root"><span>Collective responsibility and direction</span><strong>Body of Elders</strong><small>SFG 1:1-10</small></div>
+<div class="appointment-note">The circuit overseer appoints the coordinator of the body of elders (SFG 1:11).</div>
+</div>
+<div class="oversight-connector" aria-hidden="true"></div>
+<div class="service-committee-map">
+<div><span>Congregation Service Committee</span><strong>Coordinator of the Body of Elders · Secretary · Service Overseer</strong><small>The coordinator, secretary and service overseer serve together. Its decisions harmonize with the thinking of the body of elders; it is not a superior body over the elders. · SFG 1:10</small></div>
+</div>
+<div class="oversight-lanes">
+<section class="oversight-lane" id="coordinator-lane">
+<header><span>SFG 1:11-12</span><h3>Coordinator</h3><strong>Adamson dela Cruz</strong><span class="status confirmed">Confirmed</span></header>
+<div class="oversight-items">
+<article><div><a href="#role-attendant-coordinator">Attendants / attendant coordination</a><b>Oversees</b></div><small>SFG 1:12</small></article>
+<article><div><a href="#role-public-talk-coordinator">Public Talk Coordinator</a><b>Oversees</b></div><small>SFG 1:12</small></article>
+<article><div><a href="#role-av-coordinator">Audio/Video Support Coordinator</a><b>Oversees</b></div><small>SFG 1:12</small></article>
+<article><div><a href="#role-public-talk-chairmen">Public Talk Chairmen roster</a><b>Schedules</b></div><small>SFG 1:12</small></article>
+<article><div><a href="#role-watchtower-readers">Watchtower Readers roster</a><b>Schedules</b></div><small>SFG 1:12</small></article>
+<article><div><span>Congregation account audits</span><b>Arranges</b></div><small>SFG 1:12</small></article>
+</div>
+</section>
+<section class="oversight-lane" id="secretary-lane">
+<header><span>SFG 1:13-14</span><h3>Secretary</h3><strong>Dave Asuncion</strong><span class="status confirmed">Confirmed</span></header>
+<div class="oversight-items">
+<article><div><a href="#role-accounts-servant">Accounts Servant</a><b>Oversees</b></div><small>SFG 1:14</small></article>
+<article><div><a href="#role-assistant-secretary">Field-report support</a><b>Supervises assigned tasks</b></div><small>SFG 1:14</small></article>
+<article><div><span>Convention matters</span><b>Oversees</b></div><small>SFG 1:14</small></article>
+<article><div><span>Legal and financial responsibilities</span><b>Ensures timely handling</b></div><small>SFG 1:14</small></article>
+</div>
+</section>
+<section class="oversight-lane" id="service-overseer-lane">
+<header><span>SFG 1:15-17</span><h3>Service Overseer</h3><strong>To be confirmed</strong><span class="status to-fill">To Fill</span></header>
+<div class="oversight-items">
+<article><div><a href="#role-literature-servant">Literature Servant</a><b>Oversees</b></div><small>SFG 1:16</small></article>
+<article><div><a href="#role-territory-servant">Territory Servant</a><b>Oversees</b></div><small>SFG 1:16</small></article>
+<article><div><span>Holiday and special-campaign witnessing</span><b>Organizes</b></div><small>SFG 1:16</small></article>
+<article><div><a href="#role-group-overseers">Field service groups</a><b>Visits annually and coordinates</b></div><small>SFG 1:17-18</small></article>
+</div>
+</section>
+<section class="oversight-lane" id="body-direct-lane">
+<header><span>SFG 1:4; 4:9, 12, 15; 13:8</span><h3>Body of Elders — Direct Assignments</h3><strong>Collective decision</strong></header>
+<div class="oversight-items">
+<article><div><a href="#role-life-ministry-overseer">Life and Ministry Meeting Overseer</a><b>Selects / assigns</b></div><small>SFG 4:14; S-38</small></article>
+<article><div><a href="#role-watchtower-conductor">Watchtower Study Conductor and substitute</a><b>Selects</b></div><small>SFG 4:12</small></article>
+<article><div><a href="#role-auxiliary-counselor">Auxiliary Counselor</a><b>Selects</b></div><small>SFG 4:15</small></article>
+<article><div><a href="#role-group-overseers">Group overseers/servants and assistants</a><b>Determines assignments</b></div><small>SFG 1:18, 21</small></article>
+<article><div><a href="#role-cleaning-coordinator">Kingdom Hall Cleaning Coordinator</a><b>Assigns</b></div><small>SFG 13:8</small></article>
+</div>
+</section>
+<section class="oversight-lane" id="shared-hall-lane">
+<header><span>SFG 13:5-6</span><h3>Combined Bodies of Elders</h3><strong>Shared Kingdom Hall arrangement</strong></header>
+<div class="oversight-items">
+<article><div><a href="#role-khoc-representative">Kingdom Hall Operating Committee</a><b>Appoints committee</b></div><small>SFG 13:6</small></article>
+<article><div><span>Operating Committee Coordinator</span><b>Appoints experienced elder</b></div><small>SFG 13:6</small></article>
+<article><div><span>Kingdom Hall cleaning and maintenance</span><b>Committee organizes</b></div><small>SFG 13:6</small></article>
+</div>
+</section>
+</div>
+<div class="oversight-clarifications"><h3>How to read the lines</h3><ul>
+<li>A role may be selected by the body of elders but have day-to-day oversight from one service-committee member. For example, the body decides who serves as public talk coordinator, while the coordinator of the body of elders oversees that work.</li>
+<li>Field service group overseers or servants are determined by the body of elders; the service overseer visits and coordinates with the groups, and the Congregation Service Committee assigns publishers to groups.</li>
+<li>The shared-hall operating committee is appointed by the combined bodies of elders, not by the new congregation’s coordinator alone.</li>
+</ul></div>
+</section>
+
+## Assignment register
+
+| Area | Role | Name | Status | MS eligibility | Reference | Notes |
+|---|---|---|---|---|---|---|
+| Congregation Service Committee | **Coordinator of the Body of Elders** | Adamson dela Cruz | <span class="status confirmed">Confirmed</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 1:10-12 | Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as coordinator. |
+| Congregation Service Committee | **Secretary** | Dave Asuncion | <span class="status confirmed">Confirmed</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 1:10, 13-14 | Confirmed. The branch postscript states that no S-62 is needed for the brother assigned as secretary. |
+| Congregation Service Committee | **Service Overseer** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 1:10, 15-17 | Needed to complete the Congregation Service Committee. |
+| Meetings and Teaching | **Life and Ministry Meeting Overseer** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 4:14 | Include any approved assistant or substitute arrangement in the working roster. |
+| Meetings and Teaching | **Watchtower Study Conductor** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 4:12-13 | The body also selects an approved substitute. |
+| Meetings and Teaching | **Substitute Watchtower Study Conductor** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 4:13 | Used when the conductor is away. |
+| Meetings and Teaching | **Public Talk Coordinator** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:12; 4:9(5) | Coordinates visiting speakers and the public-talk schedule. |
+| Meetings and Teaching | **Auxiliary Counselor** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-conditional" title="A qualified ministerial servant may be used only when the stated need or current direction applies">△ MS</span> | SFG 4:15 | Provides private counsel to elders and ministerial servants on speaking assignments. |
+| Meetings and Teaching | **Audio/Video Support Coordinator** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:4, 12 | Coordinates audio/video support and its approved roster. |
+| Meetings and Teaching | **Attendant Coordinator** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:12 | Coordinates attendants and their roster. |
+| Ministry, Records and Support | **Accounts Servant** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:4, 14 | Serves under the secretary’s oversight. |
+| Ministry, Records and Support | **Literature Servant** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:4, 17 | Serves under the service overseer’s oversight. |
+| Ministry, Records and Support | **Territory Servant** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:4, 17 | Works with the approved territory assignment; submitted S-6 boundaries apply until the branch supplies updated assignments. |
+| Ministry, Records and Support | **Field Service Group Overseer(s)/Servant(s)** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-conditional" title="A qualified ministerial servant may be used only when the stated need or current direction applies">△ MS</span> | SFG 1:18-19 | Record one name for each field service group once the groups are arranged. |
+| Ministry, Records and Support | **Field Service Group Assistant(s)** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:18-19 | Optional per group as local circumstances require. |
+| Ministry, Records and Support | **Kingdom Hall Cleaning Coordinator** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 13:8 | Coordinates the new congregation’s cleaning assignments. |
+| Ministry, Records and Support | **Kingdom Hall Operating Committee Representative** | To be confirmed | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 13:6 | The hall is shared, so record the congregation’s representative or liaison to the combined operating arrangement. |
+| Optional Assistants and Rosters | **Secretary Support / Field Report Assistant** | If needed | <span class="status if-needed">If Needed</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:14 | A qualified ministerial servant may assist with compiling, posting and submitting field service activity under the secretary. |
+| Optional Assistants and Rosters | **Assistant Service Overseer** | If needed | <span class="status if-needed">If Needed</span> | <span class="eligibility-badge compact elder-only" title="This chart treats the role as an elder assignment">Elder</span> | SFG 1:15 | May be assigned according to local need. |
+| Optional Assistants and Rosters | **Public Talk Chairmen** | Roster to be prepared | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:12 | Maintain an approved roster rather than treating this as a single office. |
+| Optional Assistants and Rosters | **Watchtower Readers** | Roster to be prepared | <span class="status to-fill">To Fill</span> | <span class="eligibility-badge compact ms-yes" title="A qualified ministerial servant may be assigned">✓ MS</span> | SFG 1:12 | Maintain an approved roster. |
+
+## Important launch notes
+
+- Adamson dela Cruz and Dave Asuncion are the only names currently recorded as confirmed in this chart.
+- The service overseer is the first vacancy to settle because that assignment completes the Congregation Service Committee.
+- The branch letter says S-62 recommendations are submitted after the new congregation begins functioning for elders and ministerial servants who transfer. No S-62 is needed for the brothers assigned as coordinator and secretary.
+- Because the Kingdom Hall is shared, the chart records a Kingdom Hall Operating Committee representative or liaison, not a separate maintenance coordinator for the new congregation.
+- Public talk chairmen and Watchtower readers are rosters, not single offices; additional assistants are assigned only if needed.
+
+## Ministerial-servant eligibility notes
+
+- For field service groups, an elder is a group overseer; when there are not enough elders, a qualified ministerial servant may serve as group servant or group assistant (SFG 1:21).
+- For auxiliary counselor, an experienced elder should be used whenever possible; the conditional badge flags that an MS should not be treated as the normal choice (SFG 4:15).
+- A Kingdom Hall Operating Committee may include elders or ministerial servants, but its coordinator should be an experienced elder (SFG 13:6).
+- Secretary support means assistance with field-service reporting tasks under the secretary, not appointment as the congregation secretary (SFG 1:14).

@@ -437,7 +437,7 @@
     const FILE_NAME = "03-checklist-progress.json";
     const STORAGE_KEY = "forming-new-congregation-checklist-v1";
     const SCHEMA_VERSION = 1;
-    const EVIDENCE_REVISION = "2026-08-13-email-and-s51";
+    const EVIDENCE_REVISION = "2026-09-02-branch-approval";
 
     const sections = [
       {
@@ -557,17 +557,87 @@
       },
       {
         id: "approval",
-        title: "Wait for approval and implement the branch direction",
-        subtitle: "A proposed start date is not authorisation to begin functioning.",
-        gate: "The branch office informs the congregation(s) and circuit overseer(s) whether the new congregation is approved.",
+        title: "Implement the branch approval and launch direction",
+        subtitle: "Approved 2 September 2026; congregation 3814 begins functioning 1 November 2026.",
+        gate: "The branch approved the Ashburton Tagalog Congregation and supplied confidential transition instructions.",
         items: [
           { id: "approval-wait", ref: "S-50 par. 6", title: "Do not begin functioning as a new congregation before branch approval." },
-          { id: "approval-letter", ref: "S-50 par. 6", title: "Receive and review the branch approval letter with all affected congregations and circuit overseers." },
-          { id: "approval-date", ref: "S-50 par. 6", title: "Use the start date specified in the approval letter.", detail: "The letter also provides further instructions." },
+          { id: "approval-letter", ref: "S-50 par. 6", title: "Receive and review the branch approval letter." },
+          { id: "approval-date", ref: "S-50 par. 6", title: "Use the official start date: 1 November 2026.", detail: "Continue under the present host-congregation arrangement until that date." },
           { id: "approval-instructions", ref: "S-50 par. 6", title: "Assign and complete every further instruction in the approval letter." },
           { id: "approval-territory-supplies", ref: "S-50 par. 6", title: "Track the updated territory assignments and other supplies that will follow." },
           { id: "approval-requests", ref: "M-202", title: "If periodical/workbook requests were deferred, enter the approved new or revised requests on jw.org." },
-          { id: "approval-official-name", ref: "S-51", title: "Adopt the approved complete congregation name in all official records and uses." }
+          { id: "approval-official-name", ref: "Approval letter", title: "Adopt the approved complete congregation name in all official records and uses." },
+          { id: "approval-circuit-identity", ref: "Approval letter", title: "Record congregation 3814 in Circuit NZ-2 under circuit overseer Anthony Radi." },
+          { id: "approval-announce", ref: "Approval letter p. 2", title: "Read page 1 at the first midweek meeting after receipt.", detail: "Read the approval letter only; do not read the confidential postscript." },
+          { id: "approval-post", ref: "Approval letter p. 2", title: "After the announcement, post page 1 on the congregation information board." },
+          { id: "approval-postscript-confidential", ref: "Approval letter p. 2", title: "Keep the postscript confidential; do not read or post it." },
+          { id: "approval-co-arrangements", ref: "Approval letter p. 2", title: "Coordinate assembly and congregation-visit arrangements with Anthony Radi." },
+          { id: "approval-territory-interim", ref: "Approval letter p. 2", title: "Use the boundaries submitted with S-6 until updated territory assignments arrive." },
+          { id: "approval-hub", ref: "Approval letter p. 2", title: "Prepare for the new JW Hub domain and access transition before 1 November." },
+          { id: "approval-records-letters", ref: "Approval letter p. 2", title: "Arrange for former secretaries to send letters of introduction and S-21 records on or shortly after 1 November." },
+          { id: "approval-records-transfer", ref: "Approval letter p. 2", title: "Arrange for former secretaries to transfer Congregation Persons records in JW Hub." },
+          { id: "approval-s62", ref: "Approval letter p. 2", title: "After launch, submit S-62 recommendations for transferring elders and ministerial servants.", detail: "No S-62 is needed for the brothers assigned as coordinator and secretary." },
+          { id: "approval-first-report", ref: "Approval letter p. 2", title: "Submit the congregation’s first field service report after the end of November." }
+        ]
+      },
+      {
+        id: "startup-control",
+        title: "Establish the congregation’s launch controls",
+        subtitle: "Complete the leadership, secure-records, shared-hall, meeting and ministry setup before 1 November.",
+        gate: "These are operational-readiness tasks. The approval letter remains the authority for the effective date and transition sequence.",
+        items: [
+          { id: "startup-csc", ref: "SFG 1:10", title: "Complete the Congregation Service Committee.", detail: "Adamson dela Cruz and Dave Asuncion are confirmed; the service overseer remains to be confirmed." },
+          { id: "startup-role-assign", ref: "SFG 1:4, 12, 14-19", title: "Assign the essential congregation roles and rosters.", detail: "Prioritise accounts, literature, territory, meeting oversight, public talks, A/V, attendants, field service groups and cleaning; use the organisation chart as the working register." },
+          { id: "startup-s135", ref: "SFG 17:4, 8, 11", title: "Obtain and review the current Instructions for Congregation Use of JW Hub (S-135)." },
+          { id: "startup-cong-file", ref: "SFG 17:1-2", title: "Create a secure congregation file and its required categories.", detail: "Accounts; circuit overseer reports; confidential records; elders and ministerial servants; Kingdom Hall; letters of introduction; territory." },
+          { id: "startup-s46", ref: "SFG 13:5 / S-46", title: "Update the shared Kingdom Hall Agreement.", detail: "Record meeting times, use and care, operating-expense responsibility, operating-account balance and extraordinary-expense limits." },
+          { id: "startup-meeting-readiness", ref: "SFG 4 / S-5", title: "Publish the first month of meeting assignments and support rosters.", detail: "Verify the approved Thursday 7:15 p.m. and Saturday 7:00 p.m. times." },
+          { id: "startup-ministry-ready", ref: "SFG 1:15-19", title: "Establish field service groups and ministry support.", detail: "Assign publishers, group overseers/servants and assistants; prepare territory and literature handling." },
+          { id: "startup-emergency", ref: "SFG 11:6, 11; 13:1, 13", title: "Prepare congregation emergency contacts and shared-hall safety procedures.", detail: "Apply privacy safeguards and review current security, incident and life-safety direction." }
+        ]
+      },
+      {
+        id: "startup-finance",
+        title: "Set up legal, charity, tax and banking arrangements",
+        subtitle: "Confirm the Branch-approved legal structure first; do not create a duplicate entity or use an assumed account name.",
+        gate: "Charities Services registration is voluntary under New Zealand law and is not established by the available branch direction as a separate pre-start condition for congregation 3814.",
+        items: [
+          { id: "startup-legal-confirm", ref: "SFG 1:14", title: "Ask the branch Accounting/Legal function to identify the approved legal and banking structure for congregation 3814.", detail: "Confirm whether an existing nationwide entity/registration applies or any separate local entity is required; obtain the exact legal name, IRD/charity identifiers and banking process in writing." },
+          { id: "startup-s27", ref: "SFG 1:12, 14; 13:11", title: "Obtain and review the current Instructions for Congregation Accounting (S-27) and tutorial videos.", detail: "Treat S-27 as the controlling accounting checklist; this project does not have a current local copy." },
+          { id: "startup-accounts-servant", ref: "SFG 1:4, 12, 14", title: "Appoint and train the accounts servant.", detail: "The secretary oversees the work; the coordinator arranges audits." },
+          { id: "startup-bank-resolution", ref: "S-27 / bank requirements", title: "Approve and minute the bank-account resolution.", detail: "Use the exact approved legal/account name, address, operators and authorisations; match S-27 controls." },
+          { id: "startup-bank-docs", ref: "Bank / AML requirements", title: "Assemble the bank onboarding pack.", detail: "Expect applicable entity evidence, recent signed minutes, authorised-person identity/address verification and tax-residency information." },
+          { id: "startup-bank-open", ref: "S-27", title: "Open and verify the congregation bank account and online access.", detail: "Test deposits, authorised payments, statements and handover access before relying on it." },
+          { id: "startup-accounting-records", ref: "SFG 1:12, 14; 17:2", title: "Set up the congregation accounting records and approved payment/donation workflow.", detail: "Record opening balances, statement cycle, approvals, reports, receipts and secure retention exactly as directed by S-27." },
+          { id: "startup-audit", ref: "SFG 1:12 / S-27", title: "Schedule the first congregation accounts audit and future audit cycle." },
+          { id: "startup-charity-if-directed", ref: "NZ law — conditional", title: "Only if directed, complete the approved entity and Charities Services registration path.", detail: "Use branch-approved rules and officers. Registration is voluntary generally and current applications may take up to 20 weeks." },
+          { id: "startup-tax-if-directed", ref: "IRD — conditional", title: "Only if directed, complete the correct IRD, donee-status and tax setup.", detail: "If registering with Charities Services, do not separately apply for an IRD number; otherwise use the route specified for the approved entity." }
+        ]
+      },
+      {
+        id: "startup-activate",
+        title: "Activate the congregation on or shortly after 1 November",
+        subtitle: "Complete the people, appointment, ministry, publications and record transitions after the congregation becomes effective.",
+        items: [
+          { id: "startup-pioneers", ref: "SFG 14:4", title: "Review and confirm transferred regular pioneers.", detail: "Check the introduction-letter recommendation, confirm each pioneer wishes to continue and announce favourable confirmations at the next midweek meeting." },
+          { id: "startup-appointments-announce", ref: "Approval letter / SFG 14:4", title: "Make the authorised appointment and pioneer announcements at the proper time." },
+          { id: "startup-territory", ref: "Approval letter / S-6", title: "Put the interim territory arrangement into operation.", detail: "Use the submitted S-6 boundaries until updated assignments arrive; create controlled territory records and assignments." },
+          { id: "startup-publications", ref: "S-36 / M-202", title: "Activate literature, periodical, workbook and shipping arrangements.", detail: "Verify the requests and Kingdom Hall Literature Group arrangement; avoid duplicate orders during handover." },
+          { id: "startup-attendance-records", ref: "SFG 17:13-15", title: "Begin separate S-88 attendance and S-21 publisher records for the new congregation." }
+        ]
+      },
+      {
+        id: "startup-first-month",
+        title: "Complete the first month and recurring setup",
+        subtitle: "Prove that the reporting, accounting, hall and review routines work in practice.",
+        items: [
+          { id: "startup-monthly-accounts", ref: "S-27", title: "Complete and review the first monthly congregation accounts report.", detail: "Confirm statement reconciliation, approvals, target balance and filing under the current S-27." },
+          { id: "startup-information-board", ref: "SFG 13:9, 14", title: "Establish the new congregation’s controlled information-board routine.", detail: "Coordinator approval is required; post only congregation-activity information and the current cleaning schedule." },
+          { id: "startup-hall-cleaning", ref: "SFG 13:8-9", title: "Run the first cleaning cycle and confirm supplies and safety instructions." },
+          { id: "startup-khoc", ref: "SFG 13:4-6", title: "Confirm the congregation’s participation in the shared Kingdom Hall operating arrangement.", detail: "Record the representative, expenses and communication route agreed by the combined bodies." },
+          { id: "startup-review-30", ref: "Project control review", title: "Hold a 30-day launch review.", detail: "Reconcile people, appointments, meetings, ministry, territory, literature, bank/accounting, hall use and unresolved correspondence." },
+          { id: "startup-compliance-calendar", ref: "SFG 17:2 / conditional NZ duties", title: "Create the recurring compliance and review calendar.", detail: "Include monthly reports/accounts, audits, January file review, hall/agreement reviews and any branch-confirmed legal or charity obligations." }
         ]
       }
     ];
@@ -591,7 +661,12 @@
       "s51-ms": "Signed S-51 attachment and 9 August email: 2 ministerial servants are recorded.",
       "s51-reasons": "Signed S-51 attachment contains the completed factual reason for forming the congregation.",
       "s51-start": "Signed S-51 attachment and 9 August email record November 2026 as the proposed start month—not branch approval.",
-      "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence."
+      "final-language": "The 9 August email documents population, Tagalog-language, spiritual-need, fluency, publisher, study, attendance, and appointed-brother evidence.",
+      "approval-wait": "Completed: the branch approval letter is dated 2 September 2026.",
+      "approval-letter": "Official two-page branch approval letter AUS2824311_1 received and reviewed.",
+      "approval-date": "The approved start date is 1 November 2026.",
+      "approval-official-name": "Approved complete name: Ashburton Tagalog Congregation of Jehovah’s Witnesses, Ashburton, New Zealand.",
+      "approval-circuit-identity": "Official identity: congregation 3814, Circuit NZ-2, circuit overseer Anthony Radi."
     };
     let state = defaultState();
     let fileHandle = null;
